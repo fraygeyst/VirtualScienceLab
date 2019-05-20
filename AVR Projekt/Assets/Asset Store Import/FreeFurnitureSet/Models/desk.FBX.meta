@@ -1,99 +1,48 @@
 fileFormatVersion: 2
 guid: ecdfe9f0b8508af4d92737c656e36132
 ModelImporter:
-  serializedVersion: 25
-  internalIDToNameTable:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Door1
+    100004: door1
+    100006: Door2
+    100008: door2
+    100010: handle1
+    100012: handle2
+    400000: //RootNode
+    400002: Door1
+    400004: door1
+    400006: Door2
+    400008: door2
+    400010: handle1
+    400012: handle2
+    2300000: //RootNode
+    2300002: door1
+    2300004: door2
+    2300006: handle1
+    2300008: handle2
+    3300000: //RootNode
+    3300002: door1
+    3300004: door2
+    3300006: handle1
+    3300008: handle2
+    4300000: desk
+    4300002: door1
+    4300004: handle1
+    4300006: door2
+    4300008: handle2
+  externalObjects:
   - first:
-      1: 100000
-    second: //RootNode
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #25'
+    second: {fileID: 2100000, guid: 057d5430214e8414cafeee34639cae34, type: 2}
   - first:
-      1: 100002
-    second: Door1
-  - first:
-      1: 100004
-    second: door1
-  - first:
-      1: 100006
-    second: Door2
-  - first:
-      1: 100008
-    second: door2
-  - first:
-      1: 100010
-    second: handle1
-  - first:
-      1: 100012
-    second: handle2
-  - first:
-      4: 400000
-    second: //RootNode
-  - first:
-      4: 400002
-    second: Door1
-  - first:
-      4: 400004
-    second: door1
-  - first:
-      4: 400006
-    second: Door2
-  - first:
-      4: 400008
-    second: door2
-  - first:
-      4: 400010
-    second: handle1
-  - first:
-      4: 400012
-    second: handle2
-  - first:
-      23: 2300000
-    second: //RootNode
-  - first:
-      23: 2300002
-    second: door1
-  - first:
-      23: 2300004
-    second: door2
-  - first:
-      23: 2300006
-    second: handle1
-  - first:
-      23: 2300008
-    second: handle2
-  - first:
-      33: 3300000
-    second: //RootNode
-  - first:
-      33: 3300002
-    second: door1
-  - first:
-      33: 3300004
-    second: door2
-  - first:
-      33: 3300006
-    second: handle1
-  - first:
-      33: 3300008
-    second: handle2
-  - first:
-      43: 4300000
-    second: desk
-  - first:
-      43: 4300002
-    second: door1
-  - first:
-      43: 4300004
-    second: handle1
-  - first:
-      43: 4300006
-    second: door2
-  - first:
-      43: 4300008
-    second: handle2
-  - first:
-      95: 9500000
-    second: //RootNode
-  externalObjects: {}
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metal
+    second: {fileID: 2100000, guid: 03db3db6f68dc514e8f1ee0c95468740, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -127,7 +76,6 @@ ModelImporter:
     globalScale: 0.01
     meshCompression: 0
     addColliders: 0
-    useSRGBMaterialColor: 1
     importVisibility: 0
     importBlendShapes: 1
     importCameras: 0
@@ -135,32 +83,27 @@ ModelImporter:
     swapUVChannels: 0
     generateSecondaryUV: 1
     useFileUnits: 1
+    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
     preserveHierarchy: 0
-    skinWeightsMode: 0
-    maxBonesPerVertex: 4
-    minBoneWeight: 0.001
-    meshOptimizationFlags: -1
     indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15
     secondaryUVHardAngle: 45
     secondaryUVPackMargin: 6
     useFileScale: 0
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 4
     normalCalculationMode: 0
-    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
-    blendShapeNormalImportMode: 1
-    normalSmoothingSource: 0
-  referencedClips: []
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
-    serializedVersion: 3
+    serializedVersion: 2
     human: []
     skeleton: []
     armTwist: 0.5
@@ -170,7 +113,6 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.01
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
