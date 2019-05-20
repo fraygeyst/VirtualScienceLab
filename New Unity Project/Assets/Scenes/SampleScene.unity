@@ -1941,7 +1941,7 @@ GameObject:
   - component: {fileID: 1212377591}
   - component: {fileID: 1212377590}
   m_Layer: 0
-  m_Name: Cube (2)
+  m_Name: Wand links
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
