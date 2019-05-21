@@ -1,0 +1,178 @@
+fileFormatVersion: 2
+guid: 754f78d9f80a9c5458aed4a74cfe6145
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: eyeglass
+    100002: eyeglass_frame
+    100004: hair
+    100006: //RootNode
+    100008: l_eyeball
+    100010: l_pupil_spec
+    100012: l_spec_eyeball
+    100014: r_eyeball
+    100016: r_pupil_spec
+    100018: r_spec_eyeball
+    400000: eyeglass
+    400002: eyeglass_frame
+    400004: hair
+    400006: //RootNode
+    400008: l_eyeball
+    400010: l_pupil_spec
+    400012: l_spec_eyeball
+    400014: r_eyeball
+    400016: r_pupil_spec
+    400018: r_spec_eyeball
+    2300000: eyeglass
+    2300002: eyeglass_frame
+    2300004: hair
+    2300006: l_eyeball
+    2300008: l_pupil_spec
+    2300010: l_spec_eyeball
+    2300012: r_eyeball
+    2300014: r_pupil_spec
+    2300016: r_spec_eyeball
+    3300000: eyeglass
+    3300002: eyeglass_frame
+    3300004: hair
+    3300006: l_eyeball
+    3300008: l_pupil_spec
+    3300010: l_spec_eyeball
+    3300012: r_eyeball
+    3300014: r_pupil_spec
+    3300016: r_spec_eyeball
+    4300000: face_neutral
+    4300002: hair
+    4300004: l_eyeball
+    4300006: l_pupil_spec
+    4300008: r_eyeball
+    4300010: r_pupil_spec
+    4300012: l_spec_eyeball
+    4300014: r_spec_eyeball
+    4300016: eyeglass_frame
+    4300018: eyeglass
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: //RootNode
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: black_plastic_mat
+    second: {fileID: 2100000, guid: 0f192e7c7978c29449c869a7aaeeedea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cheveux_mat
+    second: {fileID: 2100000, guid: f58ba12527c4cac4599ae764d596705e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cornee_mat
+    second: {fileID: 2100000, guid: 47cbb36a94f7ea340b07bd38b29c0e6e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dents_mat
+    second: {fileID: 2100000, guid: 2cd5436e8f3105141b7f04fbfe24be19, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: peau_mat
+    second: {fileID: 2100000, guid: d8026a96b7a38764bb40d9778904e54b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: reflet_yeux_mat
+    second: {fileID: 2100000, guid: 01baf09d0cf0aed40a4c495002e12f6d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: verre_mat
+    second: {fileID: 2100000, guid: 235e33d39e2703e49911d00f978cba29, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
