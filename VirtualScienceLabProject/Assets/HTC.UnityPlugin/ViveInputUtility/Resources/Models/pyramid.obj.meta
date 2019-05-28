@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: edaf4f4e82f235e44a6bce82aeabacfb
+guid: 34f5197a8108c0744a2f1b72b7bfa340
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -10,8 +10,6 @@ ModelImporter:
     2300000: default
     3300000: default
     4300000: default
-    9500000: //RootNode
-    2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
     importMaterials: 0
@@ -62,13 +60,13 @@ ModelImporter:
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
-    useFileScale: 0
+    useFileScale: 1
     previousCalculatedGlobalScale: 1
     hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
-    tangentImportMode: 4
+    tangentImportMode: 3
     normalCalculationMode: 0
   importAnimation: 1
   copyAvatar: 0
