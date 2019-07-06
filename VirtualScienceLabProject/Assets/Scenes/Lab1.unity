@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657725, g: 0.49641198, b: 0.5748184, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657695, g: 0.49641138, b: 0.5748176, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2805,9 +2805,9 @@ MonoBehaviour:
   hour: 0
   seconds: 0
   realTime: 1
-  pointerSeconds: {fileID: 0}
-  pointerMinutes: {fileID: 0}
-  pointerHours: {fileID: 0}
+  pointerSeconds: {fileID: 2068966920}
+  pointerMinutes: {fileID: 2068966921}
+  pointerHours: {fileID: 2068966922}
   clockSpeed: 1
 --- !u!1 &918145444
 GameObject:
@@ -14315,6 +14315,21 @@ Prefab:
 --- !u!4 &2068966919 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 456804, guid: 4073f41b7d930f94d9470df64ec12b53,
+    type: 2}
+  m_PrefabInternal: {fileID: 2068966918}
+--- !u!1 &2068966920 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 192248, guid: 4073f41b7d930f94d9470df64ec12b53,
+    type: 2}
+  m_PrefabInternal: {fileID: 2068966918}
+--- !u!1 &2068966921 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 101354, guid: 4073f41b7d930f94d9470df64ec12b53,
+    type: 2}
+  m_PrefabInternal: {fileID: 2068966918}
+--- !u!1 &2068966922 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 111596, guid: 4073f41b7d930f94d9470df64ec12b53,
     type: 2}
   m_PrefabInternal: {fileID: 2068966918}
 --- !u!1001 &2072997205

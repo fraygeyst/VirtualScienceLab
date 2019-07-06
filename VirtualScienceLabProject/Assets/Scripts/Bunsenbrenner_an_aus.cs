@@ -28,7 +28,7 @@ public class Bunsenbrenner_an_aus : MonoBehaviour {
         }
 	}
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
         if (Brenneran == false)
         {
@@ -46,8 +46,4 @@ public class Bunsenbrenner_an_aus : MonoBehaviour {
         }
     }
 
-    private void OnCollisionExit(Collision collision)
-    {
-        
-    }
 }
