@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using HTC.UnityPlugin.Vive;
+using HTC.UnityPlugin.ColliderEvent;
 
 
 public class Bunsenbrenner_an_aus : MonoBehaviour {
