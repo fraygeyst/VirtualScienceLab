@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657683, g: 0.49641192, b: 0.5748182, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657725, g: 0.49641198, b: 0.5748184, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1492,6 +1492,7 @@ GameObject:
   - component: {fileID: 485889418}
   - component: {fileID: 485889417}
   - component: {fileID: 485889416}
+  - component: {fileID: 485889419}
   m_Layer: 0
   m_Name: "T\xFCrknauf"
   m_TagString: Untagged
@@ -1522,7 +1523,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 3.02
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &485889417
 MeshRenderer:
@@ -1566,6 +1567,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 485889414}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &485889419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 485889414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 192c70a3cca129b4f9d1fc6fd728300c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: Lab2
 --- !u!1001 &555865895
 Prefab:
   m_ObjectHideFlags: 0
