@@ -887,7 +887,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 551c14278867e424b8518d5443813578, type: 2}
+  - {fileID: 2100000, guid: d162a9a77600c6847951c4dab77526bc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1767,11 +1767,11 @@ Light:
   m_GameObject: {fileID: 740001042}
   m_Enabled: 1
   serializedVersion: 8
-  m_Type: 2
+  m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
-  m_Range: 10
-  m_SpotAngle: 30
+  m_Range: 20
+  m_SpotAngle: 42.4
   m_CookieSize: 10
   m_Shadows:
     m_Type: 0
@@ -1802,13 +1802,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 740001042}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.78, z: 0}
+  m_LocalRotation: {x: 0.5813931, y: 0.26881707, z: -0.21172474, w: 0.73816806}
+  m_LocalPosition: {x: 0, y: -0.77998567, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1403120330}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 76.449005, y: 40.02, z: 0}
 --- !u!1 &802984330
 GameObject:
   m_ObjectHideFlags: 0
@@ -3612,6 +3612,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goLight: {fileID: 740001042}
+--- !u!65 &1885483169
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1885483167}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.7, y: 2.84, z: 2.13}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1935830557
 GameObject:
   m_ObjectHideFlags: 0
