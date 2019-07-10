@@ -27,7 +27,7 @@ public class TurnLightOn : MonoBehaviour {
     // Update is called once per frame
     void Update () {
 
-        if (ViveInput.GetPressDownEx(HandRole.RightHand, ControllerButton.Trigger) && collisionHappend || ViveInput.GetPressDownEx(HandRole.LeftHand, ControllerButton.Trigger) && collisionHappend)
+        if ( (ViveInput.GetPressDownEx(HandRole.RightHand, ControllerButton.Trigger) && collisionHappend ) || (ViveInput.GetPressDownEx(HandRole.LeftHand, ControllerButton.Trigger) && collisionHappend ) )
         {
             if (isOn)
             {
