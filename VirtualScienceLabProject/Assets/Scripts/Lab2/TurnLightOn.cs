@@ -5,23 +5,27 @@ using HTC.UnityPlugin.Vive;
 
 public class TurnLightOn : MonoBehaviour {
 
-    public GameObject goLight;
+    public GameObject pointLight1;
+    public GameObject pointLight2;
+    public GameObject pointLight3;
     private bool isOn; 
     private bool collisionHappend = false;
 
 	// Use this for initialization
 	void Start () {
-        isOn = goLight.GetComponent<Light>().enabled;
+        isOn = pointLight1.GetComponent<Light>().enabled;
 	}
 
     private void OnCollisionEnter(Collision collision)
     {
         collisionHappend = true;
+        Debug.Log("collisionHappend: " +collisionHappend);
     }
 
     private void OnCollisionExit(Collision collision)
     {
         collisionHappend = false;
+        Debug.Log("collisionHappend: " + collisionHappend);
     }
 
     // Update is called once per frame
@@ -31,12 +35,16 @@ public class TurnLightOn : MonoBehaviour {
         {
             if (isOn)
             {
-                goLight.GetComponent<Light>().enabled = false;
+                pointLight1.GetComponent<Light>().enabled = false;
+                pointLight2.GetComponent<Light>().enabled = false;
+                pointLight3.GetComponent<Light>().enabled = false;
                 isOn = false;
             }
             else
             {
-                goLight.GetComponent<Light>().enabled = true;
+                pointLight1.GetComponent<Light>().enabled = true;
+                pointLight2.GetComponent<Light>().enabled = true;
+                pointLight3.GetComponent<Light>().enabled = true;
                 isOn = true;
             }
         }
