@@ -7,7 +7,8 @@ using HTC.UnityPlugin.Vive;
  * Script um das Licht z.B. an der Decke an/aus zuschalten
  */
 
-public class TurnLightOn : MonoBehaviour {
+public class TurnLightOn : MonoBehaviour
+{
 
     public GameObject pointLight1up;
     public GameObject pointLight1down;
@@ -16,20 +17,21 @@ public class TurnLightOn : MonoBehaviour {
     public GameObject pointLight3up;
     public GameObject pointLight3down;
     public GameObject directLight;
-    private bool isOn; 
+    private bool isOn;
     private bool collisionHappend = false;
 
-	// Use this for initialization
+    // Use this for initialization
     //Beim Start wird gepruepft ob das Licht an oder aus ist und entsprechend gesetzt
-	void Start () {
+    void Start()
+    {
         isOn = directLight.GetComponent<Light>().enabled;
-	}
+    }
 
     //sobald man sich z.B. mit dem Controller in dem Bereich befinden wird die Variable auf true gesetzt
     private void OnTriggerEnter(Collider other)
     {
         collisionHappend = true;
-        Debug.Log("collisionHappend: " +collisionHappend);
+        Debug.Log("collisionHappend: " + collisionHappend);
     }
 
     //sobald man sich z.B. mit dem Controller aus dem Bereich entfernt wird die Variable auf false gesetzt
@@ -40,10 +42,11 @@ public class TurnLightOn : MonoBehaviour {
     }
 
     // Update is called once per frame
-    void Update () {
+    void Update()
+    {
 
         //Sollte man sich in dem Bereich befinden und auf den Trigger Button druecken wird das Licht je nach Zustand an oder ausgeschlatet
-        if ( (ViveInput.GetPressDownEx(HandRole.RightHand, ControllerButton.Trigger) && collisionHappend ) || (ViveInput.GetPressDownEx(HandRole.LeftHand, ControllerButton.Trigger) && collisionHappend ) )
+        if ((ViveInput.GetPressDownEx(HandRole.RightHand, ControllerButton.Trigger) && collisionHappend) || (ViveInput.GetPressDownEx(HandRole.LeftHand, ControllerButton.Trigger) && collisionHappend))
         {
             if (isOn)
             {
