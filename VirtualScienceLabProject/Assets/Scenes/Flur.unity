@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657683, g: 0.49641192, b: 0.5748182, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -124,26 +124,13 @@ GameObject:
   - component: {fileID: 31457606}
   - component: {fileID: 31457605}
   - component: {fileID: 31457604}
-  - component: {fileID: 31457603}
   m_Layer: 0
-  m_Name: "T\xFCr2 (1)"
+  m_Name: "T\xFCr2"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &31457603
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 31457602}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a66249abc3727648b9b3e7cde97ea53, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneName: Lab2
 --- !u!65 &31457604
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -257,7 +244,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 1bbb1fe168d944444bfea8a67478b27b, type: 2}
+  - {fileID: 2100000, guid: abc889d5d3b576a42a2a736fed2a0aaa, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -424,7 +411,7 @@ GameObject:
   - component: {fileID: 889070938}
   - component: {fileID: 889070937}
   m_Layer: 0
-  m_Name: Wand rechts (1)
+  m_Name: Wand rechts
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -438,7 +425,7 @@ Transform:
   m_GameObject: {fileID: 889070935}
   m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: -0.5}
   m_LocalPosition: {x: -0.008631147, y: 0.49469155, z: 14.500027}
-  m_LocalScale: {x: 0.012539686, y: 30, z: 1.0229787}
+  m_LocalScale: {x: 0.012539686, y: 30, z: 1.0441543}
   m_Children: []
   m_Father: {fileID: 935528744}
   m_RootOrder: 3
@@ -470,7 +457,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 1bbb1fe168d944444bfea8a67478b27b, type: 2}
+  - {fileID: 2100000, guid: abc889d5d3b576a42a2a736fed2a0aaa, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -509,7 +496,7 @@ GameObject:
   - component: {fileID: 902174222}
   - component: {fileID: 902174221}
   m_Layer: 0
-  m_Name: Wand vorne (2)
+  m_Name: Wand vorne2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -555,7 +542,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 1bbb1fe168d944444bfea8a67478b27b, type: 2}
+  - {fileID: 2100000, guid: abc889d5d3b576a42a2a736fed2a0aaa, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1083,6 +1070,7 @@ GameObject:
   - component: {fileID: 1626585056}
   - component: {fileID: 1626585055}
   - component: {fileID: 1626585054}
+  - component: {fileID: 1626585057}
   m_Layer: 0
   m_Name: "T\xFCrknauf"
   m_TagString: Untagged
@@ -1113,7 +1101,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 2.87
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1626585055
 MeshRenderer:
@@ -1157,6 +1145,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1626585052}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1626585057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1626585052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a66249abc3727648b9b3e7cde97ea53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: Lab3
 --- !u!1 &1719739435
 GameObject:
   m_ObjectHideFlags: 0
@@ -1168,8 +1168,9 @@ GameObject:
   - component: {fileID: 1719739439}
   - component: {fileID: 1719739438}
   - component: {fileID: 1719739437}
+  - component: {fileID: 1719739440}
   m_Layer: 0
-  m_Name: "T\xFCrknauf (1)"
+  m_Name: "T\xFCrknauf"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1198,7 +1199,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 2.76
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1719739438
 MeshRenderer:
@@ -1242,6 +1243,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1719739435}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1719739440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1719739435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a66249abc3727648b9b3e7cde97ea53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: Lab2
 --- !u!1 &1842612590
 GameObject:
   m_ObjectHideFlags: 0
@@ -1254,7 +1267,7 @@ GameObject:
   - component: {fileID: 1842612592}
   - component: {fileID: 1842612591}
   m_Layer: 0
-  m_Name: Wand vorne (3)
+  m_Name: Wand vorne
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1287,7 +1300,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 1bbb1fe168d944444bfea8a67478b27b, type: 2}
+  - {fileID: 2100000, guid: abc889d5d3b576a42a2a736fed2a0aaa, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1424,7 +1437,7 @@ GameObject:
   - component: {fileID: 1904727538}
   - component: {fileID: 1904727537}
   m_Layer: 0
-  m_Name: Bild (1)
+  m_Name: Bild3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1538,7 +1551,7 @@ GameObject:
   - component: {fileID: 2033941773}
   - component: {fileID: 2033941772}
   m_Layer: 0
-  m_Name: Wand rechts (2)
+  m_Name: Wand rechts2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1584,7 +1597,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 1bbb1fe168d944444bfea8a67478b27b, type: 2}
+  - {fileID: 2100000, guid: abc889d5d3b576a42a2a736fed2a0aaa, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1623,7 +1636,7 @@ GameObject:
   - component: {fileID: 2034019798}
   - component: {fileID: 2034019797}
   m_Layer: 0
-  m_Name: Wand vorne (1)
+  m_Name: Wand vorne
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1669,7 +1682,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 1bbb1fe168d944444bfea8a67478b27b, type: 2}
+  - {fileID: 2100000, guid: abc889d5d3b576a42a2a736fed2a0aaa, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1707,26 +1720,13 @@ GameObject:
   - component: {fileID: 2036989815}
   - component: {fileID: 2036989814}
   - component: {fileID: 2036989813}
-  - component: {fileID: 2036989812}
   m_Layer: 0
-  m_Name: "T\xFCr (1)"
+  m_Name: "T\xFCr"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2036989812
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2036989811}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a66249abc3727648b9b3e7cde97ea53, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneName: Lab3
 --- !u!65 &2036989813
 BoxCollider:
   m_ObjectHideFlags: 0
