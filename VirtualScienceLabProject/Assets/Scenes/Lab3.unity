@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657683, g: 0.49641192, b: 0.5748182, a: 1}
+  m_IndirectSpecularColor: {r: 0.43713364, g: 0.48485702, b: 0.5651278, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1317,12 +1317,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 514303087}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 247ca448e1a66244fae3432dab51f42a, type: 3}
+  m_Script: {fileID: 11500000, guid: d4b7850e3a997684d8bc1e3525be0964, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointLight1: {fileID: 0}
-  pointLight2: {fileID: 0}
-  pointLight3: {fileID: 0}
+  pointLight: {fileID: 1772455897}
 --- !u!1 &533268807
 GameObject:
   m_ObjectHideFlags: 0
@@ -4794,37 +4792,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 247ca448e1a66244fae3432dab51f42a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointLight1: {fileID: 0}
-  pointLight2: {fileID: 0}
-  pointLight3: {fileID: 0}
---- !u!114 &1885170829
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1885170827}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 247ca448e1a66244fae3432dab51f42a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pointLight1: {fileID: 0}
-  pointLight2: {fileID: 0}
-  pointLight3: {fileID: 0}
---- !u!114 &1885170830
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1885170827}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 247ca448e1a66244fae3432dab51f42a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pointLight1: {fileID: 0}
-  pointLight2: {fileID: 0}
-  pointLight3: {fileID: 0}
+  pointLight1: {fileID: 784463497}
+  pointLight2: {fileID: 2109216452}
+  pointLight3: {fileID: 510562936}
 --- !u!65 &1885170831
 BoxCollider:
   m_ObjectHideFlags: 0
