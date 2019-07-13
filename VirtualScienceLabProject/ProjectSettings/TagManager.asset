@@ -11,6 +11,11 @@ TagManager:
   - Stab
   - Waschbecken
   - Water
+  - natrium
+  - lithium
+  - kupfer
+  - calcium
+  - inhalt
   layers:
   - Default
   - TransparentFX

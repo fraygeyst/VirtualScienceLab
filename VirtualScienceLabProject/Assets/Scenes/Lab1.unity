@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657695, g: 0.49641138, b: 0.5748176, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657725, g: 0.49641198, b: 0.5748184, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5721,6 +5721,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: abc889d5d3b576a42a2a736fed2a0aaa, type: 2}
+    - target: {fileID: 100002, guid: eb2b0dd7d755d364aad85a0d4a1a9c89, type: 3}
+      propertyPath: m_TagString
+      value: kupfer
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb2b0dd7d755d364aad85a0d4a1a9c89, type: 3}
   m_IsPrefabAsset: 0
@@ -5858,23 +5862,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 233923197}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a51a402b3537e18459343729e1a1a758, type: 3}
+  m_Script: {fileID: 11500000, guid: ba24013e7af8c9446857ec73000b6eab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Anschalter: {fileID: 233923197}
-  Brenneran: 0
-  Feuer: {fileID: 251779954}
-  Funken: {fileID: 457125881}
-  Audio: {fileID: 490314673}
-  spoon: {fileID: 1570123380}
-  Calcium: {fileID: 297848608}
-  Kupfer: {fileID: 189912039}
-  Lithium: {fileID: 2072997207}
-  Natrium: {fileID: 945939940}
-  Ca: {fileID: 1330330750}
-  Cu: {fileID: 511627298}
-  Li: {fileID: 172215589}
-  Na: {fileID: 1110622818}
+  Feuer: {fileID: 251779951}
+  Funken: {fileID: 457125879}
+  Audio: {fileID: 490314672}
+  Ca: {fileID: 1330330747}
+  Cu: {fileID: 511627295}
+  Li: {fileID: 172215586}
+  Na: {fileID: 1110622815}
+  smallFires: {fileID: 688371136}
 --- !u!136 &233923199
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -11024,6 +11022,10 @@ Prefab:
     - target: {fileID: 100002, guid: eb2b0dd7d755d364aad85a0d4a1a9c89, type: 3}
       propertyPath: m_Name
       value: Calcium
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: eb2b0dd7d755d364aad85a0d4a1a9c89, type: 3}
+      propertyPath: m_TagString
+      value: calcium
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb2b0dd7d755d364aad85a0d4a1a9c89, type: 3}
@@ -21129,6 +21131,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 136122, guid: cbfd31aaac017204885fcc03f0579a1a, type: 2}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cbfd31aaac017204885fcc03f0579a1a, type: 2}
   m_IsPrefabAsset: 0
@@ -22114,6 +22120,7 @@ Transform:
   - {fileID: 511627296}
   - {fileID: 172215587}
   - {fileID: 1110622816}
+  - {fileID: 966546592}
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -23416,6 +23423,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 16e58087e8cae74458175a04c1e2f587, type: 2}
+    - target: {fileID: 100002, guid: eb2b0dd7d755d364aad85a0d4a1a9c89, type: 3}
+      propertyPath: m_TagString
+      value: natrium
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb2b0dd7d755d364aad85a0d4a1a9c89, type: 3}
   m_IsPrefabAsset: 0
@@ -23441,6 +23452,65 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.15
   m_Center: {x: -0.00000009685755, y: 0.092126206, z: -0.000030517578}
+--- !u!1 &966546591
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 966546592}
+  - component: {fileID: 966546594}
+  - component: {fileID: 966546593}
+  m_Layer: 0
+  m_Name: SpoonFlameColliderArea
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &966546592
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 966546591}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 650, y: -16594, z: 10031}
+  m_LocalScale: {x: 100000, y: 100000, z: 100000}
+  m_Children: []
+  m_Father: {fileID: 688371139}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &966546593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 966546591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42b297175f4e3d1438a6b24bbb8dfc05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spoonInhalt: {fileID: 1807906505}
+  Anschalter: {fileID: 233923197}
+  Kupfer: {fileID: 2100000, guid: d126f324ef346a8459d9ae8a3c9c9f6b, type: 2}
+  Lithium: {fileID: 2100000, guid: 2a44576f97b58fa4a836c14261bc166d, type: 2}
+  Calcium: {fileID: 2100000, guid: efe6d62e9e63dfa4596a8c084d943e5f, type: 2}
+  Natrium: {fileID: 2100000, guid: 5c140038659f95e49bd2d634bebe269e, type: 2}
+--- !u!65 &966546594
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 966546591}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.13, y: 0.1, z: 0.13}
+  m_Center: {x: 0, y: 0.12, z: 0}
 --- !u!4 &997816601 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: eed1e5446035d1e499c2cd0117ff9c4a,
@@ -29981,7 +30051,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1330330747}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -2039, y: -131.98853, z: 4605}
+  m_LocalPosition: {x: 2217, y: -131.98853, z: 2893}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 688371139}
@@ -35291,6 +35361,7 @@ GameObject:
   - component: {fileID: 1570123384}
   - component: {fileID: 1570123385}
   - component: {fileID: 1570123386}
+  - component: {fileID: 1570123387}
   m_Layer: 0
   m_Name: Table Spoon
   m_TagString: Untagged
@@ -35349,7 +35420,8 @@ Transform:
   m_LocalRotation: {x: -0.5, y: 0.5, z: 0.5, w: 0.5}
   m_LocalPosition: {x: 205.408, y: 21.027, z: 420.457}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1807906506}
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: -90, y: 90, z: 0}
@@ -35417,6 +35489,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.04283975, y: 0.19425295, z: 0.022524051}
   m_Center: {x: -0.000000074505806, y: 0.09219832, z: 0.0059871306}
+--- !u!114 &1570123387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1570123380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d98b4e2c7b84974468a6343054fc2f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  natrium: {fileID: 2100000, guid: 5c140038659f95e49bd2d634bebe269e, type: 2}
+  lithium: {fileID: 2100000, guid: 2a44576f97b58fa4a836c14261bc166d, type: 2}
+  kupfer: {fileID: 2100000, guid: d126f324ef346a8459d9ae8a3c9c9f6b, type: 2}
+  calcium: {fileID: 2100000, guid: efe6d62e9e63dfa4596a8c084d943e5f, type: 2}
+  spoonInhalt: {fileID: 1807906505}
 --- !u!1 &1602934644
 GameObject:
   m_ObjectHideFlags: 0
@@ -35957,6 +36045,92 @@ Transform:
   m_Father: {fileID: 1363484045}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 90, y: 90, z: 0}
+--- !u!1 &1807906505
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1807906506}
+  - component: {fileID: 1807906509}
+  - component: {fileID: 1807906508}
+  - component: {fileID: 1807906507}
+  m_Layer: 0
+  m_Name: inhalt
+  m_TagString: inhalt
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1807906506
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1807906505}
+  m_LocalRotation: {x: 0.79703325, y: 0.035310507, z: -0.046821713, w: 0.60108155}
+  m_LocalPosition: {x: -0.0007, y: 0.1593, z: 0.0062}
+  m_LocalScale: {x: 0.030932, y: -0.0006940876, z: 0.05660528}
+  m_Children: []
+  m_Father: {fileID: 1570123383}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 105.957, y: 6.723999, z: -0.000015258789}
+--- !u!136 &1807906507
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1807906505}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1807906508
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1807906505}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 2100000, guid: abc889d5d3b576a42a2a736fed2a0aaa, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1807906509
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1807906505}
+  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &1812617829
 Prefab:
   m_ObjectHideFlags: 0
@@ -36987,6 +37161,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: f62b52b2d4b721742a0bc5c6b4db468d, type: 2}
+    - target: {fileID: 100002, guid: eb2b0dd7d755d364aad85a0d4a1a9c89, type: 3}
+      propertyPath: m_TagString
+      value: lithium
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb2b0dd7d755d364aad85a0d4a1a9c89, type: 3}
   m_IsPrefabAsset: 0
