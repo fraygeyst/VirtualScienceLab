@@ -16,6 +16,7 @@ TagManager:
   - kupfer
   - calcium
   - inhalt
+  - salzstein
   layers:
   - Default
   - TransparentFX
