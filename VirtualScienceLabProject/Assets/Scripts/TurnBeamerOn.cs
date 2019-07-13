@@ -18,8 +18,9 @@ public class TurnBeamerOn : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        Debug.Log("collisionHappend: " + collisionHappend);
-        isOn = beamerLight.activeSelf;
+        
+        beamerLight.SetActive(false);
+        isOn = false;
     }
 
  
@@ -27,14 +28,14 @@ public class TurnBeamerOn : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         collisionHappend = true;
-        Debug.Log("collisionHappend: " + collisionHappend);
+        Debug.Log("TurnBeamerOn collisionHappend: " + collisionHappend);
 
     }
 
     private void OnTriggerExit(Collider other)
     {
         collisionHappend = false;
-        Debug.Log("collisionHappend: " + collisionHappend);
+        Debug.Log("TurnBeamerOn collisionHappend: " + collisionHappend);
     }
 
 

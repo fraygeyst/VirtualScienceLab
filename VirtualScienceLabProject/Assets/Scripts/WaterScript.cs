@@ -20,7 +20,7 @@ public class WaterScript : MonoBehaviour {
     private void OnTriggerEnter(Collider other)
     {
             collisionHappend = true;
-            Debug.Log("collisionHappend: " + collisionHappend);
+            Debug.Log("WaterScript collisionHappend: " + collisionHappend);
         
     }
 
@@ -28,7 +28,7 @@ public class WaterScript : MonoBehaviour {
     private void OnTriggerExit(Collider other)
     {
           collisionHappend = false;
-          Debug.Log("collisionHappend" + collisionHappend);
+          Debug.Log("WaterScript collisionHappend" + collisionHappend);
         
     }
 
