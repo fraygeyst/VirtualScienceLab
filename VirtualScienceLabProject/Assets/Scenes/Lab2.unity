@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311947, g: 0.38074005, b: 0.35872722, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -235,7 +235,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6cb7283949387b04bbc0e727e66de7c1, type: 3}
       propertyPath: m_RootOrder
-      value: 19
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 6cb7283949387b04bbc0e727e66de7c1, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -529,7 +529,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 83a8ea92913740449a4ad6c6c19c7d92, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 206.31
+      value: 208.903
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 83a8ea92913740449a4ad6c6c19c7d92, type: 3}
       propertyPath: m_LocalPosition.y
@@ -537,7 +537,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 83a8ea92913740449a4ad6c6c19c7d92, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 423.774
+      value: 423.778
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 83a8ea92913740449a4ad6c6c19c7d92, type: 3}
       propertyPath: m_LocalRotation.x
@@ -557,7 +557,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 83a8ea92913740449a4ad6c6c19c7d92, type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 83a8ea92913740449a4ad6c6c19c7d92, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -744,6 +744,64 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 103165658}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &105518281
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400004, guid: 1bcd9147380ac1f4b97535c4b28bee6f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 212.716
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 1bcd9147380ac1f4b97535c4b28bee6f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 20.288
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 1bcd9147380ac1f4b97535c4b28bee6f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 428.749
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 1bcd9147380ac1f4b97535c4b28bee6f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 1bcd9147380ac1f4b97535c4b28bee6f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 1bcd9147380ac1f4b97535c4b28bee6f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 1bcd9147380ac1f4b97535c4b28bee6f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 1bcd9147380ac1f4b97535c4b28bee6f, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 1bcd9147380ac1f4b97535c4b28bee6f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 1bcd9147380ac1f4b97535c4b28bee6f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 1bcd9147380ac1f4b97535c4b28bee6f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 1bcd9147380ac1f4b97535c4b28bee6f, type: 3}
+      propertyPath: m_Name
+      value: Pflanze_rechte_ecke
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1bcd9147380ac1f4b97535c4b28bee6f, type: 3}
+  m_IsPrefabAsset: 0
 --- !u!1 &143257222
 GameObject:
   m_ObjectHideFlags: 0
@@ -863,7 +921,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: 17813e373c247bb4f9c7a0e75cd6a9dd, type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: 17813e373c247bb4f9c7a0e75cd6a9dd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -1040,7 +1098,7 @@ Transform:
   - {fileID: 1262426181}
   - {fileID: 1685131594}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &214536255
 GameObject:
@@ -1311,7 +1369,7 @@ Transform:
   m_LocalScale: {x: 0.29824504, y: 0.022731597, z: 0.73689204}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 90.827, z: 0}
 --- !u!1001 &275389745
 Prefab:
@@ -1350,7 +1408,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4795266759639050, guid: 72653085a6b827f48b10b434c7972f1c, type: 2}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 4795266759639050, guid: 72653085a6b827f48b10b434c7972f1c, type: 2}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1540,7 +1598,7 @@ Transform:
   m_LocalScale: {x: 6.08519, y: 7.9746814, z: 0.1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &290236238
 GameObject:
@@ -1642,7 +1700,7 @@ Transform:
   m_LocalScale: {x: 8, y: 0.10000001, z: 6}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &312697807
 GameObject:
@@ -1671,7 +1729,7 @@ Transform:
   m_Children:
   - {fileID: 2101094055}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &338040214
 GameObject:
@@ -2033,7 +2091,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 456804, guid: 4073f41b7d930f94d9470df64ec12b53, type: 2}
       propertyPath: m_RootOrder
-      value: 22
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 456804, guid: 4073f41b7d930f94d9470df64ec12b53, type: 2}
       propertyPath: m_LocalScale.x
@@ -2507,7 +2565,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400016, guid: 6ae8eb4b8f56c70478d2f5cdb15a26b0, type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 400016, guid: 6ae8eb4b8f56c70478d2f5cdb15a26b0, type: 3}
       propertyPath: m_LocalScale.x
@@ -2770,7 +2828,7 @@ Transform:
   m_Children:
   - {fileID: 2009162486}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &523273468
 MonoBehaviour:
@@ -3203,6 +3261,75 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 608033922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c1e088ce10ab7d4c87f03fd1f2dfcae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  posOffset: {x: 0, y: 0, z: 0}
+  rotOffset: {x: 0, y: 0, z: 0}
+  alignPosition: 0
+  alignRotation: 0
+  alignPositionOffset: {x: 0, y: 0, z: 0}
+  alignRotationOffset: {x: 0, y: 0, z: 0}
+  m_followingDuration: 0.04
+  m_overrideMaxAngularVelocity: 1
+  m_unblockableGrab: 1
+  m_grabButton: 0
+  m_allowMultipleGrabbers: 1
+  m_afterGrabbed:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: HTC.UnityPlugin.Vive.BasicGrabbable+UnityEventGrabbable, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_beforeRelease:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: HTC.UnityPlugin.Vive.BasicGrabbable+UnityEventGrabbable, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_onDrop:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: HTC.UnityPlugin.Vive.BasicGrabbable+UnityEventGrabbable, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!1 &624858827 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: f74f1c6cb855df646a49ede5df29c582,
+    type: 3}
+  m_PrefabInternal: {fileID: 1273858228}
+--- !u!54 &624858828
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 624858827}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &624858829
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 624858827}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 21.36, y: 33, z: 17.61}
+  m_Center: {x: 0, y: 15.52, z: 0}
+--- !u!114 &624858831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 624858827}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2c1e088ce10ab7d4c87f03fd1f2dfcae, type: 3}
@@ -4680,6 +4807,48 @@ Transform:
   m_Father: {fileID: 827370849}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 83.98, y: 40.02, z: 0}
+--- !u!1001 &919703124
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4552235428467734, guid: e8ff6bc36650e0440a546f620221e966, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 207.815
+      objectReference: {fileID: 0}
+    - target: {fileID: 4552235428467734, guid: e8ff6bc36650e0440a546f620221e966, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 20.205
+      objectReference: {fileID: 0}
+    - target: {fileID: 4552235428467734, guid: e8ff6bc36650e0440a546f620221e966, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 425.018
+      objectReference: {fileID: 0}
+    - target: {fileID: 4552235428467734, guid: e8ff6bc36650e0440a546f620221e966, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4552235428467734, guid: e8ff6bc36650e0440a546f620221e966, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.707917
+      objectReference: {fileID: 0}
+    - target: {fileID: 4552235428467734, guid: e8ff6bc36650e0440a546f620221e966, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4552235428467734, guid: e8ff6bc36650e0440a546f620221e966, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.7062957
+      objectReference: {fileID: 0}
+    - target: {fileID: 4552235428467734, guid: e8ff6bc36650e0440a546f620221e966, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e8ff6bc36650e0440a546f620221e966, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &929482404
 GameObject:
   m_ObjectHideFlags: 0
@@ -4898,7 +5067,7 @@ Transform:
   m_Children:
   - {fileID: 1655734733}
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 45, z: 0}
 --- !u!1 &983172677
 GameObject:
@@ -5309,7 +5478,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400022, guid: 91132eed7287e494da734f1caecadf63, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 400022, guid: 91132eed7287e494da734f1caecadf63, type: 3}
       propertyPath: m_LocalScale.x
@@ -5606,7 +5775,7 @@ Transform:
   - {fileID: 736356650}
   - {fileID: 103165659}
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1261188696
 GameObject:
@@ -5944,7 +6113,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bc09823b4a881ae48a3b1f5243401f03, type: 2}
       propertyPath: m_RootOrder
-      value: 17
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bc09823b4a881ae48a3b1f5243401f03, type: 2}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -6042,6 +6211,72 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: HTC.UnityPlugin.Vive.BasicGrabbable+UnityEventGrabbable, Assembly-CSharp,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!1001 &1273858228
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: f74f1c6cb855df646a49ede5df29c582, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 206.759
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f74f1c6cb855df646a49ede5df29c582, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 20.295
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f74f1c6cb855df646a49ede5df29c582, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 423.899
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f74f1c6cb855df646a49ede5df29c582, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f74f1c6cb855df646a49ede5df29c582, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.9486305
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f74f1c6cb855df646a49ede5df29c582, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f74f1c6cb855df646a49ede5df29c582, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.31638628
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f74f1c6cb855df646a49ede5df29c582, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f74f1c6cb855df646a49ede5df29c582, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f74f1c6cb855df646a49ede5df29c582, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f74f1c6cb855df646a49ede5df29c582, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f74f1c6cb855df646a49ede5df29c582, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -143.11101
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: f74f1c6cb855df646a49ede5df29c582, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100006, guid: 91132eed7287e494da734f1caecadf63, type: 3}
+    - target: {fileID: 100000, guid: f74f1c6cb855df646a49ede5df29c582, type: 3}
+      propertyPath: m_Name
+      value: Chefsessel
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f74f1c6cb855df646a49ede5df29c582, type: 3}
+  m_IsPrefabAsset: 0
 --- !u!1 &1288305719
 GameObject:
   m_ObjectHideFlags: 0
@@ -6280,7 +6515,7 @@ Transform:
   - {fileID: 588430642}
   - {fileID: 1687534789}
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 90.61, y: 0, z: 0}
 --- !u!1 &1420703557
 GameObject:
@@ -7769,131 +8004,6 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: HTC.UnityPlugin.Vive.BasicGrabbable+UnityEventGrabbable, Assembly-CSharp,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
---- !u!1001 &1688668651
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 400000, guid: 83a8ea92913740449a4ad6c6c19c7d92, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 209.046
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 83a8ea92913740449a4ad6c6c19c7d92, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 20.259996
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 83a8ea92913740449a4ad6c6c19c7d92, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 423.866
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 83a8ea92913740449a4ad6c6c19c7d92, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.7057626
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 83a8ea92913740449a4ad6c6c19c7d92, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.04357961
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 83a8ea92913740449a4ad6c6c19c7d92, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.043579645
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 83a8ea92913740449a4ad6c6c19c7d92, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.70576257
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 83a8ea92913740449a4ad6c6c19c7d92, type: 3}
-      propertyPath: m_RootOrder
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 83a8ea92913740449a4ad6c6c19c7d92, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -90.00001
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 83a8ea92913740449a4ad6c6c19c7d92, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -7.0670004
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 83a8ea92913740449a4ad6c6c19c7d92, type: 3}
-      propertyPath: m_Name
-      value: chair
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 83a8ea92913740449a4ad6c6c19c7d92, type: 3}
-  m_IsPrefabAsset: 0
---- !u!1 &1688668652 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100000, guid: 83a8ea92913740449a4ad6c6c19c7d92,
-    type: 3}
-  m_PrefabInternal: {fileID: 1688668651}
---- !u!64 &1688668653
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1688668652}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 1
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: 83a8ea92913740449a4ad6c6c19c7d92, type: 3}
---- !u!54 &1688668654
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1688668652}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!114 &1688668655
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1688668652}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c1e088ce10ab7d4c87f03fd1f2dfcae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  posOffset: {x: 0, y: 0, z: 0}
-  rotOffset: {x: 0, y: 0, z: 0}
-  alignPosition: 0
-  alignRotation: 0
-  alignPositionOffset: {x: 0, y: 0, z: 0}
-  alignRotationOffset: {x: 0, y: 0, z: 0}
-  m_followingDuration: 0.04
-  m_overrideMaxAngularVelocity: 1
-  m_unblockableGrab: 1
-  m_grabButton: 0
-  m_allowMultipleGrabbers: 1
-  m_afterGrabbed:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: HTC.UnityPlugin.Vive.BasicGrabbable+UnityEventGrabbable, Assembly-CSharp,
-      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_beforeRelease:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: HTC.UnityPlugin.Vive.BasicGrabbable+UnityEventGrabbable, Assembly-CSharp,
-      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_onDrop:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: HTC.UnityPlugin.Vive.BasicGrabbable+UnityEventGrabbable, Assembly-CSharp,
-      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!1 &1700346760
 GameObject:
   m_ObjectHideFlags: 0
@@ -8136,7 +8246,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bc09823b4a881ae48a3b1f5243401f03, type: 2}
       propertyPath: m_RootOrder
-      value: 14
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bc09823b4a881ae48a3b1f5243401f03, type: 2}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -8555,7 +8665,7 @@ Transform:
   - {fileID: 661046647}
   - {fileID: 344180869}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 90.61, y: 0, z: 0}
 --- !u!1001 &1885483165
 Prefab:
@@ -8694,7 +8804,7 @@ Transform:
   - {fileID: 702067429}
   - {fileID: 1688559028}
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1940140199
 GameObject:
@@ -8876,7 +8986,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6995ccaed157b15468eea0496decaaa9, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6995ccaed157b15468eea0496decaaa9, type: 3}
       propertyPath: m_LocalScale.x
@@ -9339,7 +9449,7 @@ Transform:
   - {fileID: 1940741208}
   - {fileID: 1190781617}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2068833875
 Prefab:
@@ -9378,7 +9488,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: eb2b0dd7d755d364aad85a0d4a1a9c89, type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: eb2b0dd7d755d364aad85a0d4a1a9c89, type: 3}
       propertyPath: m_LocalScale.x
@@ -9587,7 +9697,7 @@ Transform:
   - {fileID: 1836677567}
   - {fileID: 558014300}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2095009354
 MonoBehaviour:
@@ -9912,3 +10022,72 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: HTC.UnityPlugin.Vive.BasicGrabbable+UnityEventGrabbable, Assembly-CSharp,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!1 &2127955160 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100004, guid: 1bcd9147380ac1f4b97535c4b28bee6f,
+    type: 3}
+  m_PrefabInternal: {fileID: 105518281}
+--- !u!65 &2127955161
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2127955160}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.61, y: 0.91, z: 0.61}
+  m_Center: {x: 0, y: 0.52, z: 0}
+--- !u!114 &2127955162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2127955160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c1e088ce10ab7d4c87f03fd1f2dfcae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  posOffset: {x: 0, y: 0, z: 0}
+  rotOffset: {x: 0, y: 0, z: 0}
+  alignPosition: 0
+  alignRotation: 0
+  alignPositionOffset: {x: 0, y: 0, z: 0}
+  alignRotationOffset: {x: 0, y: 0, z: 0}
+  m_followingDuration: 0.04
+  m_overrideMaxAngularVelocity: 1
+  m_unblockableGrab: 1
+  m_grabButton: 0
+  m_allowMultipleGrabbers: 1
+  m_afterGrabbed:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: HTC.UnityPlugin.Vive.BasicGrabbable+UnityEventGrabbable, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_beforeRelease:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: HTC.UnityPlugin.Vive.BasicGrabbable+UnityEventGrabbable, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_onDrop:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: HTC.UnityPlugin.Vive.BasicGrabbable+UnityEventGrabbable, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!54 &2127955163
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2127955160}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0

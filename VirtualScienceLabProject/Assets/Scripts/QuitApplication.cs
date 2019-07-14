@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using HTC.UnityPlugin.Vive;
 
 /// <summary>
 /// Erstes Beispiel einer C# Klasse in einer Unity-Anwendung
@@ -17,7 +18,9 @@ public class QuitApplication : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.Escape))
+        if (Input.GetKeyUp(KeyCode.Escape) || 
+            ( ViveInput.GetPressDownEx(HandRole.LeftHand, ControllerButton.Menu) && ViveInput.GetPressDownEx(HandRole.LeftHand, ControllerButton.HairTrigger) ) ||
+            ( ViveInput.GetPressDownEx(HandRole.RightHand, ControllerButton.Menu) && ViveInput.GetPressDownEx(HandRole.RightHand, ControllerButton.HairTrigger) )  )
         {
             Application.Quit();
             // Esc is ignored in Editor playback mode
