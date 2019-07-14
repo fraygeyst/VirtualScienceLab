@@ -18,7 +18,8 @@ public class QuitApplication : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.Escape) || 
+        //Input.GetKeyUp(KeyCode.Escape) ||
+        if (
             ( ViveInput.GetPressDownEx(HandRole.LeftHand, ControllerButton.Menu) && ViveInput.GetPressDownEx(HandRole.LeftHand, ControllerButton.HairTrigger) ) ||
             ( ViveInput.GetPressDownEx(HandRole.RightHand, ControllerButton.Menu) && ViveInput.GetPressDownEx(HandRole.RightHand, ControllerButton.HairTrigger) )  )
         {
