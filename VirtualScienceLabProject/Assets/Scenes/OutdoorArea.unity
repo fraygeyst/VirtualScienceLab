@@ -8349,7 +8349,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab_kleine_wurfel: {fileID: 1387494162530188, guid: 8233e027418fef24b9e78a5b57989c15,
     type: 2}
-  numberOfObjects: 40
+  numberOfObjects: 80
   radius: 120
   prefab_hslogo: {fileID: 1735819011541930, guid: 93a34f90cfbe9364385f9ef3ec1b13b9,
     type: 2}
