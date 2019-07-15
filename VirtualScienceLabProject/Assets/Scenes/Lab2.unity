@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311926, g: 0.38073996, b: 0.35872698, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311947, g: 0.38074005, b: 0.35872722, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2239,7 +2239,7 @@ GameObject:
   - component: {fileID: 343576532}
   - component: {fileID: 343576531}
   m_Layer: 0
-  m_Name: Capsule (4)
+  m_Name: Styropor4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2377,7 +2377,7 @@ Transform:
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 32
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 90, y: 90, z: 0}
 --- !u!1 &343615402
 GameObject:
@@ -6100,7 +6100,7 @@ GameObject:
   - component: {fileID: 1101544715}
   - component: {fileID: 1101544714}
   m_Layer: 0
-  m_Name: Capsule (1)
+  m_Name: Styropor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6238,7 +6238,7 @@ Transform:
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 29
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 90, y: 90, z: 0}
 --- !u!1 &1104058608
 GameObject:
@@ -8109,7 +8109,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1502959186}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.529, y: -0.375, z: 1.504}
+  m_LocalPosition: {x: 0.529, y: -0.427, z: 1.504}
   m_LocalScale: {x: 0.2, y: 0.15, z: 0.1}
   m_Children: []
   m_Father: {fileID: 1247073319}
@@ -9832,7 +9832,7 @@ GameObject:
   - component: {fileID: 1709649330}
   - component: {fileID: 1709649329}
   m_Layer: 0
-  m_Name: Capsule (3)
+  m_Name: Styropor3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9970,7 +9970,7 @@ Transform:
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 31
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1728048933
 GameObject:
@@ -11966,7 +11966,7 @@ GameObject:
   - component: {fileID: 2107953202}
   - component: {fileID: 2107953201}
   m_Layer: 0
-  m_Name: Capsule (2)
+  m_Name: Styropor2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12104,7 +12104,7 @@ Transform:
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 30
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &2107991657
 GameObject:
