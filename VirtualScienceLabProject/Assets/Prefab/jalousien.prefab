@@ -173,7 +173,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4552235428467734}
   m_Layer: 0
-  m_Name: schalosien
+  m_Name: jalousien
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
