@@ -8,12 +8,14 @@ public class WaterScript : MonoBehaviour {
     public GameObject water;
     private bool isOn;
     private bool collisionHappend = false;
+    public GameObject waterParticleSystem;
     
 
     // Use this for initialization
     void Start () {
         
         water.SetActive(false);
+        waterParticleSystem.SetActive(false);
         isOn = false;
     }
 
@@ -41,11 +43,13 @@ public class WaterScript : MonoBehaviour {
             if (isOn)
             {
                 water.SetActive(false);
+                waterParticleSystem.SetActive(false);
                 isOn = false;
             }
             else
             {
                 water.SetActive(true);
+                waterParticleSystem.SetActive(true);
                 isOn = true;
             }
         }

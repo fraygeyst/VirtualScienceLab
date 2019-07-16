@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657683, g: 0.49641192, b: 0.5748182, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657725, g: 0.49641198, b: 0.5748184, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6020,6 +6020,7 @@ GameObject:
   - component: {fileID: 233923200}
   - component: {fileID: 233923199}
   - component: {fileID: 233923198}
+  - component: {fileID: 233923203}
   m_Layer: 0
   m_Name: Anschalter
   m_TagString: Untagged
@@ -6114,6 +6115,19 @@ Transform:
   m_Father: {fileID: 1195181583}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: -45, y: 0, z: 0}
+--- !u!114 &233923203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 233923197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28cd828adcbb6474c9824b693599c604, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Materialcolor1: {fileID: 2100000, guid: 1fc1977a539f9d4439a3cde5a5fb4abb, type: 2}
+  Materialcolor2: {fileID: 2100000, guid: 4e4ce311185476f429ba8b5140c68cab, type: 2}
 --- !u!4 &236350233 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 4f665beecc0be9e469ec31f98e732987,
