@@ -28,10 +28,11 @@ public class Flammenfärbung : MonoBehaviour {
     {
         Color m = new Color(0,0,0);
 
-        if (other.gameObject == spoonInhalt)
+        if (other.gameObject.tag.Equals(spoonInhalt.tag))
         {
             Debug.Log("Spooninhalt im Feuer");
-            m = spoonInhalt.GetComponent<Renderer>().material.color;
+            
+            m = other.gameObject.GetComponent<Renderer>().material.color;
        
 
         if (m.r != 0 && m.g != 0 && m.b != 0)
