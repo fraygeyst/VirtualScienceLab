@@ -4063,7 +4063,7 @@ GameObject:
   - component: {fileID: 450210505}
   - component: {fileID: 450210504}
   m_Layer: 0
-  m_Name: Capsule (5)
+  m_Name: Styropor7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6552,7 +6552,7 @@ GameObject:
   - component: {fileID: 879796830}
   - component: {fileID: 879796829}
   m_Layer: 0
-  m_Name: Cube (5)
+  m_Name: Styropor6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16150,7 +16150,7 @@ GameObject:
   - component: {fileID: 2114554491}
   - component: {fileID: 2114554490}
   m_Layer: 0
-  m_Name: Sphere (1)
+  m_Name: Styropor5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
