@@ -3,46 +3,31 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /**
- * Script um zu pruefen ob der Player durch das gruene Feld im Terrain durchgebrochen ist.
- * Die Variable CollisionWithVROriginDetected kann von außen ueberprueft werden.
+ *Bei Collision wird der Rigidbody und Boxcollider von VROrigin wieder entfernt.
  * */
 
 public class DetectCollisionScript : MonoBehaviour {
 
     public GameObject VROrigin;
-    private bool CollisionWithVROriginDetected = false;
+    
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-
-  
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject == VROrigin)
+
+        if (VROrigin.GetComponent<Rigidbody>() != null)
         {
-            CollisionWithVROriginDetected = true;
-            Debug.Log("DetectionCollisionScript : " + CollisionWithVROriginDetected);
+            Destroy(VROrigin.GetComponent<Rigidbody>());
+            Debug.Log("rigidbody von VROrigin entfernt");
         }
-    }
 
-    private void OnCollisionExit(Collision collision)
-    {
-        if (collision.gameObject == VROrigin)
+        if (VROrigin.GetComponent<BoxCollider>() != null)
         {
-            CollisionWithVROriginDetected = false;
-            Debug.Log("DetectionCollisionScript : " + CollisionWithVROriginDetected);
+            Destroy(VROrigin.GetComponent<BoxCollider>());
+            Debug.Log("BoxCollider von VROrigin entfernt");
         }
+
+
     }
 
-    // Update is called once per frame
-    void Update () {
-		
-	}
-
-    public bool getCollisionWithVROriginDetected()
-    {
-        return CollisionWithVROriginDetected;
-    }
+ 
 }
