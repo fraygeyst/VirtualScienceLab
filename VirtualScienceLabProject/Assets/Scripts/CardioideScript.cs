@@ -27,7 +27,7 @@ public class CardioideScript : MonoBehaviour {
             //float x = Mathf.Cos(angle) * radius;
             //float y = Mathf.Sin(angle) * radius;
 
-            
+
             //Kardioide
             float sin = Mathf.Sin(angle);
             float cos = Mathf.Cos(angle);
@@ -35,16 +35,16 @@ public class CardioideScript : MonoBehaviour {
             float x = radius * cos * (1 - cos);
             float y = radius * sin * (1 - cos);
 
-            Vector3 pos = transform.position + new Vector3(x, y, 0)+ verschiebungsVector;
+            Vector3 pos = transform.position + new Vector3(x, y, 0) + verschiebungsVector;
             float angleDegrees = -angle * Mathf.Rad2Deg;
             Quaternion rot = Quaternion.Euler(0, angleDegrees, 0);
             Instantiate(prefab_kleine_wurfel, pos, rot);
 
-            
-           
+
+
         }
 
-        
+
 
         //hskl_logo_ oben erzeugen
         //fuer Kreis
@@ -53,7 +53,7 @@ public class CardioideScript : MonoBehaviour {
         //fuer Kardioide
         Vector3 pos2 = transform.position + new Vector3(-100, 40, 0) + verschiebungsVector;
 
-        float angle2 =  Mathf.PI * 2 / numberOfObjects;
+        float angle2 = Mathf.PI * 2 / numberOfObjects;
         float angleDegrees2 = -angle2 * Mathf.Rad2Deg;
         Quaternion rot2 = Quaternion.Euler(0, angleDegrees2, 0);
         Instantiate(prefab_hslogo, pos2, rot2);
@@ -75,7 +75,8 @@ public class CardioideScript : MonoBehaviour {
 
 
         //FlameParticleSystem Feuer bei der Kardioide erzeugen
-        Vector3 pos1 = transform.position + new Vector3(-100, 40, 0) + verschiebungsVector;
+        Vector3 pos1 = transform.position + new Vector3(-100, 60, 0) + verschiebungsVector;
         Instantiate(prefab_flameParticleSystem, pos1, rot2);
+
     }
 }
