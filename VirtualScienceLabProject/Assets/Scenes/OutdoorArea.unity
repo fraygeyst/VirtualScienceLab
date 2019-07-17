@@ -8141,7 +8141,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 845822341}
   m_LocalRotation: {x: -0.1341186, y: 0.18233186, z: 0.005622402, w: 0.9740307}
-  m_LocalPosition: {x: -18.96, y: 14.97, z: 5.21}
+  m_LocalPosition: {x: -18.96, y: 11.28, z: 5.21}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 19011531}
@@ -8955,7 +8955,8 @@ MonoBehaviour:
     type: 2}
   prefab_hskl_schriftzug: {fileID: 1897219644084090, guid: 71556564b1494644f9ee28d3f8787e9e,
     type: 2}
-  prefab_flameParticleSystem: {fileID: 0}
+  prefab_flameParticleSystem: {fileID: 1066058998234624, guid: 8e7601184114ad546b28486076d4b376,
+    type: 2}
 --- !u!1 &963030404
 GameObject:
   m_ObjectHideFlags: 0
@@ -11127,7 +11128,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1458814919}
   m_Layer: 0
-  m_Name: "Geb\xE4ude2"
+  m_Name: "Geb\xE4ude_VRLab"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
