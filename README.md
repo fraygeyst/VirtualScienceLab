@@ -14,13 +14,18 @@ Zwischen Labor 2 und Labor 3 muss man einen Gang durchqueren, in dem es von lust
  
 Labor 3 hat einen weiteren physikalischen Versuch. Es soll überprüft werden, ob destilliertes Wasser ein elektrischer Leiter ist. Ein Draht läuft durch Wasser endet an einer Glühbirne. Das destillierte Wasser muss jedoch erst durch einen daneben befindlichen Gegenstand leitbar gemacht werden. Informationen über den richtigen Gegenstand kann man von Plakaten an der Wand ablesen. 
 
-Wir haben alle drei vor diesem Projekt keinerlei Erfahrungen mit Unity gemacht gehabt, konnten uns jedoch aufgrund der Überschaubarkeit und des gut gefüllten Asset-Stores relativ schnell ein Bild von der Materie machen. 
+Aufgrund der Überschaubarkeit und des gut gefüllten Asset-Stores konnten wir uns relativ schnell ein Bild von der Materie machen und unser vorhaben umsetzen. 
 Die größten Probleme haben uns die verschiedenen Unity-Versionen gemacht, wegen denen unser Projekt mehrere Male komplett neu gemacht werden musste. Da sich die Versionen gegenseitig nicht unterstützt haben, wurden Objekte aus dem Projekt gelöscht, alle Materialien wurden pink... Als dann jedoch sowohl mit Unity als auch Git kaum noch ein Problem auftrat, konnte gut zusammen gearbeitet werden und ein kleines Gebäude mit Außenbereich geschaffen werden, in dem man sowohl etwas entdecken, als auch lernen kann.
 
 Übersicht über Tastenbelegungen:
 Pad: Teleport
-Hairtrigger: Objekte aufnehmen, Lichtschalter aktivieren, Türklinke bedienen
+Hairtrigger: Objekte aufnehmen, Lichtschalter aktivieren, Beamer einschalten, Wasserhahn öffnen, Türklinke bedienen
 
+
+Quellen (https://free3d.com)
+___________________________
+Viele der in dem Projekt eingesetzten Objekte stammen von dieser Seite. 
+Alokaziya by evgenn3d, Bilderrahmen by braunjakob200, Office Chair by bananacake, Can of Coca-cola by moddlestudios, Remote Control by printable_models, light bulb by zabihi, Money Plant by vedprakash, indoor pot plants by 3dhaupt, Fragmented with RayFire by michipreston, HP Notebook by 3dhaupt, Luxury White Sink by vastic4, light switch by cerensavasan, bench by raccoonice, cat by snippysnappets, Door by karwanit, sofa by berkayc, Security cameras by aliasgar, Well by animatedheaven,
 
 Quellen (Unity Store Assets)
 ___________________________
@@ -29,3 +34,5 @@ VIVE Inout Utility by VIVESOFTWARE; Blood splatter decals by NORSAT ENTERTAINMEN
 Quellen (Bilder)
 ___________________________
 https://github.com/Informatik-HS-KL/Python-Tutorial; quora.com; http://lern-gold.de/pse/; Pinterest.com; https://de.depositphotos.com/;
+
+Trotz großer Sorgfalt, kann es möglich sein, dass ein Autor bei der Auflistung unbeabsichtigt vergessen wurde. Sollten Sie feststellen, das Sie als Modelldesigner nicht mit aufgeführt wurden, so nehmen Sie mit uns Kontakt auf.
