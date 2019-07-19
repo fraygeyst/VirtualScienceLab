@@ -69,8 +69,8 @@ public class QuitApplication : MonoBehaviour {
 
         //Input.GetKeyUp(KeyCode.Escape) ||
         if (
-            (ViveInput.GetPressDownEx(HandRole.LeftHand, ControllerButton.Menu) && ViveInput.GetPressDownEx(HandRole.LeftHand, ControllerButton.HairTrigger)) ||
-            (ViveInput.GetPressDownEx(HandRole.RightHand, ControllerButton.Menu) && ViveInput.GetPressDownEx(HandRole.RightHand, ControllerButton.HairTrigger)))
+            (ViveInput.GetPressDownEx(HandRole.LeftHand, ControllerButton.Menu) && ViveInput.GetPressDownEx(HandRole.LeftHand, ControllerButton.Trigger)) ||
+            (ViveInput.GetPressDownEx(HandRole.RightHand, ControllerButton.Menu) && ViveInput.GetPressDownEx(HandRole.RightHand, ControllerButton.Trigger)))
         {
             Application.Quit();
             // Esc is ignored in Editor playback mode
