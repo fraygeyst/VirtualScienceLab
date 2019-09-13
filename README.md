@@ -3,6 +3,7 @@ Version: 2018.2.21f1
 
 Virtual Science Lab Version 1.1
 ____________________________________
+PHILIPP LAUER, MARC ZINTEL
 
 Beschreibung der Neuerungen hier einfügen.
 
