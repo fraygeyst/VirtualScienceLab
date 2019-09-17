@@ -6,7 +6,6 @@ using HTC.UnityPlugin.Vive;
 public class BubbleSort : MonoBehaviour {
 
     public bool start = false;
-    private bool collisionHappend = false;
 
     public GameObject sicht1;
     public GameObject sicht2;
@@ -15,14 +14,7 @@ public class BubbleSort : MonoBehaviour {
     private void OnTriggerEnter(Collider other)
     {
 
-        collisionHappend = true;
-        Debug.Log("startButton collisionHappend: " + collisionHappend);
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        collisionHappend = false;
-        Debug.Log("startButton collisionHappend: " + collisionHappend);
+        start = true;
     }
 
 
@@ -35,12 +27,10 @@ public class BubbleSort : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if ((ViveInput.GetPressDownEx(HandRole.RightHand, ControllerButton.Trigger) && collisionHappend) || (ViveInput.GetPressDownEx(HandRole.LeftHand, ControllerButton.Trigger) && collisionHappend))
-        {
-
             if (start == true)
             {
-                startSort();
+                sicht1.SetActive(false);
+                sicht2.SetActive(false);
             }
             else
 
@@ -49,10 +39,4 @@ public class BubbleSort : MonoBehaviour {
             }
         }
     }
-    public void startSort()
-    {
-            sicht1.SetActive(false);
-            sicht2.SetActive(false);
-      
-    }
-}
+ 
