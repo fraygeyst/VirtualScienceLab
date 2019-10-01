@@ -35,12 +35,47 @@ public class Sev_Seg_Counter : MonoBehaviour {
             set_n_3(digits[2]);
         }
     }
+    // eventuell gameobjecte einzeln initialisieren? funktioniert aber auch nicht 
+    /*public GameObject n_1_lt;
+    public GameObject n_1_rt;
+    public GameObject n_1_lb;
+    public GameObject n_1_rb;
+    public GameObject n_1_m;
+    public GameObject n_1_b;
+    public GameObject n_1_t;
+
+
+    public GameObject n_2_lt;
+    public GameObject n_2_rt;
+    public GameObject n_2_lb;
+    public GameObject n_2_rb;
+    public GameObject n_2_m;
+    public GameObject n_2_b;
+    public GameObject n_2_t;
+
+
+    public GameObject n_3_lt;
+    public GameObject n_3_rt;
+    public GameObject n_3_lb;
+    public GameObject n_3_rb;
+    public GameObject n_3_m;
+    public GameObject n_3_b;
+    public GameObject n_3_t;
+    */
 
     private void set_n_1(int number)
     {
         switch (number)
         {
             case 0:
+                /*setColorP(n_1_lt);
+                setColorP(n_1_lt);
+                setColorP(n_1_lb);
+                setColorP(n_1_rb);
+                setColorN(n_1_m);
+                setColorP(n_1_b);
+                setColorP(n_1_t);
+                */
                 setColorP(GameObject.Find("n_1_lt"));
                 setColorP(GameObject.Find("n_1_rt"));
                 setColorP(GameObject.Find("n_1_lb"));
@@ -138,6 +173,14 @@ public class Sev_Seg_Counter : MonoBehaviour {
         switch (number)
         {
             case 0:
+               /* setColorP(n_2_lt);
+                setColorP(n_2_lt);
+                setColorP(n_2_lb);
+                setColorP(n_2_rb);
+                setColorN(n_2_m);
+                setColorP(n_2_b);
+                setColorP(n_2_t);
+                */
                 setColorP(GameObject.Find("n_2_lt"));
                 setColorP(GameObject.Find("n_2_rt"));
                 setColorP(GameObject.Find("n_2_lb"));

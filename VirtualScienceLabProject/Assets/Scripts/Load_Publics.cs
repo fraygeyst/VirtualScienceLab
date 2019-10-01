@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Load_Publics : MonoBehaviour {
-
+    internal static readonly bool reset_clicked;
     public static string Dijkstra_Word;
     public static bool s_active = true;
     public static bool a_active = false;
