@@ -8,6 +8,8 @@ public class NextScene   : MonoBehaviour {
    public System.String sceneName;
    private bool collisionHappend = false;
 
+
+
    
 
     private void OnTriggerEnter(Collider other)
