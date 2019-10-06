@@ -13,7 +13,6 @@ public class BubbleSort : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-
         start = true;
     }
 

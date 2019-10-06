@@ -14,6 +14,7 @@ public class Load_Publics : MonoBehaviour {
     public static bool e_active = false;
     public static bool f_active = false;
     public static bool z_active = false;
+    public static bool r_active = false;
 
     public static bool s_clicked = false;
     public static bool a_clicked = false;
@@ -24,6 +25,7 @@ public class Load_Publics : MonoBehaviour {
     public static bool e_clicked = false;
     public static bool f_clicked = false;
     public static bool z_clicked = false;
+    public static bool r_clicked = false;
 
     public static int counter = 0;
     public static string last_clicked = "";
