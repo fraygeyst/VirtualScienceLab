@@ -423,6 +423,7 @@ GameObject:
   - component: {fileID: 725949958}
   - component: {fileID: 725949957}
   - component: {fileID: 725949956}
+  - component: {fileID: 725949959}
   m_Layer: 0
   m_Name: Cylinder (1)
   m_TagString: Untagged
@@ -498,6 +499,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 725949954}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &725949959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 725949954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a66249abc3727648b9b3e7cde97ea53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: BioLab
 --- !u!1 &737287986
 GameObject:
   m_ObjectHideFlags: 0
@@ -708,6 +721,7 @@ GameObject:
   - component: {fileID: 1167209020}
   - component: {fileID: 1167209019}
   - component: {fileID: 1167209018}
+  - component: {fileID: 1167209021}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -783,6 +797,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1167209016}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1167209021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1167209016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a66249abc3727648b9b3e7cde97ea53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: BioLab
 --- !u!1 &1167630246
 GameObject:
   m_ObjectHideFlags: 0
@@ -794,6 +820,7 @@ GameObject:
   - component: {fileID: 1167630250}
   - component: {fileID: 1167630249}
   - component: {fileID: 1167630248}
+  - component: {fileID: 1167630251}
   m_Layer: 0
   m_Name: Cylinder (2)
   m_TagString: Untagged
@@ -869,6 +896,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1167630246}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1167630251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1167630246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a66249abc3727648b9b3e7cde97ea53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: BioLab
 --- !u!1 &1205810992
 GameObject:
   m_ObjectHideFlags: 0

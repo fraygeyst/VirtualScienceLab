@@ -19,7 +19,7 @@ public class Mikroskop_NewScene : MonoBehaviour
        collisionHappend = true;
        Debug.Log("collisionHappend: " + collisionHappend);
 
-        if (other.gameObject.tag.Equals("pflanze"))
+        /*if (other.gameObject.tag.Equals(pflanze.tag))
         {
             Debug.Log("Pflanze eingelegt");
             counter = "pflanze";
@@ -32,6 +32,27 @@ public class Mikroskop_NewScene : MonoBehaviour
         }
 
         else if (other.gameObject.tag.Equals(zelle.tag))
+        {
+            Debug.Log("Zelle eingelegt");
+            counter = "zelle";
+        }*/
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag.Equals(pflanze.tag))
+        {
+            Debug.Log("Pflanze eingelegt");
+            counter = "pflanze";
+        }
+
+        else if (collision.gameObject.tag.Equals(blut.tag))
+        {
+            Debug.Log("Blut eingelegt");
+            counter = "blut";
+        }
+
+        else if (collision.gameObject.tag.Equals(zelle.tag))
         {
             Debug.Log("Zelle eingelegt");
             counter = "zelle";
@@ -53,7 +74,7 @@ public class Mikroskop_NewScene : MonoBehaviour
             Debug.Log("changing Scene zu Blatt");
             UnityEngine.SceneManagement.SceneManager.LoadScene("Blatt");
         }
-        else if ((ViveInput.GetPressDownEx(HandRole.RightHand, ControllerButton.Trigger) && collisionHappend && (counter == "blut")) || (ViveInput.GetPressDownEx(HandRole.LeftHand, ControllerButton.Trigger) && collisionHappend && (counter == "blut")))
+        else if (((ViveInput.GetPressDownEx(HandRole.RightHand, ControllerButton.Trigger) && (counter == "blut") && collisionHappend)) || (ViveInput.GetPressDownEx(HandRole.LeftHand, ControllerButton.Trigger) && collisionHappend && (counter == "blut")))
         {
             Debug.Log("changing Scene zu Blut");
             UnityEngine.SceneManagement.SceneManager.LoadScene("Blut");
