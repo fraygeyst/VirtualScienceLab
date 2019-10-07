@@ -31,9 +31,9 @@ public class Dijkstra : MonoBehaviour {
                     setActive("A");
                     setActive("B");
                     setActive("G");
-                    setActive("R");
                     Load_Publics.s_clicked = true;
                     Load_Publics.last_clicked = "S";
+                    GameObject.Find("RESET").GetComponent<Renderer>().material.color = Color.red;
                 }
                 break;
             case "A":
@@ -243,124 +243,9 @@ public class Dijkstra : MonoBehaviour {
                 }
                 break;
 
-            case "R":
-                if (Load_Publics.r_active && !Load_Publics.r_clicked)
-                {
-                    gameObject.GetComponent<Renderer>().material.color = Color.red;
-                    switch (Load_Publics.last_clicked)
-                    {
-                        case "S":
-                            setActive("S");
-                            Load_Publics.counter = 0;
-                            deactivate("A");
-                            deactivate("B");
-                            deactivate("C");
-                            deactivate("D");
-                            deactivate("E");
-                            deactivate("F");
-                            deactivate("G");
-                            deactivate("Z");
-                            break;
-                        case "A":
-                            setActive("S");
-                            Load_Publics.counter = 0;
-                            deactivate("A");
-                            deactivate("B");
-                            deactivate("C");
-                            deactivate("D");
-                            deactivate("E");
-                            deactivate("F");
-                            deactivate("G");
-                            deactivate("Z");
-                            break;
-                        case "B":
-                            setActive("S");
-                            Load_Publics.counter = 0;
-                            deactivate("A");
-                            deactivate("B");
-                            deactivate("C");
-                            deactivate("D");
-                            deactivate("E");
-                            deactivate("F");
-                            deactivate("G");
-                            deactivate("Z");
-                            break;
-                        case "C":
-                            setActive("S");
-                            Load_Publics.counter = 0;
-                            deactivate("A");
-                            deactivate("B");
-                            deactivate("C");
-                            deactivate("D");
-                            deactivate("E");
-                            deactivate("F");
-                            deactivate("G");
-                            deactivate("Z");
-                            break;
-                        case "D":
-                            setActive("S");
-                            Load_Publics.counter = 0;
-                            deactivate("A");
-                            deactivate("B");
-                            deactivate("C");
-                            deactivate("D");
-                            deactivate("E");
-                            deactivate("F");
-                            deactivate("G");
-                            deactivate("Z");
-                            break;
-                        case "E":
-                            setActive("S");
-                            Load_Publics.counter = 0;
-                            deactivate("A");
-                            deactivate("B");
-                            deactivate("C");
-                            deactivate("D");
-                            deactivate("E");
-                            deactivate("F");
-                            deactivate("G");
-                            deactivate("Z");
-                            break;
-                        case "F":
-                            setActive("S");
-                            Load_Publics.counter = 0;
-                            deactivate("A");
-                            deactivate("B");
-                            deactivate("C");
-                            deactivate("D");
-                            deactivate("E");
-                            deactivate("F");
-                            deactivate("G");
-                            deactivate("Z");
-                            break;
-                        case "G":
-                            setActive("S");
-                            Load_Publics.counter = 0;
-                            deactivate("A");
-                            deactivate("B");
-                            deactivate("C");
-                            deactivate("D");
-                            deactivate("E");
-                            deactivate("F");
-                            deactivate("G");
-                            deactivate("Z");
-                            break;
-                        case "Z":
-                            setActive("S");
-                            Load_Publics.counter = 0;
-                            deactivate("A");
-                            deactivate("B");
-                            deactivate("C");
-                            deactivate("D");
-                            deactivate("E");
-                            deactivate("F");
-                            deactivate("G");
-                            deactivate("Z");
-                            break;
-                    }
-                    Load_Publics.z_clicked = true;
-                    Load_Publics.last_clicked = "Z";
-                }
+            case "RESET":
+                gameObject.GetComponent<Renderer>().material.color = Color.green;
+                reset();
                 break;
 
         }
@@ -437,17 +322,13 @@ public class Dijkstra : MonoBehaviour {
                     Load_Publics.z_active = true;
                 }
                 break;
-
-            case "R":
-                if (!Load_Publics.r_clicked)
-                {
-                    set_act_obj = GameObject.Find(name);
-                    Load_Publics.r_active = true;
-                }
-                break;
         }
-        set_act_obj.GetComponent<Renderer>().material.color = Color.yellow;
+        if (set_act_obj != null)
+        {
+            set_act_obj.GetComponent<Renderer>().material.color = Color.yellow;
+        }
     }
+
     private void deactivate(string name)
     {
         Debug.Log("Deactivate: " + name);
@@ -516,18 +397,46 @@ public class Dijkstra : MonoBehaviour {
                     Load_Publics.z_active = false;
                 }
                 break;
-            case "R":
-                if (!Load_Publics.r_clicked)
-                {
-                    set_de_obj = GameObject.Find(name);
-                    Load_Publics.r_active = false;
-                }
-                break;
         }
         if(set_de_obj != null)
         {
             set_de_obj.GetComponent<Renderer>().material.color = Color.white;
         }
+    }
+
+    private void reset()
+    {
+        GameObject.Find("S").GetComponent<Renderer>().material.color = Color.white;
+        GameObject.Find("A").GetComponent<Renderer>().material.color = Color.white;
+        GameObject.Find("B").GetComponent<Renderer>().material.color = Color.white;
+        GameObject.Find("G").GetComponent<Renderer>().material.color = Color.white;
+        GameObject.Find("C").GetComponent<Renderer>().material.color = Color.white;
+        GameObject.Find("D").GetComponent<Renderer>().material.color = Color.white;
+        GameObject.Find("E").GetComponent<Renderer>().material.color = Color.white;
+        GameObject.Find("F").GetComponent<Renderer>().material.color = Color.white;
+        GameObject.Find("Z").GetComponent<Renderer>().material.color = Color.white;
+        Load_Publics.s_active = true;
+        Load_Publics.a_active = false;
+        Load_Publics.b_active = false;
+        Load_Publics.g_active = false;
+        Load_Publics.c_active = false;
+        Load_Publics.d_active = false;
+        Load_Publics.e_active = false;
+        Load_Publics.f_active = false;
+        Load_Publics.z_active = false;
+        Load_Publics.r_active = false;
+        Load_Publics.s_clicked = false;
+        Load_Publics.a_clicked = false;
+        Load_Publics.b_clicked = false;
+        Load_Publics.g_clicked = false;
+        Load_Publics.c_clicked = false;
+        Load_Publics.d_clicked = false;
+        Load_Publics.e_clicked = false;
+        Load_Publics.f_clicked = false;
+        Load_Publics.z_clicked = false;
+        Load_Publics.r_clicked = false;
+        Load_Publics.counter = 0;
+        Load_Publics.last_clicked = "";
     }
 
 }
