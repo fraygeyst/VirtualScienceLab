@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Load_Publics : MonoBehaviour {
+
+    // Dijkstra
     internal static readonly bool reset_clicked;
     public static string Dijkstra_Word;
     public static bool s_active = true;
@@ -28,7 +30,13 @@ public class Load_Publics : MonoBehaviour {
     public static bool r_clicked = false;
 
     public static int counter = 0;
+    public static int maximum = 21;
     public static string last_clicked = "";
+
+
+    // Bubblesort
+    public static int b_state = 0;
+    public static bool bubble_active = true;
 
     // Use this for initialization
     void Start () {

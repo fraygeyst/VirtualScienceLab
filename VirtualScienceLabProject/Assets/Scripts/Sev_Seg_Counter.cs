@@ -16,66 +16,47 @@ public class Sev_Seg_Counter : MonoBehaviour {
 
     public void setSevSegCount(int seconds)
     {
-        List<int> digits = new List<int>();
-        int sizeOfList = digits.Count;
-        if(sizeOfList == 1)
+        if(seconds == 0)
         {
             set_n_1(0);
             set_n_2(0);
-            set_n_3(digits[0]);
-        } else if(sizeOfList == 2)
+            set_n_3(0);
+        } else
         {
-            set_n_1(0);
-            set_n_2(digits[0]);
-            set_n_3(digits[1]);
-        } else if(sizeOfList == 3)
-        {
-            set_n_1(digits[0]);
-            set_n_2(digits[1]);
-            set_n_3(digits[2]);
+            List<int> digits = new List<int>();
+            while (seconds > 0)
+            {
+                digits.Add(seconds % 10);
+                seconds = seconds / 10;
+            }
+            digits.Reverse();
+            int sizeOfList = digits.Count;
+            if (sizeOfList == 1)
+            {
+                set_n_1(0);
+                set_n_2(0);
+                set_n_3(digits[0]);
+            }
+            else if (sizeOfList == 2)
+            {
+                set_n_1(0);
+                set_n_2(digits[0]);
+                set_n_3(digits[1]);
+            }
+            else if (sizeOfList == 3)
+            {
+                set_n_1(digits[0]);
+                set_n_2(digits[1]);
+                set_n_3(digits[2]);
+            }
         }
     }
-    // eventuell gameobjecte einzeln initialisieren? funktioniert aber auch nicht 
-    /*public GameObject n_1_lt;
-    public GameObject n_1_rt;
-    public GameObject n_1_lb;
-    public GameObject n_1_rb;
-    public GameObject n_1_m;
-    public GameObject n_1_b;
-    public GameObject n_1_t;
-
-
-    public GameObject n_2_lt;
-    public GameObject n_2_rt;
-    public GameObject n_2_lb;
-    public GameObject n_2_rb;
-    public GameObject n_2_m;
-    public GameObject n_2_b;
-    public GameObject n_2_t;
-
-
-    public GameObject n_3_lt;
-    public GameObject n_3_rt;
-    public GameObject n_3_lb;
-    public GameObject n_3_rb;
-    public GameObject n_3_m;
-    public GameObject n_3_b;
-    public GameObject n_3_t;
-    */
 
     private void set_n_1(int number)
     {
         switch (number)
         {
             case 0:
-                /*setColorP(n_1_lt);
-                setColorP(n_1_lt);
-                setColorP(n_1_lb);
-                setColorP(n_1_rb);
-                setColorN(n_1_m);
-                setColorP(n_1_b);
-                setColorP(n_1_t);
-                */
                 setColorP(GameObject.Find("n_1_lt"));
                 setColorP(GameObject.Find("n_1_rt"));
                 setColorP(GameObject.Find("n_1_lb"));
@@ -173,14 +154,6 @@ public class Sev_Seg_Counter : MonoBehaviour {
         switch (number)
         {
             case 0:
-               /* setColorP(n_2_lt);
-                setColorP(n_2_lt);
-                setColorP(n_2_lb);
-                setColorP(n_2_rb);
-                setColorN(n_2_m);
-                setColorP(n_2_b);
-                setColorP(n_2_t);
-                */
                 setColorP(GameObject.Find("n_2_lt"));
                 setColorP(GameObject.Find("n_2_rt"));
                 setColorP(GameObject.Find("n_2_lb"));
@@ -372,11 +345,18 @@ public class Sev_Seg_Counter : MonoBehaviour {
 
     private void setColorP(GameObject gameObject)
     {
-        gameObject.GetComponent<Renderer>().material.color = Color.green;
+        if(Load_Publics.counter <= Load_Publics.maximum)
+        {
+            gameObject.GetComponent<Renderer>().material.color = Color.green;
+        } else
+        {
+            gameObject.GetComponent<Renderer>().material.color = Color.red;
+        }
+        
     }
     private void setColorN(GameObject gameObject)
     {
-        gameObject.GetComponent<Renderer>().material.color = Color.grey;
+        gameObject.GetComponent<Renderer>().material.color = Color.black;
     }
 
     private int[] GetIntArray(int num)

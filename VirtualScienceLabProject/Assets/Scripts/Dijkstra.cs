@@ -68,6 +68,7 @@ public class Dijkstra : MonoBehaviour {
                     {
                         case "S":
                             setActive("C");
+                            deactivate("G");
                             Load_Publics.counter += 2;
                             break;
                         case "A":
