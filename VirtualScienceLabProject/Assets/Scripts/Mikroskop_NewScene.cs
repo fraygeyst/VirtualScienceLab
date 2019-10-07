@@ -7,34 +7,34 @@ public class Mikroskop_NewScene : MonoBehaviour
 {
 
     private bool collisionHappend = false;
-    private int counter = 0;
+    private string counter;
 
     public GameObject pflanze;
     public GameObject blut;
     public GameObject zelle;
 
-
+ 
     private void OnTriggerEnter(Collider other)
     {
        collisionHappend = true;
        Debug.Log("collisionHappend: " + collisionHappend);
 
-        if (other.gameObject.tag.Equals(pflanze))
+        if (other.gameObject.tag.Equals("pflanze"))
         {
             Debug.Log("Pflanze eingelegt");
-            counter = 1;
+            counter = "pflanze";
         }
 
-        else if (other.gameObject.tag.Equals("blut"))
+        else if (other.gameObject.tag.Equals(blut.tag))
         {
             Debug.Log("Blut eingelegt");
-            counter = 2;
+            counter = "blut";
         }
 
-        else if (other.gameObject.tag.Equals(zelle))
+        else if (other.gameObject.tag.Equals(zelle.tag))
         {
-            Debug.Log("changing Scene zu Zelle");
-            counter = 3;
+            Debug.Log("Zelle eingelegt");
+            counter = "zelle";
         }
 
     }
@@ -48,17 +48,17 @@ public class Mikroskop_NewScene : MonoBehaviour
 
     private void Update()
     {
-        if ((ViveInput.GetPressDownEx(HandRole.RightHand, ControllerButton.Trigger) && collisionHappend && (counter == 1)) || (ViveInput.GetPressDownEx(HandRole.LeftHand, ControllerButton.Trigger) && collisionHappend && (counter == 1)))
+        if ((ViveInput.GetPressDownEx(HandRole.RightHand, ControllerButton.Trigger) && collisionHappend && (counter == "pflanze")) || (ViveInput.GetPressDownEx(HandRole.LeftHand, ControllerButton.Trigger) && collisionHappend && (counter == "pflanze")))
         {
             Debug.Log("changing Scene zu Blatt");
             UnityEngine.SceneManagement.SceneManager.LoadScene("Blatt");
         }
-        else if ((ViveInput.GetPressDownEx(HandRole.RightHand, ControllerButton.Trigger) && collisionHappend && (counter == 2)) || (ViveInput.GetPressDownEx(HandRole.LeftHand, ControllerButton.Trigger) && collisionHappend && (counter == 2)))
+        else if ((ViveInput.GetPressDownEx(HandRole.RightHand, ControllerButton.Trigger) && collisionHappend && (counter == "blut")) || (ViveInput.GetPressDownEx(HandRole.LeftHand, ControllerButton.Trigger) && collisionHappend && (counter == "blut")))
         {
             Debug.Log("changing Scene zu Blut");
             UnityEngine.SceneManagement.SceneManager.LoadScene("Blut");
         }
-        else if ((ViveInput.GetPressDownEx(HandRole.RightHand, ControllerButton.Trigger) && collisionHappend && (counter == 3)) || (ViveInput.GetPressDownEx(HandRole.LeftHand, ControllerButton.Trigger) && collisionHappend && (counter == 3)))
+        else if ((ViveInput.GetPressDownEx(HandRole.RightHand, ControllerButton.Trigger) && collisionHappend && (counter == "zelle")) || (ViveInput.GetPressDownEx(HandRole.LeftHand, ControllerButton.Trigger) && collisionHappend && (counter == "zelle")))
         {
             Debug.Log("changing Scene zu Zelle");
             UnityEngine.SceneManagement.SceneManager.LoadScene("Zelle");
