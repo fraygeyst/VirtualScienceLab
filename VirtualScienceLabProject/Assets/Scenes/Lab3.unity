@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311926, g: 0.38073996, b: 0.35872698, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5322,13 +5322,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb34190587031da41bd815b4c38e8123, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointLight1up: {fileID: 0}
-  pointLight1down: {fileID: 0}
-  pointLight2up: {fileID: 0}
-  pointLight2down: {fileID: 0}
-  pointLight3up: {fileID: 0}
-  pointLight3down: {fileID: 0}
-  directLight: {fileID: 0}
+  pointLight1up: {fileID: 1706359605}
+  pointLight1down: {fileID: 1728375446}
+  pointLight2up: {fileID: 1804709853}
+  pointLight2down: {fileID: 1495549249}
+  pointLight3up: {fileID: 1288298364}
+  pointLight3down: {fileID: 1016463864}
+  directLight: {fileID: 448075358}
 --- !u!65 &857237236
 BoxCollider:
   m_ObjectHideFlags: 0
