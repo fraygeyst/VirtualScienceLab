@@ -29,7 +29,7 @@ MonoBehaviour:
   m_externalCameraSwitchKey: 109
   m_externalCameraSwitchKeyModifier: 303
   m_activateOculusVRModule: 1
-  m_activateSteamVRModule: 0
+  m_activateSteamVRModule: 1
   m_activateSimulatorModule: 1
   m_simulatorAutoTrackMainCamera: 1
   m_simulateTrackpadTouch: 1
@@ -37,7 +37,7 @@ MonoBehaviour:
   m_simulatorKeyMoveSpeed: 1.5
   m_simulatorMouseRotateSpeed: 90
   m_simulatorKeyRotateSpeed: 90
-  m_activateUnityNativeVRModule: 0
+  m_activateUnityNativeVRModule: 1
   m_activateWaveVRModule: 1
   m_simulateWaveVR6DoFController: 0
   m_waveVRAddVirtualArmTo3DoFController: 1

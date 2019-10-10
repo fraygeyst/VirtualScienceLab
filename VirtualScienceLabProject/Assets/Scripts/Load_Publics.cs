@@ -38,6 +38,10 @@ public class Load_Publics : MonoBehaviour {
     public static int b_state = 0;
     public static bool bubble_active = true;
 
+    // BioLab
+    public static string scene_change = "";
+    public static bool bio_collision_happened = false;
+
     // Use this for initialization
     void Start () {
 		

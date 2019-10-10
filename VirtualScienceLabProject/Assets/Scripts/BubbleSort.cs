@@ -152,7 +152,7 @@ public class BubbleSort : MonoBehaviour
         button_bub.GetComponent<Renderer>().material.color = Color.yellow;
         Load_Publics.bubble_active = false;
 
-        yield return new WaitForSeconds(5);    //Wait 5 Seconds
+        yield return new WaitForSeconds(2);    //Wait 2 Seconds
 
         Load_Publics.bubble_active = true;
         button_bub.GetComponent<Renderer>().material.color = Color.green;

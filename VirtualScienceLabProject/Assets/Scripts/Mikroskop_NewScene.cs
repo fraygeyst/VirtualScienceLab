@@ -6,9 +6,6 @@ using HTC.UnityPlugin.Vive;
 public class Mikroskop_NewScene : MonoBehaviour
 {
 
-    private bool collisionHappend = false;
-    private string counter;
-
     public GameObject pflanze;
     public GameObject blut;
     public GameObject zelle;
@@ -16,72 +13,75 @@ public class Mikroskop_NewScene : MonoBehaviour
  
     private void OnTriggerEnter(Collider other)
     {
-       collisionHappend = true;
-       Debug.Log("collisionHappend: " + collisionHappend);
+        Load_Publics.bio_collision_happened = true;
+       Debug.Log("collisionHappend: " + Load_Publics.bio_collision_happened);
 
-        /*if (other.gameObject.tag.Equals(pflanze.tag))
+        if (other.gameObject.name == "pflanze_com" || other.gameObject.name == "pflanze" || other.gameObject.name == "pflanze_scheibe")
         {
             Debug.Log("Pflanze eingelegt");
-            counter = "pflanze";
+            Load_Publics.scene_change = "pflanze";
         }
 
-        else if (other.gameObject.tag.Equals(blut.tag))
+        else if (other.gameObject.name == "blut_com" || other.gameObject.name == "blut" || other.gameObject.name == "blut_scheibe")
         {
             Debug.Log("Blut eingelegt");
-            counter = "blut";
+            Load_Publics.scene_change = "blut";
         }
 
-        else if (other.gameObject.tag.Equals(zelle.tag))
+        else if (other.gameObject.name == "zelle_com" || other.gameObject.name == "zelle" || other.gameObject.name == "zelle_scheibe")
         {
             Debug.Log("Zelle eingelegt");
-            counter = "zelle";
-        }*/
+            Load_Publics.scene_change = "zelle";
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag.Equals(pflanze.tag))
+        if (collision.gameObject.name == "pflanze_com" || collision.gameObject.name == "pflanze" || collision.gameObject.name == "pflanze_scheibe")
         {
             Debug.Log("Pflanze eingelegt");
-            counter = "pflanze";
+            Load_Publics.scene_change = "pflanze";
         }
 
-        else if (collision.gameObject.tag.Equals(blut.tag))
+        else if (collision.gameObject.name == "blut_com" || collision.gameObject.name == "blut" || collision.gameObject.name == "blut_scheibe")
         {
             Debug.Log("Blut eingelegt");
-            counter = "blut";
+            Load_Publics.scene_change = "blut";
         }
 
-        else if (collision.gameObject.tag.Equals(zelle.tag))
+        else if (collision.gameObject.name == "zelle_com" || collision.gameObject.name == "zelle" || collision.gameObject.name == "zelle_scheibe")
         {
             Debug.Log("Zelle eingelegt");
-            counter = "zelle";
+            Load_Publics.scene_change = "zelle";
         }
 
     }
 
     private void OnTriggerExit(Collider other)
     {
-        collisionHappend = false;
-        Debug.Log("collisionHappend: " + collisionHappend);
+        Load_Publics.bio_collision_happened = false;
+        Debug.Log("collisionHappend: " + Load_Publics.bio_collision_happened);
     }
 
 
     private void Update()
     {
-        if ((ViveInput.GetPressDownEx(HandRole.RightHand, ControllerButton.Trigger) && collisionHappend && (counter == "pflanze")) || (ViveInput.GetPressDownEx(HandRole.LeftHand, ControllerButton.Trigger) && collisionHappend && (counter == "pflanze")))
+        if ((ViveInput.GetPressDownEx(HandRole.RightHand, ControllerButton.Trigger) && Load_Publics.bio_collision_happened && Load_Publics.scene_change == "pflanze") || (ViveInput.GetPressDownEx(HandRole.LeftHand, ControllerButton.Trigger) && Load_Publics.bio_collision_happened && Load_Publics.scene_change == "pflanze"))
         {
             Debug.Log("changing Scene zu Blatt");
+            Load_Publics.scene_change = "";
             UnityEngine.SceneManagement.SceneManager.LoadScene("Blatt");
         }
-        else if (((ViveInput.GetPressDownEx(HandRole.RightHand, ControllerButton.Trigger) && (counter == "blut") && collisionHappend)) || (ViveInput.GetPressDownEx(HandRole.LeftHand, ControllerButton.Trigger) && collisionHappend && (counter == "blut")))
+        else if ((ViveInput.GetPressDownEx(HandRole.RightHand, ControllerButton.Trigger) && Load_Publics.scene_change == "blut" && Load_Publics.bio_collision_happened) || (ViveInput.GetPressDownEx(HandRole.LeftHand, ControllerButton.Trigger) && Load_Publics.bio_collision_happened && Load_Publics.scene_change == "blut"))
         {
             Debug.Log("changing Scene zu Blut");
+            Load_Publics.scene_change = "";
             UnityEngine.SceneManagement.SceneManager.LoadScene("Blut");
         }
-        else if ((ViveInput.GetPressDownEx(HandRole.RightHand, ControllerButton.Trigger) && collisionHappend && (counter == "zelle")) || (ViveInput.GetPressDownEx(HandRole.LeftHand, ControllerButton.Trigger) && collisionHappend && (counter == "zelle")))
+        else if ((ViveInput.GetPressDownEx(HandRole.RightHand, ControllerButton.Trigger) && Load_Publics.bio_collision_happened && Load_Publics.scene_change == "zelle") || (ViveInput.GetPressDownEx(HandRole.LeftHand, ControllerButton.Trigger) && Load_Publics.bio_collision_happened && Load_Publics.scene_change == "zelle"))
         {
             Debug.Log("changing Scene zu Zelle");
+            Load_Publics.scene_change = "";
             UnityEngine.SceneManagement.SceneManager.LoadScene("Zelle");
         }
     }
