@@ -37,6 +37,13 @@ public class Load_Publics : MonoBehaviour {
     // Bubblesort
     public static int b_state = 0;
     public static bool bubble_active = true;
+    public static bool s_1_act = true;
+    public static bool s_2_act = true;
+    public static bool s_3_act = true;
+    public static bool s_4_act = true;
+    public static bool s_5_act = true;
+    public static bool s_6_act = true;
+    public static bool s_7_act = true;
 
     // BioLab
     public static string scene_change = "";
