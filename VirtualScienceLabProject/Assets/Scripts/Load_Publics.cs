@@ -42,6 +42,9 @@ public class Load_Publics : MonoBehaviour {
     public static string scene_change = "";
     public static bool bio_collision_happened = false;
 
+    //Moleküle 
+    public static int Temperatur = 25;
+
     // Use this for initialization
     void Start () {
 		
