@@ -51,6 +51,24 @@ public class Load_Publics : MonoBehaviour {
 
     //Moleküle 
     public static int Temperatur = 25;
+    public static bool min_act = true;
+    public static bool plus_act = true;
+    public static float Temp_Max = 500f;
+    public static float Temp_Min = 0f;
+    public static float Map_Temp_Max = 0.25f;
+    public static float Map_Temp_Min = 0f;
+    public static float move_speed_multi = 15;
+    public static float RemapTemp(float from, float fromMin, float fromMax, float toMin, float toMax)
+    {
+        var fromAbs = from - fromMin;
+        var fromMaxAbs = fromMax - fromMin;
+        var normal = fromAbs / fromMaxAbs;
+        var toMaxAbs = toMax - toMin;
+        var toAbs = toMaxAbs * normal;
+        var to = toAbs + toMin;
+
+        return to;
+    }
 
     // Use this for initialization
     void Start () {
