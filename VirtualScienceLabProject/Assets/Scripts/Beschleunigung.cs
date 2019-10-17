@@ -54,15 +54,23 @@ public class Beschleunigung : MonoBehaviour {
         button_mol.GetComponent<Renderer>().material.color = Color.yellow;
 
         yield return new WaitForSeconds(1);    //Wait 1 Second
+        Color color = new Color();
 
         if (isplus)
         {
             Load_Publics.plus_act = true;
+            if(ColorUtility.TryParseHtmlString("#FF0000", out color))
+            {
+                button_mol.GetComponent<Renderer>().material.color = color;
+            }
         }
         else
         {
             Load_Publics.min_act = true;
+            if (ColorUtility.TryParseHtmlString("#00FFFF", out color))
+            {
+                button_mol.GetComponent<Renderer>().material.color = color;
+            }
         }
-        button_mol.GetComponent<Renderer>().material.color = Color.green;
     }
 }
