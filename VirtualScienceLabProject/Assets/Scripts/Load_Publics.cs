@@ -55,7 +55,7 @@ public class Load_Publics : MonoBehaviour {
     public static int Temperatur = 25;
     public static bool min_act = true;
     public static bool plus_act = true;
-    public static float Temp_Max = 500f;
+    public static float Temp_Max = 200f;
     public static float Temp_Min = 0f;
     public static float Map_Temp_Max = 0.25f;
     public static float Map_Temp_Min = 0f;
