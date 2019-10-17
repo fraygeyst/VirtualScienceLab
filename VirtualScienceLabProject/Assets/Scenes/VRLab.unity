@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.574817, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5081,6 +5081,7 @@ GameObject:
   - component: {fileID: 1416184398}
   - component: {fileID: 1416184397}
   - component: {fileID: 1416184400}
+  - component: {fileID: 1416184401}
   m_Layer: 0
   m_Name: Boden
   m_TagString: Untagged
@@ -5174,6 +5175,17 @@ MonoBehaviour:
   fadeDuration: 0.3
   m_reticleMaterial: {fileID: 2100000, guid: 3320905fb6f6bd54297f26399d87c525, type: 2}
   teleportButton: 1
+--- !u!114 &1416184401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1416184395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 493212b87e0c42843b951e3336b54522, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1429329384
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Load_Publics : MonoBehaviour {
 
+    // Informatiklab
     // Dijkstra
     internal static readonly bool reset_clicked;
     public static string Dijkstra_Word;
@@ -49,7 +50,8 @@ public class Load_Publics : MonoBehaviour {
     public static string scene_change = "";
     public static bool bio_collision_happened = false;
 
-    //Moleküle 
+    // Teilchenlabor
+    // Molekuele
     public static int Temperatur = 25;
     public static bool min_act = true;
     public static bool plus_act = true;
@@ -69,6 +71,9 @@ public class Load_Publics : MonoBehaviour {
 
         return to;
     }
+
+    // Mathelab
+    
 
     // Use this for initialization
     void Start () {
