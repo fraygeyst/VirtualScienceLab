@@ -1,0 +1,9 @@
+\contentsline {section}{\numberline {1}Idee}{2}{section.1}
+\contentsline {section}{\numberline {2}Ausgangslage}{2}{section.2}
+\contentsline {section}{\numberline {3}Ausf\~A\IeC {\textonequarter }hrung}{2}{section.3}
+\contentsline {subsection}{\numberline {3.1}Bisherige Labore}{2}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Neue Labore}{2}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Teilchenlabor}{2}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}Biologie}{2}{subsubsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.3}Informatik}{2}{subsubsection.3.2.3}
+\contentsline {subsubsection}{\numberline {3.2.4}Mathematik}{2}{subsubsection.3.2.4}
