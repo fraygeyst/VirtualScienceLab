@@ -36,36 +36,12 @@ public class QuitApplication : MonoBehaviour {
 
         if ((ViveInput.GetPressDownEx(HandRole.RightHand, ControllerButton.Trigger) && collisionHappend) || (ViveInput.GetPressDownEx(HandRole.LeftHand, ControllerButton.Trigger) && collisionHappend))
         {
-            
-            if (VROrigin.GetComponent<Rigidbody>() == null)
-            {
-                VROrigin.AddComponent<Rigidbody>();
-                
-            }
-            if (VROrigin.GetComponent<BoxCollider>() == null)
-            {
-                VROrigin.AddComponent<BoxCollider>();
-      
-            }
-           //Kraft nach oben hinzufuegen
-            VROrigin.GetComponent<Rigidbody>().AddForce(new Vector3(0, 4000, 0));
-           
-        }
-
-
-        //verlaesst die Anwendung nach dem man Oben am Ziel angekommen ist.
-        if (VROrigin.GetComponent<Transform>().transform.position.y >= 340.0f)
-        {
             Application.Quit();
             // Esc is ignored in Editor playback mode
-#if UNITY_EDITOR
-            UnityEditor.EditorApplication.isPlaying = false;
-#endif
+            #if UNITY_EDITOR
+                UnityEditor.EditorApplication.isPlaying = false;
+            #endif
         }
-
-
-
-
 
         //Input.GetKeyUp(KeyCode.Escape) ||
         if (
@@ -74,9 +50,9 @@ public class QuitApplication : MonoBehaviour {
         {
             Application.Quit();
             // Esc is ignored in Editor playback mode
-#if UNITY_EDITOR
-            UnityEditor.EditorApplication.isPlaying = false;
-#endif
+            #if UNITY_EDITOR
+                UnityEditor.EditorApplication.isPlaying = false;
+            #endif
         }
 
     }

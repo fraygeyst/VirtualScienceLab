@@ -14,7 +14,7 @@ public class Scene_Management : MonoBehaviour {
         transform = camera_obj.GetComponent<Transform>();
         Vector3 vec = new Vector3();
 
-        if (scene.name == "NeuerFlur")
+        if (scene.name == "NeuerFlur" && Globals.last_scene != "")
         {
             Debug.Log("Switching Cam from: " + Globals.last_scene);
             switch (Globals.last_scene)
@@ -47,12 +47,12 @@ public class Scene_Management : MonoBehaviour {
                     vec = new Vector3(16.9f, 0f, 1.4f);
                     break;
             }
+            Debug.Log("Changing Position: " + vec);
+            camera_obj.transform.position = vec;
         } else
         {
             Globals.last_scene = scene.name;
         }
-        Debug.Log("Changing Position: " + vec);
-        camera_obj.transform.position = vec;
     }
 	
 	// Update is called once per frame
