@@ -228,7 +228,7 @@ public class BubbleSort : MonoBehaviour
         Load_Publics.bubble_active = true;
         button_bub.GetComponent<Renderer>().material.color = Color.green;
     }
-    public IEnumerator MoveToPosition(Transform transform, Vector3 position, float timeToMove)
+    IEnumerator MoveToPosition(Transform transform, Vector3 position, float timeToMove)
     {
         var currentPos = transform.position;
         var t = 0f;

@@ -73,7 +73,8 @@ public class Load_Publics : MonoBehaviour {
     }
 
     // Mathelab
-    
+    public static int sev_bridges_counter = 0;
+    public static bool bridges_active = true;
 
     // Use this for initialization
     void Start () {
