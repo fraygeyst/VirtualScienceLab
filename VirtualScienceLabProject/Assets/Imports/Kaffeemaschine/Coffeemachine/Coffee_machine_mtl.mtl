@@ -1,0 +1,107 @@
+# Blender MTL File: 'Coffee_machine_BI.blend'
+# Material Count: 10
+
+newmtl B_3
+Ns 76.470588
+Ka 0.000000 0.000000 0.000000
+Kd 0.019082 0.021540 0.023081
+Ks 0.020000 0.020000 0.020000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Bump Black_nor.png
+map_Kd Black.jpg
+
+newmtl Glass
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 0.496732
+illum 2
+map_Kd Ref.jpg
+
+newmtl Material.005
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.050000 0.050000 0.050000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Bump Black_nor.png
+map_Kd Black.jpg
+
+newmtl Material.007
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl R_2
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.000000 0.000000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl S_2
+Ns 76.470588
+Ka 0.000000 0.000000 0.000000
+Kd 0.227670 0.228470 0.224321
+Ks 0.020000 0.020000 0.020000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Bump Black_nor.png
+map_Kd Black.jpg
+
+newmtl S_3
+Ns 76.470588
+Ka 0.000000 0.000000 0.000000
+Kd 0.000000 0.000000 0.000000
+Ks 0.020000 0.020000 0.020000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Bump Black_nor.png
+map_Kd Black.jpg
+
+newmtl W_3
+Ns 76.470588
+Ka 0.000000 0.000000 0.000000
+Kd 0.573097 0.575163 0.564445
+Ks 0.020000 0.020000 0.020000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Bump Black_nor.png
+map_Kd Black.jpg
+
+newmtl b
+Ns 76.470588
+Ka 0.000000 0.000000 0.000000
+Kd 0.545882 0.545882 0.545882
+Ks 0.100000 0.100000 0.100000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Bump Black_nor.png
+map_Kd Black.jpg
+
+newmtl s
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Bump steel_DH_nor.png
+map_Kd steel_DH.jpg
