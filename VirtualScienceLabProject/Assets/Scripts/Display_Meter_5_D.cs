@@ -3,30 +3,34 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Sev_Seg_Counter : MonoBehaviour {
+public class Display_Meter_5_D : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-        
+    // Use this for initialization
+    void Start()
+    {
+
     }
 
-    public void setSevSegCount(int seconds)
+    // Update is called once per frame
+    void Update()
     {
-        if (seconds < 1000)
+
+    }
+
+    public void setDisplay(double do_number, string parent_name)
+    {
+        if(do_number < 1000)
         {
-            string s_number = String.Format("{0:000}", seconds);
-            GameObject parent = GameObject.Find("Zähler");
+            string s_number = String.Format("{0:000.00}", do_number);
+            GameObject parent = GameObject.Find(parent_name);
 
             Debug.Log(s_number);
 
             set_n(int.Parse(Char.ToString(s_number[0])), 1, parent);
             set_n(int.Parse(Char.ToString(s_number[1])), 2, parent);
             set_n(int.Parse(Char.ToString(s_number[2])), 3, parent);
+            set_n(int.Parse(Char.ToString(s_number[4])), 4, parent);
+            set_n(int.Parse(Char.ToString(s_number[5])), 5, parent);
         }
     }
 
@@ -68,8 +72,8 @@ public class Sev_Seg_Counter : MonoBehaviour {
                 setColorP(parent_item.transform.Find(s_m).gameObject);
                 setColorP(parent_item.transform.Find(s_b).gameObject);
                 setColorP(parent_item.transform.Find(s_t).gameObject);
-                break;
-            case 3:
+                break;              
+            case 3:                 
                 setColorN(parent_item.transform.Find(s_lt).gameObject);
                 setColorP(parent_item.transform.Find(s_rt).gameObject);
                 setColorN(parent_item.transform.Find(s_lb).gameObject);
@@ -77,8 +81,8 @@ public class Sev_Seg_Counter : MonoBehaviour {
                 setColorP(parent_item.transform.Find(s_m).gameObject);
                 setColorP(parent_item.transform.Find(s_b).gameObject);
                 setColorP(parent_item.transform.Find(s_t).gameObject);
-                break;
-            case 4:
+                break;              
+            case 4:                 
                 setColorP(parent_item.transform.Find(s_lt).gameObject);
                 setColorP(parent_item.transform.Find(s_rt).gameObject);
                 setColorN(parent_item.transform.Find(s_lb).gameObject);
@@ -86,8 +90,8 @@ public class Sev_Seg_Counter : MonoBehaviour {
                 setColorP(parent_item.transform.Find(s_m).gameObject);
                 setColorN(parent_item.transform.Find(s_b).gameObject);
                 setColorN(parent_item.transform.Find(s_t).gameObject);
-                break;
-            case 5:
+                break;              
+            case 5:                 
                 setColorP(parent_item.transform.Find(s_lt).gameObject);
                 setColorN(parent_item.transform.Find(s_rt).gameObject);
                 setColorN(parent_item.transform.Find(s_lb).gameObject);
@@ -95,8 +99,8 @@ public class Sev_Seg_Counter : MonoBehaviour {
                 setColorP(parent_item.transform.Find(s_m).gameObject);
                 setColorP(parent_item.transform.Find(s_b).gameObject);
                 setColorP(parent_item.transform.Find(s_t).gameObject);
-                break;
-            case 6:
+                break;              
+            case 6:                 
                 setColorP(parent_item.transform.Find(s_lt).gameObject);
                 setColorN(parent_item.transform.Find(s_rt).gameObject);
                 setColorP(parent_item.transform.Find(s_lb).gameObject);
@@ -104,8 +108,8 @@ public class Sev_Seg_Counter : MonoBehaviour {
                 setColorP(parent_item.transform.Find(s_m).gameObject);
                 setColorP(parent_item.transform.Find(s_b).gameObject);
                 setColorP(parent_item.transform.Find(s_t).gameObject);
-                break;
-            case 7:
+                break;              
+            case 7:                 
                 setColorN(parent_item.transform.Find(s_lt).gameObject);
                 setColorP(parent_item.transform.Find(s_rt).gameObject);
                 setColorN(parent_item.transform.Find(s_lb).gameObject);
@@ -113,8 +117,8 @@ public class Sev_Seg_Counter : MonoBehaviour {
                 setColorN(parent_item.transform.Find(s_m).gameObject);
                 setColorN(parent_item.transform.Find(s_b).gameObject);
                 setColorP(parent_item.transform.Find(s_t).gameObject);
-                break;
-            case 8:
+                break;              
+            case 8:                 
                 setColorP(parent_item.transform.Find(s_lt).gameObject);
                 setColorP(parent_item.transform.Find(s_rt).gameObject);
                 setColorP(parent_item.transform.Find(s_lb).gameObject);
@@ -122,8 +126,8 @@ public class Sev_Seg_Counter : MonoBehaviour {
                 setColorP(parent_item.transform.Find(s_m).gameObject);
                 setColorP(parent_item.transform.Find(s_b).gameObject);
                 setColorP(parent_item.transform.Find(s_t).gameObject);
-                break;
-            case 9:
+                break;              
+            case 9:                 
                 setColorP(parent_item.transform.Find(s_lt).gameObject);
                 setColorP(parent_item.transform.Find(s_rt).gameObject);
                 setColorN(parent_item.transform.Find(s_lb).gameObject);
@@ -134,17 +138,18 @@ public class Sev_Seg_Counter : MonoBehaviour {
                 break;
         }
     }
-
+    
     private void setColorP(GameObject gameObject)
     {
-        if(Load_Publics.counter <= Load_Publics.maximum)
+        if (Load_Publics.counter <= Load_Publics.maximum)
         {
             gameObject.GetComponent<Renderer>().material.color = Color.green;
-        } else
+        }
+        else
         {
             gameObject.GetComponent<Renderer>().material.color = Color.red;
         }
-        
+
     }
     private void setColorN(GameObject gameObject)
     {
