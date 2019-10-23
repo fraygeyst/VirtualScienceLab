@@ -1,0 +1,192 @@
+fileFormatVersion: 2
+guid: 5786391baec42da49988fcdf40776c30
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Null1_Boole_1_Cube_34
+    100004: Null1_Boole_1_Oil_Tank1
+    100006: Null1_Boole_2_Cube_31
+    100008: Null1_Boole_2_Oil_Tank
+    100010: Null1_Boole_3_Cube
+    100012: Null1_Boole_3_Cube_3
+    100014: Null1_Boole_Cube1
+    100016: Null1_Boole_Null_Cylinder
+    100018: Null1_Boole_Null_Cylinder1
+    100020: Null1_Boole_Null_Null2_Null3_Cube_1
+    100022: Null1_Boole_Null_Null2_Null3_Cube_2
+    100024: Null1_Boole_Null_Null2_Null3_Cube_33
+    100026: Null1_Cube2
+    100028: Null1_Cube_11
+    100030: Null1_Cube_32
+    100032: Null1_Cube_6
+    100034: Null1_Plane
+    400000: //RootNode
+    400002: Null1_Boole_1_Cube_34
+    400004: Null1_Boole_1_Oil_Tank1
+    400006: Null1_Boole_2_Cube_31
+    400008: Null1_Boole_2_Oil_Tank
+    400010: Null1_Boole_3_Cube
+    400012: Null1_Boole_3_Cube_3
+    400014: Null1_Boole_Cube1
+    400016: Null1_Boole_Null_Cylinder
+    400018: Null1_Boole_Null_Cylinder1
+    400020: Null1_Boole_Null_Null2_Null3_Cube_1
+    400022: Null1_Boole_Null_Null2_Null3_Cube_2
+    400024: Null1_Boole_Null_Null2_Null3_Cube_33
+    400026: Null1_Cube2
+    400028: Null1_Cube_11
+    400030: Null1_Cube_32
+    400032: Null1_Cube_6
+    400034: Null1_Plane
+    2100000: Null1_Boole_1_Cube_34Mat
+    2100002: Null1_Boole_1_Oil_Tank1Mat
+    2100004: Null1_Boole_2_Cube_31Mat
+    2100006: Null1_Boole_2_Oil_TankMat
+    2100008: Null1_Boole_3_CubeMat
+    2100010: Null1_Boole_3_Cube_3Mat
+    2100012: Null1_Boole_Cube1Mat
+    2100014: Null1_Boole_Null_CylinderMat
+    2100016: Null1_Boole_Null_Cylinder1Mat
+    2100018: Null1_Boole_Null_Null2_Null3_Cube_1Mat
+    2100020: Null1_Boole_Null_Null2_Null3_Cube_2Mat
+    2100022: Null1_Boole_Null_Null2_Null3_Cube_33Mat
+    2100024: Null1_Cube2Mat
+    2100026: Null1_Cube_11Mat
+    2100028: Null1_Cube_32Mat
+    2100030: Null1_Cube_6Mat
+    2100032: Null1_PlaneMat
+    2300000: Null1_Boole_1_Cube_34
+    2300002: Null1_Boole_1_Oil_Tank1
+    2300004: Null1_Boole_2_Cube_31
+    2300006: Null1_Boole_2_Oil_Tank
+    2300008: Null1_Boole_3_Cube
+    2300010: Null1_Boole_3_Cube_3
+    2300012: Null1_Boole_Cube1
+    2300014: Null1_Boole_Null_Cylinder
+    2300016: Null1_Boole_Null_Cylinder1
+    2300018: Null1_Boole_Null_Null2_Null3_Cube_1
+    2300020: Null1_Boole_Null_Null2_Null3_Cube_2
+    2300022: Null1_Boole_Null_Null2_Null3_Cube_33
+    2300024: Null1_Cube2
+    2300026: Null1_Cube_11
+    2300028: Null1_Cube_32
+    2300030: Null1_Cube_6
+    2300032: Null1_Plane
+    3300000: Null1_Boole_1_Cube_34
+    3300002: Null1_Boole_1_Oil_Tank1
+    3300004: Null1_Boole_2_Cube_31
+    3300006: Null1_Boole_2_Oil_Tank
+    3300008: Null1_Boole_3_Cube
+    3300010: Null1_Boole_3_Cube_3
+    3300012: Null1_Boole_Cube1
+    3300014: Null1_Boole_Null_Cylinder
+    3300016: Null1_Boole_Null_Cylinder1
+    3300018: Null1_Boole_Null_Null2_Null3_Cube_1
+    3300020: Null1_Boole_Null_Null2_Null3_Cube_2
+    3300022: Null1_Boole_Null_Null2_Null3_Cube_33
+    3300024: Null1_Cube2
+    3300026: Null1_Cube_11
+    3300028: Null1_Cube_32
+    3300030: Null1_Cube_6
+    3300032: Null1_Plane
+    4300000: Null1_Boole_1_Cube_34
+    4300002: Null1_Boole_1_Oil_Tank1
+    4300004: Null1_Boole_2_Cube_31
+    4300006: Null1_Boole_2_Oil_Tank
+    4300008: Null1_Boole_3_Cube
+    4300010: Null1_Boole_3_Cube_3
+    4300012: Null1_Boole_Cube1
+    4300014: Null1_Boole_Null_Cylinder
+    4300016: Null1_Boole_Null_Cylinder1
+    4300018: Null1_Boole_Null_Null2_Null3_Cube_1
+    4300020: Null1_Boole_Null_Null2_Null3_Cube_2
+    4300022: Null1_Boole_Null_Null2_Null3_Cube_33
+    4300024: Null1_Cube2
+    4300026: Null1_Cube_11
+    4300028: Null1_Cube_32
+    4300030: Null1_Cube_6
+    4300032: Null1_Plane
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
