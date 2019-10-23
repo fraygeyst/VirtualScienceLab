@@ -1,0 +1,161 @@
+fileFormatVersion: 2
+guid: fcc11df33d96ad146869b2667d7c849d
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Armature
+    100002: Bone
+    100004: Bone.001
+    100006: Bone.001_end
+    100008: Bone.002
+    100010: Bone.003
+    100012: Bone.004
+    100014: Bone.005
+    100016: Bone.006
+    100018: Bone.007
+    100020: Bone.008
+    100022: Bone.008_end
+    100024: Bone.009
+    100026: Bone.009_end
+    100028: Bone.016
+    100030: Bone.016_end
+    100032: Circle.000
+    100034: Circle.001
+    100036: Circle.002
+    100038: Circle.004
+    100040: Circle.006
+    100042: //RootNode
+    100044: e1
+    100046: Hemi
+    400000: Armature
+    400002: Bone
+    400004: Bone.001
+    400006: Bone.001_end
+    400008: Bone.002
+    400010: Bone.003
+    400012: Bone.004
+    400014: Bone.005
+    400016: Bone.006
+    400018: Bone.007
+    400020: Bone.008
+    400022: Bone.008_end
+    400024: Bone.009
+    400026: Bone.009_end
+    400028: Bone.016
+    400030: Bone.016_end
+    400032: Circle.000
+    400034: Circle.001
+    400036: Circle.002
+    400038: Circle.004
+    400040: Circle.006
+    400042: //RootNode
+    400044: e1
+    400046: Hemi
+    2100000: B_3
+    2100002: W_3
+    2100004: S_3
+    2100006: S_2
+    2100008: R_2
+    2100010: s
+    2100012: b
+    2100014: Glass
+    2100016: Material.005
+    2100018: Material.007
+    2300000: Circle.000
+    2300002: Circle.001
+    2300004: Circle.002
+    2300006: Circle.004
+    3300000: Circle.000
+    3300002: Circle.001
+    3300004: Circle.002
+    3300006: Circle.004
+    4300000: Circle.001
+    4300002: Circle.000
+    4300004: Circle.004
+    4300006: Circle.002
+    4300008: Circle.006
+    9500000: //RootNode
+    10800000: Hemi
+    13700000: Circle.006
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
