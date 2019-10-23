@@ -78,8 +78,12 @@ public class Load_Publics : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-		
-	}
+        Display_Meter_5_D counti = new Display_Meter_5_D();
+        counti.setDisplay(123.00, "Zähler_Netzteil");
+        counti.setDisplay(456.4, "Zähler_Volt");
+        counti.setDisplay(789.0, "Zähler_Ampere");
+    }
+	
 	
 	// Update is called once per frame
 	void Update () {
