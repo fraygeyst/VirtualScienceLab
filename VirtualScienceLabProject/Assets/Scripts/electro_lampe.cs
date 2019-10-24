@@ -7,13 +7,45 @@ public class electro_lampe : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
-	}
+        Display_Meter_5_D counti = new Display_Meter_5_D();
+        counti.setDisplay(0, "Zähler_Netzteil");
+        counti.setDisplay(0, "Zähler_Volt");
+        counti.setDisplay(0, "Zähler_Ampere");
+    }
 	
 	// Update is called once per frame
 	void Update () {
 		
 	}
+
+    private void OnTriggerEnter(Collider other)
+    {
+        switch (gameObject.name)
+        {
+            case "Button_links_plus":
+                Load_Publics.lampe_netzteil_count += 0.5;
+                break;
+            case "Button_links_minus":
+                if(Load_Publics.lampe_netzteil_count >= 0.5)
+                {
+                    Load_Publics.lampe_netzteil_count -= 0.5;
+                }
+                break;
+            case "Button_mitte_plus":
+                Load_Publics.lampe_netzteil_count += 0.1;
+                break;
+            case "Button_mitte_minus":
+                if (Load_Publics.lampe_netzteil_count >= 0.1)
+                {
+                    Load_Publics.lampe_netzteil_count -= 0.1;
+                }
+                break;
+        }
+        Display_Meter_5_D counti = new Display_Meter_5_D();
+        counti.setDisplay(Load_Publics.lampe_netzteil_count, "Zähler_Netzteil");
+        counti.setDisplay(getVolt(Load_Publics.lampe_netzteil_count), "Zähler_Volt");
+        counti.setDisplay(getAmpere(Load_Publics.lampe_netzteil_count), "Zähler_Ampere");
+    }
 
     private double getVolt(double x)
     {

@@ -31,6 +31,8 @@ public class Display_Meter_5_D : MonoBehaviour {
             set_n(int.Parse(Char.ToString(s_number[2])), 3, parent);
             set_n(int.Parse(Char.ToString(s_number[4])), 4, parent);
             set_n(int.Parse(Char.ToString(s_number[5])), 5, parent);
+
+            setColorP(parent.transform.Find("decimal_point").gameObject);
         }
     }
 
