@@ -11,6 +11,7 @@ public class electro_lampe : MonoBehaviour {
         counti.setDisplay(0, "Zähler_Netzteil");
         counti.setDisplay(0, "Zähler_Volt");
         counti.setDisplay(0, "Zähler_Ampere");
+        setLight(0, "Glowlight");
     }
 	
 	// Update is called once per frame
@@ -23,7 +24,10 @@ public class electro_lampe : MonoBehaviour {
         switch (gameObject.name)
         {
             case "Button_links_plus":
-                Load_Publics.lampe_netzteil_count += 0.5;
+                if(Load_Publics.lampe_netzteil_count <= 6)
+                {
+                    Load_Publics.lampe_netzteil_count += 0.5;
+                }
                 break;
             case "Button_links_minus":
                 if(Load_Publics.lampe_netzteil_count >= 0.5)
@@ -32,7 +36,10 @@ public class electro_lampe : MonoBehaviour {
                 }
                 break;
             case "Button_mitte_plus":
-                Load_Publics.lampe_netzteil_count += 0.1;
+                if (Load_Publics.lampe_netzteil_count <= 6.4)
+                {
+                    Load_Publics.lampe_netzteil_count += 0.1;
+                }
                 break;
             case "Button_mitte_minus":
                 if (Load_Publics.lampe_netzteil_count >= 0.1)
@@ -45,6 +52,8 @@ public class electro_lampe : MonoBehaviour {
         counti.setDisplay(Load_Publics.lampe_netzteil_count, "Zähler_Netzteil");
         counti.setDisplay(getVolt(Load_Publics.lampe_netzteil_count), "Zähler_Volt");
         counti.setDisplay(getAmpere(Load_Publics.lampe_netzteil_count), "Zähler_Ampere");
+
+        setLight((float)Load_Publics.lampe_netzteil_count, "Glowlight");
     }
 
     private double getVolt(double x)
@@ -57,5 +66,12 @@ public class electro_lampe : MonoBehaviour {
     {
         x = (0.0012809183618 * Math.Pow(x, 4)) - (0.019316637036 * Math.Pow(x, 3)) + (0.106348881997 * Math.Pow(x, 2)) + (0.6547898739782 * x) - 0.0044123552528;
         return x;
+    }
+
+    private void setLight(float input, string obj_name)
+    {
+        GameObject go = GameObject.Find(obj_name);
+        Light lt = go.GetComponent<Light>();
+        lt.intensity = Load_Publics.RemapLight(input, 0f, 10f, 0f, 5f);
     }
 }
