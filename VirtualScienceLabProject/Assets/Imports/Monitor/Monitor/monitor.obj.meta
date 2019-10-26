@@ -8,6 +8,15 @@ ModelImporter:
     400000: default
     400002: //RootNode
     2100000: defaultMat
+    2100002: Material.002
+    2100004: Material.001
+    2100006: phone_screen
+    2100008: screen_glas
+    2100010: Material
+    2100012: BMD_CarPaint_0020
+    2100014: BMD_PBRMetallic
+    2100016: green1-LED
+    2100018: Rubber
     2300000: default
     3300000: default
     4300000: default
