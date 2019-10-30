@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4459054, g: 0.49564725, b: 0.57438624, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3629,7 +3629,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a66249abc3727648b9b3e7cde97ea53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: NeuerFlur
+  sceneName: Elektro
 --- !u!135 &366054941
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -14083,7 +14083,7 @@ Transform:
   - {fileID: 1753986651}
   - {fileID: 200342245}
   m_Father: {fileID: 1640329348}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1419922698
 GameObject:
@@ -16441,8 +16441,8 @@ Transform:
   - {fileID: 1874954672}
   - {fileID: 161005949}
   - {fileID: 1180917376}
-  - {fileID: 1600959969}
   - {fileID: 1411546552}
+  - {fileID: 1600959969}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -7,7 +7,8 @@ public class Beschleunigung : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        
+        Sev_Seg_Counter counti = new Sev_Seg_Counter();
+        counti.setSevSegCount(0);
     }
 	
 	// Update is called once per frame

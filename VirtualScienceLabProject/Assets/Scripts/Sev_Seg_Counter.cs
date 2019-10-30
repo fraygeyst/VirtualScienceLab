@@ -17,6 +17,7 @@ public class Sev_Seg_Counter : MonoBehaviour {
 
     public void setSevSegCount(int seconds)
     {
+        Debug.Log("Counter");
         if (seconds < 1000)
         {
             string s_number = String.Format("{0:000}", seconds);

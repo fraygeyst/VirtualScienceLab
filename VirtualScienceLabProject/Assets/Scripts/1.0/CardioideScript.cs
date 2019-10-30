@@ -10,7 +10,7 @@ public class CardioideScript : MonoBehaviour {
     public float radius = 120f;
     public GameObject prefab_hslogo;
     public GameObject prefab_hskl_schriftzug;
-    //public GameObject prefab_flameParticleSystem;
+    public GameObject prefab_flameParticleSystem;
 
     //verschiebt das Gesamtbild
     private Vector3 verschiebungsVector = new Vector3(60, 0, -500);
@@ -75,8 +75,8 @@ public class CardioideScript : MonoBehaviour {
 
 
         //FlameParticleSystem Feuer bei der Kardioide erzeugen
-        //Vector3 pos1 = transform.position + new Vector3(-100, 60, 0) + verschiebungsVector;
-        //Instantiate(prefab_flameParticleSystem, pos1, rot2);
+        Vector3 pos1 = transform.position + new Vector3(-100, 60, 0) + verschiebungsVector;
+        Instantiate(prefab_flameParticleSystem, pos1, rot2);
 
     }
 }

@@ -1,0 +1,177 @@
+fileFormatVersion: 2
+guid: df855037547218e4da9f956fe54c53db
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Glasplatte_LOD0
+    100002: Glasplatte_LOD1
+    100004: Glasplatte_LOD2
+    100006: //RootNode
+    100008: Mikroskop_LOD0
+    100010: Mikroskop_LOD1
+    100012: Mikroskop_LOD2
+    400000: Glasplatte_LOD0
+    400002: Glasplatte_LOD1
+    400004: Glasplatte_LOD2
+    400006: //RootNode
+    400008: Mikroskop_LOD0
+    400010: Mikroskop_LOD1
+    400012: Mikroskop_LOD2
+    2100000: M_Glass
+    2100002: M_Halterung
+    2100004: M_Karussel
+    2100006: M_Binokular
+    2100008: M_Klammer
+    2100010: M_Schraube
+    2100012: M_Binokular_Classifier_10x
+    2100014: M_Binokular_Classifier_4x
+    2100016: M_Binokular_Classifier_40x
+    2300000: Glasplatte_LOD0
+    2300002: Glasplatte_LOD1
+    2300004: Glasplatte_LOD2
+    2300006: Mikroskop_LOD0
+    2300008: Mikroskop_LOD1
+    2300010: Mikroskop_LOD2
+    3300000: Glasplatte_LOD0
+    3300002: Glasplatte_LOD1
+    3300004: Glasplatte_LOD2
+    3300006: Mikroskop_LOD0
+    3300008: Mikroskop_LOD1
+    3300010: Mikroskop_LOD2
+    4300000: Glasplatte_LOD2
+    4300002: Glasplatte_LOD1
+    4300004: Mikroskop_LOD2
+    4300006: Mikroskop_LOD1
+    4300008: Mikroskop_LOD0
+    4300010: Glasplatte_LOD0
+    20500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Binokular
+    second: {fileID: 2100000, guid: 3281da5e5e9a17646adc4e45fbcff8b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Binokular_Classifier_10x
+    second: {fileID: 2100000, guid: db36cf1d02ccd754a92acd3cc1a9cdf2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Binokular_Classifier_40x
+    second: {fileID: 2100000, guid: 06eb4b2244dd0644bad4f7783d084f7c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Binokular_Classifier_4x
+    second: {fileID: 2100000, guid: 6c3daa7a5c7695549964c4b5c5c1022a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Glass
+    second: {fileID: 2100000, guid: d78f257320650454c9d3b10f0a911708, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Halterung
+    second: {fileID: 2100000, guid: 82ef90bb7438ca049a4934b5addc88f6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Karussel
+    second: {fileID: 2100000, guid: e6c0838fef83da740a1ddc34ff27a97d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Klammer
+    second: {fileID: 2100000, guid: c74274740a2c0d94b8fd255647419f82, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Schraube
+    second: {fileID: 2100000, guid: 1b5ae1354be61744fb64d9ed9901966c, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages:
+    - 0.25
+    - 0.125
+    - 0.01
+    globalScale: 2
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
