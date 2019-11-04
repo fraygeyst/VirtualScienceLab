@@ -27,6 +27,9 @@ public class electro_lampe : MonoBehaviour {
                 if(Load_Publics.lampe_netzteil_count <= 6)
                 {
                     Load_Publics.lampe_netzteil_count += 0.5;
+                } else
+                {
+                    Destroy(GameObject.Find("Glowlight"));
                 }
                 break;
             case "Button_links_minus":
@@ -39,6 +42,10 @@ public class electro_lampe : MonoBehaviour {
                 if (Load_Publics.lampe_netzteil_count <= 6.4)
                 {
                     Load_Publics.lampe_netzteil_count += 0.1;
+                }
+                else
+                {
+                    Destroy(GameObject.Find("Glowlight"));
                 }
                 break;
             case "Button_mitte_minus":
