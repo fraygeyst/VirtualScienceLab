@@ -4352,12 +4352,12 @@ GameObject:
   - component: {fileID: 181690532}
   - component: {fileID: 181690531}
   m_Layer: 0
-  m_Name: Graf
+  m_Name: Graph
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &181690531
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -45298,8 +45298,9 @@ GameObject:
   - component: {fileID: 2028036478}
   - component: {fileID: 2028036477}
   - component: {fileID: 2028036476}
+  - component: {fileID: 2028036479}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45372,6 +45373,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2028036474}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2028036479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2028036474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 591f67d0dd97a154cbb4da64ac513bda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 181690530}
+  table: {fileID: 2043292395}
 --- !u!1 &2031735355
 GameObject:
   m_ObjectHideFlags: 0
@@ -46005,7 +46019,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &2043292396
 BoxCollider:
   m_ObjectHideFlags: 0
