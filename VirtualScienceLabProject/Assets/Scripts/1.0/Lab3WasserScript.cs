@@ -55,8 +55,8 @@ public class Lab3WasserScript : MonoBehaviour
     {
         if (col.gameObject == salzstein)
         {
-            //Salzstein soll sich nach 6 sekunden zersetzt haben
-            StartCoroutine(salzsteinZersetzen(6));
+            //Salzstein soll sich nach 3 sekunden zersetzt haben
+            StartCoroutine(salzsteinZersetzen(3));
            
         }else if (col.gameObject == stein1)
         {
