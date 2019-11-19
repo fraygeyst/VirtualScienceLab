@@ -90,6 +90,10 @@ public class Load_Publics : MonoBehaviour {
         return to;
     }
 
+    // Versuch 2
+    public static float Uq = 4.0f;
+    public static float frequency_Netzteil = 0.0f;
+
     // Use this for initialization
     void Start () {
         
@@ -98,6 +102,6 @@ public class Load_Publics : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+	
 	}
 }
