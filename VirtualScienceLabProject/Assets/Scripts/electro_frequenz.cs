@@ -28,7 +28,7 @@ public class electro_frequenz : MonoBehaviour {
                 {
                     new_freq += 10f;
                 }
-                else if (Load_Publics.frequency_Netzteil >= 100 && Load_Publics.frequency_Netzteil < 1000f)
+                else if (Load_Publics.frequency_Netzteil >= 100f && Load_Publics.frequency_Netzteil < 1000f)
                 {
                     new_freq += 100f;
                 }
@@ -42,7 +42,7 @@ public class electro_frequenz : MonoBehaviour {
                 {
                     new_freq -= 10f;
                 }
-                else if (Load_Publics.frequency_Netzteil > 100 && Load_Publics.frequency_Netzteil <= 1000f)
+                else if (Load_Publics.frequency_Netzteil > 100f && Load_Publics.frequency_Netzteil <= 1000f)
                 {
                     new_freq -= 100f;
                 }
@@ -86,13 +86,13 @@ public class electro_frequenz : MonoBehaviour {
         }
         else
         {
-            Load_Publics.lampe_netzteil_count = new_freq;
+            Load_Publics.frequency_Netzteil = new_freq;
         }
 
         Display_Meter_5_D counti = new Display_Meter_5_D();
-        counti.setDisplay(System.Convert.ToDouble(Load_Publics.frequency_Netzteil), "Zähler_Netzteil_v2");
-        counti.setDisplay(getUc(Load_Publics.Uq, Load_Publics.Uq), "Zähler_Volt_v2");
-        counti.setDisplay(getUr(Load_Publics.Uq, Load_Publics.Uq), "Zähler_Ampere_v2");
+        counti.setDisplay(System.Convert.ToDouble(Load_Publics.frequency_Netzteil / 10.0), "Zähler_Netzteil_v2");
+        counti.setDisplay(System.Convert.ToDouble(getUc(Load_Publics.Uq, 3f)), "Zähler_Volt_v2");
+        counti.setDisplay(System.Convert.ToDouble(getUr(Load_Publics.Uq, 2f)), "Zähler_Ampere_v2");
     }
 
     float getUq(float Ur, float Uc)

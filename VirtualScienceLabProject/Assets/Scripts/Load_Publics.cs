@@ -92,6 +92,8 @@ public class Load_Publics : MonoBehaviour {
 
     // Versuch 2
     public static float Uq = 4.0f;
+    public static float R = 2000f;
+    public static float C = 0.5f;
     public static float frequency_Netzteil = 0.0f;
 
     // Use this for initialization

@@ -2993,7 +2993,7 @@ Transform:
   m_GameObject: {fileID: 124304927}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
   m_LocalPosition: {x: -0.040599823, y: 9.54, z: -0.5629997}
-  m_LocalScale: {x: 0.1, y: 0.099999994, z: 0.1}
+  m_LocalScale: {x: 0.2, y: 0.099999994, z: 0.2}
   m_Children: []
   m_Father: {fileID: 119034160}
   m_RootOrder: 2
@@ -6945,7 +6945,6 @@ GameObject:
   - component: {fileID: 290437243}
   - component: {fileID: 290437242}
   - component: {fileID: 290437241}
-  - component: {fileID: 290437240}
   - component: {fileID: 290437244}
   m_Layer: 0
   m_Name: Button_mitte_plus
@@ -6969,17 +6968,6 @@ Transform:
   m_Father: {fileID: 340901099}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &290437240
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 290437238}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7cc3110759a956b40b76d81d27df2f13, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &290437241
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9455,7 +9443,6 @@ GameObject:
   - component: {fileID: 396536181}
   - component: {fileID: 396536180}
   - component: {fileID: 396536179}
-  - component: {fileID: 396536178}
   - component: {fileID: 396536182}
   m_Layer: 0
   m_Name: Button_mitte_minus
@@ -9478,17 +9465,6 @@ Transform:
   m_Father: {fileID: 340901099}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &396536178
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 396536176}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7cc3110759a956b40b76d81d27df2f13, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &396536179
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10558,7 +10534,6 @@ GameObject:
   - component: {fileID: 420010725}
   - component: {fileID: 420010724}
   - component: {fileID: 420010723}
-  - component: {fileID: 420010722}
   - component: {fileID: 420010726}
   m_Layer: 0
   m_Name: Button_links_minus
@@ -10581,17 +10556,6 @@ Transform:
   m_Father: {fileID: 340901099}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &420010722
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 420010720}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7cc3110759a956b40b76d81d27df2f13, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &420010723
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17557,7 +17521,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 742228166}
   m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: -0.517, y: -0.3310001, z: 0.468}
+  m_LocalPosition: {x: -0.517, y: -0.331, z: 0.696}
   m_LocalScale: {x: 0.02, y: 0.01, z: 0.02}
   m_Children: []
   m_Father: {fileID: 1423901478}
@@ -20378,7 +20342,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 498762, guid: cbfd31aaac017204885fcc03f0579a1a, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.609
+      value: -5.198
       objectReference: {fileID: 0}
     - target: {fileID: 498762, guid: cbfd31aaac017204885fcc03f0579a1a, type: 2}
       propertyPath: m_LocalPosition.y
@@ -20386,7 +20350,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 498762, guid: cbfd31aaac017204885fcc03f0579a1a, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 1.169
+      value: 0.326
       objectReference: {fileID: 0}
     - target: {fileID: 498762, guid: cbfd31aaac017204885fcc03f0579a1a, type: 2}
       propertyPath: m_LocalRotation.x
@@ -30421,7 +30385,6 @@ GameObject:
   - component: {fileID: 1272029359}
   - component: {fileID: 1272029358}
   - component: {fileID: 1272029357}
-  - component: {fileID: 1272029356}
   - component: {fileID: 1272029360}
   m_Layer: 0
   m_Name: Button_links_plus
@@ -30445,17 +30408,6 @@ Transform:
   m_Father: {fileID: 340901099}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1272029356
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1272029354}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7cc3110759a956b40b76d81d27df2f13, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &1272029357
 BoxCollider:
   m_ObjectHideFlags: 0
