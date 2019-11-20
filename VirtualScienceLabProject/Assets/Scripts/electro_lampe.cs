@@ -82,6 +82,5 @@ public class electro_lampe : MonoBehaviour {
         Light lt = go.GetComponent<Light>();
         lt.intensity = Load_Publics.RemapLight(input, 0f, 10f, 0f, 5f);
     }
-
     // https://answers.unity.com/questions/1215516/using-numpy-in-unity.html
 }
