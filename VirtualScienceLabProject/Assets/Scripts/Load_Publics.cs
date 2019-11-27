@@ -31,7 +31,7 @@ public class Load_Publics : MonoBehaviour {
     public static bool r_clicked = false;
 
     public static int counter = 0;
-    public static int maximum = 21;
+    public static int maximum = 19;
     public static string last_clicked = "";
 
 

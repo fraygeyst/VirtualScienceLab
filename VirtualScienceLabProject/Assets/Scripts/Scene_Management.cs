@@ -24,10 +24,10 @@ public class Scene_Management : MonoBehaviour {
                     vec = new Vector3(9.2f, 0f, 0f);
                     break;
                 case "Lab1": // Chemie
-                    vec = new Vector3(22.0f, 0f, 1.4f);
+                    vec = new Vector3(22.0f, 0f, -1.4f);
                     break;
                 case "Lab2": // Physik
-                    vec = new Vector3(22.0f, 0f, -1.4f);
+                    vec = new Vector3(22.0f, 0f, 1.4f);
                     break;
                 case "Lab3": // Informatik
                     vec = new Vector3(16.9f, 0f, 1.4f);
