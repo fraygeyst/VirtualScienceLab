@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using HTC.UnityPlugin.Vive;
+using UnityEngine.SceneManagement;
 
 public class TurnBeamerOn : MonoBehaviour
 {
@@ -18,7 +19,6 @@ public class TurnBeamerOn : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        
         beamerLight.SetActive(false);
         isOn = false;
     }
@@ -27,9 +27,20 @@ public class TurnBeamerOn : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        collisionHappend = true;
-        Debug.Log("TurnBeamerOn collisionHappend: " + collisionHappend);
-
+        Scene scene = SceneManager.GetActiveScene();
+        Debug.Log(other.name);
+        if (scene.name == "Lab2")
+        {
+            if (other.name == "SphereCollider") {
+                collisionHappend = true;
+                Debug.Log("TurnBeamerOn collisionHappend: " + collisionHappend);
+            }
+        }
+        else {
+            collisionHappend = true;
+            Debug.Log("TurnBeamerOn collisionHappend: " + collisionHappend);
+        }
+        
     }
 
     private void OnTriggerExit(Collider other)
