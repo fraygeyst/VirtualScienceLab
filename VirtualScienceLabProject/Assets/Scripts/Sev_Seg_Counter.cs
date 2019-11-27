@@ -17,11 +17,10 @@ public class Sev_Seg_Counter : MonoBehaviour {
 
     public void setSevSegCount(int seconds)
     {
-        Debug.Log("Counter");
         if (seconds < 1000)
         {
             string s_number = String.Format("{0:000}", seconds);
-            GameObject parent = GameObject.Find("Zähler");
+            GameObject parent = GameObject.Find("Zähler1");
 
             Debug.Log(s_number);
 
@@ -40,6 +39,9 @@ public class Sev_Seg_Counter : MonoBehaviour {
         string s_m = "n_" + disp_num + "_m";
         string s_b = "n_" + disp_num + "_b";
         string s_t = "n_" + disp_num + "_t";
+
+        Debug.Log(parent_item);
+        Debug.Log(number);
 
         switch (number)
         {
