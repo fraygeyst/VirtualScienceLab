@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class Load_Publics : MonoBehaviour {
 
+    //Allgemein
+    public static bool light_on = false;
+    public static bool light_col = false;
+    public static string[] lightnames = {"Point_Light_l", "Point_Light_m", "Point_light_r"};
+
     // Informatiklab
     // Dijkstra
     internal static readonly bool reset_clicked;

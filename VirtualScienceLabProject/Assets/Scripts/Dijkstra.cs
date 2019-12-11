@@ -251,7 +251,7 @@ public class Dijkstra : MonoBehaviour {
 
         }
         Sev_Seg_Counter counti = new Sev_Seg_Counter();
-        counti.setSevSegCount(Load_Publics.counter);
+        counti.setSevSegCount(Load_Publics.counter, "Zähler");
         Debug.Log(Load_Publics.counter);
     }
 
