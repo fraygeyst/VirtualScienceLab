@@ -1,0 +1,13 @@
+% !TeX root = ../../pythonTutorial.tex
+\section{Lambda-Funktionen}
+\label{lambdaFunctions}
+Lambda-Funktionen (oder auch anonyme Funktionen) bieten den Vorteil zur besseren Lesbarkeit und sollten benutzt werden, wenn bspw. die Funktion in einer Zeile geschrieben werden kann.
+
+\begin{lstlisting}[language=Python, label=lambdaFunctions:lst:syntaxLambda]
+# Syntax einer Lambda-Funktion
+# lambda_name =  lambda [Parameter] : [Ausdruck]
+
+addition = lambda a, b: a + b 
+\end{lstlisting}
+
+Wie in Listing \ref{lambdaFunctions:lst:syntaxLambda} zu sehen ist, werden Lambda-Funktionen mit dem Schlüsselwort \lstinline$lambda$ definiert - und nicht mit \lstinline$def$. 

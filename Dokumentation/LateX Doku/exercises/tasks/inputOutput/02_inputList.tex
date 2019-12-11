@@ -1,0 +1,21 @@
+% !TeX root = ../../../pythonTutorial.tex
+
+Schreiben Sie ein Programm, das es dem Nutzer ermöglicht, eine beliebige Anzahl an Eingaben zu tätigen. Diese sollen in einer Liste gespeichert und nach der Eingabe des Wortes \lstinline{exit} in der Konsole ausgegeben werden.
+
+\tip{Für die Eingabe wird hier eine \emph{while}-Schleife genutzt, welche immer \lstinline{True} ist (Endlosschleife). Das Ausbrechen aus einer Schleife gelingt mit dem Schlüsselwort \lstinline{break}.}
+
+\begin{lstlisting}[language=Python, label=03_inputList:lst:exercise]
+# Ein- und Ausgabe durch Nutzer-Interaktion
+
+inputList = []
+print("Füllen Sie mittels Eingabe eine" 
++ "Liste mit geometrischen Körpern")
+print("Bei Eingabe 'exit' wird die " + 
+    "Eingabeschleife beendet.\n")
+
+while True:
+    ...
+
+print("\nDie geometrischen Körper lauten:")
+...
+\end{lstlisting}

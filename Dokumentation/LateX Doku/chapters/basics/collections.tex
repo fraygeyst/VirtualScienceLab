@@ -1,0 +1,368 @@
+% !TeX root = ../../pythonTutorial.tex
+\section{Collections}
+\label{collections:sec:collections}
+
+In Python 3 existieren nativ die vier Datenstrukturen List, Tuple, Set und Dictionary, welche im Folgenden vorgestellt werden.
+
+\subsection{List}
+\label{collections:sec:list}
+\randnotiz{List}
+
+Die Datenstruktur List bietet einen geordneten und veränderbaren Behälter für Python-Objekte, der Duplikate von Elementen erlaubt. Da eine List immer sortiert ist, können einzelne Elemente aus der Datenstruktur über den entsprechenden Index ausgewählt und verändert werden. Python unterstützt intern keine Arrays, alternativ hierzu kann eine List verwendet werden.
+
+Eine List kann wie folgt initialisiert werden:
+\lstinputlisting[language=Python]{chapters/basics/src/list/ListInit.py}
+\label{collections:lst:listinit}
+
+Dabei kann sie jegliche Art von Objekten beinhalten; der Datentyp spielt hierbei keine Rolle. 
+
+Beispiel:
+\lstinputlisting{chapters/basics/src/list/ListDataType.py}
+\label{collections:lst:listdatatype}
+
+Im Gegensatz zu Java und C++ muss der Programmierer darauf achten und sicherstellen, dass die Datenstruktur mit Werten des entsprechenden Datentyps befüllt wird, um Fehler aufgrund unterschiedlicher Datentypen zu vermeiden.
+
+Der Inhalt einer List kann über die \lstinline$print()$-Methode ausgegeben werden. Im folgenden Beispiel werden verschiedene Elemente der List auf der Konsole ausgegeben.
+Wird die List als Parameter gewählt, wird der Inhalt ausgegeben.
+\lstinputlisting{chapters/basics/src/list/ListPrint.py}
+\label{collections:lst:listprint}
+
+Wie zuvor erwähnt, ähnelt die Verwaltung einer List der eines Arrays aus Java oder C++. Durch die Verwendung eines Index können einzelne Elemente ausgewählt oder verändert werden.
+\lstinputlisting{chapters/basics/src/list/ListIndex.py}
+\label{collections:lst:listindex}
+
+Python erlaubt die Nutzung von negativen Indizes. Mit diesen kann der Inhalt der List in umgekehrter Reihenfolge ausgegeben werden. Ein Index von \lstinline$-1$ wird dem letzten Element der List zugeordnet, \lstinline$-2$ dem vorletzten.
+\lstinputlisting{chapters/basics/src/list/ListNegativeIndex.py}
+\label{collections:lst:lsitnegativeindex}
+
+In Python existiert für die Datenstruktur List keine Methode, die mit \\ \lstinline$contains()$ in Java oder der \lstinline$find()$ aus C++ vergleichbar ist. Stattdessen stehen die Membership Operatoren \lstinline$in$ oder \lstinline$not$ \lstinline$in$ zur Verfügung, die auf eine beliebige Sequenz oder die hier beschriebenen Collections angewendet, Auskunft darüber gibt, ob das spezifizierte Element darin enthalten ist.
+\lstinputlisting{chapters/basics/src/list/ListInOperator.py}
+\label{collections:lst:listinoperator}
+    
+Der Python Interpreter stellt nativ einige Funktionen zur Verfügung. Eine davon ist die \lstinline$len()$-Methode, die die Anzahl an Elementen in einem Objekt liefert.
+\lstinputlisting{chapters/basics/src/list/ListLen.py}
+\label{collections:lst:listlen}
+    
+Das \lstinline$del$-Statement erlaubt das Löschen einzelner Elemente oder der gesamten List.
+\lstinputlisting{chapters/basics/src/list/ListDelete.py}
+\label{collections:lst:listdel}
+    
+
+\subsubsection{Methoden einer List}
+\label{collections:sec:listmethodes}
+\randnotiz{List-Methoden}
+
+\textbf{append():}
+Fügt am Ende der List ein Objekt hinzu.
+\lstinputlisting{chapters/basics/src/list/ListAppend.py}
+\label{collections:lst:listappend}
+
+\textbf{clear():}
+Entfernt sämtliche Objekte aus der List.
+\lstinputlisting{chapters/basics/src/list/ListClear.py}
+\label{collections:lst:listclear}
+
+\textbf{copy():}
+Liefert eine Kopie der List.
+\lstinputlisting{chapters/basics/src/list/ListCopy.py}
+\label{collections:lst:listcopy}
+    
+%\newpage
+\textbf{count():}
+Liefert die Anzahl des spezifizierten Objekts in der List.
+\lstinputlisting{chapters/basics/src/list/ListCount.py}
+\label{collections:lst:listcount}
+
+\textbf{extend():} 
+Fügt der \lstinline$liste1$ den Inhalt der \lstinline$liste2$ am Ende hinzu.
+\lstinputlisting{chapters/basics/src/list/ListExtend.py}
+\label{collections:lst:listextend}
+    
+\textbf{index():}
+Liefert den Index der Position, an der sich das erste spezifizierte Objekt in der List befindet.
+\lstinputlisting{chapters/basics/src/list/ListIndexMethode.py}
+\label{collections:lst:listindexmethode}
+    
+\textbf{insert():}
+Fügt ein Objekt an der gewählten Position der List hinzu.
+\lstinputlisting{chapters/basics/src/list/ListInsert.py}
+\label{collections:lst:listinsert}
+
+\textbf{pop():}
+Entfernt das Objekt, das sich an der durch den Index spezifizierten Position befindet.
+\lstinputlisting{chapters/basics/src/list/ListPop.py}
+\label{collections:lst:listpop}
+    
+\textbf{remove():}
+Entfernt das erste Objekt der List, das der Spezifikation entspricht.
+\lstinputlisting{chapters/basics/src/list/ListRemove.py}
+\label{collections:lst:listremove}
+    
+\textbf{reverse():}
+Invertiert die Folge der Objekte in der List.
+\lstinputlisting{chapters/basics/src/list/ListReverse.py}
+\label{collections:lst:listreverse}
+
+\textbf{sort():}
+Sortiert die List.
+\lstinputlisting{chapters/basics/src/list/ListSort.py}
+\label{collections:lst:listsort}
+
+    
+\subsection{Tuple}
+\label{collections:sec:tuple}
+\randnotiz{Tuple} 
+
+Ein Tuple stellt einen geordneten und unveränderbaren Behälter für Python-Objekte dar. Dieser erlaubt, wie eine List, Duplikate und den Zugriff auf einzelne Elemente über einen Index. Tuple sind Datenstrukturen, die ausschließlich gelesen werden können.
+
+Ein Tuple wird mit folgender Syntax erzeugt:
+\lstinputlisting{chapters/basics/src/tuple/TupleInit.py}
+\label{collections:lst:tupleinit}
+
+Es ist möglich, leere Tuple zu erzeugen. Wie zuvor erwähnt, ist deren Inhalt unveränderlich.
+
+\subsubsection{Arbeiten mit einem Tuple}
+\label{collections:sec:workwithtuple} 
+
+Der Inhalt eines Tuple kann, analog zur List, auf der Konsole ausgegeben werden. Das Zuweisen eines neuen Objekts mittels Index führt im Gegensatz zur List zu einem Fehler.
+\lstinputlisting{chapters/basics/src/tuple/TupleIndex.py}
+\label{collections:lst:tupleindex}    
+    
+Die Verwendung der Operatoren \lstinline$in$ und \lstinline$not in$ ist, wie die \lstinline$len()$-Methode, analog zur List-Datenstruktur.
+\lstinputlisting{chapters/basics/src/tuple/TupleInLen.py}
+\label{collections:lst:tupleinlen} 
+    
+Das \lstinline$del$-Statement erlaubt das Löschen des Tuple. Aufgrund der Unveränderbarkeit der Datenstruktur können keine einzelnen Elemente entfernt werden.
+\lstinputlisting{chapters/basics/src/tuple/TupleDelete.py}
+\label{collections:lst:tupledelete}      
+
+\subsubsection{Methoden eines Tuple}
+\label{collections:sec:tuplemethodes}
+\randnotiz{Tuple-Methoden}
+
+\textbf{count():}
+Liefert die Anzahl des gewählten Werts in einem Tuple.
+\lstinputlisting{chapters/basics/src/tuple/TupleCount.py}    
+\label{collections:lst:tuplecount}  
+
+\textbf{index():}
+Liefert die Position des ersten Werts, der mit dem spezifizierten Wert übereinstimmt.
+\lstinputlisting{chapters/basics/src/tuple/TupleIndexMethode.py}
+\label{collections:lst:tupleindexmethode}  
+
+\subsection{Set}
+\label{collections:sec:set}
+\randnotiz{Set} 
+
+Ein Set ist durch das Hinzufügen oder Entfernen von Objekten veränderbar und erlaubt keine Duplikate. Das Initialisieren mit mehrfach identischen Werten führt nicht zu einem Fehler, jedoch werden die überzähligen Werte aus dem Set entfernt. Die enthaltenen Elemente sind unveränderlich. Zudem ist die Datenstruktur ungeordnet, weshalb nicht auf einzelne Objekte mittels Index zugegriffen werden kann. 
+
+Ein Datenbehälter vom Typ Set kann mit folgender Syntax erzeugt werden:
+\lstinputlisting{chapters/basics/src/set/SetInit.py}
+\label{collections:lst:setinit}  
+    
+\subsubsection{Arbeiten mit Sets}
+\label{collections:sec:workwithset}
+Bei der Ausgabe eines Set auf der Konsole ist die Reihenfolge der Elemente nicht garantiert. 
+
+% Wird der Inhalt eines Sets auf der Konsole ausgegeben, erscheint die Reihenfolge der Elemente willkürlich, da diese nicht geordnet sind.
+% Der Inhalt eines Sets ist nicht geordnet. Dies führt zu einer willkürlichen Reihenfolge der Elemente auf der Konsole. 
+% "in"
+
+Die Syntax für die Ausgabe auf der Konsole ist analog zur List. Die Verwendung eines Index ist nicht erlaubt und führt zu einem Fehler.
+\lstinputlisting{chapters/basics/src/set/SetPrint.py}
+\label{collections:lst:setprint} 
+ 
+%\newpage
+\subsubsection{Methoden eines Sets}
+\label{collections:sec:setmethodes} 
+\randnotiz{Set-Methoden}
+
+\textbf{add():}
+Fügt dem Set ein Objekt hinzu.
+\lstinputlisting{chapters/basics/src/set/SetAdd.py}   
+\label{collections:lst:setadd}  
+
+\textbf{clear():}
+Entfernt alle Elemente aus dem Set.
+\lstinputlisting{chapters/basics/src/set/SetClear.py}
+\label{collections:lst:setclear}     
+
+\textbf{copy():}
+Liefert eine Kopie des Sets.
+\lstinputlisting{chapters/basics/src/set/SetCopy.py}
+\label{collections:lst:setcopy}     
+
+\textbf{difference():}
+Liefert ein Set, das diejenigen Elemente enthält, die ausschließlich in \lstinline$setX$ vorkommen. Alle Element, die mit denen von \lstinline$setY$ übereinstimmen, werden aus dem ersten entfernt. Alternativ ist dies auch über den Operator \lstinline$-$ möglich.
+\lstinputlisting{chapters/basics/src/set/SetDifference.py}
+\label{collections:lst:setdifference} 
+    
+\textbf{difference\_update():}
+Entfernt diejenigen Elemente aus dem ersten Set, die mit denen aus dem zweiten übereinstimmen.
+\lstinputlisting{chapters/basics/src/set/SetDifferenceUpdate.py}
+\label{collections:lst:setdifferenceupdate}  
+ 
+%\newpage
+\textbf{discard():}
+Entfernt das gewählte Element aus dem Set. Duplikate werden ebenfalls entfernt.
+\lstinputlisting{chapters/basics/src/set/SetDiscard.py}
+\label{collections:lst:setdiscard} 
+
+\textbf{intersection():}
+Liefert ein Set mit der Schnittmenge zweier Sets. Alternativ ist dies auch mit der Angabe des \lstinline$&$-Operators möglich.
+\lstinputlisting{chapters/basics/src/set/SetIntersection.py}
+\label{collections:lst:setintersection} 
+
+\textbf{intersection\_update():}
+Entfernt alle Elemente, die sich nicht in der Schnittmenge beider Sets befinden.
+\lstinputlisting{chapters/basics/src/set/SetIntersectionUpdate.py}
+\label{collections:lst:setintersectionupdate} 
+    
+\textbf{isdisjoint():}
+Gibt Auskunft darüber, ob zwei Sets eine Schnittmenge besitzen. Liefert \lstinline$True$, wenn kein Element des ersten Sets im zweiten enthalten ist.
+\lstinputlisting{chapters/basics/src/set/SetIsDisJoint.py}
+\label{collections:lst:setisdisjoint} 
+    
+\textbf{issubset():}
+Gibt an, ob das gewählte Set eine Teilmenge enthält, die exakt dem ersten Set entspricht. Alternativ kann das Zeichen \lstinline$<$ verwendet werden.
+\lstinputlisting{chapters/basics/src/set/SetIsSubSet.py}
+\label{collections:lst:setissubset} 
+    
+\textbf{pop():}
+Entfernt ein beliebiges Element aus dem Set. Sollte das Set leer sein, wird ein Fehler generiert.
+\lstinputlisting{chapters/basics/src/set/SetPop.py}
+\label{collections:lst:setpop} 
+    
+\textbf{remove():}
+Entfernt das gewählte Element aus dem Set. Sollte das gewählte Element nicht in dem Set enthalten sein, wird ein Fehler angezeigt.
+\lstinputlisting{chapters/basics/src/set/SetRemove.py}
+\label{collections:lst:setremove} 
+    
+\textbf{symmetric\_difference():}
+Liefert ein Set, das die Vereinigung zweier Sets ohne deren Schnittmenge enthält.
+\lstinputlisting{chapters/basics/src/set/SetSymDiff.py}
+\label{collections:lst:setsymdiff} 
+    
+\textbf{symmetric\_difference\_update():}
+Vereinigt zwei Sets und entfernt deren Schnittmenge.%TODO
+\lstinputlisting{chapters/basics/src/set/SetSymDiffUpdate.py}
+\label{collections:lst:setsymdiffupdate} 
+    
+\textbf{union():}
+Liefert ein Set, das die Vereinigung zweier Sets darstellt. Duplikate werden entfernt.
+\lstinputlisting{chapters/basics/src/set/SetUnion.py}
+\label{collections:lst:setunion} 
+    
+\textbf{update():}
+Fügt einem Set die Items eines anderen hinzu. Duplikate werden entfernt.
+\lstinputlisting{chapters/basics/src/set/SetUpdate.py}
+\label{collections:lst:setupdate} 
+    
+\subsubsection{Frozenset}
+\label{collections:sec:frozenset}
+\randnotiz{Frozenset}
+
+Im Gegensatz zu einem \glqq{}normalen\grqq{} Set kann ein Frozenset nicht mehr verändert werden. Das Hinzufügen eines neuen Elements ist nicht erlaubt und führt zu einem Fehler.
+\lstinputlisting{chapters/basics/src/set/FrozenSet.py}
+\label{collections:lst:setfrozen} 
+
+\subsection{Dictionary}
+\label{collections:sec:dictionary}
+\randnotiz{Dictionary} 
+
+Ein Dictionary ist eine ungeordnete, veränderbare Datenstruktur, die keine Duplikate erlaubt und Schlüssel-Objekt-Paare beinhaltet. Auch beim Dictionary ist die Reihenfolge der Ausgabe nicht garantiert, denn ein Dictionary besitzt keine Ordnung.
+
+Ein Datenbehälter vom Typ Dictionary kann mit folgender Syntax erzeugt werden:
+\lstinputlisting{chapters/basics/src/dictionary/DictInit.py}
+\label{collections:lst:dictinit}
+
+Demnach befindet sich hinter dem Schlüssel \lstinline$k1$ das Objekt \lstinline$v1$ und analog dazu die weiteren Schlüssel-Objekt-Paare. Über den Schlüssel \lstinline$k1$ lässt sich auf das Objekt \lstinline$v1$ direkt zugreifen. Ebenso kann ein neues Objekt unter dem Schlüssel \lstinline$k1$ zugewiesen werden.
+\lstinputlisting{chapters/basics/src/dictionary/DictPrint.py}
+\label{collections:lst:dictprint}
+
+Eine alternative Möglichkeit, ein Dictionary zu erstellen, ist die Methode \lstinline$zip()$. Mit deren Hilfe kann aus zwei separaten List-Behältern ein Dictionary generiert werden.
+\lstinputlisting{chapters/basics/src/dictionary/DictZip.py}
+\label{collections:lst:dictzip}
+
+% TODO
+% \subsubsection{Arbeiten mit Dictionaries}
+% "in"
+% Ausgaebe
+% Values ändern
+
+%\newline 
+\subsubsection{Methoden eines Dictionary}
+\label{collections:sec:dictionarymethodes}
+\randnotiz{Dictionary-Methoden}
+
+\textbf{clear():}
+Entfernt alle Einträge aus dem Dictionary.
+\lstinputlisting{chapters/basics/src/dictionary/DictClear.py}
+\label{collections:lst:dictclear}
+
+\textbf{copy():}
+Liefert eine Kopie des Dictionary.
+\lstinputlisting{chapters/basics/src/dictionary/DictCopy.py}
+\label{collections:lst:dictcopy}
+
+\textbf{fromkeys():}
+Liefert ein Dictionary mit den angegebenen Schlüsseln und Objekten.
+\lstinputlisting{chapters/basics/src/dictionary/DictFromKeys.py}
+\label{collections:lst:dictfromkeys}
+
+\textbf{get():}
+Liefert das Objekt, das dem angegebenen Schlüssel zugeordnet ist.
+\lstinputlisting{chapters/basics/src/dictionary/DictGet.py}
+\label{collections:lst:dictget}
+
+\textbf{items():}
+Liefert eine List mit einem Tuple für jedes Schlüssel-Objekt-Paar.
+\lstinputlisting{chapters/basics/src/dictionary/DictItems.py}
+\label{collections:lst:dictitems}
+
+\textbf{keys():}
+Liefert eine List von allen im Dictionary verwendeten Schlüsseln.
+\lstinputlisting{chapters/basics/src/dictionary/DictKeys.py}
+\label{collections:lst:dictkeys}
+
+\textbf{pop():}
+Entfernt das Element mit dem entsprechenden Schlüssel aus dem Dictionary und liefert das Objekt zurück.
+\lstinputlisting{chapters/basics/src/dictionary/DictPop.py}
+\label{collections:lst:dictpop}
+
+\textbf{popitem():}
+Liefert das zuletzt hinzugefügte Schlüssel-Objekt-Paar als Tuple und entfernt es aus dem Dictionary.
+\lstinputlisting{chapters/basics/src/dictionary/DictPopItem.py}
+\label{collections:lst:dictpopitem}
+
+\textbf{setdefault():}
+Liefert das dem Schlüssel zugeordneten Objekt. Existiert dieser Schlüssel nicht, wird ein neues Schlüssel-Objekt-Paar mit dem angegebenen Schlüssel und Objekt angelegt.
+\lstinputlisting{chapters/basics/src/dictionary/DictSetDefault.py}
+\label{collections:lst:dictsetdefault}
+
+\textbf{update():}
+Fügt dem Dictionary ein Schlüssel-Objekt-Paar hinzu.
+\lstinputlisting{chapters/basics/src/dictionary/DictUpdate.py}
+\label{collections:lst:dictupdate}
+
+\textbf{values():}
+Liefert eine Liste mit allen im Dictionary enthaltenen Werten.
+\lstinputlisting{chapters/basics/src/dictionary/DictValues.py}
+\label{collections:lst:dictvalues}
+
+\uebung
+
+Abschließend soll das in diesem Kapitel erlangte Wissen über Collections in Übungen angewandt und vertieft werden. Hierbei liegt der Fokus bei den Datentypen List, Tuple, Set und Dictionary.
+
+\aufgabe{Collections/CollectionsAufgabe1List}
+\label{collections:task1List}
+\aufgabe{Collections/CollectionsAufgabe2List}
+\label{collections.task2List}
+\aufgabe{Collections/CollectionsAufgabe1Tuple}
+\label{collections:task1Tuple}
+\aufgabe{Collections/CollectionsAufgabe2Tuple}
+\label{collections:task2Tuple}
+\aufgabe{Collections/CollectionsAufgabe1Set}
+\label{collections:task1Set}
+\aufgabe{Collections/CollectionsAufgabe1Dictionary}
+\label{collections:task1Dictionary}

@@ -1,0 +1,10 @@
+Die von \lstinline$Process$ erbende Klasse muss die \lstinline$run()$-Methode überschreiben.
+Um den Namen und die PID auszugeben, können die Attribute \lstinline$name$ und \lstinline$pid$
+genutzt werden.
+
+\lstinputlisting[language=Python,linerange={1-2,5-9}]{exercises/src/nebenlaufigkeit11.py}
+
+Zum Wählen der Startmethode kann  \lstinline$set_start_method()$ aufgerufen werden.
+In einer \lstinline$for$-Schleife können 10 Objekte der eigenen Klasse erzeugt und gestartet werden.
+
+\lstinputlisting[language=Python,linerange={1-2,10-15}]{exercises/src/nebenlaufigkeit11.py}

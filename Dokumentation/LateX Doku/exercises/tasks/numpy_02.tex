@@ -1,0 +1,25 @@
+Erzeugen Sie das Numpy-Array \lstinline![0, 1, 2, 3, 4, 5]! mit verschiedenen
+Methoden:
+
+\begin{enumerate}
+	\item Umwandeln einer \lstinline!list!.
+	\item Umwandeln eines \lstinline!tuple!.
+	\item Umwandeln eines \lstinline!range!.
+	\item Mittels \lstinline!np.arange()!.
+	\item Aus der Funktion \lstinline!f = lambda x: x!.
+	\item Aus der Generatorfunktion \lstinline!natural_numbers()!.
+	\begin{lstlisting}
+def natural_numbers():
+    i = 0
+    while True:
+        yield i
+        i += 1
+	\end{lstlisting}
+	\item Per Manipulation eines zuvor definierten Arrays:
+	\begin{enumerate}
+		\item Erzeugt mit \lstinline!np.empty()!.
+		\item Erzeugt mit \lstinline!np.ones()!.
+		\item Erzeugt mit \lstinline!np.zeros()!.
+		\item Erzeugt mit \lstinline!np.full()!.
+	\end{enumerate}
+\end{enumerate}

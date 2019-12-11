@@ -1,0 +1,112 @@
+% !TeX root = ../../pythonTutorial.tex
+\section{Input-Parameter}
+\label{inputParameterFunctions}
+In diesem Abschnitt sehen wir uns die verschiedenen Arten von Übergabeparametern genauer an, sowie die Möglichkeiten, diese an eine Funktion zu übergeben.
+
+\begin{lstlisting}[language=Python, label=inputParameterFunctions:lst:primitiveParameter]
+# Übergabe eines primitiven Datentyps
+
+def myFunction(x):
+    x = 1
+  
+x = 2
+myFunction(x)
+print(x)
+
+# Ausgabe:
+# 2
+\end{lstlisting}
+
+Mittels Codes (\ref{inputParameterFunctions:lst:primitiveParameter}) wird der Wert '2' ausgedruckt. Aus dem vorherigen Abschnitt über Gültigkeitsbereiche wissen wir, dass es sich hierbei - trotz gleichem Namen - um zwei verschiedene Variablen handelt. Eine Integer-Variable im lokalen und eine im globalen Gültigkeitsbereich. Dies gilt jedoch nur für primitive Datentypen, für nicht-primitive Datentypen verhält es sich anders.
+
+\begin{lstlisting}[language=Python, label=inputParameterFunctions:lst:nonPrimitiveParameter]
+# Übergabe eines nicht-primitiven Datentyps
+
+def myFunction(x)
+    x[0] = 100
+  
+x = [0,1,2]
+myFunction(x)
+print(x)
+\end{lstlisting}
+
+Da es sich hier (\ref{inputParameterFunctions:lst:nonPrimitiveParameter}) nicht um einen primitiven Datentyp handelt, stellt der Input-Parameter eine Referenz dar, womit der Wert von x auch in der Methode geändert wird. Beim Ausgeben erhalten wir: \lstinline$[100,1,2]$.
+
+Es ist wichtig, sich dieses Verhalten zu merken, da beim objekt-orientierten Programmieren sonst Fehler auftreten.
+
+\kontrollfrage{
+	\item[\kontroll] Unter welcher Voraussetzung führen Änderungen eines Übergabeparameters innerhalb einer Funktion zu Änderungen außerhalb?
+	\item[\kontroll] Welche nicht-primitiven Datentypen kennen wir?
+}
+
+\subsection{Arten von Input-Parametern}
+\label{inputParameterFunctions:subsection:inputParameter}
+In folgendem Unterabschnitt gehen wir auf verschiedene Arten von Input-Parametern ein.
+
+
+Diese Art von Parametern dürfte bereits bekannt sein.\randnotiz{Positional} Es handelt sich um eine endliche Anzahl von Parametern, die man von links nach rechts liest.
+
+\begin{lstlisting}[language=Python, label=inputParameterFunctions:lst:positionalParameter]
+# Funktion mit positionalen Parametern
+
+def myFunction(x,y,z):
+    ...
+    myFunction(1,2,3)
+\end{lstlisting}
+
+
+Bei \randnotiz{Schlüsselwort} Schlüsselwort-Parametern ist die Reihenfolge der Parameter nicht elementar, da die Variablen über den Namens-Wert übergeben werden.
+
+\warning{Bei der Verwendung von positionalen und Schlüsselwort-Parametern, müssen positionale Parameter immer links der Schlüsselwort-Parameter stehen.}
+
+\begin{lstlisting}[language=Python, label=inputParameterFunctions:lst:keywordParameter]
+# Funktion mit Schlüsselwort-Parametern
+
+def myFunction(x,y,z):
+    ...
+    myFunction(x = 1, z = 3, y = 2)
+\end{lstlisting}
+
+Standard-Parameter \randnotiz{Standard} folgen einer ähnlichen Syntax wie Schlüssel"-wort-Para"-meter, sie werden jedoch in der Funktionsdefinition festgelegt und nicht beim Aufruf.
+Zu beachten ist, dass beim Verwenden von positionalen und Standard-Parametern alle Standard-Parameter \emph{nach} den positionalen stehen müssen.
+
+\begin{lstlisting}[language=Python, label=inputParameterFunctions:lst:standardParameter]
+# Funktion mit Standard-Parametern
+
+def myFunction(x, y = 10, z = 20):
+    print(x, y, z)
+
+myFunction(0)                       # 0 10 20
+myFunction(y = 20, x = 10, z = 30)  # 10 20 30
+myFunction(0, z = 1)                # 0 10 1
+\end{lstlisting}
+
+\label{inputParameterFunctions:subsection:multipleParameter}
+Variable Parameter \randnotiz{Variable} ermöglichen quasi eine unendliche Anzahl an Übergabe-Parametern.
+Möchte ein Nutzer beispielsweise den Durchschnitt mehrerer Zahlen wissen, so könnte die
+Funktion wie folgt aussehen:
+
+\begin{lstlisting}[language=Python, label=inputParameterFunctions:lst:restParameter]
+# Funktion mit variablen Parametern
+
+def average(*numbers):
+    value = 1
+    for number in numbers:
+        value = value * number
+    
+    value = value / len(numbers)
+    # durch die Anzahl an Parametern 
+    return value
+
+result = average(5, 5, 10, 8, 2)
+print(result) # druckt das Ergebnis 6
+\end{lstlisting}
+
+Die multiplen Parameter werden als Liste gehandhabt.
+Bei der Definition von variablen Parametern in einer Funktion ist es wichtig, dass sie als letztes Argument stehen.
+
+\kontrollfrage{
+	\item[\kontroll] Worin liegt der Unterschied zwischen Standard- und Schlüsselwort-Parametern?
+	\item[\kontroll] Worauf ist bei gleichzeitiger Nutzung von positionalen und Standard-Parametern zu achten?
+	\item[\kontroll] Welchen Nutzen bieten variable Parameter? Gibt es Kontrollstrukturen, bei denen sich variable Parameter anbieten?
+}

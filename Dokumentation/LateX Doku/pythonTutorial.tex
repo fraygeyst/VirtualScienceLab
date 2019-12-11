@@ -1,0 +1,162 @@
+
+% -----------------------------------------------------------------------
+% Python Tutorial
+% WS 18/19
+% -----------------------------------------------------------------------
+\documentclass[enabledeprecatedfontcommands, fontsize=12pt,
+     open=right, a4paper,
+     twoside, DIV=11,
+     abstractoff,
+     headsepline,
+     numbers=noenddot,
+     BCOR=15mm,
+     headings=standardclasses,
+     headings=big]{scrbook}
+\KOMAoptions{cleardoublepage=empty}
+% Header für Variablen
+\input{stammdaten.tex}
+%
+\input{setup}
+%
+% Schalter für das Ein- und Ausblenden der Lösungen
+\setboolean{solutions}{true}
+%
+\input{pdfsetup}
+\listfiles
+%
+% Beginn Dokument
+%
+\begin{document}
+\titelseiteMitBild{\theTitle{}}
+%
+% Vorwort
+%
+\input{./chapters/vorwort.tex}
+%
+% Inhaltsverzeichnis
+%
+\tableofcontents
+\clearevenpage
+\pagenumbering{arabic}
+%
+%
+%
+\input{./chapters/grundlagen.tex}
+
+\input{./chapters/inputOutput.tex}
+
+\input{./chapters/functionsAndModules.tex}
+
+\input{./chapters/testing.tex}
+
+\input{./chapters/ui.tex}
+
+\input{./chapters/bibliotheken.tex}
+
+\input{./chapters/documentation/documentation.tex}
+
+\input{./chapters/advancedTopics.tex}
+
+
+
+
+
+%
+% Literatur
+%
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{Literaturverzeichnis}
+\chaptermark{Literaturverzeichnis}
+\sectionmark{Literatur}\label{literatur}
+\bibliography{./bib/literatur}
+%
+% Anhang
+%
+\appendix
+
+\chapter{Lösungshinweise}\label{solhinweise}
+Hier finden sich die Lösungshinweise zu den Aufgaben.
+
+\section{Lösungen zu Grundlagen}
+\hinweis{grundlagen01}
+\hinweis{grundlagen02}
+
+\section{Lösungen zu Datentypen und Kontrollstrukturen}
+\hinweis{DatatypesAufgabe1}
+\hinweis{ifelseAufgabe1}
+\hinweis{KontrollstrukturenAufgabe1}
+\hinweis{exceptionhandling01}
+\hinweis{exceptionhandling02}
+\hinweis{exceptionhandling03}
+
+\section{Lösungen zu Collections}
+\hinweis{Collections/CollectionsAufgabe1List}
+\hinweis{Collections/CollectionsAufgabe2List}
+\hinweis{Collections/CollectionsAufgabe1Tuple}
+\hinweis{Collections/CollectionsAufgabe2Tuple}
+\hinweis{Collections/CollectionsAufgabe1Set}
+\hinweis{Collections/CollectionsAufgabe1Dictionary}
+
+\section{Lösungen zu Iteratoren}
+\hinweis{iterator/iterator01}
+\hinweis{iterator/iterator02}
+
+\section{Lösungen zu Testen}
+\hinweis{testen01}
+\hinweis{testen02}
+
+\section{Lösungen zu Klassen und Objekte}
+\hinweis{classesandobjects01}
+\hinweis{classesandobjects02}
+\hinweis{classesandobjects03}
+\hinweis{classesandobjects04}
+\hinweis{classesandobjects05}
+
+\section{Lösungen zu Funktionen und Module}
+\input{./exercises/solutions/functionsAndModules/exercisesFunctionsAndModules.tex}
+
+\section{Lösungen zur Ein- und Ausgabe}
+\input{./exercises/solutions/inputOutput/exercisesInputOutput.tex}
+
+\section{Lösungen zu Benutzeroberflächen}
+\hinweis{UI_aufgabe01}
+\hinweis{UI_aufgabe02}
+\hinweis{UI_aufgabe03}
+
+\section{Lösungen zu Bibliotheken}
+\hinweis{numpy_01}
+\hinweis{numpy_02}
+
+\section{Lösungen zu Maschinelles Lernen}
+
+\input{./exercises/solutions/MachineLearning/exercises_machinelearning.tex}
+
+
+\section{Lösung zu Datenbanken}
+\hinweis{database01}
+\hinweis{database02}
+\section{Lösungen zu Nebenläufigkeit}
+\hinweis{nebenlaufigkeit01}
+\hinweis{nebenlaufigkeit02}
+\hinweis{nebenlaufigkeit03}
+\hinweis{nebenlaufigkeit04}
+\hinweis{nebenlaufigkeit05}
+\hinweis{nebenlaufigkeit06}
+\hinweis{nebenlaufigkeit07}
+\hinweis{nebenlaufigkeit08}
+\hinweis{nebenlaufigkeit09}
+\hinweis{nebenlaufigkeit10}
+\hinweis{nebenlaufigkeit11}
+\hinweis{nebenlaufigkeit12}
+\hinweis{nebenlaufigkeit13}
+%
+% Index
+%\clearevenpage
+%\phantomsection
+%\small
+%\chaptermark{Index}
+%\sectionmark{Index}
+%\printindex
+%\normalsize
+\end{document}

@@ -1,0 +1,29 @@
+In diesem Kapitel gehen wir auf das Erstellen von grafischen Benutzeroberflächen mithilfe von
+Tkinter in Python ein, welches unter macOS und Windows zum Lieferumfang von Python gehört.
+Neben dem hier behandelten GUI-Toolkit existieren dennoch weitere,
+unter anderem WxPython, PyQt und PySide, PyGTK, Kivy sowie PyFLTK.
+
+\section{Tkinter}
+\label{ui:einleitungTkinter:section:tkinter}
+
+Tk ist ein freies, plattformübergreifendes GUI-Toolkit von Scriptics
+(früher von Sun Labs entwickelt) zur Programmierung von grafischen
+Benutzeroberflächen (GUIs). Ursprünglich für die Programmiersprache Tcl
+(Tool command language) entwickelt, existieren heute Anbindungen an diverse
+Programmiersprachen.
+Unter vielen dynamischen Sprachen ist Tk das Standard-GUI und kann umfangreiche,
+ab dem Release 8.0 mit nativem Look-and-Feel versehene Anwendungen erstellen,
+die unverändert unter Windows, macOS und Linux laufen.
+
+Tkinter ist eine Sprachanbindung für das am häufigsten verwendete GUI-Toolkit
+Tk für die Programmiersprache Python.
+Der Name steht als Abkürzung für Tk interface. Tkinter war das erste GUI-Toolkit
+für Python, weshalb es inzwischen auf macOS und Windows zum Lieferumfang
+von Python gehört.
+
+Tkinter besteht aus einer Reihe von Modulen. Das Tk interface wird von einem
+binären Erweiterungsmodul namens \lstinline$_tkinter$ bereitgestellt. Dieses Modul enthält
+die Low-Level-Schnittstelle zu Tk und sollte niemals direkt von
+Anwendungsprogrammierern verwendet werden. Es handelt sich in der Regel um eine
+Shared Library (oder DLL), kann aber in einigen Fällen statisch mit dem
+Python-Interpreter verknüpft sein \cite{tkinter}.

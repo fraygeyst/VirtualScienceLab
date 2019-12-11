@@ -1,0 +1,202 @@
+% !TeX root = ../../pythonTutorial.tex
+\section{Formatierung von Strings}
+\label{formatInOut}
+
+Es wäre sicherlich hilfreich, wenn wir die String-Ausgaben nach belieben formatieren könnten. Bisher haben wir den Seperator von \lstinline$print()$ kennengelernt - dieser ist von seiner Funktionsweise jedoch stark beschränkt. Python bietet uns hierfür die \lstinline$format()$-Methode an, vorher betrachten wir aber die Modulo-Arithmetik und machen uns mit den Formatierungszeichen vertraut.
+
+Mittels Modulo-Arithmetik \randnotiz{Modulo-
+Arithmetik} leiten wir ein Formatierungszeichen ein. Dieses gilt als Platzhalter für einen Wert.
+
+\begin{lstlisting}[language=Python, label=formatInOut:lst:modulo]
+# Modulo-Arithmetik
+
+print("Körper: %s , Fläche: %f" %
+    ('Dreieck', 42.6))
+
+# Ausgabe:
+# Körper: Dreieck , Fläche: 42.6
+\end{lstlisting}
+
+Bei "'Körper"' setzen wir den ersten Platzhalter mit "'\%s"'. Die Reihenfolge der Platzhalter setzt fest, welcher Wert anschließend eingebunden wird. Der erste Platzhalter trägt also den ersten Wert, der nach dem Ausgabetext folgt, der zweite den zweiten und so weiter.
+
+\warning{Die einzusetzenden Werte werden nach dem String mittels Modulo als Tupel festgelegt!}
+
+Das Formatierungszeichen nach dem Modulo bestimmt den Datentyp des Wertes.
+Bei "'s"' handelt es sich um einen String, bei "'f"' um ein \emph{float}.
+In Tabelle \ref{formatInOut:fig:formatierungszeichen} sind die möglichen Formatierungszeichen aufgelistet.
+
+\begin{table}[ht]
+\centering
+\caption{\label{formatInOut:fig:formatierungszeichen}Formatierungszeichen und ihre Bedeutung (\cite{klein2018})}
+\small
+\begin{tabular}{l|l}\hline
+Platzhaltersymbol&Bedeutung\\\hline
+\lstinline$d$&Vorzeichenbehaftete Ganzzahl (Integer, dezimal)\\
+\lstinline$i$&Vorzeichenbehaftete Ganzzahl (Integer, dezimal)\\
+\lstinline$o$&vorzeichenlose Ganzzahlen (oktal)\\
+\lstinline$u$&vorzeichenlose Ganzzahlen (dezimal)\\
+\lstinline$x$&vorzeichenlose Ganzzahlen (hexadezimal)\\
+\lstinline$X$&vorzeichenlose Ganzzahlen (hexadezimal)\\
+\lstinline$e$&Fließkommazahl im Exponentialformal\\
+\lstinline$E$&Fließkommazahl im Exponentialformat\\
+\lstinline$f$&wie \lstinline$e$\\
+\lstinline$F$&wie \lstinline$E$\\
+\lstinline$g$&Wie \lstinline$e$, wenn der Exponent größer ist als $-4$\\
+           &oder kleiner als die Präzision. Ansonsten wie \lstinline$f$\\
+\lstinline$G$&wie \lstinline$E$ und analog zu \lstinline$g$\\
+\lstinline$c$&ein Zeichen\\
+\lstinline$s$&Eine Zeichenkette (String), beliebige Python-Objekte\\
+                 &werden in String mittel der Methode \lstinline$str()$ gewandelt.\\
+\lstinline$r$&wie \lstinline$s$\\
+\lstinline$%$&Es findet keine Konvertierung des Arguments statt,\\
+     &es wird ein \lstinline$%$-Zeichen ausgegeben\\\hline
+\end{tabular}
+\end{table}
+
+\kontrollfrage{
+    \item[\kontroll] Wir errichten einen Platzhalter \%d und geben den einzusetzenden Wert '2.3' an. Ausgegeben wird der Wert '2', wieso?
+    \item[\kontroll] Wie bestimmen wir, welcher Wert zu welchem Platzhalter gehört?}
+
+Was ist jedoch, falls die Ausgabe eine bestimmte Länge haben soll?
+Mit Hilfe der Syntax der Modulo-Arithmetik können wir dieses Problem lösen.
+
+ \begin{lstlisting}[language=Python, label=formatInOut:lst:syntax]
+ # Modulo-Arithmetik Syntax
+
+%[Flag][Minimum der Gesamtlänge].[Präzision][Typ]
+ \end{lstlisting}
+
+ Das Minimum der Gesamtlänge bringt große Vorteile mit sich, wenn wir z.B. einen linksbündigen Text ausgeben wollen. Alle Ausgaben, die kürzer als das vorgegebene Minimum sind, werden mit Leerzeichen aufgefüllt.
+
+ \warning{Es handelt sich hierbei um das Minimum der Gesamtlänge. Alle Ausgaben die größer sind, werden nicht beschränkt und in voller Länge ausgegeben!}
+
+ Mittels Punkt können wir folgend die Präzision einstellen, was bei einem \lstinline$Float$-Datentyp die Nachkommastellen bestimmt. Alle Zahlen werden zu der angegebenen Nachkommastelle aufgerundet!
+
+ \begin{lstlisting}[language=Python, label=formatInOut:lst:precision]
+ # Modulo-Arithmetik Präzision
+
+print("Eine Zahl %f" % (1.234))
+print("Eine gerundete Zahl %.2f)
+
+# Ausgabe:
+# Eine Zahl 1.234
+# Eine gerundete Zahl 1.23
+\end{lstlisting}
+
+\subsection{Formatierung mit format()}
+
+Python bietet uns für die Formatierung von String-Elementen die Methode \lstinline$format()$.
+
+ \begin{lstlisting}[language=Python, label=formatInOut:lst:formatMethod]
+# Syntax der format()-Methode
+
+string.format(par0, par1, ..., key0=val0, key1=val1, ...)
+\end{lstlisting}
+
+\lstinline$format()$ ersetzt markierte Stellen im gegebenen String durch angegebene Werte (Parameter in \lstinline$format()$) und liefert diesen zurück.
+Die Stellen werden durch geschweifte Klammern markiert und mittels Modulo-Arithmetik präzisiert. In der geschweiften Klammer geben wir als erstes den Index (oder das Schlüsselwort) des Parameters an.
+
+ \begin{lstlisting}[language=Python, label=formatInOut:lst:formatString]
+# format() mit gegebenem String
+
+str = "Hallo, {0:s} und {1:s}"
+print(str.format("Rainer", "Denis"))
+# Ausgabe:
+# Hallo, Rainer und Denis
+
+print(str)
+# Ausgabe:
+# Hallo, {0:s} und {1:s}
+
+# format() verändert den String nicht,
+# sondern liefert den veränderten Wert zurück
+
+str = str.format("Rainer", "Denis")
+print(str)
+# Ausgabe:
+# Hallo, Rainer und Denis
+
+# der Wert von 'str' wurde durch den Rückgabewert
+# von format() überschrieben!
+
+str = "Hallo, {1:s} und {0:s}"
+str.format("Rainer", "Denis")
+print(str)
+# Ausgabe:
+# Hallo, Denis und Rainer
+
+# in 'str' wurde der angegebene Index vertauscht
+
+str = "Hallo, {r:s} und {d:s}"
+print(str.format(r = "Rainer", d ="Denis"))
+# Ausgabe:
+# Hallo, Rainer und Denis
+
+# Angabe von Schlüsselwort-Parametern
+\end{lstlisting}
+
+\warning{Möchte man geschweifte Klammern ausgeben, dann werden diese doppelt geschrieben ("'\{\{"' und "'\}\}"')}
+
+Die \lstinline$format()$-Methode bietet uns außerdem Ausrichtungsoptionen, was zu besserer Lesbarkeit beitragen kann. Somit können wir bspw. Werte links- oder rechtsbündig ausgeben. Hierfür gibt man die Formatierungsanweisung wie in Tabelle \ref{formatInOut:leftRight} an und den Wert des Abstandes bzw. der Größe des Platzhalters. Ist das Wort zu kurz, wird der restliche Platz mit Leerzeichen aufgefüllt.
+
+\begin{table}[h]
+\centering
+\caption{\label{formatInOut:leftRight}Links- und rechtsbündiger Text}
+\begin{tabular}{|c | p{8cm}|}
+    \hline
+    Formatierungsanweisung & Bedeutung \\
+    \hline
+    < & Text wird linksbündig ausgelegt \\
+    > & Text wird rechtsbündig ausgelegt \\
+    \hline
+\end{tabular}
+\end{table}
+
+\begin{lstlisting}[language=Python, label=formatInOut:lst:formatAlignment]
+# Ausrichtung mit Formatierungsanweisung
+
+# linksbündig
+str = "{0:<10s} {1:d}"
+print(str.format("Viereck", 4))
+print(str.format("Fünfeck", 5))
+print(str.format("Sechseck", 6))
+
+# Ausgabe:
+# Viereck    4
+# Fünfeck    5
+# Sechseck   6
+
+
+# rechtsbünding
+str = "{0:>10s} {1:d}"
+print(str.format("Viereck", 4))
+print(str.format("Fünfeck", 5))
+print(str.format("Sechseck", 6))
+
+# Ausgabe:
+#    Viereck 4
+#    Fünfeck 5
+#   Sechseck 6
+\end{lstlisting}
+
+Python bietet uns für \lstinline{Dictionaries} einen einfachen Weg, diese mittels \lstinline$format()$ und der Nutzung von Schlüsselwort-Parametern, auszugeben.
+
+\begin{lstlisting}[language=Python, label=formatInOut:lst:formatDict]
+# Formatierung eines Dictionarys
+
+dictMath = {"Dreieck" : "3",
+       "Viereck" : "4",
+       "Fünfeck" : "5",
+
+str = "{body}: {corners}"
+
+for geoBody in dictMath
+    print(str.format(body=geoBody,
+                     corners=dictMath[geoBody]))
+
+# Ausgabe:
+# Dreieck: 3
+# Viereck: 4
+# Fünfeck: 5
+\end{lstlisting}
+

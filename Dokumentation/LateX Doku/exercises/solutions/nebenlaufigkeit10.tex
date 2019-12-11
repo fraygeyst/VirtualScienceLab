@@ -1,0 +1,20 @@
+\begin{enumerate}
+\item Der Konstruktor von \lstinline$Queue$ kann mit dem Wert 20 aufgerufen werden, um die Größe zu
+begrenzen.
+Anschließen kann durch Iterieren in einer \lstinline$for$-Schleife der \lstinline$Queue$ befüllt werden.
+
+\item Bei der Erzeugung der Threads ist es wichtig, die Dämon-Eigenschaft zu setzen.
+Andernfalls beendet sich das Programm nicht, sobald sich der Main-Thread beendet.
+Zur Implementierung der Threads ist es ausreichend in einer \lstinline$while$-Schleife ein Element
+aus dem übergebenen \lstinline$Queue$ zu lesen und das Quadrat auszugeben.
+Es ist wichtig, \lstinline$task_done()$ nach der Ausgabe aufzurufen, da ansonsten der Main-Thread 
+blockiert bleibt.
+
+\item Wurden die Threads gestartet, muss \lstinline$join()$ auf der \lstinline$Queue$ im Main-Thread
+aufgerufen werden.
+Nach dem Aufruf kann eine weitere Ausgabe getätig werden, um das Geschehen in der Konsole besser
+nachzuvollziehen.
+\end{enumerate}
+
+\lstinputlisting[language=Python,linerange={1-2,7-25}]{exercises/src/nebenlaufigkeit10.py}
+

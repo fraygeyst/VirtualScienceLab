@@ -1,0 +1,77 @@
+% !TeX root = ../../pythonTutorial.tex
+\section{Vorteile von Funktionen}
+\label{benefitsFunctions}
+Warum benutzen Programmierer Funktionen? Diese bieten eine Vielzahl an Vorteilen, wie z.B.
+
+\begin{itemize}
+	\item das Aufteilen von komplexen Aufgaben in mehrere simple
+	\item das Verhindern von Code-Duplikationen
+	\item bessere Lesbarkeit/Erweiterbarkeit/Veränderbarkeit
+	\item vereinfachtes Debugging
+\end{itemize}
+
+\subsection{Aufteilen von komplexen Aufgaben}
+\label{benefitsFunctions:subsection:splitComplexTask}
+Bei komplexen Aufgaben kommt es schnell zu einer hohen Anzahl an
+Code-Zeilen. Das kann für den Programmierer und die Kollegen, die an den Aufgaben mitwirken, problematisch sein.
+Der Code ist schlecht zu lesen und die Fehlersuche schwierig.
+Schritte, die immer wieder gebraucht werden, wie z.B. das Empfangen, Auslesen, Interpretieren und Aufbereiten von Daten. Anfänger könnten den Fehler machen, diese Aufgaben in einer großen komplexen Funktion zu schreiben.
+
+\begin{lstlisting}[language=Python, label=benefitsFunctions:lst:badComplexFunction]
+# Beispiel für schlechten Umgang mit komplexen Prozessen
+
+def processData(source):
+    ...
+    return finalData
+\end{lstlisting}
+
+Es ist mühsam herauszufinden, was genau in dieser Funktion passiert.
+Ein Beispiel zum Aufteilen des Code-Blocks könnte weiterhelfen.
+
+\begin{lstlisting}[language=Python, label=benefitsFunctions:lst:goodComplexFunction]
+# Aufteilung des komplexen Prozesses
+# in mehrere kleine Prozesse
+
+def processData(source):
+    rawData = readData(source)
+    parsedData = parseData(rawData)
+    editedData = editData(parsedData)
+    finalData = sortData(editedData)
+    return finalData
+\end{lstlisting}
+
+\kontrollfrage{
+	\item[\kontroll] Was sind die Vorteile, die beim Aufteilen von komplexen Aufgaben in mehrere simple auftreten?
+	\item[\kontroll] Welche Voraussetzungen finden Sie geeignet, um zu beschließen, dass eine Funktion nicht weiter aufgeteilt werden sollte?
+}
+
+\subsection{Reduktion von Code-Duplikationen}
+\label{benefitsFunctions:subsection:codeDuplication}
+Bestimmte Prozesse werden beim Programmieren immer wieder benötigt.
+Bei der Arbeit mit Datensätzen ist es üblich, diese nach gewissen Kriterien zu sortieren. 
+In einer Datenbank ist die Sortierung nach der Identifikationsnummer vorteilhaft.
+Diese \emph{Funktion} soll nicht für jeden Datensatzaufruf dupliziert werden müssen.
+Daher wird dieser Prozess in einer Funktionen gespeichert, auf die wir von verschiedenen Positionen im Programm zugreifen können.
+
+\subsection{Bessere Lesbarkeit, Erweiterbarkeit, Veränderbarkeit}
+\label{benefitsFunctions:subsection:benefits}
+Wie in Unterabschnitt \ref{benefitsFunctions:subsection:splitComplexTask} zu sehen ist, bringt das Aufteilen des Codes in spezifische Funktionen eine bessere Lesbarkeit mit sich.
+Der Nutzer muss den Code nicht erst interpretieren. Bei intelligent gewählten Funktionsnamen versteht er, was in der Funktion passiert. Besonders beim Debuggen kann das Vorteile mit sich bringen, da der Programmierer nicht an den falschen Stellen suchen muss.
+\begin{lstlisting}[]
+array = calculateArray()
+
+sortedArray = quickSort(array)
+\end{lstlisting}
+
+In diesem Beispiel weiß der Nutzer, dass das Array durch einen QuickSort-Algorithmus sortiert wird.
+Sollte nun auffallen, dass es sich um falsche Werte handelt, muss der Programmierer nur die calculateArray-Funktion ansehen, sind die Werte falsch sortiert, so wird die quickSort-Funktion
+näher betrachtet.
+
+Durch das Kapseln von Prozessen in einzelne Funktionen sind diese auch einfach erweiterbar und veränderbar.
+Wäre der Code nur dupliziert worden, müsste der Nutzer diesen an allen Stellen ändern.
+Da das Programm aber an diesen Stellen nur die Funktion aufruft, muss nur diese Funktion erweitert oder verändert werden.
+
+\kontrollfrage{
+	\item[\kontroll] Welchen Vorteil bietet das Auslagern von Code-Duplikationen in eine Funktion? Denken Sie dabei daran, dass Code immer unter der Voraussetzung geschrieben werden sollte, dass er in Zukunft nochmal geändert oder erweitert werden muss.
+}
+

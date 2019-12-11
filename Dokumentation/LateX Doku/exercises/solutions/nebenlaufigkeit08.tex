@@ -1,0 +1,13 @@
+Der Konstruktor um \lstinline$Car$ muss um einen neuen Parameter erweitert werden, welcher eine
+\lstinline$Barrier$ erwartet.
+Diese \lstinline$Barrier$ muss in einem neuen Attribut gespeichert werden.
+In der \lstinline$run()$-Methode muss vor der \lstinline$while$-Schleife die \lstinline$wait()$-Methode der
+\lstinline$Barrier$ aufgerufen werden.
+
+\lstinputlisting[language=Python,linerange={1-2,27-53}]{exercises/src/nebenlaufigkeit08.py}
+
+Bevor alle \lstinline$Car$-Objekte erzeugt werden, muss eine \lstinline$Barrier$ initialisiert werden.
+Ihr muss die Anzahl der erzeugten \lstinline$Cars$ mitgegeben werden.
+Im Konstruktoraufruf von \lstinline$Car$ muss der neue Parameter ergänzt werden.
+
+\lstinputlisting[language=Python,linerange={1-2,55-62}]{exercises/src/nebenlaufigkeit08.py}
