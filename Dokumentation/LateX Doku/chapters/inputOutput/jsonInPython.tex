@@ -1,0 +1,40 @@
+% !TeX root = ../../pythonTutorial.tex
+\section{JSON}
+\label{filehandling:section:json}
+
+JavaScript Object Notation (JSON) ist ein Format für den Austausch von Daten, das unabhängig von der Programmiersprache ist. Aufgrund von Konventionen,
+die dieses Format mit Programmiersprachen aus der C-Familie, wie C, C++, Java oder Python teilt, liefert es eine Programmierern bekannte Textstruktur.
+
+In Python 3 ist nativ das json-Package enthalten, das das Arbeiten mit
+dem JSON-Format ermöglicht. Mithilfe des folgenden Codes binden wir das Package in das Projekt ein. 
+\lstinputlisting[language=Python, linerange={1-1,3-5}]{chapters/inputOutput/src/jsonInPython/JsonInPython.py}
+\label{filehandling:lst:importpackage}
+
+Ein gegebener JSON-String wird über die \lstinline$loads()$-Methode in ein in Python existierendes, entsprechendes Objekt geparst.
+In diesem Fall wird ein Dictionary angelegt.
+\randnotiz{JSON zu Python}
+\lstinputlisting[language=Python, linerange={1-1,7-19}]{chapters/inputOutput/src/jsonInPython/JsonInPython.py}
+\label{filehandling:lst:loads}
+
+Für das Umwandeln eines Python-Objekts in einen JSON-String verwenden wir die 
+\lstinline$dumps()$-Methode.
+\randnotiz{Python zu JSON}
+\lstinputlisting[language=Python, linerange={1-1,21-35}]{chapters/inputOutput/src/jsonInPython/JsonInPython.py}
+\label{filehandling:lst:dumps}
+
+Konvertieren wir Python- zu JSON-Objekte, werden diese im\\
+JSON-Äquivalent (JavaScript) angelegt.
+
+Wenn wir einen Dictionary mit mehreren Schlüssel-Objekt-Paaren anlegen,
+werden wir bei der Ausgabe des JSON-Objekts feststellen, dass diese auf eine Zeile beschränkt sind. 
+\lstinputlisting[language=Python, linerange={1-1,37-55}]{chapters/inputOutput/src/jsonInPython/JsonInPython.py}
+\label{filehandling:lst:format1}
+
+Zur Formatierung unserer Ausgabe verwenden wir die \lstinline$dumps()$-Methode.
+Mithilfe des \lstinline$indent$-Parameters können wir festlegen, ob und wie weit die Textstruktur eingerückt werden soll. 
+Der \lstinline$separators$-Parameter legt die\\
+Trennzeichen fest und mit \lstinline$sort_keys=True$ wird die Ausgabe der Schlüssel lexikografisch sortiert.
+\lstinputlisting[language=Python, linerange={1-1,37-37,56-81}]{chapters/inputOutput/src/jsonInPython/JsonInPython.py}  
+\label{filehandling:lst:format2}
+
+

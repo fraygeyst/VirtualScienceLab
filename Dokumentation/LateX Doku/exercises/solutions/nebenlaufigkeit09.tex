@@ -1,0 +1,14 @@
+Anstelle der \lstinline$Barrier$ soll der Konstruktor der \hyperref[threads:lst:auto]{\lstinline$Car$-Klasse}
+eine \lstinline$Event$ erwarten.
+In der \lstinline$run()$-Methode muss nun die \lstinline$Barrier$ durch das \lstinline$Event$ ausgetauscht
+werden.
+Es wird weiterhin die \lstinline$wait()$-Methode aufgerufen.
+Der Aufruf des \hyperref[threads:lst:auto]{\lstinline$Car$-Konstruktors} muss entsprechend angepasst
+werden.
+
+\lstinputlisting[language=Python,linerange={1-2,27-53}]{exercises/src/nebenlaufigkeit09.py}
+
+Nachdem alle \hyperref[threads:lst:auto]{\lstinline$Car$-Objekte} erstellt wurden, muss \lstinline$set()$
+auf dem \lstinline$Event$ aufgerufen werden.
+
+\lstinputlisting[language=Python,linerange={1-2,55-63}]{exercises/src/nebenlaufigkeit09.py}

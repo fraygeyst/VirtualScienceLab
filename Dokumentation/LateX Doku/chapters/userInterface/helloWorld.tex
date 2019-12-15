@@ -1,0 +1,38 @@
+\section{Hello World mit grafischer Benutzeroberfläche}
+\label{ui:helloWorld:section:helloWorldMitGrafischerBenutzeroberfläche}
+
+Um Tkinter zu initialisieren, muss ein Tk Wurzel-Element erstellt werden.
+Dabei handelt es sich um ein gewöhnliches Fenster mit einer Titelleiste und anderer Dekoration,
+die vom Betriebssystem bereitgestellt werden.
+Generell sollte nur ein Wurzel-Element für jedes Programm erstellt werden, das auf höchster
+Ebene vor allen anderen Widget-Elementen steht.
+
+Im folgenden Beispiel wird dazu ein Wurzel-Element mit dem Namen \lstinline$root$ initialisiert.
+
+\lstinputlisting[language=Python]{chapters/userInterface/src/GUI_HelloWorld.py}
+\label{ui:helloWorld:lst:lstinputlisting:gui_helloworld}
+
+Damit das Fenster mit Inhalt gefüllt werden kann, müssen dem Wurzel-Element weitere
+Widgets hinzugefügt werden. Dazu wurde ein Label mit dem Namen \lstinline$label_1$ angelegt.
+Die Parameterliste des \lstinline$Label$-Widgets nimmt als erstes Argument den Namen des Eltern- bzw. Wurzel-Elements und
+als zweites Argument den Content bzw. Inhalt des Widgets entgegen.
+
+Als nächstes benötigt Tkinter die Anweisung, wie der Inhalt das Fenster angezeigt werden soll.
+Dazu muss eine der Layout-Methoden, in diesem Fall \lstinline$label_1.grid()$, aufgerufen werden.
+Das Fenster wird erst sichtbar, sobald die Ereignisschleife \lstinline$mainloop()$ betreten wird.
+Anschließend kann das Programm wie bereits bekannt ausgeführt werden.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.8\textwidth]{images/HelloWorldGUI.png}
+	\caption{Hello World Beispiel mit grafischer Benutzeroberfläche}
+	\label{ui:helloWorld:img:helloWorldGUI}
+\end{figure}
+
+Das Programm wird nun solange ausgeführt und bleibt in der Ereignisschleife, bis das Fenster geschlossen wird.
+In dieser Schleife werden nicht nur Events wie Nutzereingaben (z.B. Mausklicks oder Tastatureingaben)
+verarbeitet, sondern auch die des Fenstersystems (z.B. Redraw-Ereignisse und Fenster-Konfigurationsmeldungen) und
+Ereignisse von Tkinter selbst.
+
+\uebung
+\aufgabe{UI_aufgabe01}

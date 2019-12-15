@@ -1,0 +1,77 @@
+% !TeX root = ../../pythonTutorial.tex
+\section{Konsoleneingabe mit input()}
+\label{inputInOut}
+
+Mit Hilfe von \lstinline$input()$ erlauben wir dem Nutzer Eingaben über die Konsole. Somit erhalten wir den ersten Grad an Interaktion zwischen Nutzer und Programm.
+
+\begin{lstlisting}[language=Python, label=inputInOut:lst:inputDefault]
+# die input-Methode
+
+input(prompt)
+\end{lstlisting}
+
+Sobald \lstinline$input()$ aufgerufen wird, wartet das Programm mit dem weiteren Ablauf, bis der Nutzer seine Eingabe mit der Eingabetaste bestätigt.
+Die \lstinline$input()$-Methode liefert den eingegebenen Wert als String zurück.
+Damit der Nutzer weiß, was er denn eingeben muss, bietet \lstinline$input()$ den optionalen Standard-Parameter \lstinline$prompt$ an - hierbei handelt es sich um einen leeren String.
+Geben wir \lstinline$prompt$ nun einen Wert, wird dieser dem Nutzer für die Eingabe angezeigt.
+
+\begin{lstlisting}[language=Python, label=printInOut:lst:inputPrompt]
+# die input-Methode mit prompt-Angabe
+
+userName = input("Geben Sie Ihren Namen ein.")
+print("Hallo, " + userName)
+\end{lstlisting}
+
+\warning{Der Eingabewert des Nutzer liefert immer einen String zurück.
+Bei gewünschtem Datentyp muss \emph{gecasted} werden!}
+
+\kontrollfrage{
+    \item[\kontroll] Wie verhält sich das Programm bei Aufruf der \lstinline$input()$-Methode?
+    \item[\kontroll] Welchen Wert liefert \lstinline$input()$ zurück? Um was für einen Datentyp handelt es sich?
+    \item [\kontroll] Welchen Effekt hat die Angabe des \lstinline{prompt}-Parameters?
+}
+
+Bei primitiven Datentypen ist das Umwandeln recht einfach. Bei nicht-primitiven kann es jedoch zu Überraschungen kommen.
+
+\begin{lstlisting}[language=Python, label=printInOut:lst:inputCast]
+# die input-Methode mit Typ-Umwandlung
+
+summe = int(input("2 + 3 = "))
+print(summe, type(summe), sep=" - ")
+# Eingabe: 5
+# Ausgabe: 5 - <class 'int'>
+
+geoKoerper = list(input("Geben Sie einige" +
+            "geometrische Körper an"))
+print(geoKoerper)
+# Eingabe: ["Dreieck", "Viereck"]
+# Ausgabe: [' ', '[', '"', 'D', 'r', 'e',
+    'i', 'e', 'c', 'k', '"', ',',
+    ' ', '"', 'V', 'i', 'e', 'r',
+    'e', 'c', 'k', '"', ']']
+
+print(type(geoKoerper[0]))
+# Ausgabe: <class 'str'>
+
+\end{lstlisting}
+
+Python wandelt den String in eine Liste um, jedoch nimmt es jedes einzelne Zeichen der Eingabe als Listenelement. Dies kann durchaus nützlich sein, verfehlt hierbei aber das Ziel. Um die geometrischen Körper als Elemente zu erhalten, nutzen wir die \lstinline$eval()$-Funktion.
+\randnotiz{\lstinline$eval()$}
+Hierbei wird die Eingabe interpretiert und der entsprechende Datentyp zurückgeliefert (Evaluierung).
+
+\tip{eval() funktioniert auch bei anderen Collections!}
+
+\begin{lstlisting}[language=Python, label=printInOut:lst:inputEval]
+# die input-Methode mit eval()
+
+geoKoerper = eval(input("Geometrische Körper: "))
+print(geoKoerper)
+# Eingabe: ["Dreieck", "Viereck"]
+# Ausgabe: ['Dreieck', 'Viereck']
+\end{lstlisting}
+
+
+\kontrollfrage{
+    \item[\kontroll] Wie verhält sich der Rückgabewert von \lstinline$input()$, wenn man ihn zu einer Liste umwandelt?
+    \item[\kontroll] Welche Methode bietet uns Python an, um den Rückgabewert wie gewünscht zu erhalten?
+}

@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using IronPython.Hosting;
+//using IronPython.Hosting;
 
 public class electro_frequenz : MonoBehaviour {
 
@@ -14,16 +14,16 @@ public class electro_frequenz : MonoBehaviour {
         counti.setDisplay(4, "Zähler_Uq_v2");
 
         // Import Python
-        var engine = Python.CreateEngine();
-        ICollection<string> searchPaths = engine.GetSearchPaths();
+        //var engine = Python.CreateEngine();
+        //ICollection<string> searchPaths = engine.GetSearchPaths();
         //Path to the folder of greeter.py
-        searchPaths.Add(Application.dataPath + "/Python");
+        //searchPaths.Add(Application.dataPath + "/Python");
         //Path to the Python standard library
-        searchPaths.Add(Application.dataPath + "/Plugins/Lib");
-        engine.SetSearchPaths(searchPaths);
+        //searchPaths.Add(Application.dataPath + "/Plugins/Lib");
+        //engine.SetSearchPaths(searchPaths);
 
-        dynamic py = engine.ExecuteFile(Application.dataPath + "/Python/interpolate.py");
-        dynamic greeter = py.Greeter();
+        //dynamic py = engine.ExecuteFile(Application.dataPath + "/Python/interpolate.py");
+        //dynamic greeter = py.Greeter();
     }
 	
 	// Update is called once per frame

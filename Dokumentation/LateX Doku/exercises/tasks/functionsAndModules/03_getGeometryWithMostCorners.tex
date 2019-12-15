@@ -1,0 +1,18 @@
+% !TeX root = ../../pythonTutorial.tex
+Eine unbestimmte Anzahl von geometrischen Körpern nimmt an einem Wettbewerb teil. Die ganze Welt soll wissen, wer denn der Körper mit den meisten Ecken ist. Schreiben Sie eine Funktion, welche diesen Körper findet und \emph{global} festlegt.
+
+Alle Körper sollen als jeweilige Tupel mit der Anzahl an Ecken und ihrem Namen übergeben werden. Die Variable \emph{geometryWithMostCorners}, welche den Gewinner trägt, darf nicht außerhalb der Methode deklariert werden.
+
+\begin{lstlisting}[language=Python]
+# Erster Platz
+
+def getGeometryWithMostCorners(...):
+	...
+	
+getGeometryWithMostCorners(
+	(3, "Dreieck"),
+	(8, "Achteck"),
+	(5, "Fünfeck"))
+print(geometryWithMostCorners[1])
+# Ausgabe: Achteck
+\end{lstlisting} 

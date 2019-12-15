@@ -1,0 +1,333 @@
+% ----------------------------------------------------------------------------------------------
+% Vorlage für Dokumentation auf LaTeX-Basis im Projekt InfoStuDi
+% --------------------------------------------------------------------------------------------
+\usepackage{mb}
+ \usepackage{mbmath}
+\usepackage{textcomp}
+% Array-Paket für mehr Kontrolle der Tabellen
+\usepackage{array}
+% ifthen für Ein- und Ausblenden der Lösungen.
+\usepackage{ifthen}
+% Paket für Postscript Pi-Fonts
+\usepackage{pifont}
+% PSTricks
+%\usepackage{pstricks}
+% Paket für das einfache Umdefinieren von Listen
+\usepackage[shortlabels]{enumitem}
+% Alphabetischer Index
+\usepackage{imakeidx}
+\makeindex[title=Index,columns=2,options=-s german,intoc]
+% Header und Footer mit KomaScript
+\usepackage[automark, headsepline]{scrlayer-scrpage}
+% Caption unteraderm, dass \ref nicht nur zur Caption sondern auch zur Figure springt
+\usepackage{caption}
+%
+% Header für Werkzeuge, Begriffe aus dem Software-Management
+\input{variablen}
+% Farben
+\input{colors}
+% Standardverzeichnis für das Basisverzeichnis der Bilder
+%
+\newcommand{\imagePath}{./images}
+%
+\raggedbottom
+\setlength{\parskip}{2.0ex}
+\setlength{\parindent}{0.0cm}
+%% Verhindert Schusterjungen und Hurenkinder
+\clubpenalty = 10000
+\widowpenalty = 10000 \displaywidowpenalty = 10000
+%
+\setcounter{secnumdepth}{2}
+\setcounter{tocdepth}{2}
+%
+\pagestyle{scrheadings}
+\clearscrheadfoot
+% Thema des Dokuments in die Kopfzeile
+\ihead{\headmark}
+\ohead[]{\pagemark}
+\chead{}
+\pagestyle{scrheadings}
+% Abstände zwischen Caption und Bild/Tabelle
+\setlength\abovecaptionskip          {0.4em}
+\setlength\belowcaptionskip          {0.2em}
+% Anteil der Grafiken höher auf jeder Seite!
+\renewcommand{\textfraction}{0.001}
+\renewcommand{\topfraction}{0.99}
+% Literatur-Stil
+\bibliographystyle{geralpha}
+% Listingspaket
+\usepackage{listings}
+\lstloadlanguages{python}
+\lstset{language=python}
+\definecolor{lstback}{gray}{0.85}
+\lstset{backgroundcolor=\color{lstback}}
+\lstset{extendedchars=true}
+\lstset{showstringspaces = false}
+\lstset{basicstyle = \ttfamily \small}
+%% listings mit listings.sty
+%
+% Kommando für den Flattersatz bei nebeneinander liegenden Abbildungen
+\newcommand{\flatter}{\setlength{\rightskip}{0pt plus 2cm}}
+%
+% Schritte in einer Aufzählung, dafür einen Zähler (schritt) und die Umgebung
+% schritte definieren.
+\newcounter{schritt}
+\newenvironment{schritte}%
+{\begin{list}%
+{Schritt \arabic{schritt}:}%
+{\usecounter{schritt}\settowidth{\labelwidth}{Schritt 1:}%
+\setlength{\leftmargin}{\labelwidth}\addtolength\leftmargin{\labelsep}%
+\parsep0.0ex\partopsep-0.3ex\itemsep2pt\topsep0.0ex}}{\end{list}}
+% Dateinamen für interne Musterlösungen
+\newcommand{\filename}[1]{%
+\ifthenelse{\boolean{solutions}}{\framebox[50mm]{\parbox{40mm}{\textbf #1}}\vspace{6pt}}{}}
+%   Taste
+\newcommand{\taste}[1]{\small\textsf{#1}\normalsize}
+%   geschützte Namen (NICHT in chapter, section usw. verwenden!)
+\newcommand{\name}[1]{\textsl{#1}}
+%   Fachbegriffe/Erklärung von Abkürzungen
+\newcommand{\begriff}[1]{\index{#1}\textit{#1}}
+%
+\newcommand{\algorithmus}[2]{%
+\vspace{4pt}\fboxsep 1mm \framebox[140mm]
+{\parbox{135mm}{{\textbf{#1}}\vspace{2pt}#2}}\vspace{4pt}}
+%
+%   Dateinamen/Pfade
+\newcommand{\datei}[1]{\texttt{#1}\normalsize}
+%   Tip (in einer Box)
+\newcommand{\tip}[1]{%
+\vspace{4pt}\fboxsep 1mm \framebox[140mm]
+{\parbox{135mm}{{\textbf{Tipp}}:\\ #1}}\vspace{4pt}}
+
+%Achtung in einer Box
+\newcommand{\warning}[1]{%
+    \par\vspace{4pt}\fboxsep 1mm \framebox[140mm]%
+    {\parbox{135mm}{{\textbf{Achtung}}:\\ #1}}\vspace{4pt}%
+}
+%
+
+%
+%   Reflektion (in einer Box)
+%
+\newcommand{\reflection}[1]{
+\begin{quote}\fboxsep 3mm\framebox[140mm][c]{\parbox{130mm}{{\textbf{Reflektion}:\\}#1}}\end{quote}}
+%
+%   Angabe, was die Studierenden lesen sollen (in einer Box)
+
+\newcommand{\lesen}[1]{%
+\begin{minipage}[c]{2.5cm}
+\centering
+\includegraphics[width=2cm]{\imagePath/Misc/buchicon}%
+\end{minipage}%
+\begin{minipage}[t]{12cm}%
+#1%
+\end{minipage}}
+%
+%   Angabe im Begleittext, was die Studierenden lesen sollen (in einer Box)
+%   Dieses Icon wird für Angaben verwendet, die nicht verpflichtend zu lesen
+%   sind. Also "nice-to-have", "wenn sie noch Zeit haben".
+\newcommand{\vertiefen}[1]{%
+\begin{minipage}[b]{2.5cm}
+\centering
+\includegraphics[width=2cm]{\imagePath/Misc/reading}%
+\end{minipage}%
+\begin{minipage}[b\newcommand{\firefox}{\texttt{Mozilla Firefox}}
+\newcommand{\kde}{\texttt{KDE}}]{12cm}%
+#1%
+\end{minipage}}
+%
+% Jetzt kommt die Definition der Kontrollfrage; die Nummerierung
+% für das ganze erhalten wir mit Hilfe von \item{\kontroll}.
+%
+% Ein Counter für die Kontrollfragen. Wir zählen diesen Counter selbst hoch
+% mit einem entsprechenden Kommando, das wir in \item verwenden.
+% 1
+\newcounter{kontrollCounter}[section]
+\newcommand{\kontroll}[0]{
+    \refstepcounter{kontrollCounter}
+    % Kapitelnummer.Zähler für das Item
+    \arabic{chapter}.\arabic{kontrollCounter}
+    % Das Label ist bis auf weiteres "kontrolle:Kapitelnummer:kontrollcounter
+    \label{kontrolle:\arabic{chapter}:\arabic{kontrollCounter}}
+}
+% Jetzt kommt die Definition der Kontrollfrage; die Nummerierung
+% für das ganze erhalten wir mit Hilfe von \item{\kontroll}.
+\newcommand{\kontrollfrage}[1]{%
+\begin{minipage}[c]{1.85cm}
+\huge{\ding{46}}%
+\end{minipage}%
+\begin{minipage}[t]{12cm}%
+\begin{itemize}#1%
+\end{itemize}%
+\end{minipage}}
+%
+% Einblenden von Musterlösungen
+%
+% Schalter für das ein- und ausblenden der Lösungen
+\newboolean{solutions}
+%
+% Theorem-Umgebung für die Übungsaufgaben
+% Wichtig: alle Attribute einstellen, dann die neue
+% theorem-Umgebung mit newtheorem definieren!
+% Oder, wie hier, durch das Einschließen in {}
+%
+{
+% Zeilenumbruch bei Aufgaben-Überschrift
+\theoremstyle{break}
+% "Normaler" Font im Text
+\theorembodyfont{\normalfont}
+% Kapitelweise neu nummerieren
+% 2
+\newtheorem{auftitle}{Aufgabe}[section]
+}
+%
+% Definition für die Kennzeichnung der Übungsaufgaben
+%
+\newcommand{\uebung}{%
+\vspace*{11pt}%
+\begin{tabular}{@{}p{2.25cm}@{}p{11.7cm}}%
+\huge{\ding{45}}&\Large{\textbf{Übungsaufgaben}}%
+\end{tabular}%
+}
+% Ein Counter für die Übungsaufgaben. Wir zählen diesen Counter selbst hoch
+% mit einem entsprechenden Kommando, das wir in \item verwenden.
+% 3
+\newcounter{aufgabenCounter}[section]
+\newcommand{\auf}[0]{
+    \refstepcounter{aufgabenCounter}
+    % Kapitelnummer.Zähler für das Item
+    \arabic{chapter}.\arabic{aufgabenCounter}
+}
+% Der Text der Aufgaben steht im Ordner ./exercises/tasks/aufgabenstellungen,
+% so können wir die Dateien aus der Veranstaltung
+% Wahrscheinlichkeitsrechnung und Statistik verwenden; und die neuen
+% Aufgaben gehen in den allgemeinen Fundus ein.
+%
+
+% Umgebungen für Satz, Definition, Beweis, ... . Wir orientieren uns am Mathematik-Buch,
+% dort gab es diese Umgebungen auch schon. Im Grunde sind das einfach
+% wieder theorem-Umgebungen.
+{
+\setlength\theorempreskipamount{5pt plus 3pt minus 1.5pt}
+\setlength\theorempostskipamount{5pt plus 1pt minus 1pt}
+% "Normaler" Font im Text
+\theorembodyfont{\normalfont}
+% Die Namen sind so gewählt, dass sie kompatibel zu Beamer sind; dann können
+% wir den Text aus Folien kopieren und umgekehrt auch.
+% 4
+\newtheorem{Satz}{Satz}[section]
+\newtheorem{Fakt}{Fakt}[section]
+\newtheorem{Definition}{Definition}[section]
+}
+%
+{
+\setlength\theorempreskipamount{8pt plus 3pt minus 1.5pt}
+\setlength\theorempostskipamount{5pt plus 1pt minus 1pt}
+\theoremstyle{break}
+% "Normaler" Font im Text
+\theorembodyfont{\normalfont}
+\newtheorem{datensatz}{Datensatz}
+}
+% Text mit Pfad
+\newcommand{\aufgabentext}[1]{\renewcommand{\labelenumi}{\alph{enumi})}\auftitle\label{#1}\input{./exercises/tasks/#1} }
+% Funktion für die Lösungs-Hinweise für eine Aufgabe. Der Text
+% steht analog zu den Übungsaufgaben im Ordner tasks/solutions.
+\newcommand{\hinweistext}[1]{\renewcommand{\labelenumi}{\alph{enumi})}\input{./exercises/solutions/#1}}
+% Und jetzt die Funktionen, die wir im Text aufrufen
+\newcommand{\aufgabe}[1]{\aufgabentext{#1}}
+% Lösungshinweise im Anhang
+\newcommand{\hinweis}[1]{\subsubsection*{Aufgabe \ref{#1}}\label{#1sol}  \hinweistext{#1}}
+%
+% Datensatz-Texte und Daten in eigener Datei
+\newcommand{\dataset}[1]{\begin{datensatz}\label{#1}\input{./exercises/datasets/#1}\end{datensatz}}
+% Teilaufgaben alphabetisch nummerieren
+\renewcommand{\labelenumi}{\arabic{enumi})}
+%
+% Marginalien
+%
+\newcommand{\randnotiz}[1]{\marginpar{\small{\textbf{#1}}}}
+%
+% Gabelschlüssel als Marginalie und Hinweis auf Praxisbezug
+\newcommand{\praxisbezug}[0]{\randnotiz{\includegraphics[width=1cm]{\imagePath/Misc/gabel}}}
+%
+% alert aus beamer-Folien zu emph machen
+%
+\newcommand{\alert}[1]{\emph{#1}}
+%
+%
+\newcommand{\titelseite}[1]{%
+% Titelseite
+\pagenumbering{roman}%
+\thispagestyle{empty}%
+\begin{titlepage}%
+% Volle Zeilenbreite verwenden!
+\centering%
+\vspace*{2cm}%
+
+\Huge{\textbf{#1}}\\\vspace*{0.5cm}%
+
+\vspace*{10cm}%
+
+\Large{\theAuthor{}}%
+
+\Large{\theProject{}}%
+
+\Large{\theSchool{}}%
+\end{titlepage}}
+
+% Titelseite mit zusätzlicher Grafik
+%
+% Das obligatorische Argument ist der Titel des Dokuments.
+% Als Default wird das Logo der Stochastik-Veranstaltung als Titelbild
+% verwendet. Mit Hilfe eines optionalen Arguments kann
+% ein anderes Bild verwendet werden!
+% Beispiel: \titelseite[\imagePath/misc/ameise]{Das Liebesleben der Ameisen}
+% Aufruf mit Standardbild:
+% \titelseite{Das Liebesleben der Ameisen}
+%
+\newcommand{\titelseiteMitBild}[2][\imagePath/logos/python]{%
+%% Titelseite
+\pagenumbering{roman}%
+\thispagestyle{empty}%
+\begin{titlepage}%
+% Volle Zeilenbreite verwenden!
+\centering%
+\vspace*{0.5cm}%
+
+\Huge{\textbf{#2}}\\\vspace*{0.5cm}%
+
+\vspace*{2.0cm}%
+\includegraphics[height=6cm]{#1}%
+
+\vspace*{1.0cm}%
+
+\Large{\theProject{}}%
+
+\Large{\theSchool{}}%
+
+\vspace*{2.0cm}%
+
+\normalsize{\theAuthor{}}%
+\end{titlepage}}
+
+%\makeatletter
+%\newcommand{\shoppinglist}[1]{%
+%   Shopping list: #1\checknextarg}
+%\newcommand{\checknextarg}{\@ifnextchar\bgroup{\gobblenextarg}{ and that's all!}}
+%\newcommand{\gobblenextarg}[1]{ and also #1\@ifnextchar\bgroup{\gobblenextarg}{ and that's all!}}
+%\makeatother
+
+\makeatletter
+\newcommand{\templabel}{xxx}
+\newcommand{\uebungTutorial}[1]{%
+    \vspace*{11pt}%
+    \begin{tabular}{@{}p{2.25cm}@{}p{11.7cm}}%
+        \huge{\ding{45}}&\Large{\textbf{Übungsaufgaben}}%
+    \end{tabular}%
+    \aufgabe{#1}
+    \renewcommand{\templabel}{#1sol}
+    \checknextarg{#1}
+}
+\newcommand{\checknextarg}[1]{\@ifnextchar\bgroup{\gobblenextarg}{ \leavevmode \\ \\ Die Lösungen zu den Aufgaben finden Sie im Anhang \ref{#1sol}. }}
+\newcommand{\gobblenextarg}[1]{  \aufgabe{#1}\@ifnextchar\bgroup{\gobblenextarg}{ \leavevmode \\ \\  Die Lösungen zu den Aufgaben finden Sie im Anhang \ref{\templabel}.}}
+\makeatother

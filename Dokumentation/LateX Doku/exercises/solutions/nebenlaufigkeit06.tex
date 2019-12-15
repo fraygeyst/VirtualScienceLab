@@ -1,0 +1,33 @@
+\begin{enumerate}
+\item Kann aus der \hyperref[threads:lst:counter_condition_variable_example]{\lstinline$Counter$-Klasse}
+übernommen werden.
+
+\item Da nicht sichergestellt werden kann, dass durch \lstinline$notify()$ genau der eine Thread 
+aufgeweckt wird, dessen Bedingung als nächstes erfüllt ist, muss \lstinline$notify_all()$ aufgerufen 
+werden, nachdem der \lstinline$Counter$ inkrementiert wurde.
+
+\lstinputlisting[language=Python,linerange={1-2,11-19}]{exercises/src/nebenlaufigkeit06.py}
+
+\item Im Konstruktor wird ein neues Attribut \lstinline$digit$ definiert, das mit dem jeweiligen Parameter
+initialisiert wird.
+Der Aufruf des \lstinline$IncrementerThread$-Konstruktors muss entsprechend angepasst
+werden.
+
+\lstinputlisting[language=Python,linerange={1-2,21-26}]{exercises/src/nebenlaufigkeit06.py}
+
+\item Die neue \lstinline$check_condition()$-Methode gibt den Wert des Ausdrucks 
+\lstinline$self.counter.count % 10 == self.digit$ zurück.
+
+\lstinputlisting[language=Python,linerange={1-2,38-42}]{exercises/src/nebenlaufigkeit06.py}
+
+\item In der \lstinline$for$-Schleife innerhalb von \lstinline$run()$ wird ein \lstinline$with$-Statement 
+ergänzt.
+Es beinhaltet die Aufrufe von \lstinline$wait_for()$ und \lstinline$increment()$.
+Hierbei bekommt \lstinline$wait_for()$ die \lstinline$check_condition()$-Methode übergeben.
+
+\lstinputlisting[language=Python,linerange={1-2,27-37}]{exercises/src/nebenlaufigkeit06.py}
+
+\item Eine Ausgabe in \lstinline$check_condition()$ und eine Ausgabe vor \lstinline$increment()$ genügen,
+um das Geschehen nachzuvollziehen. Es sollten die Werte des \lstinline$Counters$ und des Attibuts
+\lstinline$digit$ ausgegeben werden.
+\end{enumerate}

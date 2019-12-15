@@ -1,0 +1,6 @@
+Zuerst muss ein Generator definiert werden, wie im zugehörigen Kapitel beschrieben.
+Durch eine range()-Anweisung wird eine Liste erzeugt, die Nummern von len(data)-1 (Länger von Data - 1) bis -1 enthält mit der Schrittweite -1.
+Die erzeugte Liste zählt mit jedem Element eins runter, bis sie bei -1 ankommt. 
+Durch eine for-Schleife wird die Liste durchlaufen und bei jedem Durchlauf mit \lstinline$yield$ ein Element von Data zurückgegeben - jedoch in umgekehrter Reihenfolge.
+
+\lstinputlisting{exercises/src/iterator/iterator02.py}

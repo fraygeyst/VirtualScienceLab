@@ -1,0 +1,22 @@
+\begin{enumerate}
+  \item \lstinline!np.array([0, 1, 2, 3, 4, 5])!
+  \item \lstinline!np.array((0, 1, 2, 3, 4, 5))!
+  \item \lstinline!np.array(range(0,6))!
+  \item \lstinline!np.arange(0,6)!
+  \item \lstinline!np.fromfunction(f, [6], dtype=int)!
+  \item \lstinline!np.fromiter(natural_numbers(), int, count=6)!
+\end{enumerate}
+
+Die letzten vier Unteraufgaben lassen sich beispielsweise mit einer Schleife
+lösen. Zu beachten ist hierbei lediglich, dass \lstinline!array.empty()!,
+\lstinline!array.ones()! und \lstinline!array.zeros()! standardmäßig Arrays mit
+Fließkommazahlen erzeugen.
+\begin{lstlisting}
+a = np.empty(6, dtype=int)
+b = np.ones(6, dtype=int)
+c = np.zeros(6, dtype=int)
+d = np.full(6, 0, dtype=int)
+for i in range(0,6):
+    a[i] = b[i] = c[i] = d[i] = i
+print(a, b, c, d)
+\end{lstlisting}

@@ -8,13 +8,13 @@ public class Beschleunigung : MonoBehaviour {
     // Use this for initialization
     void Start () {
         Sev_Seg_Counter counti = new Sev_Seg_Counter();
-        counti.setSevSegCount(0);
+        counti.setSevSegCount(0, "Zähler1");
     }
 	
 	// Update is called once per frame
 	void Update () {
         Sev_Seg_Counter counti = new Sev_Seg_Counter();
-        counti.setSevSegCount(Load_Publics.Temperatur);
+        counti.setSevSegCount(Load_Publics.Temperatur, "Zähler1");
     }
 
     private void OnTriggerEnter(Collider other)

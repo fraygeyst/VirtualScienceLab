@@ -1,0 +1,152 @@
+% !TeX root = ../../pythonTutorial.tex
+
+\section{Modularisierung}
+\label{modularisation}
+Unter Modularisierung versteht man die Aufteilung des Programmcodes in Module.\randnotiz{Modul}
+Ein Modul stellt dabei verschiedene Datentypen, Funktionen und Werte bereit.
+Durch das Auslagern dieser Elemente in Module wird das Projekt besser strukturiert.
+Zudem wird die Lesbarkeit des Quellcodes durch das Auslagern von Funktionen verbessert.
+
+Bei den Modulen wird zwischen lokalen und globalen Modulen unterschieden.
+Während lokale Module nur in einem Projekt genutzt werden, können globale Module projektübergreifend verwendet werden.
+\randnotiz{Math-Modul}
+Ein Beispiel für ein globales Modul ist das Modul \emph{math} der Standardbibliothek, welches mathematische Funktionen und Konstanten bereitstellt.
+
+Ob ein Modul lokal oder global ist, hängt vom Speicherort ab. Ein lokales Modul ist in der Regel im Programmverzeichnis oder in einem Unterverzeichnis hinterlegt.
+Ein globales Modul wird in einem bestimmten Verzeichnis der Python-Installation angelegt.
+Hierzu gehört beispielsweise das Verzeichnis \emph{site-packages}, in dem auch einige Module von Drittanbietern installiert werden.
+
+\kontrollfrage{
+	\item[\kontroll] Welche Vorteile bietet uns die Modularisierung?
+	\item[\kontroll] Was ist der Unterschied zwischen einem lokalen und einem globalen Modul?
+}
+
+\subsection{Erstellung eines lokalen Moduls}
+\label{modularisation:subsection:createLocalModule}
+Zur Erstellung eines lokalen Moduls wird eine Datei \emph{myModul.py} im Programmverzeichnis angelegt:
+\begin{lstlisting}[language=Python]
+def hello(constantName):
+    print("Hello, " + constantName)
+    
+MAX = "Maximilian"
+\end{lstlisting}
+Der Inhalt dieser Datei  führt keinerlei Code aus, sondern stellt lediglich eine Funktion und eine Konstante bereit, welche später im Hauptprogramm genutzt werden können.
+
+\subsection{Module verwenden}
+\label{modularisation:subsection:useModule}
+Um lokale und globale Module verwenden zu können, müssen diese zunächst im Hauptprogramm eingebunden werden.
+Hierzu wird die \emph{import}-Anweisung verwendet. Prinzipiell ist es egal, wo dies im Quellcode geschieht.
+\randnotiz{import}
+Es empfiehlt sich jedoch alle Module zu Beginn des Quelltextes einzubinden.
+Die \emph{import}-Anweisung besteht aus dem Schlüsselwort \emph{import}, gefolgt vom Namen des Moduls.
+
+\begin{lstlisting}[language=Python]
+# Einbinden des zuvor erstellten Moduls
+
+import myModule
+\end{lstlisting}
+
+Zu Beachten ist, dass beim Einbinden von Modulen die Dateiendung entfällt.
+Mit einer \emph{import}-Anweisung können auch mehrere Module eingebunden werden.
+Hierzu werden die Modulnamen hinter dem Schlüsselwort - durch Kommas getrennt - aufgelistet:
+\begin{lstlisting}[language=Python]
+import myModule, math
+
+# anstelle von:
+
+import myModule
+import math
+\end{lstlisting}
+
+Durch das Einbinden eines Moduls wird ein neuer Namensraum mit dem Modulnamen erzeugt.
+Über den Namensraum können alle Elemente des Moduls angesprochen werden:
+\begin{lstlisting}[language=Python]
+import myModule
+
+myModule.hello("World")
+myModule.hello(myModul.MAX)
+\end{lstlisting}
+
+
+Ausgabe:
+\begin{lstlisting}[language=Python]
+Hello, World
+Hello, Maximilian
+\end{lstlisting}
+
+\kontrollfrage{
+	\item[\kontroll] Wie wird ein Modul erstellt und wie kann man es verwenden? Welches Schlüsselwort wird zum Einbinden benötigt?
+	\item[\kontroll] Was passiert beim Einbinden eines Moduls?
+}
+
+Mit Hilfe der \emph{import/as}-Anweisung ist es möglich den Namen des Namensraums zu verändern:
+\begin{lstlisting}[language=Python]
+import myModule as myBib
+myBib.hello(World)
+\end{lstlisting}
+
+\tip{
+Es gilt zu beachten, dass nach dieser Anweisung das Modul \emph{myModule} ausschließlich über den Namensraum \emph{myBib} zu erreichen ist.}
+
+Python bietet \randnotiz{from x import a} zudem die Möglichkeit \emph{einzelne} Elemente aus einem Modul zu importieren.
+Hierzu wird die \emph{from/import}-Anweisung verwendet:
+
+\begin{lstlisting}[language=Python]
+from math import sin, cos, tan, sinh, cosh, tanh
+\end{lstlisting}
+
+Falls die Liste der zu importierenden Elemente etwas länger ausfallen sollte, kann die Aufzählung in mehreren Zeilen erfolgen, um so die Lesbarkeit des Codes zu verbessern.
+Zur Realisierung müssen zunächst die einzubindenden Elemente in runden Klammern gesetzt werden.
+Anschließend können beliebig viele Zeilenumbrüche innerhalb der runden Klammern erfolgen.
+Folgendes Beispiel zeigt eine \emph{from/import}-Anweisung mit einem Zeilenumbruch:
+\begin{lstlisting}[language=Python]
+from math import (sin, cos, tan,
+                    sinh, cosh, tanh)
+\end{lstlisting}
+
+Mit einem Stern können \emph{alle} Elemente des Moduls importiert werden:
+\begin{lstlisting}[language=Python]
+from myModule import *
+\end{lstlisting}
+
+Es gilt zu beachten, dass bei der \emph{from/import}-Anweisung kein eigener Namensraum erzeugt wird.
+Die Elemente werden stattdessen in den \emph{globalen} Namensraum eingebunden.
+Dies hat zur Folge, dass der Namensraum bei einem Zugriff auf ein Element nicht mehr angegeben werden muss:
+\begin{lstlisting}[language=Python]
+from myModul import hello
+hello("World")		# statt: myModule.hello("World")
+\end{lstlisting}
+
+\kontrollfrage{
+	\item[\kontroll] Mit welchem Schlüsselwort können wir den Namensraum eines Moduls ändern?
+	\item[\kontroll] Ist es möglich nur einzelne Elemente eines Moduls einzubinden?
+	\item [\kontroll] Was gilt es beim Einbinden von Modulen bezüglich des Namensraums zu beachten?
+}
+
+Da die Elemente bei der \emph{from/import}-Anweisung in den globalen Namensraum eingebunden werden, können bereits vorhandene Referenzen kommentarlos überschrieben werden.
+
+\begin{lstlisting}[language=Python]
+pi = 42
+print("pi hat den Wert:")
+print(pi)
+
+from math import pi		# pi wird überschrieben
+print("pi hat den Wert:")
+print(pi)
+\end{lstlisting}
+
+Ausgabe:
+\begin{lstlisting}[language=Python]
+pi hat den Wert:
+42
+pi hat den Wert:
+3.141592653589793
+\end{lstlisting}
+
+Um derartige Fehler zu minimieren, sollte die \emph{from/import}-Anweisung sparsam verwendet werden - also nur dann, wenn einzelne Elemente aus einem Modul benötigt werden.
+Wenn alle oder fast alle Elemente aus einem Modul benötigt werden, empfiehlt es sich, die \emph{import}-Anweisung zu verwenden.
+
+\kontrollfrage{
+	\item[\kontroll] Es wird ein Modul importiert, welches ein Element besitzt, das es schon im derzeitigen Namensraum gibt. Was passiert mit dem Element?
+	\item[\kontroll] Welche Wege gibt es, um dieses Verhalten zu vermeiden?
+}

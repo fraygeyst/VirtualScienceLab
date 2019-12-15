@@ -1,0 +1,28 @@
+% !TeX root = ../../pythonTutorial.tex
+Erstellen Sie ein eigenes Modul mit den bereits erstellten Methoden aus dieser Übung. Erweitern Sie das Modul um die Funktionen \emph{Summe()} und \emph{Produkt()}. Beide akzeptieren eine unbestimmte Anzahl von Parametern. 
+
+\begin{lstlisting}[language=Python]
+# Neue mathematische Funktionen
+
+def sum(...):
+	... # addiert alle Zahlen zu einer Summe
+	
+def product(...):
+	... # multipliziert alle Zahlen zu einem Produkt
+\end{lstlisting}
+
+Speichern Sie das Modul ab und nutzen Sie es in einem anderen Programm. Kopieren Sie den \emph{print}-Befehl und vergleichen Sie das Ergebnis.
+
+\begin{lstlisting}[language=Python]
+# Nutzen des eigenen Moduls
+
+import myModule
+
+print(myModule.sum(
+	myModule.product(2,3), myModule.product(3,5)))
+# Ausgabe: 21
+print(myModule.product(
+	myModule.sum(2,3,4,5), myModule.product(0,9)))
+# Ausgabe: 0
+
+\end{lstlisting}

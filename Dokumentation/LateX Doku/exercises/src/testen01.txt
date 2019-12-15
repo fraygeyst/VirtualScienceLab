@@ -1,0 +1,13 @@
+# exercises/src/testen01.txt
+# Beispielimplementierung für die Tests in Aufgabe 1
+
+# Importanweisung  
+>>> from testmod import testMod
+
+>>> testMod(1, 2)
+1
+
+>>> testMod(2, 0)
+Traceback (most recent call last):
+    ...
+ZeroDivisionError

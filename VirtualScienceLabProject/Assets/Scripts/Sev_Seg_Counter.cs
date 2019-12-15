@@ -15,12 +15,12 @@ public class Sev_Seg_Counter : MonoBehaviour {
         
     }
 
-    public void setSevSegCount(int seconds)
+    public void setSevSegCount(int seconds, String parentname)
     {
         if (seconds < 1000)
         {
             string s_number = String.Format("{0:000}", seconds);
-            GameObject parent = GameObject.Find("Zähler1");
+            GameObject parent = GameObject.Find(parentname);
 
             Debug.Log(s_number);
 

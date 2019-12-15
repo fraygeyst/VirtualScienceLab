@@ -1,0 +1,94 @@
+% !TeX root = ../../pythonTutorial.tex
+
+\section{Iteratoren}
+\label{iterator:sec:Iteratoren}
+In Kapitel \ref{collections:sec:collections} wurden Collections vorgestellt. Häufig ist es nötig, die gesamten Elemente einer Collection zu durchlaufen, beispielsweise um ein Element zu suchen oder jedes Element einer Liste auszugeben.
+Dies kann natürlich durch eine Schleife erreicht werden. 
+Dazu muss sich jedoch der Programmierer um den Durchlauf der Collection kümmern. 
+Eine weitere Möglichkeit ist die Nutzung eines Iterators, um den Durchlauf zu ermöglichen.
+Iteratoren sind dabei nicht auf Collections beschränkt und können vielfältig eingesetzt werden. 
+Es ist auch möglich, für selbst erzeugte Klassen Iteratoren bereitzustellen.
+Deshalb sollen im Folgenden Iteratoren und deren Funktionsweise in Python erläutert werden. 
+\subsection{Iterator und Iterable}
+\label{iterator:sec:IteratorUndIterable}
+Zunächst muss zwischen einem Iterator und einem Objekt mit der Eigenschaft \lstinline$Iterable$ unterschieden werden.
+Bei einem Iterator handelt es sich um ein Objekt, welches eine beliebige Anzahl an Werten enthält, die nacheinander durchlaufen werden können. 
+Dazu muss die Methode \lstinline$next()$ implementiert sein.
+Sie liefert bei jedem Aufruf den nächsten verfügbaren Wert zurück. 
+Sollten keine Werte mehr verfügbar sein, wird hingegen eine \lstinline$StopIteration$ Exception geworfen.\\
+\lstinline$Iterable$ bedeutet, dass ein Objekt einen Iterator mithilfe der \lstinline$iter()$ Methode erzeugen kann.
+Welche Elemente ein Iterator zurückliefert ist implementierungsabhängig.
+Meist gibt es jedoch einen direkten Zusammenhang mit dem erzeugenden Objekt.
+Zu den wichtigsten Objekten, welche \lstinline$Iterable$ sind, gehören alle Collections und der Datentyp String. 
+Ein durch eine Collection erzeugter Iterator liefert beispielsweise die Elemente, welche die Collection hält, zurück.
+Bei einem String hingegen werden als Elemente nacheinander die einzelnen Zeichen durch die \lstinline$next()$-Methode geliefert.
+\subsection{Benutzung von Iteratoren}
+\label{iterator:sec:BenutzungVonIteratoren}
+Die Nutzung eines Iterators ist simpel. Folgende Schritte müssen absolviert werden:
+\begin{enumerate}[label={\arabic*)}]
+	\item Erzeugen/Erhalten eines \lstinline$Iterable$-Objektes
+	\item Erzeugen des zugehörigen Iterators durch Übergabe des \lstinline$Iterable$-Objektes an \lstinline$iter()$
+	\item Erhalt des nächsten Elementes durch Übergabe des Iterators an die \lstinline$next()$-Methode
+	\item (Optional) Durchführung von Operationen, Ausgaben usw. mit dem erhaltenen Element
+	\item Wiederholung des letzten zwei Schrittes, bis Exception \lstinline$StopIteration$ geworfen wird (Fehlerbehandlung! siehe Kapitel \ref{kontrollstrukturen:section:fehlerundausnahmebehandlung})
+\end{enumerate}
+\tip{Es ist nicht notwendig, die durch \lstinline$next()$ erhaltenen Elemente zu benutzen, jedoch macht dies wenig Sinn, da der Zugriff auf die Elemente der Hauptgrund zur Nutzung eines Iterators sind.}\\ 
+\\
+Im Folgenden wir ein einfaches Beispiel vorgestellt:
+\lstinputlisting{chapters/basics/src/iterator/iterator_example01.py}
+\label{iterator:lst:iterator_example01}
+
+Zunächst wird ein Objekt mit der Eigenschaft \lstinline$Iterable$ benötigt. 
+Im Falle des Beispieles handelt es sich dabei um eine neu erzeugte Liste mit einigen Elementen.
+Mithilfe der Anweisung \lstinline$iter()$ wird der zugehörige Iterator \textit{iterator} zu dem übergebenen \lstinline$Iterable$ Objekt erzeugt.
+Durch Aufruf der \lstinline$next()$-Methode mit \textit{iterator} als Parameter, wird das nächste Element des Iterators zurückgeliefert und auf der Konsole ausgegeben.
+
+\subsubsection{Verwendung einer for-Schleife}
+\label{iterator:sec:VerwendungEinerForSchleife}
+Bisher wurde die \lstinline$next()$-Methode passend zur Anzahl der Objekte aufgerufen.
+Dies ist jedoch unpraktisch und wird in der Praxis bei einer unbekannten Anzahl an Objekten nicht einsetzbar sein. 
+Die einfachste Möglichkeit, auf jedes Element eines \lstinline$Iterable$-Objektes zuzugreifen ist die Verwendung einer \lstinline$for-Schleife$.
+Dabei kann direkt das \lstinline$Iterable$-Objekt an die Schleife übergeben werden. 
+Dieser erzeugt selbstständig den Iterator und liefert pro Durchlauf ein weiteres Element zurück.
+Auch die Fehlerbehandlung, nachdem der Iterator keine Elemente mehr besitzt, wird übernommen.
+Dabei wird folgende Syntax verwendet: \lstinline$for e in i$ mit:
+\begin{description}
+	\item [e] Variable, welche bei jedem Durchlauf der Schleife mit dem Ergebnis des Aufrufes von \lstinline$next()$ belegt ist
+	\item [i] \lstinline$Iterable$-Objekt, welches durchlaufen werden soll
+\end{description}
+ \lstinline$for $:
+Folgendes Beispiel zeigt die Anwendung einer \lstinline$for-Schleife$:
+\lstinputlisting{chapters/basics/src/iterator/iterator_example02.py}
+\label{iterator:lst:iterator_example02}
+
+\subsection{Erzeugung eigener Iteratoren}
+\label{iterator:sec:ErzeugungEigenerIteratoren}
+Es ist möglich, für selbst erzeugte Klassen eigene Iteratoren zu definieren.
+Dazu muss die \lstinline$iter()$ implementiert sein und ein Objekt zurück liefern, welches die \lstinline$next()$-Methode implementiert.
+Ein Objekt kann auch sich selbst als Iterator zurückliefern.
+Wie \lstinline$next()$ implementiert ist, ist abhängig davon, welche Elemente und in welcher Reihenfolge der Iterator diese zurückliefern soll.
+Im Folgenden wird ein Beispiel für eine Klasse mit einfachem Iterator gezeigt, welche eine Collection hält und durch den Iterator deren Elemente rückwärts nacheinander zurückgibt.
+Es handelt sich dabei um ein Beispiel, welches aus \cite{pythondoku} übernommen und leicht angepasst wurde:
+\lstinputlisting{chapters/basics/src/iterator/iterator_example03.py}
+\label{iterator:lst:iterator_example03}
+
+\section{Generatoren}
+\label{iterator:sec:Generatoren}
+
+Die vorher gezeigte Möglichkeit zur Erzeugung von Iteratoren sollte vermieden werden. 
+Zur einfachen Realisierung von Iteratoren stehen die sogenannten Generatoren zur Verfügung.
+Diese werden wie normale Funktionen definiert und entsprechen von der Funktionalität her etwa der \lstinline$next()$-Methode eines Iterators .
+Anstatt \lstinline$return$ wird jedoch \lstinline$yield$ verwendet, um Elemente zurückliefern. Generatoren haben die Eigenschaft, dass sie ein Gedächtnis haben, um alle Variablen und ausgeführten Anweisungen bis zum nächsten Aufruf des Generators zu speichern. 
+Beim nächsten Aufruf von \lstinline$next()$ setzt der Generator seine Berechnung fort.
+Ein weiterer Vorteil ist der automatische Auslösen einer \lstinline$StopIteration$ Exception sobald keine weiteren Elemente mehr übrig sind.
+Es gilt zu beachten, dass sowohl Generatoren als auch selbst erzeugte Iteratoren gleich mächtig sind, also die selben Probleme gelöst werden können \cite{pythondoku}. \\
+Hier wird noch einmal das Beispiel aus Kapitel \ref{iterator:lst:iterator_example03} gezeigt, jedoch diesmal als Generator implementiert (übernommen aus \cite{pythondoku}):
+\lstinputlisting{chapters/basics/src/iterator/iterator_example04.py}
+\label{iterator:lst:iterator_example04}
+
+\uebung
+
+Abschließend soll das in diesem Abschnitt erlangte Wissen durch Übungen noch einmal wiederholt und vertieft werden.
+
+\aufgabe{iterator/iterator01}
+\aufgabe{iterator/iterator02}

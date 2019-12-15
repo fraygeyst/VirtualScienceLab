@@ -1,0 +1,11 @@
+Zur Verwendung von Threads muss das \lstinline$threading$-Modul importiert werden.
+Zur Verwendung von \lstinline$sleep()$ muss das \lstinline$time$-Modul importiert werden.
+Es muss eine Klasse von \lstinline$Thread$ abgeleitet werden.
+Diese Klasse muss die \lstinline$run()$-Methode überschreiben und in einer \lstinline$for$-Schleife, 
+welche von 1 bis 10 läuft, die aktuelle Zahle ausgeben und eine Sekunde \glqq schlafen\grqq{}.
+
+\lstinputlisting[language=Python,linerange={1-2,7-12}]{exercises/src/nebenlaufigkeit01.py}
+
+Es muss ein Objekt dieser Klasse erzeugt und die \lstinline$start()$ aufgerufen werden.
+
+\lstinputlisting[language=Python,linerange={1-2,14-16}]{exercises/src/nebenlaufigkeit01.py}

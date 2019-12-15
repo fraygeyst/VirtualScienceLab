@@ -31,7 +31,7 @@ public class Seven_Bridges : MonoBehaviour {
                 Load_Publics.sev_bridges_counter = 0;
             }
             Sev_Seg_Counter counti = new Sev_Seg_Counter();
-            counti.setSevSegCount(Load_Publics.sev_bridges_counter);
+            counti.setSevSegCount(Load_Publics.sev_bridges_counter, "Zähler");
         }
     }
 
