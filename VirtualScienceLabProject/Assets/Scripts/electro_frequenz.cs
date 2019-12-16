@@ -104,8 +104,28 @@ public class electro_frequenz : MonoBehaviour {
 
         Display_Meter_5_D counti = new Display_Meter_5_D();
         counti.setDisplay(System.Convert.ToDouble(Load_Publics.frequency_Netzteil / 10.0), "Zähler_Netzteil_v2");
-        counti.setDisplay(System.Convert.ToDouble(getUc(Load_Publics.Uq, 3f)), "Zähler_Volt_v2");
-        counti.setDisplay(System.Convert.ToDouble(getUr(Load_Publics.Uq, 2f)), "Zähler_Ampere_v2");
+        counti.setDisplay(System.Convert.ToDouble(interpolateUc(Load_Publics.frequency_Netzteil)), "Zähler_Volt_v2");
+        counti.setDisplay(System.Convert.ToDouble(interpolateUr(Load_Publics.frequency_Netzteil)), "Zähler_Ampere_v2");
+    }
+
+    float interpolateUc(float f)
+    {
+        float d = -0.05401982f;
+        float a = 4.011188f;
+        float m = 0.4990021f;
+        float b = 1.958791f;
+        float c = 161.1876f;
+
+        return d + (a-d) / Mathf.Pow(1f + Mathf.Pow((f / c), b), m);
+    }
+    float interpolateUr(float f)
+    {
+        float Y0 = -0.140026f;
+        float V0 = -0.03257358f;
+        float K = 0.008110052f;
+
+        //return (-1f * Mathf.Pow(2, (0.02f * f))) + 0.4f * f -2.45f;
+        return Y0 - ((V0 / K) * (1f - Mathf.Exp(-1f * K * f)));
     }
 
     float getUq(float Ur, float Uc)
