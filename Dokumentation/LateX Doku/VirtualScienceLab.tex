@@ -1,0 +1,73 @@
+
+% -----------------------------------------------------------------------
+% Python Tutorial
+% WS 18/19
+% -----------------------------------------------------------------------
+\documentclass[enabledeprecatedfontcommands, fontsize=12pt,
+     open=right, a4paper,
+     twoside, DIV=11,
+     abstractoff,
+     headsepline,
+     numbers=noenddot,
+     BCOR=15mm,
+     headings=standardclasses,
+     headings=big]{scrbook}
+\KOMAoptions{cleardoublepage=empty}
+% Header für Variablen
+\input{stammdaten.tex}
+%
+\input{setup}
+%
+% Schalter für das Ein- und Ausblenden der Lösungen
+\setboolean{solutions}{true}
+%
+\input{pdfsetup}
+\listfiles
+%
+% Beginn Dokument
+%
+\begin{document}
+\titelseiteMitBild{\theTitle{}}
+%
+% Vorwort
+%
+\input{./chapters/abstract.tex}
+%
+% Inhaltsverzeichnis
+%
+\tableofcontents
+\clearevenpage
+\pagenumbering{arabic}
+%
+%
+%
+
+\input{./chapters/idee.tex}
+\input{./chapters/steuerung.tex}
+\input{./chapters/bisheriger_stand.tex}
+\input{./chapters/neuerungen.tex}
+\input{./chapters/verworfene_ideen.tex}
+\input{./chapters/ausblick.tex}
+\input{./chapters/fazit.tex}
+
+
+%
+% Literatur
+%
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{Literaturverzeichnis}
+\chaptermark{Literaturverzeichnis}
+\sectionmark{Literatur}\label{literatur}
+\bibliography{./bib/literatur}
+
+%
+% Index
+%\clearevenpage
+%\phantomsection
+%\small
+%\chaptermark{Index}
+%\sectionmark{Index}
+%\printindex
+%\normalsize
+\end{document}

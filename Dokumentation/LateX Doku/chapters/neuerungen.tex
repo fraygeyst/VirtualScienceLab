@@ -1,0 +1,179 @@
+% !TeX root = ../pythonTutorial.tex
+\chapter{Neuerungen}
+
+Da bereits erste Erfahrungen mit Unity gemacht werden konnten, wurden zu Beginn des Projektes die Ziele höhergesteckt als bei der bisherigen Ausführung. Neben vielen Wissenschaftszweigen wie Mathematik, Informatik, Biologie etc. sollte auch ein Android Build erstellt werden, der auf preiswerten Geräten ausgerollt werden sollte. Die Idee dahinter ist es, dass in einem Klassenraum jeder für sich einen Versuch selber durchführen soll, statt lediglich aus mehreren Metern entfernt zuzuschauen, wie der Lehrer den Versuch zum zigsten Mal in seiner Laufbahn macht. \newline
+Außerdem sollte der bisherige Aufbau insgesamt etwas abgeändert werden, sowie bestehende Bugs behoben werden. Ideen kamen viele, meist bestand das Problem in der bildlichen Vorstellung. Wie soll ein theoretischer Versuch möglichst anschaulich in VR umgesetzt werden und anschließend sinnvoll und nativ durchführbar sein. Die Outdoor Area wurde komplett entfernt, ebenso wie der gewinkelte Gang zwischen dem Leitbarkeitstest und der Müllverarbeitung. 
+
+\begin{figure}
+	\centering
+	\includegraphics[width=1\textwidth]{images/neuerungen/grundriss_physiklabor.png}
+	\caption{Grundriss Physiklabor}
+	\label{img:physiklabor}
+\end{figure}
+
+Die ganzen Labore sollten durch einen einzelnen breiten Flur mit Türen zu jedem Versuch zugänglich werden. Leitbarkeitstest und Müllverarbeitung wurden zusätzlich zusammengelegt unter dem Oberbegriff ?Physik?. Das Chemielabor hat ein richtiges Bunsenbrenner-Modell erhalten. Das VR- Lab, das vorher keinen eigenen Versuch erhalten hatte, bekam nun einen eigenen Versuch, beziehungsweise eher ein bekanntes Knobelspiel: \textit{Die Türme von Hanoi} in Lebensgröße. Die neu gefertigten Räume mit den dazugehörigen Versuchen werden im Folgenden mit den aufgetretenen Problemen veranschaulicht:
+
+\begin{figure}
+	\centering
+	\includegraphics[width=1\textwidth]{images/neuerungen/neuer_flur.png}
+	\caption{Neuer Flur mit Türen zum jeweiligen Laborraum}
+	\label{img:neuerflur}
+\end{figure} 
+\begin{figure}
+	\centering
+	\includegraphics[width=1\textwidth]{images/neuerungen/grundriss_vrlab.png}
+	\caption{Grundriss Virtual Reality Labor}
+	\label{img:vrlab}
+\end{figure}
+
+
+\section{Biologie}
+
+Das Biologie Labor hat einen Mikroskop-Versuch. Auf einem Tisch im Raum liegen drei Glasplatten mit verschiedenen Inhalten (Blut, Pflanze, Textil). Diese Platten kann man aufnehmen und in das Mikroskop [2], das auf dem danebenstehenden Tisch (soll zur Bewegung im Raum animieren) steht einlegen. Klickt man nun erneut auf das Mikroskop gelangt man in das zu betrachtende Material. Durch eine Falltür auf dem Boden kann man wieder zurück ins Labor gelangen. Die Falltür soll dazu dienen, dass man auch die Höhe des Raumes mit einbezieht und der User gezwungen ist, sich zu bücken. 
+
+\begin{figure}
+	\centering
+	\includegraphics[width=1\textwidth]{images/neuerungen/grundriss_biolab.png}
+	\caption{Grundriss Biologielabor}
+	\label{img:biolab}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=1\textwidth]{images/neuerungen/biolab_mikroskop.png}
+	\caption{Biologielabor mit Mikroskop und Glasplatten}
+	\label{img:biolabmikroskop}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=1\textwidth]{images/neuerungen/biolab_blutzelle.png}
+	\caption{Biologielabor ? Blutzelle}
+	\label{img:biolabblutzelle}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=1\textwidth]{images/neuerungen/biolab_pflanze.png}
+	\caption{Biologielabor ? Pflanzenzelle}
+	\label{img:biolabpflanze}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=1\textwidth]{images/neuerungen/biolab_textil.png}
+	\caption{Biologielabor ? Textilfaser}
+	\label{img:biolabtextil}
+\end{figure}
+
+In diesem Labor bestand ein Problem darin, die Szenen für Pflanze, Blut und Textil zu gestalten, da Unity nicht von sich aus eine Sphere von innen texturiert. Das heißt, wenn man eine große Sphere als Art Kuppel anlegen will, funktioniert dies nicht einfach, indem man die Kamera innerhalb der Sphere platziert. Nach einer Recherche mit einigen Umwegen war die Lösung sehr simpel, es wurde ein Double Side Shader statt dem Standard Shader ausgewählt, sowie die Belichtung angepasst. 
+
+\clearpage
+\section{Mathematik}
+
+Ein Raum des Projektes sollte planmäßig die bisherigen Maße von 3x4 Meter durch 10x10 Meter ersetzen, sodass auch Vorführungen in einem größeren Raum sinnvoll sind.  Dabei fiel die Wahl auf das Mathematiklabor. In diesem wurde die Darstellung der Kardioiden-Funktion aus der Outdoor Szene recyclet, welche man nun mit der dazugehörigen Gleichung durch ein Fenster außerhalb des Raumes betrachten kann.  \newline
+
+Außerdem wurde das Königsberger Brückenproblem raumfüllend gestaltet. Dem Benutzer ist es also möglich, sich frei innerhalb des Raumes zu bewegen, um zu versuchen das nicht lösbare Problem zu lösen. Die Lösung ist etwas versteckt in Form eines ?toten Briefkastens?, der sich unter ein paar Steinen befindet. 
+
+\begin{figure}
+	\centering
+	\includegraphics[width=1\textwidth]{images/neuerungen/brueckenproblem.png}
+	\caption{Königsberger Brückenproblem mit geänderter Brückenfarbe (bereits benutzt) und Zähler}
+	\label{img:brueckenproblem}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=1\textwidth]{images/neuerungen/grundriss_mathelab.png}
+	\caption{Grundriss Mathematiklabor}
+	\label{img:grundrissmathelab}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=1\textwidth]{images/neuerungen/mathelab_kardioide.png}
+	\caption{Karidoide am Fenster im Raum}
+	\label{img:kardioide}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=1\textwidth]{images/neuerungen/mathelab_briefkasten.png}
+	\caption{Steine im Raum als toter Briefkasten}
+	\label{img:toterbriefkasten}
+\end{figure}
+
+\clearpage
+\section{Informatik}
+Das Informatiklabor bietet zwei Versuche, bei denen das angesprochene Problem der schwierigen Visualisierung am stärksten aufgetreten ist. Diese sind der Suchalgorithmus Bubble Sort und der Dijkstra-Algorithmus, der den kürzesten Weg innerhalb eines Graphen aufzeigt.  \newline
+
+Die Wahl ist schließlich so ausgefallen, dass der Bubble Sort in einer Box auf einem Tisch dargestellt wird, welche mit Cubes mit zugehörigen Zahlenwerten gefüllt ist. Dabei werden immer zwei Fächer der Box gleichzeitig geöffnet, sodass man gegebenenfalls die beiden Elemente tauschen muss, falls ein kleinerer Wert rechts eines größeren liegt. Dies wird solange durchgeführt, bis alle Cubes an der richtigen Stelle platziert sind. Visuelles Feedback bekommt der User durch Färben der Blöcke zu grün, sobald sie an der richtigen Position liegen.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=1\textwidth]{images/neuerungen/grundriss_informatiklab.png}
+	\caption{Grundriss Informatiklab}
+	\label{img:informartiklab}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=1\textwidth]{images/neuerungen/informatiklab_bubblesort.png}
+	\caption{Bubble Sort mit Button um nächstes Fach zu öffnen}
+	\label{img:bubblesort}
+\end{figure}
+
+Der Dijkstra-Algorithmus ist an der Wand platziert und die einzelnen Knotenpunkte sind durch Berührung des Controllers abzugehen. Dabei erscheint ebenso ein virtuelles Feedback. Knoten, die bereits besucht wurden, sind grün, mögliche Knoten im nächsten Schritt werden gelb hinterlegt. Ein Sieben-Segment Zähler rechnet die Werte der abgelaufenen Pfade zusammen. Wird die Zahl rot ist man über den Wert des kürzesten Weges gekommen. Erscheint sie grün hat man erfolgreich den kürzesten Weg absolviert. Will man den Zähler zurücksetzen wählt man den Reset-Knopf und man kann von vorne beginnen. 
+
+\begin{figure}
+	\centering
+	\includegraphics[width=1\textwidth]{images/neuerungen/informatiklab_dijkstra.png}
+	\caption{Dijkstra-Algorithmus, grüne Knoten besucht, gelbe Knoten besuchbar, Zähler und Reset-Button}
+	\label{img:dijkstra}
+\end{figure}
+
+Hier sind einige seltsame Probleme aufgetreten, die sich auch im Nachhinein nicht erklären lassen. Bei Tests im Simulator und mit der HTC Vive Pro kamen teils verschiedene Ergebnisse hervor. Der Bubble Sort hat mit der Brille nach einer bestimmten Zeit einen Stack-Overflow Fehler aufgeworfen, bei dem nicht klar zu erkennen war wieso dieser entsteht. Der Counter hat auch in beiden Ausführungen verschiedene Probleme gehabt, teils ging er nur im Simulator, teils nur mit Brille, teils weder noch. Diese Probleme werden, um es leicht zu machen einfach auf kleine Bugs von der Seite von Unity oder des HTC Vive Plugins geschoben. Anders sind diese (für uns) nicht erklärbar.
+
+\clearpage
+\section{Teilchenlabor}
+
+Das Teilchenlabor hat auf einer relativ spontanen Idee basiert und soll zeigen, wie das Verhalten von einzelnen Wassermolekülen (H\textsuperscript{2}O) bei sich verändernder Raumtemperatur ist. Dazu fliegen bei Betreten des Raums die Moleküle von Wand zu Wand von denen sie sich abstoßen. Auch Kollisionen miteinander führen zu einem Richtungswechsel. 
+
+\begin{figure}
+	\centering
+	\includegraphics[width=1\textwidth]{images/neuerungen/grundriss_teilchenlab.png}
+	\caption{Grundriss Teilchenlabor}
+	\label{img:teilchenlab}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=1\textwidth]{images/neuerungen/teilchenlab_temp.png}
+	\caption{Teilchenlabor mit Display und Temperatursteuerung}
+	\label{img:teilchenlabtemp}
+\end{figure}
+
+Dabei hat sich als Problem herausgestellt, dass Mesh-Collider in den aktuelleren Unity-Versionen nicht mehr unterstützt werden, wodurch die Moleküle zu Beginn immer durch die Wände geflogen sind und langsam, aber sicher verschwanden. Ein möglicher Lösungsansatz war es, um das gesamte Molekülgebilde einen Cube-Collider zu legen, sodass die Moleküle sich gegenseitig und auf die Cube-Collider des Raumes reagieren können. \newline
+
+Ein kleineres weiteres Problem ist es, dass es ein sehr unangenehmes Gefühl ist, wenn ein Molekül direkt auf den User zufliegt und einen am Kopf treffen würde. Dafür wurde jedoch keine passable Lösung gefunden. 
+
+\clearpage
+\section{Elektrotechnik}
+Die beiden Versuche der Elektrotechnik sind raumtechnisch im Hinterzimmer des Physiklabors. Das liegt ganz einfach daher, dass ansonsten eine gerade Anzahl an Räumen im Flur entstanden wäre, was nicht aufteilbar gewesen wäre und daher wurde dies fachlich der Physik ?untergeordnet?.  \newline
+
+Zu diesen Versuchen wurde auf tatkräftige Unterstützung von Herr Dr.-Ing. Hubert Zitt gebaut, der für uns die Versuche im Elektrotechnik-Labor der Hochschule Kaiserslautern in Realität aufgebaut hat und uns genau beschrieb, welche Vorgänge umgesetzt werden sollen und was veranschaulicht werden soll. 
+
+\begin{figure}
+	\centering
+	\includegraphics[width=1\textwidth]{images/neuerungen/grundriss_elektrotechnik.png}
+	\caption{Grundriss Elektrotechniklabor}
+	\label{img:etechniklab}
+\end{figure}
+
+Das größte Problem hierbei waren vor allem die Kabel in VR umzusetzen. Es wäre prinzipiell schöner gewesen, wenn ein User die Buchsen der Geräte selbst verkabeln könnte, dies gab die Zeit und auch unsere Erfahrung mit Unity nicht her, solch ein Vorhaben würde den vorgegebenen Rahmen um ein Vielfaches sprengen vermutlich. Daher wurde die Wahl auf statische Kabel getroffen, welche aus etlichen Zylindern einzeln zusammengebaut wurden. Ein weiteres Problem war es, an die benötigten Formeln heranzukommen, da es hierbei hin und wieder zu Missverständnissen kam. Gelöst wurde dieses Problem durch zur Hilfenahme von Interpolation. \newline
+
+Bei dem ersten Versuch wird Strom und Spannung bei einem nichtlinearen Verbraucher gemessen. \cite{ZittScript1} Der zweite Versuch veranschaulicht das Messen von Spannungen bei einer RC-Reihenschaltung. \cite{ZittScript2}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=1\textwidth]{images/neuerungen/etechnik_v1.png}
+	\caption{Versuch: Messen von Strom und Spannung bei einem nichtlinearen Verbraucher}
+	\label{img:etechniklabv1}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=1\textwidth]{images/neuerungen/etechnik_v2.png}
+	\caption{Versuch: Messen von Spannungen bei einer RC-Reihenschaltung}
+	\label{img:etechniklabv2}
+\end{figure}

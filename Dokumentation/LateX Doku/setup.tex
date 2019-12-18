@@ -2,8 +2,9 @@
 % Vorlage für Dokumentation auf LaTeX-Basis im Projekt InfoStuDi
 % --------------------------------------------------------------------------------------------
 \usepackage{mb}
- \usepackage{mbmath}
+\usepackage{mbmath}
 \usepackage{textcomp}
+\usepackage{german}
 % Array-Paket für mehr Kontrolle der Tabellen
 \usepackage{array}
 % ifthen für Ein- und Ausblenden der Lösungen.
@@ -277,15 +278,8 @@
 
 % Titelseite mit zusätzlicher Grafik
 %
-% Das obligatorische Argument ist der Titel des Dokuments.
-% Als Default wird das Logo der Stochastik-Veranstaltung als Titelbild
-% verwendet. Mit Hilfe eines optionalen Arguments kann
-% ein anderes Bild verwendet werden!
-% Beispiel: \titelseite[\imagePath/misc/ameise]{Das Liebesleben der Ameisen}
-% Aufruf mit Standardbild:
-% \titelseite{Das Liebesleben der Ameisen}
 %
-\newcommand{\titelseiteMitBild}[2][\imagePath/logos/python]{%
+\newcommand{\titelseiteMitBild}[1]{%
 %% Titelseite
 \pagenumbering{roman}%
 \thispagestyle{empty}%
@@ -294,10 +288,9 @@
 \centering%
 \vspace*{0.5cm}%
 
-\Huge{\textbf{#2}}\\\vspace*{0.5cm}%
+\Huge{\textbf{#1}}\\\vspace*{0.5cm}%
 
 \vspace*{2.0cm}%
-\includegraphics[height=6cm]{#1}%
 
 \vspace*{1.0cm}%
 
@@ -328,6 +321,5 @@
     \renewcommand{\templabel}{#1sol}
     \checknextarg{#1}
 }
-\newcommand{\checknextarg}[1]{\@ifnextchar\bgroup{\gobblenextarg}{ \leavevmode \\ \\ Die Lösungen zu den Aufgaben finden Sie im Anhang \ref{#1sol}. }}
-\newcommand{\gobblenextarg}[1]{  \aufgabe{#1}\@ifnextchar\bgroup{\gobblenextarg}{ \leavevmode \\ \\  Die Lösungen zu den Aufgaben finden Sie im Anhang \ref{\templabel}.}}
+
 \makeatother

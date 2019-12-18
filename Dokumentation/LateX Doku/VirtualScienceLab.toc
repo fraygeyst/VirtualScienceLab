@@ -1,0 +1,13 @@
+\contentsline {chapter}{\numberline {1}Idee}{1}{chapter.1}% 
+\contentsline {chapter}{\numberline {2}Steuerung}{3}{chapter.2}% 
+\contentsline {chapter}{\numberline {3}Bisheriger Stand}{5}{chapter.3}% 
+\contentsline {chapter}{\numberline {4}Neuerungen}{9}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}Biologie}{11}{section.4.1}% 
+\contentsline {section}{\numberline {4.2}Mathematik}{15}{section.4.2}% 
+\contentsline {section}{\numberline {4.3}Informatik}{18}{section.4.3}% 
+\contentsline {section}{\numberline {4.4}Teilchenlabor}{21}{section.4.4}% 
+\contentsline {section}{\numberline {4.5}Elektrotechnik}{23}{section.4.5}% 
+\contentsline {chapter}{\numberline {5}Verworfene Ideen}{27}{chapter.5}% 
+\contentsline {chapter}{\numberline {6}Verworfene Ideen}{29}{chapter.6}% 
+\contentsline {chapter}{\numberline {7}Verworfene Ideen}{31}{chapter.7}% 
+\contentsline {chapter}{Literaturverzeichnis}{33}{section*.26}% 
