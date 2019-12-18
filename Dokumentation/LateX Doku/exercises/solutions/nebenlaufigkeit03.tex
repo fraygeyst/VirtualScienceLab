@@ -1,9 +1,0 @@
-Hierzu wird ein \lstinline$Lock$-Objekt im Konstruktor der \lstinline$Counter$-Klasse erzeugt
-und in einem neuen Attribut gespeichert.
-In der \lstinline$increment()$-Methode wird nun das Inkrementieren des \lstinline$count$-Attributs 
-nach dem Aufruf von \lstinline$aquire()$ auf dem neuen \lstinline$Lock$-Objekt ausgeführt.
-Anschließend wird \lstinline$release()$ aufgerufen.
-
-\lstinputlisting[language=Python,linerange={1-2,6-14}]{exercises/src/nebenlaufigkeit03.py}
-
-Es bietet sich an, das \lstinline$with$-Statement zu verwenden.
