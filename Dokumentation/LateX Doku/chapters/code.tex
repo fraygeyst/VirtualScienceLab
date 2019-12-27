@@ -1,0 +1,319 @@
+% !TeX root = ../pythonTutorial.tex
+\chapter{Code}
+
+Viele Funktionen sind in Unity standardmäßig implementiert. So zum Beispiel die Möglichkeit physikalische Eigentschaften auf ein Objekt zu definieren. Dies macht es anfassbar und ermöglicht die Interaktion mit dem Objekt. \newline
+
+Eigene bzw. weitere und schwierigere Funktionen müssen hingegen selbst implementiert werden. Alle von uns implementierten Funktionen und Methoden befinden sich im Projekt unter Assets -> Scripts. Alle Scripte wurden in C# programmiert. \newline
+
+Es gibt Scripte, die sich durchs ganze Projekt ziehen und andere, die sich auf bestimmte Szenen beziehen. Allgemein können jedoch alle Scripte überall verwendet werden.
+
+\clearpage
+\subsection{Scene\_Management.cs}
+
+Das Scene Management Script dient zur richtigen Positionierung des Spielers, wenn er den Flur betritt. Je nachdem aus welchem Raum er kommt ändert sich die Startposition. Das Script muss in jeder Scene eingebaut sein, da nur so die zuletzt verwendete Scene ausgelesen werden kann. 
+
+\begin{lstlisting}
+Scene scene = SceneManager.GetActiveScene();
+camera_obj = GameObject.Find("ViveRig");
+Vector3 vec = new Vector3();
+
+if (scene.name == "NeuerFlur" && Globals.last_scene != "")
+{
+Debug.Log("Switching Cam from: " + Globals.last_scene);
+switch (Globals.last_scene)
+{
+case "BioLab":
+vec = new Vector3(12.0f, 0f, -1.4f);
+break;
+case "grosserRaum": // Mathe
+vec = new Vector3(9.2f, 0f, 0f);
+break;
+case "Lab1": // Chemie
+vec = new Vector3(22.0f, 0f, -1.4f);
+break;
+case "Lab2": // Physik
+vec = new Vector3(22.0f, 0f, 1.4f);
+break;
+case "Lab3": // Informatik
+vec = new Vector3(16.9f, 0f, 1.4f);
+break;
+case "Teilchenlabor":
+vec = new Vector3(12.0f, 0f, 1.4f);
+break;
+case "VRLab":
+vec = new Vector3(16.9f, 0f, 1.4f);
+break;
+}
+Debug.Log("Changing Position: " + vec);
+camera_obj.transform.position = vec;
+} else
+{
+Globals.last_scene = scene.name;
+}
+\end{lstlisting}
+
+Das Script wird in der \textit{start()} Methode ausgeführt - also beim Laden der Scene. Am Anfang wird der Scenenname rausgefunden und in einer Variable gespeichert. Anschließend erfolgt eine Abfrage, ob die aktuelle Scene der "Flur" ist oder nicht. Falls nicht, wird der aktuelle Scenenname als \textit{last\_scene} in einer Globalen Variable gespeichert. Wenn es sich um den Flur handelt wird die Position des Players entsprechend der letzten Scene im Flur geändert.
+
+\clearpage
+\subsection{Load\_publics.cs}
+
+In diesem Script werden alle Variablen gespeichert, die über ein Script hinaus benötigt werden, da aus anderen Scripten darauf zugegriffen werden muss. Das Script wird in jeder Scene eingebunden. Das Objekt auf dem es positioniert ist, spielt dabei keine Rolle. \newline
+
+Innerhalb des Scripts ist eine Klasse definiert, in der die Variablen und alle Scriptübergreifenden Funktionen definiert sind.
+
+\begin{lstlisting}
+//Allgemein
+public static bool light_on = false;
+public static bool light_col = false;
+public static string[] lightnames = {"Point_Light_l", "Point_Light_m", "Point_light_r"};
+
+// Informatiklab
+// Dijkstra
+internal static readonly bool reset_clicked;
+public static string Dijkstra_Word;
+public static bool s_active = true;
+public static bool a_active = false;
+public static bool b_active = false;
+public static bool g_active = false;
+public static bool c_active = false;
+public static bool d_active = false;
+public static bool e_active = false;
+public static bool f_active = false;
+public static bool z_active = false;
+public static bool r_active = false;
+
+public static bool s_clicked = false;
+public static bool a_clicked = false;
+public static bool b_clicked = false;
+public static bool g_clicked = false;
+public static bool c_clicked = false;
+public static bool d_clicked = false;
+public static bool e_clicked = false;
+public static bool f_clicked = false;
+public static bool z_clicked = false;
+public static bool r_clicked = false;
+
+public static int counter = 0;
+public static int maximum = 19;
+public static string last_clicked = "";
+
+
+// Bubblesort
+public static int b_state = 0;
+public static bool bubble_active = true;
+public static bool s_1_act = true;
+public static bool s_2_act = true;
+public static bool s_3_act = true;
+public static bool s_4_act = true;
+public static bool s_5_act = true;
+public static bool s_6_act = true;
+public static bool s_7_act = true;
+
+// BioLab
+public static string scene_change = "";
+public static bool bio_collision_happened = false;
+
+// Teilchenlabor
+// Molekuele
+public static int Temperatur = 25;
+public static bool min_act = true;
+public static bool plus_act = true;
+public static float Temp_Max = 200f;
+public static float Temp_Min = 0f;
+public static float Map_Temp_Max = 0.25f;
+public static float Map_Temp_Min = 0f;
+public static float move_speed_multi = 15;
+public static float RemapTemp(float from, float fromMin, float fromMax, float toMin, float toMax)
+{
+var fromAbs = from - fromMin;
+var fromMaxAbs = fromMax - fromMin;
+var normal = fromAbs / fromMaxAbs;
+var toMaxAbs = toMax - toMin;
+var toAbs = toMaxAbs * normal;
+var to = toAbs + toMin;
+
+return to;
+}
+
+// Mathelab
+public static int sev_bridges_counter = 0;
+public static bool bridges_active = true;
+
+// Elektrolab
+public static double lampe_netzteil_count = 0;
+public static float RemapLight(float from, float fromMin, float fromMax, float toMin, float toMax)
+{
+var fromAbs = from - fromMin;
+var fromMaxAbs = fromMax - fromMin;
+var normal = fromAbs / fromMaxAbs;
+var toMaxAbs = toMax - toMin;
+var toAbs = toMaxAbs * normal;
+var to = toAbs + toMin;
+
+return to;
+}
+
+// Versuch 2
+public static float Uq = 4.0f;
+public static float R = 2000f;
+public static float C = 0.5f;
+public static float frequency_Netzteil = 0.0f;
+\end{lstlisting}
+
+\clearpage
+\subsection{Sev\_Seg\_counter.cs}
+
+Die 7-Segment-Anzeige wird in verschiedenen Scenen benutzt. Dieses Script dient dazu eine eingegebenen Zahl auf das 3-Ziffern-Display zu übertragen.
+
+\begin{lstlisting}
+public void setSevSegCount(int seconds, String parentname)
+{
+if (seconds < 1000)
+{
+string s_number = String.Format("{0:000}", seconds);
+GameObject parent = GameObject.Find(parentname);
+
+Debug.Log(s_number);
+
+set_n(int.Parse(Char.ToString(s_number[0])), 1, parent);
+set_n(int.Parse(Char.ToString(s_number[1])), 2, parent);
+set_n(int.Parse(Char.ToString(s_number[2])), 3, parent);
+}
+}
+
+private void set_n(int number, int disp_num, GameObject parent_item)
+{
+string s_lt = "n_" + disp_num + "_lt";
+string s_rt = "n_" + disp_num + "_rt";
+string s_lb = "n_" + disp_num + "_lb";
+string s_rb = "n_" + disp_num + "_rb";
+string s_m = "n_" + disp_num + "_m";
+string s_b = "n_" + disp_num + "_b";
+string s_t = "n_" + disp_num + "_t";
+
+Debug.Log(parent_item);
+Debug.Log(number);
+
+switch (number)
+{
+case 0:
+setColorP(parent_item.transform.Find(s_lt).gameObject);
+setColorP(parent_item.transform.Find(s_rt).gameObject);
+setColorP(parent_item.transform.Find(s_lb).gameObject);
+setColorP(parent_item.transform.Find(s_rb).gameObject);
+setColorN(parent_item.transform.Find(s_m).gameObject);
+setColorP(parent_item.transform.Find(s_b).gameObject);
+setColorP(parent_item.transform.Find(s_t).gameObject);
+break;
+case 1:
+setColorN(parent_item.transform.Find(s_lt).gameObject);
+setColorP(parent_item.transform.Find(s_rt).gameObject);
+setColorN(parent_item.transform.Find(s_lb).gameObject);
+setColorP(parent_item.transform.Find(s_rb).gameObject);
+setColorN(parent_item.transform.Find(s_m).gameObject);
+setColorN(parent_item.transform.Find(s_b).gameObject);
+setColorN(parent_item.transform.Find(s_t).gameObject);
+break;
+case 2:
+setColorN(parent_item.transform.Find(s_lt).gameObject);
+setColorP(parent_item.transform.Find(s_rt).gameObject);
+setColorP(parent_item.transform.Find(s_lb).gameObject);
+setColorN(parent_item.transform.Find(s_rb).gameObject);
+setColorP(parent_item.transform.Find(s_m).gameObject);
+setColorP(parent_item.transform.Find(s_b).gameObject);
+setColorP(parent_item.transform.Find(s_t).gameObject);
+break;
+case 3:
+setColorN(parent_item.transform.Find(s_lt).gameObject);
+setColorP(parent_item.transform.Find(s_rt).gameObject);
+setColorN(parent_item.transform.Find(s_lb).gameObject);
+setColorP(parent_item.transform.Find(s_rb).gameObject);
+setColorP(parent_item.transform.Find(s_m).gameObject);
+setColorP(parent_item.transform.Find(s_b).gameObject);
+setColorP(parent_item.transform.Find(s_t).gameObject);
+break;
+case 4:
+setColorP(parent_item.transform.Find(s_lt).gameObject);
+setColorP(parent_item.transform.Find(s_rt).gameObject);
+setColorN(parent_item.transform.Find(s_lb).gameObject);
+setColorP(parent_item.transform.Find(s_rb).gameObject);
+setColorP(parent_item.transform.Find(s_m).gameObject);
+setColorN(parent_item.transform.Find(s_b).gameObject);
+setColorN(parent_item.transform.Find(s_t).gameObject);
+break;
+case 5:
+setColorP(parent_item.transform.Find(s_lt).gameObject);
+setColorN(parent_item.transform.Find(s_rt).gameObject);
+setColorN(parent_item.transform.Find(s_lb).gameObject);
+setColorP(parent_item.transform.Find(s_rb).gameObject);
+setColorP(parent_item.transform.Find(s_m).gameObject);
+setColorP(parent_item.transform.Find(s_b).gameObject);
+setColorP(parent_item.transform.Find(s_t).gameObject);
+break;
+case 6:
+setColorP(parent_item.transform.Find(s_lt).gameObject);
+setColorN(parent_item.transform.Find(s_rt).gameObject);
+setColorP(parent_item.transform.Find(s_lb).gameObject);
+setColorP(parent_item.transform.Find(s_rb).gameObject);
+setColorP(parent_item.transform.Find(s_m).gameObject);
+setColorP(parent_item.transform.Find(s_b).gameObject);
+setColorP(parent_item.transform.Find(s_t).gameObject);
+break;
+case 7:
+setColorN(parent_item.transform.Find(s_lt).gameObject);
+setColorP(parent_item.transform.Find(s_rt).gameObject);
+setColorN(parent_item.transform.Find(s_lb).gameObject);
+setColorP(parent_item.transform.Find(s_rb).gameObject);
+setColorN(parent_item.transform.Find(s_m).gameObject);
+setColorN(parent_item.transform.Find(s_b).gameObject);
+setColorP(parent_item.transform.Find(s_t).gameObject);
+break;
+case 8:
+setColorP(parent_item.transform.Find(s_lt).gameObject);
+setColorP(parent_item.transform.Find(s_rt).gameObject);
+setColorP(parent_item.transform.Find(s_lb).gameObject);
+setColorP(parent_item.transform.Find(s_rb).gameObject);
+setColorP(parent_item.transform.Find(s_m).gameObject);
+setColorP(parent_item.transform.Find(s_b).gameObject);
+setColorP(parent_item.transform.Find(s_t).gameObject);
+break;
+case 9:
+setColorP(parent_item.transform.Find(s_lt).gameObject);
+setColorP(parent_item.transform.Find(s_rt).gameObject);
+setColorN(parent_item.transform.Find(s_lb).gameObject);
+setColorP(parent_item.transform.Find(s_rb).gameObject);
+setColorP(parent_item.transform.Find(s_m).gameObject);
+setColorP(parent_item.transform.Find(s_b).gameObject);
+setColorP(parent_item.transform.Find(s_t).gameObject);
+break;
+}
+}
+
+private void setColorP(GameObject gameObject)
+{
+if(Load_Publics.counter <= Load_Publics.maximum)
+{
+gameObject.GetComponent<Renderer>().material.color = Color.green;
+} else
+{
+gameObject.GetComponent<Renderer>().material.color = Color.red;
+}
+
+}
+private void setColorN(GameObject gameObject)
+{
+gameObject.GetComponent<Renderer>().material.color = Color.black;
+}
+
+private int[] GetIntArray(int num)
+{
+List<int> listOfInts = new List<int>();
+while (num > 0)
+{
+listOfInts.Add(num % 10);
+num = num / 10;
+}
+listOfInts.Reverse();
+return listOfInts.ToArray();
+}
+\end{lstlisting}

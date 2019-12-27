@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.12.11)  18 DEC 2019 12:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.12.27)  27 DEC 2019 19:30
 entering extended mode
 **./VirtualScienceLab.tex
 (VirtualScienceLab.tex
-LaTeX2e <2018-12-01>
+LaTeX2e <2019-10-01> patch level 3
 
 ("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\scrboo
 k.cls"
@@ -150,7 +150,7 @@ MB package, V2.1, (c) Manfred Brill
 ty" v2.5e 1998-07-08
 Package: ngerman 1998/07/08 v2.5e Support for writing german texts (br)
 \grmnU@D=\dimen103
-ngerman -- \language number for naustrian undefined, default 50 used.
+ngerman -- \language number for naustrian undefined, default 47 used.
 )
 ("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\inputenc.sty"
 Package: inputenc 2018/08/11 v1.3c Input encoding file
@@ -171,7 +171,7 @@ Package: palatino 2005/04/12 PSNFSS-v9.2a (SPQR)
 )
 ("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsmath.st
 y"
-Package: amsmath 2018/12/01 v2.17b AMS math features
+Package: amsmath 2019/11/16 v2.17d AMS math features
 \@mathmargin=\skip58
 
 For additional information on amsmath, use the `?' option.
@@ -196,20 +196,20 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count90
-LaTeX Info: Redefining \frac on input line 223.
+LaTeX Info: Redefining \frac on input line 227.
 \uproot@=\count91
 \leftroot@=\count92
-LaTeX Info: Redefining \overline on input line 385.
+LaTeX Info: Redefining \overline on input line 389.
 \classnum@=\count93
 \DOTSCASE@=\count94
-LaTeX Info: Redefining \ldots on input line 482.
-LaTeX Info: Redefining \dots on input line 485.
-LaTeX Info: Redefining \cdots on input line 606.
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
 \Mathstrutbox@=\box29
 \strutbox@=\box30
 \big@size=\dimen106
-LaTeX Font Info:    Redeclaring font encoding OML on input line 729.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
 \macc@depth=\count95
 \c@MaxMatrixCols=\count96
 \dotsspace@=\muskip10
@@ -230,14 +230,15 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
 \multlinegap=\skip59
 \multlinetaggap=\skip60
 \mathdisplay@stack=\toks21
-LaTeX Info: Redefining \[ on input line 2844.
-LaTeX Info: Redefining \] on input line 2845.
+LaTeX Info: Redefining \[ on input line 2858.
+LaTeX Info: Redefining \] on input line 2859.
 )
 ("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\amsfonts.
 sty"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )
@@ -255,7 +256,7 @@ Package: amscd 2017/04/14 v2.1 AMS Commutative Diagrams
 Package: mbmath 2002/06/04, (MB)
 
 Enhanced math macros, V1.0, (c) Manfred Brill
-("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/latex/eepic\epic.sty"
+("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/latex/epic\epic.sty"
 Enhancements to Picture Environment. Version 1.2 - Released June 1, 1986
 \@@multicnt=\count102
 \d@lta=\count103
@@ -297,7 +298,7 @@ Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
 ("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphics.
 sty"
-Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2019/11/01 v1.3d Standard LaTeX Graphics (DPC,SPQR)
 
 ("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\trig.sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
@@ -306,7 +307,7 @@ Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 ics.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 99.
+Package graphics Info: Driver file: pdftex.def on input line 105.
 
 ("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-def\pdfte
 x.def"
@@ -354,7 +355,7 @@ Package: bibgerm 2000/08/18 v0.1 Support for mixed language bibliographies
 ** Modified for ngerman.sty and babel.sty by H. Harders 21 August 2000 **)
 ("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\multicol.sty
 "
-Package: multicol 2018/12/27 v1.8v multicolumn formatting (FMi)
+Package: multicol 2019/03/01 v1.8w multicolumn formatting (FMi)
 \c@tracingmulticols=\count112
 \mult@box=\box39
 \multicol@leftmargin=\dimen128
@@ -393,19 +394,20 @@ Package: multicol 2018/12/27 v1.8v multicolumn formatting (FMi)
 \@tempa=\box60
 \@tempa=\box61
 \@tempa=\box62
-\c@columnbadness=\count118
-\c@finalcolumnbadness=\count119
+\c@minrows=\count118
+\c@columnbadness=\count119
+\c@finalcolumnbadness=\count120
 \last@try=\dimen134
 \multicolovershoot=\dimen135
 \multicolundershoot=\dimen136
 \mult@nat@firstbox=\box63
 \colbreak@box=\box64
-\mc@col@check@num=\count120
+\mc@col@check@num=\count121
 )
 ("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/latex/supertabular\super
 tabular.sty"
 Package: supertabular 2004/02/20 v4.1e the supertabular environment
-\c@tracingst=\count121
+\c@tracingst=\count122
 \ST@wd=\dimen137
 \ST@rightskip=\skip65
 \ST@leftskip=\skip66
@@ -424,7 +426,7 @@ Package: supertabular 2004/02/20 v4.1e the supertabular environment
 )
 ("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/latex/float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count122
+\c@float@type=\count123
 \float@exts=\toks25
 \float@box=\box66
 \@float@everytoks=\toks26
@@ -432,24 +434,24 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 )
 ("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listings.
 sty"
-\lst@mode=\count123
+\lst@mode=\count124
 \lst@gtempboxa=\box68
 \lst@token=\toks27
-\lst@length=\count124
+\lst@length=\count125
 \lst@currlwidth=\dimen148
-\lst@column=\count125
-\lst@pos=\count126
+\lst@column=\count126
+\lst@pos=\count127
 \lst@lostspace=\dimen149
 \lst@width=\dimen150
-\lst@newlines=\count127
-\lst@lineno=\count128
+\lst@newlines=\count128
+\lst@lineno=\count129
 \lst@maxwidth=\dimen151
 
 ("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstmisc.s
 ty"
 File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
-\c@lstnumber=\count129
-\lst@skipnumbers=\count130
+\c@lstnumber=\count130
+\lst@skipnumbers=\count131
 \lst@framebox=\box69
 )
 ("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listings.
@@ -458,12 +460,14 @@ File: listings.cfg 2019/09/10 1.8c listings configuration
 ))
 Package: listings 2019/09/10 1.8c (Carsten Heinz)
 \Blen=\skip68
-LaTeX Font Info:    Try loading font information for U+msa on input line 227.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 227
+.
 
 ("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 227.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 227
+.
 ("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )) ("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\textcomp.s
@@ -486,7 +490,7 @@ File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 Now handling font encoding TS1 ...
 ... processing UTF-8 mapping file for font encoding TS1
  ("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ts1enc.dfu"
-File: ts1enc.dfu 2018/10/05 v1.2f UTF-8 support for inputenc
+File: ts1enc.dfu 2019/07/11 v1.2j UTF-8 support for inputenc
    defining Unicode char U+00A2 (decimal 162)
    defining Unicode char U+00A3 (decimal 163)
    defining Unicode char U+00A4 (decimal 164)
@@ -556,6 +560,8 @@ File: ts1enc.dfu 2018/10/05 v1.2f UTF-8 support for inputenc
    defining Unicode char U+25E6 (decimal 9702)
    defining Unicode char U+25EF (decimal 9711)
    defining Unicode char U+266A (decimal 9834)
+   defining Unicode char U+27E8 (decimal 10216)
+   defining Unicode char U+27E9 (decimal 10217)
    defining Unicode char U+FEFF (decimal 65279)
 ))
 LaTeX Info: Redefining \oldstylenums on input line 334.
@@ -631,10 +637,10 @@ LaTeX Info: Redefining \flqq on input line 277.
 LaTeX Info: Redefining \frqq on input line 285.
 LaTeX Info: Redefining \flq on input line 293.
 LaTeX Info: Redefining \frq on input line 300.
-german -- \language number for Austrian undefined, default 28 used.
+german -- \language number for Austrian undefined, default 26 used.
 )
 ("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\array.sty"
-Package: array 2018/12/30 v2.4k Tabular extension package (FMi)
+Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
 \col@sep=\dimen152
 \ar@mcellbox=\box70
 \extrarowheight=\dimen153
@@ -648,11 +654,13 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 ("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\pifont.sty"
 Package: pifont 2005/04/12 PSNFSS-v9.2a Pi font support (SPQR) 
-LaTeX Font Info:    Try loading font information for U+pzd on input line 63.
+LaTeX Font Info:    Trying to load font information for U+pzd on input line 63.
+
 ("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\upzd.fd"
 File: upzd.fd 2001/06/04 font definitions for U/pzd.
 )
-LaTeX Font Info:    Try loading font information for U+psy on input line 64.
+LaTeX Font Info:    Trying to load font information for U+psy on input line 64.
+
 
 ("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\upsy.fd"
 File: upsy.fd 2001/06/04 font definitions for U/psy.
@@ -664,8 +672,8 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 \enit@outerparindent=\dimen154
 \enit@toks=\toks29
 \enit@inbox=\box72
-\enit@count@id=\count131
-\enitdp@description=\count132
+\enit@count@id=\count132
+\enitdp@description=\count133
 )
 ("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/latex/imakeidx\imakeidx.
 sty"
@@ -683,17 +691,19 @@ tex"
 \XKV@toks=\toks30
 \XKV@tempa@toks=\toks31
 )
-\XKV@depth=\count133
+\XKV@depth=\count134
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/generic/ifxetex\ifxetex.
-sty"
-Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
-)
-("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ifluate
-x.sty"
-Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
+("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/generic/iftex\ifxetex.st
+y"
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+
+("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/generic/iftex\iftex.sty"
+Package: iftex 2019/11/07 v1.0c TeX engine tests
+))
+("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/generic/iftex\ifluatex.s
+ty"
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
 ))
 \VirtualScienceLab@idxfile=\write3
 \openout3 = `VirtualScienceLab.idx'.
@@ -746,8 +756,8 @@ Package caption3 Info: TeX engine: e-TeX on input line 64.
 Package caption Info: KOMA-Script document class detected.
 )
 Package caption Info: KOMA-Script document class.
-\c@caption@flags=\count134
-\c@continuedfloat=\count135
+\c@caption@flags=\count135
+\c@continuedfloat=\count136
 Package caption Info: float package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: supertabular package is loaded.
@@ -757,67 +767,76 @@ Package caption Info: supertabular package is loaded.
 sty"
 File: lstlang1.sty 2019/09/10 1.8c listings language file
 )
-Package color Info: Redefining color lstback on input line 63.
-\c@schritt=\count136
-\c@kontrollCounter=\count137
+Package color Info: Redefining color lstback on input line 64.
+\c@schritt=\count137
+\c@kontrollCounter=\count138
  ("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\thb.sty"
 File: thb.sty 2014/10/28 v2.2c Theorem extension package (FMi)
 )
-\c@auftitle=\count138
-\c@aufgabenCounter=\count139
-\c@Satz=\count140
-\c@Fakt=\count141
-\c@Definition=\count142
-LaTeX Font Info:    Try loading font information for T1+ppl on input line 227.
+\c@auftitle=\count139
+\c@aufgabenCounter=\count140
+\c@Satz=\count141
+\c@Fakt=\count142
+\c@Definition=\count143
+LaTeX Font Info:    Trying to load font information for T1+ppl on input line 22
+8.
  ("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\t1ppl.fd"
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 )
-\c@datensatz=\count143
+\c@datensatz=\count144
 ) (pdfsetup.tex
 ("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\hyperref.
 sty"
-Package: hyperref 2018/11/30 v6.88e Hypertext links for LaTeX
+Package: hyperref 2019/11/10 v7.00c Hypertext links for LaTeX
 
-("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\hobsub-
-hyperref.sty"
-Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
-
-
-("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\hobsub-
-generic.sty"
-Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
-Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ltxcmds
+.sty"
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-Package hobsub Info: Skipping package `ifluatex' (already loaded).
-Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
-Package ifvtex Info: VTeX not detected.
-Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
-Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
-Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
 )
-Package pdftexcmds Info: LuaTeX not detected.
+("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pdftexcmds\pdftexc
+mds.sty"
+Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\infware
+rr.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
+)
+("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\kvsetke
+ys.sty"
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\etexcmd
+s.sty"
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+))
+("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\kvdefin
+ekeys.sty"
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+)
+("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\pdfesca
+pe.sty"
 Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
-Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
 )
-Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
-Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
-)
-Package hobsub Info: Skipping package `hobsub' (already loaded).
-Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
-Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
-Package: xcolor-patch 2016/05/16 xcolor patch
-Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
-Package atveryend Info: \enddocument detected (standard20110627).
-Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
-Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\hycolor.s
+ty"
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+
+("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\xcolor-pa
+tch.sty"
+Package: xcolor-patch 2016/05/16 xcolor patch
+
+("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\hopatch.s
+ty"
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+)))
+("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\letltxmac
+ro.sty"
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
 )
 ("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\auxhook.s
 ty"
@@ -828,65 +847,98 @@ Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
 \@linkdim=\dimen162
-\Hy@linkcounter=\count144
-\Hy@pagecounter=\count145
+\Hy@linkcounter=\count145
+\Hy@pagecounter=\count146
 
 ("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\pd1enc.de
 f"
-File: pd1enc.def 2018/11/30 v6.88e Hyperref: PDFDocEncoding definition (HO)
+File: pd1enc.def 2019/11/10 v7.00c Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count146
+("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\intcalc
+.sty"
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count147
 
 ("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/latex/00miktex\hyperref.
 cfg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-Package hyperref Info: Option `breaklinks' set `true' on input line 4393.
-Package hyperref Info: Hyper figures OFF on input line 4519.
-Package hyperref Info: Link nesting OFF on input line 4524.
-Package hyperref Info: Hyper index ON on input line 4527.
-Package hyperref Info: Plain pages OFF on input line 4534.
-Package hyperref Info: Backreferencing OFF on input line 4539.
+Package hyperref Info: Option `breaklinks' set `true' on input line 4409.
+Package hyperref Info: Hyper figures OFF on input line 4535.
+Package hyperref Info: Link nesting OFF on input line 4540.
+Package hyperref Info: Hyper index ON on input line 4543.
+Package hyperref Info: Plain pages OFF on input line 4550.
+Package hyperref Info: Backreferencing OFF on input line 4555.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4772.
-\c@Hy@tempcnt=\count147
+Package hyperref Info: Bookmarks ON on input line 4788.
+\c@Hy@tempcnt=\count148
  ("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/latex/url\url.sty"
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 5125.
+LaTeX Info: Redefining \url on input line 5147.
 \XeTeXLinkMargin=\dimen163
-\Fld@menulength=\count148
+
+("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\bitset.
+sty"
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+
+("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\bigintc
+alc.sty"
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count149
 \Field@Width=\dimen164
 \Fld@charsize=\dimen165
-Package hyperref Info: Hyper figures OFF on input line 6380.
-Package hyperref Info: Link nesting OFF on input line 6385.
-Package hyperref Info: Hyper index ON on input line 6388.
-Package hyperref Info: backreferencing OFF on input line 6395.
-Package hyperref Info: Link coloring OFF on input line 6400.
-Package hyperref Info: Link coloring with OCG OFF on input line 6405.
-Package hyperref Info: PDF/A mode OFF on input line 6410.
-LaTeX Info: Redefining \ref on input line 6450.
-LaTeX Info: Redefining \pageref on input line 6454.
-\Hy@abspage=\count149
-\c@Item=\count150
-\c@Hfootnote=\count151
+Package hyperref Info: Hyper figures OFF on input line 6418.
+Package hyperref Info: Link nesting OFF on input line 6423.
+Package hyperref Info: Hyper index ON on input line 6426.
+Package hyperref Info: backreferencing OFF on input line 6433.
+Package hyperref Info: Link coloring OFF on input line 6438.
+Package hyperref Info: Link coloring with OCG OFF on input line 6443.
+Package hyperref Info: PDF/A mode OFF on input line 6448.
+LaTeX Info: Redefining \ref on input line 6488.
+LaTeX Info: Redefining \pageref on input line 6492.
+
+("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\atbegsh
+i.sty"
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+
+("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/generic/iftex\ifpdf.sty"
+Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
+))
+\Hy@abspage=\count150
+\c@Item=\count151
+\c@Hfootnote=\count152
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
 ("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\hpdftex.d
 ef"
-File: hpdftex.def 2018/11/30 v6.88e Hyperref driver for pdfTeX
-\Fld@listcount=\count152
-\c@bookmark@seq@number=\count153
+File: hpdftex.def 2019/11/10 v7.00c Hyperref driver for pdfTeX
+
+("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\atveryend
+.sty"
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+)
+\Fld@listcount=\count153
+\c@bookmark@seq@number=\count154
 
 ("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\rerunfile
 check.sty"
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+
+("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\uniquec
+ounter.sty"
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
-82.
+85.
 )
 \Hy@SectionHShift=\skip72
 )
@@ -925,7 +977,8 @@ LaTeX Font Info:    ... okay on input line 29.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
 LaTeX Font Info:    ... okay on input line 29.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 29.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 29.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 2
+9.
 
 ("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
@@ -937,37 +990,37 @@ LaTeX Font Info:    ... okay on input line 29.
 ("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-p
 df.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count154
+\scratchcounter=\count155
 \scratchdimen=\dimen166
 \scratchbox=\box73
-\nofMPsegments=\count155
-\nofMParguments=\count156
+\nofMPsegments=\count156
+\nofMParguments=\count157
 \everyMPshowfont=\toks32
-\MPscratchCnt=\count157
+\MPscratchCnt=\count158
 \MPscratchDim=\dimen167
-\MPnumerator=\count158
-\makeMPintoPDFobject=\count159
+\MPnumerator=\count159
+\makeMPintoPDFobject=\count160
 \everyMPtoPDFconversion=\toks33
 )
-("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\epstopdf-
-base.sty"
-Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/latex/epstopdf-pkg\epsto
+pdf-base.sty"
+Package: epstopdf-base 2019/11/24 v2.7 Base part for package epstopdf
 
 ("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\grfext.st
 y"
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 )
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-38.
+42.
 Package grfext Info: Graphics extension search list:
 (grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 456.
+(grfext)             \AppendGraphicsExtensions on input line 460.
 )
 
 bibgerm.sty: (n)german.sty 2.5b detected
 
-\c@lstlisting=\count160
+\c@lstlisting=\count161
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
@@ -976,13 +1029,17 @@ Package hyperref Info: Link coloring OFF on input line 29.
 
 ("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\nameref.s
 ty"
-Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
+("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\refcount.
+sty"
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+)
 ("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\gettitl
 estring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count161
+\c@section@level=\count162
 )
 LaTeX Info: Redefining \ref on input line 29.
 LaTeX Info: Redefining \pageref on input line 29.
@@ -1002,15 +1059,19 @@ Class scrbook Info: loading recommended package `bookmark'.
 
 ("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\bookmark.
 sty"
-Package: bookmark 2016/05/17 v1.26 PDF bookmarks (HO)
+Package: bookmark 2019/06/04 v1.27 PDF bookmarks (HO)
 
+("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/generic/iftex\ifvtex.sty
+"
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
 ("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\bkm-pdfte
 x.def"
-File: bkm-pdftex.def 2016/05/17 v1.26 bookmark driver for pdfTeX (HO)
+File: bkm-pdftex.def 2019/06/04 v1.27 bookmark driver for pdfTeX (HO)
 Package auxhook Info: \AddLineBeginMainAux comes a little late,
 (auxhook)             because the main .aux file is already opened on input lin
-e 164.
-\BKM@id=\count162
+e 167.
+\BKM@id=\count163
 ))
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 30.
@@ -1073,7 +1134,7 @@ n-er-läs-slich. Die-
 ]
 chapter 3.
 [5]
-<images/bisheriger_stand/grundriss_chemielabor.png, id=81, 526.21594pt x 388.45
+<images/bisheriger_stand/grundriss_chemielabor.png, id=85, 526.21594pt x 388.45
 125pt>
 File: images/bisheriger_stand/grundriss_chemielabor.png Graphic file (type png)
 
@@ -1081,7 +1142,8 @@ File: images/bisheriger_stand/grundriss_chemielabor.png Graphic file (type png)
 Package pdftex.def Info: images/bisheriger_stand/grundriss_chemielabor.png  use
 d on input line 12.
 (pdftex.def)             Requested size: 403.51187pt x 297.88142pt.
-LaTeX Font Info:    Try loading font information for T1+phv on input line 17.
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 17
+.
  ("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\t1phv.fd"
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
@@ -1101,20 +1163,20 @@ n-ner (auf Grund
 
 ]
 chapter 4.
-<images/neuerungen/grundriss_physiklabor.png, id=100, 513.41812pt x 383.93437pt
+<images/neuerungen/grundriss_physiklabor.png, id=104, 513.41812pt x 383.93437pt
 >
 File: images/neuerungen/grundriss_physiklabor.png Graphic file (type png)
 <use images/neuerungen/grundriss_physiklabor.png>
 Package pdftex.def Info: images/neuerungen/grundriss_physiklabor.png  used on i
 nput line 9.
 (pdftex.def)             Requested size: 403.51187pt x 301.75235pt.
-<images/neuerungen/neuer_flur.png, id=101, 913.91437pt x 386.19281pt>
+<images/neuerungen/neuer_flur.png, id=105, 913.91437pt x 386.19281pt>
 File: images/neuerungen/neuer_flur.png Graphic file (type png)
 <use images/neuerungen/neuer_flur.png>
 Package pdftex.def Info: images/neuerungen/neuer_flur.png  used on input line 1
 8.
 (pdftex.def)             Requested size: 403.51187pt x 170.50874pt.
-<images/neuerungen/grundriss_vrlab.png, id=102, 545.03625pt x 380.92313pt>
+<images/neuerungen/grundriss_vrlab.png, id=106, 545.03625pt x 380.92313pt>
 File: images/neuerungen/grundriss_vrlab.png Graphic file (type png)
 <use images/neuerungen/grundriss_vrlab.png>
 Package pdftex.def Info: images/neuerungen/grundriss_vrlab.png  used on input l
@@ -1124,31 +1186,31 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <17.28> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 30.
 [9] [10 <./images/neuerungen/grundriss_physiklabor.png> <./images/neuerungen/ne
 uer_flur.png>]
-<images/neuerungen/grundriss_biolab.png, id=114, 493.845pt x 364.36125pt>
+<images/neuerungen/grundriss_biolab.png, id=118, 493.845pt x 364.36125pt>
 File: images/neuerungen/grundriss_biolab.png Graphic file (type png)
 <use images/neuerungen/grundriss_biolab.png>
 Package pdftex.def Info: images/neuerungen/grundriss_biolab.png  used on input 
 line 36.
 (pdftex.def)             Requested size: 403.51187pt x 297.7107pt.
-<images/neuerungen/biolab_mikroskop.png, id=115, 764.10469pt x 372.64218pt>
+<images/neuerungen/biolab_mikroskop.png, id=119, 764.10469pt x 372.64218pt>
 File: images/neuerungen/biolab_mikroskop.png Graphic file (type png)
 <use images/neuerungen/biolab_mikroskop.png>
 Package pdftex.def Info: images/neuerungen/biolab_mikroskop.png  used on input 
 line 42.
 (pdftex.def)             Requested size: 403.51187pt x 196.78865pt.
-<images/neuerungen/biolab_blutzelle.png, id=116, 733.99219pt x 382.42876pt>
+<images/neuerungen/biolab_blutzelle.png, id=120, 733.99219pt x 382.42876pt>
 File: images/neuerungen/biolab_blutzelle.png Graphic file (type png)
 <use images/neuerungen/biolab_blutzelle.png>
 Package pdftex.def Info: images/neuerungen/biolab_blutzelle.png  used on input 
 line 48.
 (pdftex.def)             Requested size: 403.51187pt x 210.24309pt.
-<images/neuerungen/biolab_pflanze.png, id=117, 778.40813pt x 390.70969pt>
+<images/neuerungen/biolab_pflanze.png, id=121, 778.40813pt x 390.70969pt>
 File: images/neuerungen/biolab_pflanze.png Graphic file (type png)
 <use images/neuerungen/biolab_pflanze.png>
 Package pdftex.def Info: images/neuerungen/biolab_pflanze.png  used on input li
 ne 54.
 (pdftex.def)             Requested size: 403.51187pt x 202.54422pt.
-<images/neuerungen/biolab_textil.png, id=118, 820.56563pt x 388.45125pt>
+<images/neuerungen/biolab_textil.png, id=122, 820.56563pt x 388.45125pt>
 File: images/neuerungen/biolab_textil.png Graphic file (type png)
 <use images/neuerungen/biolab_textil.png>
 Package pdftex.def Info: images/neuerungen/biolab_textil.png  used on input lin
@@ -1165,25 +1227,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 70--71
 
  []
 
-<images/neuerungen/brueckenproblem.png, id=142, 818.30719pt x 374.90062pt>
+<images/neuerungen/brueckenproblem.png, id=146, 818.30719pt x 374.90062pt>
 File: images/neuerungen/brueckenproblem.png Graphic file (type png)
 <use images/neuerungen/brueckenproblem.png>
 Package pdftex.def Info: images/neuerungen/brueckenproblem.png  used on input l
 ine 76.
 (pdftex.def)             Requested size: 403.51187pt x 184.86989pt.
-<images/neuerungen/grundriss_mathelab.png, id=143, 500.62032pt x 393.72093pt>
+<images/neuerungen/grundriss_mathelab.png, id=147, 500.62032pt x 393.72093pt>
 File: images/neuerungen/grundriss_mathelab.png Graphic file (type png)
 <use images/neuerungen/grundriss_mathelab.png>
 Package pdftex.def Info: images/neuerungen/grundriss_mathelab.png  used on inpu
 t line 82.
 (pdftex.def)             Requested size: 403.51187pt x 317.36223pt.
-<images/neuerungen/mathelab_kardioide.png, id=144, 678.28406pt x 387.69844pt>
+<images/neuerungen/mathelab_kardioide.png, id=148, 678.28406pt x 387.69844pt>
 File: images/neuerungen/mathelab_kardioide.png Graphic file (type png)
 <use images/neuerungen/mathelab_kardioide.png>
 Package pdftex.def Info: images/neuerungen/mathelab_kardioide.png  used on inpu
 t line 88.
 (pdftex.def)             Requested size: 403.51187pt x 230.63905pt.
-<images/neuerungen/mathelab_briefkasten.png, id=145, 685.05937pt x 385.44pt>
+<images/neuerungen/mathelab_briefkasten.png, id=149, 685.05937pt x 385.44pt>
 File: images/neuerungen/mathelab_briefkasten.png Graphic file (type png)
 <use images/neuerungen/mathelab_briefkasten.png>
 Package pdftex.def Info: images/neuerungen/mathelab_briefkasten.png  used on in
@@ -1198,14 +1260,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 101--102
 
  []
 
-<images/neuerungen/grundriss_informatiklab.png, id=162, 538.26094pt x 392.96812
+<images/neuerungen/grundriss_informatiklab.png, id=166, 538.26094pt x 392.96812
 pt>
 File: images/neuerungen/grundriss_informatiklab.png Graphic file (type png)
 <use images/neuerungen/grundriss_informatiklab.png>
 Package pdftex.def Info: images/neuerungen/grundriss_informatiklab.png  used on
  input line 107.
 (pdftex.def)             Requested size: 403.51187pt x 294.59343pt.
-<images/neuerungen/informatiklab_bubblesort.png, id=163, 802.49812pt x 389.2040
+<images/neuerungen/informatiklab_bubblesort.png, id=167, 802.49812pt x 389.2040
 6pt>
 File: images/neuerungen/informatiklab_bubblesort.png Graphic file (type png)
 <use images/neuerungen/informatiklab_bubblesort.png>
@@ -1221,7 +1283,7 @@ er-legt. Ein Sieben-
 [18
 
  <./images/neuerungen/grundriss_informatiklab.png>]
-<images/neuerungen/informatiklab_dijkstra.png, id=169, 824.32968pt x 380.17032p
+<images/neuerungen/informatiklab_dijkstra.png, id=173, 824.32968pt x 380.17032p
 t>
 File: images/neuerungen/informatiklab_dijkstra.png Graphic file (type png)
 <use images/neuerungen/informatiklab_dijkstra.png>
@@ -1230,14 +1292,14 @@ input line 122.
 (pdftex.def)             Requested size: 403.51187pt x 186.09364pt.
  [19 <./images/neuerungen/informatiklab_bubblesort.png>] [20 <./images/neuerung
 en/informatiklab_dijkstra.png>]
-<images/neuerungen/grundriss_teilchenlab.png, id=181, 472.01344pt x 352.31625pt
+<images/neuerungen/grundriss_teilchenlab.png, id=185, 472.01344pt x 352.31625pt
 >
 File: images/neuerungen/grundriss_teilchenlab.png Graphic file (type png)
 <use images/neuerungen/grundriss_teilchenlab.png>
 Package pdftex.def Info: images/neuerungen/grundriss_teilchenlab.png  used on i
 nput line 136.
 (pdftex.def)             Requested size: 403.51187pt x 301.1905pt.
-<images/neuerungen/teilchenlab_temp.png, id=182, 569.12625pt x 344.03531pt>
+<images/neuerungen/teilchenlab_temp.png, id=186, 569.12625pt x 344.03531pt>
 File: images/neuerungen/teilchenlab_temp.png Graphic file (type png)
 <use images/neuerungen/teilchenlab_temp.png>
 Package pdftex.def Info: images/neuerungen/teilchenlab_temp.png  used on input 
@@ -1262,7 +1324,7 @@ Overfull \hbox (4.9872pt too wide) in paragraph at lines 155--156
  uns ge-nau be-schrieb,
  []
 
-<images/neuerungen/grundriss_elektrotechnik.png, id=193, 510.40688pt x 381.6759
+<images/neuerungen/grundriss_elektrotechnik.png, id=197, 510.40688pt x 381.6759
 3pt>
 File: images/neuerungen/grundriss_elektrotechnik.png Graphic file (type png)
 <use images/neuerungen/grundriss_elektrotechnik.png>
@@ -1277,13 +1339,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 164--165
 [23
 
  <./images/neuerungen/grundriss_elektrotechnik.png>]
-<images/neuerungen/etechnik_v1.png, id=201, 743.02594pt x 369.63094pt>
+<images/neuerungen/etechnik_v1.png, id=205, 743.02594pt x 369.63094pt>
 File: images/neuerungen/etechnik_v1.png Graphic file (type png)
 <use images/neuerungen/etechnik_v1.png>
 Package pdftex.def Info: images/neuerungen/etechnik_v1.png  used on input line 
 170.
 (pdftex.def)             Requested size: 403.51187pt x 200.73703pt.
-<images/neuerungen/etechnik_v2.png, id=202, 858.20625pt x 390.70969pt>
+<images/neuerungen/etechnik_v2.png, id=206, 858.20625pt x 390.70969pt>
 File: images/neuerungen/etechnik_v2.png Graphic file (type png)
 <use images/neuerungen/etechnik_v2.png>
 Package pdftex.def Info: images/neuerungen/etechnik_v2.png  used on input line 
@@ -1294,12 +1356,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 177--177
 [][][]|\T1/ppl/m/n/12 Ver-such: Mes-sen von Span-nun-gen bei ei-ner RC-
  []
 
-) (chapters/verworfene_ideen.tex [24 <./images/neuerungen/etechnik_v1.png>]
-[25 <./images/neuerungen/etechnik_v2.png>] [26
+) (chapters/code.tex [24 <./images/neuerungen/etechnik_v1.png>] [25 <./images/n
+euerungen/etechnik_v2.png>] [26
 
 
 ]
 chapter 5.
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
+
+ []
+
+! You can't use `macro parameter character #' in horizontal mode.
+l.6 ...ssets -> Scripts. Alle Scripte wurden in C#
+                                                   programmiert. \newline
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--7
+
+ []
+
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 10.
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 14
+.
+("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\t1pcr.fd"
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+[27]) (chapters/verworfene_ideen.tex [28]
+chapter 6.
 
 Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
@@ -1310,11 +1399,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--7
 
  []
 
-) (chapters/ausblick.tex [27] [28
+) (chapters/ausblick.tex [29
+
+
+] [30
 
 
 ]
-chapter 6.
+chapter 7.
 
 Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
@@ -1335,8 +1427,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--11
 
  []
 
-[29]) (chapters/fazit.tex [30]
-chapter 7.
+[31]) (chapters/fazit.tex [32]
+chapter 8.
 
 Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
@@ -1352,10 +1444,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
  []
 
-[31
+[33
 
 
-]) [32] (VirtualScienceLab.bbl
+]) [34] (VirtualScienceLab.bbl
 
 Class scrbook Warning: deprecated old font command `\sc' used.
 (scrbook)              You should note, that since 1994 LaTeX2e provides a
@@ -1444,16 +1536,16 @@ Underfull \hbox (badness 5548) in paragraph at lines 16--21
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 73.
- [33
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 75.
+ [35
 
 
 
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 73.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 75.
  (VirtualScienceLab.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 73.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 75.
 
 
  *File List*
@@ -1476,7 +1568,7 @@ inputenc.sty    2018/08/11 v1.3c Input encoding file
  fontenc.sty
    t1enc.def    2018/08/11 v2.0j Standard LaTeX file
 palatino.sty    2005/04/12 PSNFSS-v9.2a (SPQR) 
- amsmath.sty    2018/12/01 v2.17b AMS math features
+ amsmath.sty    2019/11/16 v2.17d AMS math features
  amstext.sty    2000/06/29 v2.01 AMS text
   amsgen.sty    1999/11/30 v2.0 generic functions
   amsbsy.sty    1999/11/29 v1.2d Bold Symbols
@@ -1489,7 +1581,7 @@ amsfonts.sty    2013/01/14 v3.01 Basic AMSFonts support
    eepic.sty    
   epsfig.sty    2017/06/25 v1.7b (e)psfig emulation (SPQR)
 graphicx.sty    2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
-graphics.sty    2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+graphics.sty    2019/11/01 v1.3d Standard LaTeX Graphics (DPC,SPQR)
     trig.sty    2016/01/03 v1.10 sin cos tan (DPC)
 graphics.cfg    2016/06/04 v1.11 sample graphics configuration
   pdftex.def    2018/01/08 v1.0l Graphics/color driver for pdftex
@@ -1500,7 +1592,7 @@ graphics.cfg    2016/06/04 v1.11 sample graphics configuration
    color.cfg    2016/01/02 v1.6 sample color configuration
  eurosym.sty    1998/08/06 v1.1 European currency symbol ``Euro''
  bibgerm.sty    2000/08/18 v0.1 Support for mixed language bibliographies
-multicol.sty    2018/12/27 v1.8v multicolumn formatting (FMi)
+multicol.sty    2019/03/01 v1.8w multicolumn formatting (FMi)
 supertabular.sty    2004/02/20 v4.1e the supertabular environment
    float.sty    2001/11/08 v1.3d Float enhancements (AL)
 listings.sty    2019/09/10 1.8c (Carsten Heinz)
@@ -1510,9 +1602,9 @@ listings.cfg    2019/09/10 1.8c listings configuration
     umsb.fd    2013/01/14 v3.01 AMS symbols B
 textcomp.sty    2018/08/11 v2.0j Standard LaTeX package
   ts1enc.def    2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
-  ts1enc.dfu    2018/10/05 v1.2f UTF-8 support for inputenc
+  ts1enc.dfu    2019/07/11 v1.2j UTF-8 support for inputenc
   german.sty    1998/07/08 v2.5e Support for writing german texts (br)
-   array.sty    2018/12/30 v2.4k Tabular extension package (FMi)
+   array.sty    2019/08/31 v2.4l Tabular extension package (FMi)
   ifthen.sty    2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
   pifont.sty    2005/04/12 PSNFSS-v9.2a Pi font support (SPQR) 
     upzd.fd    2001/06/04 font definitions for U/pzd.
@@ -1522,8 +1614,9 @@ imakeidx.sty    2016/10/15 v1.3e Package for typesetting indices in a synchrono
 us mode
  xkeyval.sty    2014/12/03 v2.7a package option processing (HA)
  xkeyval.tex    2014/12/03 v2.7a key=value parser (HA)
- ifxetex.sty    2010/09/12 v0.6 Provides ifxetex conditional
-ifluatex.sty    2016/05/16 v1.4 Provides the ifluatex switch (HO)
+ ifxetex.sty    2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+   iftex.sty    2019/11/07 v1.0c TeX engine tests
+ifluatex.sty    2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
 scrlayer-scrpage.sty    2019/10/12 v3.27 KOMA-Script package (end user interfac
 e for scrlayer)
 scrlayer.sty    2019/10/12 v3.27 KOMA-Script package (defining layers and page 
@@ -1536,48 +1629,45 @@ lstlang1.sty    2019/09/10 1.8c listings language file
      thb.sty    2014/10/28 v2.2c Theorem extension package (FMi)
    t1ppl.fd    2001/06/04 font definitions for T1/ppl.
 pdfsetup.tex
-hyperref.sty    2018/11/30 v6.88e Hypertext links for LaTeX
-hobsub-hyperref.sty    2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
-hobsub-generic.sty    2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
-  hobsub.sty    2016/05/16 v1.14 Construct package bundles (HO)
-infwarerr.sty    2016/05/16 v1.4 Providing info/warning/error messages (HO)
+hyperref.sty    2019/11/10 v7.00c Hypertext links for LaTeX
  ltxcmds.sty    2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-  ifvtex.sty    2016/05/16 v1.6 Detect VTeX and its facilities (HO)
- intcalc.sty    2016/05/16 v1.2 Expandable calculations with integers (HO)
-   ifpdf.sty    2018/09/07 v3.3 Provides the ifpdf switch
-etexcmds.sty    2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+pdftexcmds.sty    2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO)
+infwarerr.sty    2016/05/16 v1.4 Providing info/warning/error messages (HO)
 kvsetkeys.sty    2016/05/16 v1.17 Key value parser (HO)
+etexcmds.sty    2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 kvdefinekeys.sty    2016/05/16 v1.4 Define keys (HO)
-pdftexcmds.sty    2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO)
 pdfescape.sty    2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
-bigintcalc.sty    2016/05/16 v1.4 Expandable calculations on big integers (HO)
-  bitset.sty    2016/05/16 v1.2 Handle bit-vector datatype (HO)
-uniquecounter.sty    2016/05/16 v1.3 Provide unlimited unique counter (HO)
-letltxmacro.sty    2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
- hopatch.sty    2016/05/16 v1.3 Wrapper for package hooks (HO)
-xcolor-patch.sty    2016/05/16 xcolor patch
-atveryend.sty    2016/05/16 v1.9 Hooks at the very end of document (HO)
-atbegshi.sty    2016/06/09 v1.18 At begin shipout hook (HO)
-refcount.sty    2016/05/16 v3.5 Data extraction from label references (HO)
  hycolor.sty    2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+xcolor-patch.sty    2016/05/16 xcolor patch
+ hopatch.sty    2016/05/16 v1.3 Wrapper for package hooks (HO)
+letltxmacro.sty    2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
  auxhook.sty    2016/05/16 v1.4 Hooks for auxiliary files (HO)
 kvoptions.sty    2016/05/16 v3.12 Key value format for package options (HO)
-  pd1enc.def    2018/11/30 v6.88e Hyperref: PDFDocEncoding definition (HO)
+  pd1enc.def    2019/11/10 v7.00c Hyperref: PDFDocEncoding definition (HO)
+ intcalc.sty    2016/05/16 v1.2 Expandable calculations with integers (HO)
 hyperref.cfg    2002/06/06 v1.2 hyperref configuration of TeXLive
      url.sty    2013/09/16  ver 3.4  Verb mode for urls, etc.
- hpdftex.def    2018/11/30 v6.88e Hyperref driver for pdfTeX
+  bitset.sty    2016/05/16 v1.2 Handle bit-vector datatype (HO)
+bigintcalc.sty    2016/05/16 v1.4 Expandable calculations on big integers (HO)
+atbegshi.sty    2016/06/09 v1.18 At begin shipout hook (HO)
+   ifpdf.sty    2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
+ hpdftex.def    2019/11/10 v7.00c Hyperref driver for pdfTeX
+atveryend.sty    2016/05/16 v1.9 Hooks at the very end of document (HO)
 rerunfilecheck.sty    2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+uniquecounter.sty    2016/05/16 v1.3 Provide unlimited unique counter (HO)
 breakurl.sty    2013/04/10 v1.40 Breakable hyperref URLs
   ts1cmr.fd    2014/09/29 v2.5h Standard LaTeX font definitions
 supp-pdf.mkii
-epstopdf-base.sty    2016/05/15 v2.6 Base part for package epstopdf
+epstopdf-base.sty    2019/11/24 v2.7 Base part for package epstopdf
   grfext.sty    2016/05/16 v1.2 Manage graphics extensions (HO)
- nameref.sty    2016/05/21 v2.44 Cross-referencing by name of section
+ nameref.sty    2019/09/16 v2.46 Cross-referencing by name of section
+refcount.sty    2016/05/16 v3.5 Data extraction from label references (HO)
 gettitlestring.sty    2016/05/16 v1.5 Cleanup title references (HO)
 VirtualScienceLab.out
 VirtualScienceLab.out
-bookmark.sty    2016/05/17 v1.26 PDF bookmarks (HO)
-bkm-pdftex.def    2016/05/17 v1.26 bookmark driver for pdfTeX (HO)
+bookmark.sty    2019/06/04 v1.27 PDF bookmarks (HO)
+  ifvtex.sty    2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+bkm-pdftex.def    2019/06/04 v1.27 bookmark driver for pdfTeX (HO)
 ./chapters/abstract.tex
 ./chapters/idee.tex
 ./chapters/steuerung.tex
@@ -1605,35 +1695,38 @@ images/neuerungen/teilchenlab_temp.png
 images/neuerungen/grundriss_elektrotechnik.png
 images/neuerungen/etechnik_v1.png
 images/neuerungen/etechnik_v2.png
+./chapters/code.tex
+   t1pcr.fd    2001/06/04 font definitions for T1/pcr.
 ./chapters/verworfene_ideen.tex
 ./chapters/ausblick.tex
 ./chapters/fazit.tex
 VirtualScienceLab.bbl
  ***********
 
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 73.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 75.
 Package rerunfilecheck Info: File `VirtualScienceLab.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 73.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 75.
  ) 
 Here is how much of TeX's memory you used:
- 15769 strings out of 492895
- 292132 string characters out of 3123734
- 608799 words of memory out of 3000000
- 19288 multiletter control sequences out of 15000+200000
- 29781 words of font info for 57 fonts, out of 3000000 for 9000
+ 16643 strings out of 492484
+ 304856 string characters out of 3121602
+ 625293 words of memory out of 3000000
+ 20487 multiletter control sequences out of 15000+200000
+ 34035 words of font info for 64 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,20n,109p,10113b,514s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 60i,20n,109p,10113b,1980s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/phili/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc
-}<C:/Users/phili/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhv
-b8a.pfb><C:/Users/phili/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/palat
-ino/uplb8a.pfb><C:/Users/phili/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/ur
-w/palatino/uplr8a.pfb><C:/Users/phili/AppData/Local/Programs/MiKTeX 2.9/fonts/t
-ype1/urw/palatino/uplr8a.pfb><C:/Users/phili/AppData/Local/Programs/MiKTeX 2.9/
-fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on VirtualScienceLab.pdf (39 pages, 5823051 bytes).
+}<C:/Users/phili/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/courier/ucrr
+8a.pfb><C:/Users/phili/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/helvet
+ic/uhvb8a.pfb><C:/Users/phili/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw
+/palatino/uplb8a.pfb><C:/Users/phili/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
+pe1/urw/palatino/uplr8a.pfb><C:/Users/phili/AppData/Local/Programs/MiKTeX 2.9/f
+onts/type1/urw/palatino/uplr8a.pfb><C:/Users/phili/AppData/Local/Programs/MiKTe
+X 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on VirtualScienceLab.pdf (41 pages, 5852145 bytes).
 PDF statistics:
- 336 PDF objects out of 1000 (max. 8388607)
- 83 named destinations out of 1000 (max. 500000)
- 210 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 404 PDF objects out of 1000 (max. 8388607)
+ 125 named destinations out of 1000 (max. 500000)
+ 226 words of extra memory for PDF output out of 10000 (max. 10000000)
 
