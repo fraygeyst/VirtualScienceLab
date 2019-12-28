@@ -1,5 +1,6 @@
 % !TeX root = ../pythonTutorial.tex
 \chapter{Code}
+\section{Allgemeine Scripte}
 
 Viele Funktionen sind in Unity standardmäßig implementiert. So zum Beispiel die Möglichkeit physikalische Eigentschaften auf ein Objekt zu definieren. Dies macht es anfassbar und ermöglicht die Interaktion mit dem Objekt. \newline
 
@@ -10,7 +11,7 @@ Es gibt Scripte, die sich durchs ganze Projekt ziehen und andere, die sich auf b
 \clearpage
 \subsection{Scene\_Management.cs}
 
-Das Scene Management Script dient zur richtigen Positionierung des Spielers, wenn er den Flur betritt. Je nachdem aus welchem Raum er kommt ändert sich die Startposition. Das Script muss in jeder Scene eingebaut sein, da nur so die zuletzt verwendete Scene ausgelesen werden kann. 
+Das Scene Management Script dient zur richtigen Positionierung des Spielers, wenn er den Flur betritt. Je nachdem aus welchem Raum er kommt ändert sich die Startposition. Das Script muss in jeder Szene eingebaut sein, da nur so die zuletzt verwendete Szene ausgelesen werden kann. 
 
 \begin{lstlisting}
 Scene scene = SceneManager.GetActiveScene();
@@ -52,20 +53,31 @@ Globals.last_scene = scene.name;
 }
 \end{lstlisting}
 
-Das Script wird in der \textit{start()} Methode ausgeführt - also beim Laden der Scene. Am Anfang wird der Scenenname rausgefunden und in einer Variable gespeichert. Anschließend erfolgt eine Abfrage, ob die aktuelle Scene der "Flur" ist oder nicht. Falls nicht, wird der aktuelle Scenenname als \textit{last\_scene} in einer Globalen Variable gespeichert. Wenn es sich um den Flur handelt wird die Position des Players entsprechend der letzten Scene im Flur geändert.
+Das Script wird in der \textit{start()} Methode ausgeführt - also beim Laden der Szene. Am Anfang wird der Szenenname rausgefunden und in einer Variable gespeichert. Anschließend erfolgt eine Abfrage, ob die aktuelle Szene der "Flur" ist oder nicht. Falls nicht, wird der aktuelle Scenenname als \textit{last\_scene} in einer Globalen Variable gespeichert. Wenn es sich um den Flur handelt wird die Position des Players entsprechend der letzten Szene im Flur geändert.
+
+\clearpage
+\subsection{Globals.cs}
+
+In der Globals.cs werden globale Variablen gespeichert, die Szenenübergreifend benötigt werden. Aktuell ist dies nur der letzte Szenenname.
+
+\begin{lstlisting}
+public static class Globals {
+
+public static string last_scene = "";
+}
+\end{lstlisting}
 
 \clearpage
 \subsection{Load\_publics.cs}
 
-In diesem Script werden alle Variablen gespeichert, die über ein Script hinaus benötigt werden, da aus anderen Scripten darauf zugegriffen werden muss. Das Script wird in jeder Scene eingebunden. Das Objekt auf dem es positioniert ist, spielt dabei keine Rolle. \newline
-
-Innerhalb des Scripts ist eine Klasse definiert, in der die Variablen und alle Scriptübergreifenden Funktionen definiert sind.
+In diesem Script werden alle Variablen gespeichert, die über ein Script hinaus aber nur innerhalb einer Szene benötigt werden. Das Script wird in jeder Szene eingebunden. Das Objekt auf dem es positioniert ist, spielt dabei keine Rolle. \newline
 
 \begin{lstlisting}
 //Allgemein
 public static bool light_on = false;
 public static bool light_col = false;
-public static string[] lightnames = {"Point_Light_l", "Point_Light_m", "Point_light_r"};
+public static string[] lightnames = {"Point_Light_l", 
+"Point_Light_m", "Point_light_r"};
 
 // Informatiklab
 // Dijkstra
@@ -123,7 +135,8 @@ public static float Temp_Min = 0f;
 public static float Map_Temp_Max = 0.25f;
 public static float Map_Temp_Min = 0f;
 public static float move_speed_multi = 15;
-public static float RemapTemp(float from, float fromMin, float fromMax, float toMin, float toMax)
+public static float RemapTemp(float from, float fromMin, 
+float fromMax, float toMin, float toMax)
 {
 var fromAbs = from - fromMin;
 var fromMaxAbs = fromMax - fromMin;
@@ -141,7 +154,8 @@ public static bool bridges_active = true;
 
 // Elektrolab
 public static double lampe_netzteil_count = 0;
-public static float RemapLight(float from, float fromMin, float fromMax, float toMin, float toMax)
+public static float RemapLight(float from, float fromMin, 
+float fromMax, float toMin, float toMax)
 {
 var fromAbs = from - fromMin;
 var fromMaxAbs = fromMax - fromMin;
@@ -160,10 +174,15 @@ public static float C = 0.5f;
 public static float frequency_Netzteil = 0.0f;
 \end{lstlisting}
 
+Wichtig ist, dass in dem Script eine Klasse definiert ist, die die Variablen und für die Variablen wichtige Funktionen z. B. zum Mapping von manchen Variablen enthält.
+
 \clearpage
 \subsection{Sev\_Seg\_counter.cs}
 
-Die 7-Segment-Anzeige wird in verschiedenen Scenen benutzt. Dieses Script dient dazu eine eingegebenen Zahl auf das 3-Ziffern-Display zu übertragen.
+Die 7-Segment-Anzeige wird in verschiedenen Szenen benutzt. Dieses Script dient dazu eine eingegebenen Zahl auf das 3-Ziffern-Display zu übertragen. \newline
+Der Funktion \textit{setSevSegCount()} wird eine Zahl als int und der Name des zugehörigen Parent-Objekts übergeben. Die Zahl wird als String formatiert, sodass sie besser in 3 Teile geteilt werden kann. Das Parent-Objekt wird per \textit{Find} Befehl gesucht und in einer Variable gespeichert. Anschließend wird für jede der 3 Zeichen des Zahl-Strings die Funktion \textit{set\_n()} aufgerufen, welche die entsprechende Position in der 7-Segment-Anzeige in die Zahl umwandelt. \newline
+
+Innerhalb der \textit{set\_n()} Methode werden die Segment-Objekte innerhalb des Parent-Objekts gesucht. Da die Benennung immer gleich ist, kann dies programmatisch anhand eines zusammengesetzten Strings geschehen. Anschließend wird für jedes Segment der Anzeige die Farbe entsprechend einer Vorgabe, die per If-Abfrage anhand der eingegebenen Zahl festgestellt wird, entweder Schwarz oder Rot bzw. Grün gesetzt. Dadurch entsteht die Zahl auf der Anzeige.
 
 \begin{lstlisting}
 public void setSevSegCount(int seconds, String parentname)
@@ -181,7 +200,8 @@ set_n(int.Parse(Char.ToString(s_number[2])), 3, parent);
 }
 }
 
-private void set_n(int number, int disp_num, GameObject parent_item)
+private void set_n(int number, int disp_num, 
+GameObject parent_item)
 {
 string s_lt = "n_" + disp_num + "_lt";
 string s_rt = "n_" + disp_num + "_rt";
@@ -293,27 +313,137 @@ private void setColorP(GameObject gameObject)
 {
 if(Load_Publics.counter <= Load_Publics.maximum)
 {
-gameObject.GetComponent<Renderer>().material.color = Color.green;
+gameObject.GetComponent<Renderer>().material.color 
+= Color.green;
 } else
 {
-gameObject.GetComponent<Renderer>().material.color = Color.red;
+gameObject.GetComponent<Renderer>().material.color 
+= Color.red;
 }
 
 }
 private void setColorN(GameObject gameObject)
 {
-gameObject.GetComponent<Renderer>().material.color = Color.black;
+gameObject.GetComponent<Renderer>().material.color 
+= Color.black;
 }
 
-private int[] GetIntArray(int num)
-{
-List<int> listOfInts = new List<int>();
-while (num > 0)
-{
-listOfInts.Add(num % 10);
-num = num / 10;
-}
-listOfInts.Reverse();
-return listOfInts.ToArray();
 }
 \end{lstlisting}
+
+\clearpage
+\subsection{Display\_Meter\_5D.cs}
+
+Ähnlich des Scripts \textit{Sev\_Seg\_counter.cs} ist auch dieses Script zum Anzeigen von Zahlen auf einer 7-Segment-Anzeige gedacht. Die Besonderheit hier ist, dass 5 Ziffern dargestellt werden und die letzten beiden Ziffern nach einem Komma stehen. Also eine Kommazahl. \newline
+
+Der Unterscheid der beiden Scripte besteht rein in der Formatierung der Zahl und der Eingabe einer Double-Variable, anstatt einer Integer-Variable. Der Rest ist identisch. Einzig die \textit{set\_n()}-Methode wird fünf mal anstatt nur drei mal aufgerufen.
+
+\begin{lstlisting}
+public void setDisplay(double do_number, string parent_name)
+{
+if(do_number < 1000)
+{
+string s_number = String.Format("{0:000.00}", do_number);
+GameObject parent = GameObject.Find(parent_name);
+
+Debug.Log(s_number);
+
+set_n(int.Parse(Char.ToString(s_number[0])), 1, parent);
+set_n(int.Parse(Char.ToString(s_number[1])), 2, parent);
+set_n(int.Parse(Char.ToString(s_number[2])), 3, parent);
+set_n(int.Parse(Char.ToString(s_number[4])), 4, parent);
+set_n(int.Parse(Char.ToString(s_number[5])), 5, parent);
+
+setColorP(parent.transform.Find("decimal_point").gameObject);
+}
+}
+\end{lstlisting}
+
+\clearpage
+\section{Szenenspezifische Scripte}
+\subsection{Beschleunigung.cs}
+
+Dieses Script ist für die Steuerung der Geschwindigkeit der Teilchen im Teilchenlabor zuständig.
+
+\begin{lstlisting}
+public class Beschleunigung : MonoBehaviour {
+
+
+// Use this for initialization
+void Start () {
+Sev_Seg_Counter counti = new Sev_Seg_Counter();
+counti.setSevSegCount(0, "Zähler1");
+}
+
+// Update is called once per frame
+void Update () {
+Sev_Seg_Counter counti = new Sev_Seg_Counter();
+counti.setSevSegCount(Load_Publics.Temperatur, "Zähler1");
+}
+
+private void OnTriggerEnter(Collider other)
+{
+switch (gameObject.name)
+{
+case "plus":
+if (Load_Publics.plus_act && Load_Publics.Temperatur 
+< Load_Publics.Temp_Max)
+{
+Load_Publics.Temperatur += 25;
+Debug.Log("wärmer");
+StartCoroutine(waiter(true));
+}
+break;
+case "minus":
+if (Load_Publics.min_act && Load_Publics.Temperatur 
+> Load_Publics.Temp_Min)
+{
+Load_Publics.Temperatur -= 25;
+Debug.Log("kälter");
+StartCoroutine(waiter(false));
+}
+break;
+}
+}
+
+IEnumerator waiter(bool isplus)
+{
+GameObject button_mol = null;
+if (isplus)
+{
+button_mol = GameObject.Find("plus");
+Load_Publics.plus_act = false;
+} else
+{
+button_mol = GameObject.Find("minus");
+Load_Publics.min_act = false;
+}
+button_mol.GetComponent<Renderer>().material.color 
+= Color.yellow;
+
+yield return new WaitForSeconds(1);    //Wait 1 Second
+Color color = new Color();
+
+if (isplus)
+{
+Load_Publics.plus_act = true;
+if(ColorUtility.TryParseHtmlString("#FF0000", out color))
+{
+button_mol.GetComponent<Renderer>().material.color = color;
+}
+}
+else
+{
+Load_Publics.min_act = true;
+if (ColorUtility.TryParseHtmlString("#00FFFF", out color))
+{
+button_mol.GetComponent<Renderer>().material.color = color;
+}
+}
+}
+}
+\end{lstlisting}
+
+Das Script wurde auf die beiden Buttons in der Szene zum Beschleunigen und Abbremsen der Teilchen gelegt. Bei Aufruf der Szene wird zuerst in der \textit{start()} die 7-Segment-Anzeige auf 0 gesetzt. Das ist der Temperatur Startwert. Anschließend wird die Anzeige in der \textit{Update()} jeweils auf den Wert der Temperatur-Variable in der \textit{Load\_Publics.cs} gesetzt. Standardmäßig ist dies 25. \newline
+
+Das Script enthält außerdem Listener, die ausgelöst werden, sobald der Spieler einen der Buttons berührt. Diese Listener unterscheiden dann welcher Button gedrückt wurde und ändern entsprechend die Temperatur-Variable. Nachdem ein Button gedrückt wurde wird es für eine Sekunde unmöglich diesen nochmals zu drücken. Dies wird auch durch eine Farbänderung dargestellt.

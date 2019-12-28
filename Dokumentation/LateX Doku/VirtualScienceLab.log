@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.12.27)  27 DEC 2019 19:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.12.27)  28 DEC 2019 11:47
 entering extended mode
 **./VirtualScienceLab.tex
 (VirtualScienceLab.tex
@@ -1134,7 +1134,7 @@ n-er-läs-slich. Die-
 ]
 chapter 3.
 [5]
-<images/bisheriger_stand/grundriss_chemielabor.png, id=85, 526.21594pt x 388.45
+<images/bisheriger_stand/grundriss_chemielabor.png, id=99, 526.21594pt x 388.45
 125pt>
 File: images/bisheriger_stand/grundriss_chemielabor.png Graphic file (type png)
 
@@ -1163,20 +1163,20 @@ n-ner (auf Grund
 
 ]
 chapter 4.
-<images/neuerungen/grundriss_physiklabor.png, id=104, 513.41812pt x 383.93437pt
+<images/neuerungen/grundriss_physiklabor.png, id=118, 513.41812pt x 383.93437pt
 >
 File: images/neuerungen/grundriss_physiklabor.png Graphic file (type png)
 <use images/neuerungen/grundriss_physiklabor.png>
 Package pdftex.def Info: images/neuerungen/grundriss_physiklabor.png  used on i
 nput line 9.
 (pdftex.def)             Requested size: 403.51187pt x 301.75235pt.
-<images/neuerungen/neuer_flur.png, id=105, 913.91437pt x 386.19281pt>
+<images/neuerungen/neuer_flur.png, id=119, 913.91437pt x 386.19281pt>
 File: images/neuerungen/neuer_flur.png Graphic file (type png)
 <use images/neuerungen/neuer_flur.png>
 Package pdftex.def Info: images/neuerungen/neuer_flur.png  used on input line 1
 8.
 (pdftex.def)             Requested size: 403.51187pt x 170.50874pt.
-<images/neuerungen/grundriss_vrlab.png, id=106, 545.03625pt x 380.92313pt>
+<images/neuerungen/grundriss_vrlab.png, id=120, 545.03625pt x 380.92313pt>
 File: images/neuerungen/grundriss_vrlab.png Graphic file (type png)
 <use images/neuerungen/grundriss_vrlab.png>
 Package pdftex.def Info: images/neuerungen/grundriss_vrlab.png  used on input l
@@ -1186,31 +1186,31 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <17.28> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 30.
 [9] [10 <./images/neuerungen/grundriss_physiklabor.png> <./images/neuerungen/ne
 uer_flur.png>]
-<images/neuerungen/grundriss_biolab.png, id=118, 493.845pt x 364.36125pt>
+<images/neuerungen/grundriss_biolab.png, id=132, 493.845pt x 364.36125pt>
 File: images/neuerungen/grundriss_biolab.png Graphic file (type png)
 <use images/neuerungen/grundriss_biolab.png>
 Package pdftex.def Info: images/neuerungen/grundriss_biolab.png  used on input 
 line 36.
 (pdftex.def)             Requested size: 403.51187pt x 297.7107pt.
-<images/neuerungen/biolab_mikroskop.png, id=119, 764.10469pt x 372.64218pt>
+<images/neuerungen/biolab_mikroskop.png, id=133, 764.10469pt x 372.64218pt>
 File: images/neuerungen/biolab_mikroskop.png Graphic file (type png)
 <use images/neuerungen/biolab_mikroskop.png>
 Package pdftex.def Info: images/neuerungen/biolab_mikroskop.png  used on input 
 line 42.
 (pdftex.def)             Requested size: 403.51187pt x 196.78865pt.
-<images/neuerungen/biolab_blutzelle.png, id=120, 733.99219pt x 382.42876pt>
+<images/neuerungen/biolab_blutzelle.png, id=134, 733.99219pt x 382.42876pt>
 File: images/neuerungen/biolab_blutzelle.png Graphic file (type png)
 <use images/neuerungen/biolab_blutzelle.png>
 Package pdftex.def Info: images/neuerungen/biolab_blutzelle.png  used on input 
 line 48.
 (pdftex.def)             Requested size: 403.51187pt x 210.24309pt.
-<images/neuerungen/biolab_pflanze.png, id=121, 778.40813pt x 390.70969pt>
+<images/neuerungen/biolab_pflanze.png, id=135, 778.40813pt x 390.70969pt>
 File: images/neuerungen/biolab_pflanze.png Graphic file (type png)
 <use images/neuerungen/biolab_pflanze.png>
 Package pdftex.def Info: images/neuerungen/biolab_pflanze.png  used on input li
 ne 54.
 (pdftex.def)             Requested size: 403.51187pt x 202.54422pt.
-<images/neuerungen/biolab_textil.png, id=122, 820.56563pt x 388.45125pt>
+<images/neuerungen/biolab_textil.png, id=136, 820.56563pt x 388.45125pt>
 File: images/neuerungen/biolab_textil.png Graphic file (type png)
 <use images/neuerungen/biolab_textil.png>
 Package pdftex.def Info: images/neuerungen/biolab_textil.png  used on input lin
@@ -1227,25 +1227,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 70--71
 
  []
 
-<images/neuerungen/brueckenproblem.png, id=146, 818.30719pt x 374.90062pt>
+<images/neuerungen/brueckenproblem.png, id=160, 818.30719pt x 374.90062pt>
 File: images/neuerungen/brueckenproblem.png Graphic file (type png)
 <use images/neuerungen/brueckenproblem.png>
 Package pdftex.def Info: images/neuerungen/brueckenproblem.png  used on input l
 ine 76.
 (pdftex.def)             Requested size: 403.51187pt x 184.86989pt.
-<images/neuerungen/grundriss_mathelab.png, id=147, 500.62032pt x 393.72093pt>
+<images/neuerungen/grundriss_mathelab.png, id=161, 500.62032pt x 393.72093pt>
 File: images/neuerungen/grundriss_mathelab.png Graphic file (type png)
 <use images/neuerungen/grundriss_mathelab.png>
 Package pdftex.def Info: images/neuerungen/grundriss_mathelab.png  used on inpu
 t line 82.
 (pdftex.def)             Requested size: 403.51187pt x 317.36223pt.
-<images/neuerungen/mathelab_kardioide.png, id=148, 678.28406pt x 387.69844pt>
+<images/neuerungen/mathelab_kardioide.png, id=162, 678.28406pt x 387.69844pt>
 File: images/neuerungen/mathelab_kardioide.png Graphic file (type png)
 <use images/neuerungen/mathelab_kardioide.png>
 Package pdftex.def Info: images/neuerungen/mathelab_kardioide.png  used on inpu
 t line 88.
 (pdftex.def)             Requested size: 403.51187pt x 230.63905pt.
-<images/neuerungen/mathelab_briefkasten.png, id=149, 685.05937pt x 385.44pt>
+<images/neuerungen/mathelab_briefkasten.png, id=163, 685.05937pt x 385.44pt>
 File: images/neuerungen/mathelab_briefkasten.png Graphic file (type png)
 <use images/neuerungen/mathelab_briefkasten.png>
 Package pdftex.def Info: images/neuerungen/mathelab_briefkasten.png  used on in
@@ -1260,14 +1260,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 101--102
 
  []
 
-<images/neuerungen/grundriss_informatiklab.png, id=166, 538.26094pt x 392.96812
+<images/neuerungen/grundriss_informatiklab.png, id=180, 538.26094pt x 392.96812
 pt>
 File: images/neuerungen/grundriss_informatiklab.png Graphic file (type png)
 <use images/neuerungen/grundriss_informatiklab.png>
 Package pdftex.def Info: images/neuerungen/grundriss_informatiklab.png  used on
  input line 107.
 (pdftex.def)             Requested size: 403.51187pt x 294.59343pt.
-<images/neuerungen/informatiklab_bubblesort.png, id=167, 802.49812pt x 389.2040
+<images/neuerungen/informatiklab_bubblesort.png, id=181, 802.49812pt x 389.2040
 6pt>
 File: images/neuerungen/informatiklab_bubblesort.png Graphic file (type png)
 <use images/neuerungen/informatiklab_bubblesort.png>
@@ -1283,7 +1283,7 @@ er-legt. Ein Sieben-
 [18
 
  <./images/neuerungen/grundriss_informatiklab.png>]
-<images/neuerungen/informatiklab_dijkstra.png, id=173, 824.32968pt x 380.17032p
+<images/neuerungen/informatiklab_dijkstra.png, id=187, 824.32968pt x 380.17032p
 t>
 File: images/neuerungen/informatiklab_dijkstra.png Graphic file (type png)
 <use images/neuerungen/informatiklab_dijkstra.png>
@@ -1292,14 +1292,14 @@ input line 122.
 (pdftex.def)             Requested size: 403.51187pt x 186.09364pt.
  [19 <./images/neuerungen/informatiklab_bubblesort.png>] [20 <./images/neuerung
 en/informatiklab_dijkstra.png>]
-<images/neuerungen/grundriss_teilchenlab.png, id=185, 472.01344pt x 352.31625pt
+<images/neuerungen/grundriss_teilchenlab.png, id=199, 472.01344pt x 352.31625pt
 >
 File: images/neuerungen/grundriss_teilchenlab.png Graphic file (type png)
 <use images/neuerungen/grundriss_teilchenlab.png>
 Package pdftex.def Info: images/neuerungen/grundriss_teilchenlab.png  used on i
 nput line 136.
 (pdftex.def)             Requested size: 403.51187pt x 301.1905pt.
-<images/neuerungen/teilchenlab_temp.png, id=186, 569.12625pt x 344.03531pt>
+<images/neuerungen/teilchenlab_temp.png, id=200, 569.12625pt x 344.03531pt>
 File: images/neuerungen/teilchenlab_temp.png Graphic file (type png)
 <use images/neuerungen/teilchenlab_temp.png>
 Package pdftex.def Info: images/neuerungen/teilchenlab_temp.png  used on input 
@@ -1324,7 +1324,7 @@ Overfull \hbox (4.9872pt too wide) in paragraph at lines 155--156
  uns ge-nau be-schrieb,
  []
 
-<images/neuerungen/grundriss_elektrotechnik.png, id=197, 510.40688pt x 381.6759
+<images/neuerungen/grundriss_elektrotechnik.png, id=211, 510.40688pt x 381.6759
 3pt>
 File: images/neuerungen/grundriss_elektrotechnik.png Graphic file (type png)
 <use images/neuerungen/grundriss_elektrotechnik.png>
@@ -1339,13 +1339,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 164--165
 [23
 
  <./images/neuerungen/grundriss_elektrotechnik.png>]
-<images/neuerungen/etechnik_v1.png, id=205, 743.02594pt x 369.63094pt>
+<images/neuerungen/etechnik_v1.png, id=219, 743.02594pt x 369.63094pt>
 File: images/neuerungen/etechnik_v1.png Graphic file (type png)
 <use images/neuerungen/etechnik_v1.png>
 Package pdftex.def Info: images/neuerungen/etechnik_v1.png  used on input line 
 170.
 (pdftex.def)             Requested size: 403.51187pt x 200.73703pt.
-<images/neuerungen/etechnik_v2.png, id=206, 858.20625pt x 390.70969pt>
+<images/neuerungen/etechnik_v2.png, id=220, 858.20625pt x 390.70969pt>
 File: images/neuerungen/etechnik_v2.png Graphic file (type png)
 <use images/neuerungen/etechnik_v2.png>
 Package pdftex.def Info: images/neuerungen/etechnik_v2.png  used on input line 
@@ -1363,12 +1363,12 @@ euerungen/etechnik_v2.png>] [26
 ]
 chapter 5.
 
-Underfull \hbox (badness 10000) in paragraph at lines 4--5
+Underfull \hbox (badness 10000) in paragraph at lines 5--6
 
  []
 
 ! You can't use `macro parameter character #' in horizontal mode.
-l.6 ...ssets -> Scripts. Alle Scripte wurden in C#
+l.7 ...ssets -> Scripts. Alle Scripte wurden in C#
                                                    programmiert. \newline
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -1376,18 +1376,61 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6--7
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
 
+[27]
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 10.
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 14
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 12.
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 16
 .
+
 ("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\t1pcr.fd"
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-[27]) (chapters/verworfene_ideen.tex [28]
+[28
+
+] [29] [30
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 73--74
+
+ []
+
+[31
+
+] [32] [33]
+Underfull \hbox (badness 10000) in paragraph at lines 182--184
+
+ []
+
+
+Overfull \hbox (0.90036pt too wide) in paragraph at lines 185--186
+\T1/ppl/m/n/12 gram-ma-tisch an-hand ei-nes zu-sam-men-ge-setz-ten Strings ge-s
+che-hen. An-schlie-
+ []
+
+[34
+
+] [35] [36] [37]
+Underfull \hbox (badness 10000) in paragraph at lines 337--338
+
+ []
+
+[38
+
+] [39
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 447--448
+
+ []
+
+[40]) (chapters/verworfene_ideen.tex [41] [42
+
+
+]
 chapter 6.
 
 Underfull \hbox (badness 10000) in paragraph at lines 4--5
@@ -1399,10 +1442,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--7
 
  []
 
-) (chapters/ausblick.tex [29
-
-
-] [30
+) (chapters/ausblick.tex [43] [44
 
 
 ]
@@ -1427,7 +1467,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--11
 
  []
 
-[31]) (chapters/fazit.tex [32]
+[45]) (chapters/fazit.tex [46]
 chapter 8.
 
 Underfull \hbox (badness 10000) in paragraph at lines 4--5
@@ -1444,10 +1484,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
  []
 
-[33
+[47
 
 
-]) [34] (VirtualScienceLab.bbl
+]) [48] (VirtualScienceLab.bbl
 
 Class scrbook Warning: deprecated old font command `\sc' used.
 (scrbook)              You should note, that since 1994 LaTeX2e provides a
@@ -1537,7 +1577,7 @@ Underfull \hbox (badness 5548) in paragraph at lines 16--21
 
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 75.
- [35
+ [49
 
 
 
@@ -1709,13 +1749,13 @@ Package rerunfilecheck Info: File `VirtualScienceLab.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 75.
  ) 
 Here is how much of TeX's memory you used:
- 16643 strings out of 492484
- 304856 string characters out of 3121602
- 625293 words of memory out of 3000000
- 20487 multiletter control sequences out of 15000+200000
+ 17017 strings out of 492484
+ 310293 string characters out of 3121602
+ 638293 words of memory out of 3000000
+ 20494 multiletter control sequences out of 15000+200000
  34035 words of font info for 64 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,20n,109p,10113b,1980s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 60i,20n,109p,10113b,1930s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/phili/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc
 }<C:/Users/phili/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/courier/ucrr
 8a.pfb><C:/Users/phili/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/helvet
@@ -1724,9 +1764,9 @@ ic/uhvb8a.pfb><C:/Users/phili/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw
 pe1/urw/palatino/uplr8a.pfb><C:/Users/phili/AppData/Local/Programs/MiKTeX 2.9/f
 onts/type1/urw/palatino/uplr8a.pfb><C:/Users/phili/AppData/Local/Programs/MiKTe
 X 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on VirtualScienceLab.pdf (41 pages, 5852145 bytes).
+Output written on VirtualScienceLab.pdf (55 pages, 5927089 bytes).
 PDF statistics:
- 404 PDF objects out of 1000 (max. 8388607)
- 125 named destinations out of 1000 (max. 500000)
- 226 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 918 PDF objects out of 1000 (max. 8388607)
+ 492 named destinations out of 1000 (max. 500000)
+ 282 words of extra memory for PDF output out of 10000 (max. 10000000)
 
