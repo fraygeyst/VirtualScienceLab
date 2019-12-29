@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.12.27)  29 DEC 2019 17:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.12.27)  29 DEC 2019 17:11
 entering extended mode
 **./VirtualScienceLab.tex
 (VirtualScienceLab.tex
@@ -1862,7 +1862,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 75.
  ) 
 Here is how much of TeX's memory you used:
  19200 strings out of 492484
- 348972 string characters out of 3121602
+ 349140 string characters out of 3121602
  810134 words of memory out of 3000000
  21029 multiletter control sequences out of 15000+200000
  71360 words of font info for 68 fonts, out of 3000000 for 9000
