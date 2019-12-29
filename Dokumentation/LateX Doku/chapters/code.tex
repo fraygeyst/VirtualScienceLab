@@ -65,3 +65,77 @@ Das Script wurde auf die beiden Buttons in der Szene zum Beschleunigen und Abbre
 Das Script enthält außerdem Listener, die ausgelöst werden, sobald der Spieler einen der Buttons berührt. Diese Listener unterscheiden dann welcher Button gedrückt wurde und ändern entsprechend die Temperatur-Variable. Nachdem ein Button gedrückt wurde wird es für eine Sekunde unmöglich diesen nochmals zu drücken. Dies wird auch durch eine Farbänderung dargestellt.
 
 \clearpage
+\subsection{NextScene.cs}
+Dieses Script dient zum Szenenwechsel. Es wird bei Berührung eines Türgriffs ausgeführt.
+
+\lstinputlisting{../../VirtualScienceLabProject/Assets/Scripts/NextScene.cs}
+
+\clearpage
+\subsection{Mikroskop\_NewScene.cs}
+
+Ähnlich des vorherigen Scripts dient dieses Script auch zum Szenenwechsel. Jedoch wird es nur innerhalb des BioLabs auf dem Mikroskop verwendet. Die benötigte Szene wird anhand des auf das Mikroskop gelegten Objekts erkannt.
+
+\lstinputlisting{../../VirtualScienceLabProject/Assets/Scripts/Mikroskop_NewScene.cs}
+
+\clearpage
+\subsection{BubbleSort.cs}
+
+Das BubbleSort Script dient zur Steuerung des BubbleSort-Versuchs im Informatik Labor. Zu Beginn werden die Glasscheiben über den Zahlenblöcken definiert und initialisiert. Danach gibt es zwei Hauptfunktionen. Eine \textit{OnTriggerEnter()}, welche zur Erkennung des Controllers am Start-Button dient und \textit{OnCollisionEnter()}, welche dazu dient zu Erkennen, wenn die Zahlenbausteine auf der richtigen Stelle liegen. Die \textit{OnTriggerEnter()} ruft die Funktion \textit{next\_sort()} auf. Diese Funktion erkennt welche Scheiben gerade geöffnet sind und öffnet die nächsten beidem für den Versuch. Die Funktion \textit{OnCollisionEnter()} erkennt für jeden Zahlenbaustein ob diese auf der Endposition liegen und färbt sie in Positiv-Fall grün ein.
+
+\lstinputlisting{../../VirtualScienceLabProject/Assets/Scripts/BubbleSort.cs}
+
+\clearpage
+\subsection{Dijkstra}
+
+Dijkstra ist der Zweite Versuch im Informatik Labor. Das Script hilft bei der Darstellung der möglichen Wege und aktualisiert den Zähler. Mit Hilfe einer Switch-Case Anweisung wird zunächst überprüft, um welchen Buchstaben es sich handelt. Danach wird geschaut wie viele Punkte auf den Zähler addiert werden müssen und der Zähler wird aktualisiert. Jenachdem wie hoch der Zähler steht wird er bei Überschreitung des kleinsten Pfades rot markiert, sonst bleibt er grün. Es gibt noch eine Funktion zum Zurücksetzen des Zählers und des gegangenen Pfades.
+
+\lstinputlisting{../../VirtualScienceLabProject/Assets/Scripts/Dijkstra.cs}
+
+\clearpage
+\subsection{Seven\_Bridges.cs}
+
+Dieses Script dient zur Steuerung des Sieben-Brücken-Problems im Mathe-Raum. Wenn der Spieler eine Brücke mit dem Controller berührt wird diese gelb eingefärbt und der Zähler wird um eins erhöht. Wenn der Zähler 7 überschreitet blinken alle Brücken Rot und der Versuch beginnt erneut. Nach Berührung einer Brücke kann für 2 Sekunden keine weitere Brücke berührt werden.
+
+\lstinputlisting{../../VirtualScienceLabProject/Assets/Scripts/Seven_Bridges.cs}
+
+\clearpage
+\subsection{electro\_frequenz.cs}
+
+Dieses Script steuert den Frequenz Versuch im Elektrolabor. Zu Beginn werden Startwerte (0) in alle Anzeigen gesetzt. Auskommentiert findet man hier den Versuch die Interpolation der Daten mit Python durchzuführen. Es ist uns jedoch nicht gelungen \textit{NumPy} zu importieren. Für zukünftige Versionen könnte dies noch versucht werden oder eine entsprechende Interpolation mit C\# zu implementieren. Mit der \textit{OnTriggerEnter()}-Funktion werden die Buttons (+ und -) gesteuert. Je nach Höhe der aktuellen Frequenz erhöhen oder senken diese die Frequenz um einen vorgegebenen Wert. Anschließend werden die Werte für die Displays berechnet und angezeigt. Die implementierten Funktionen werden teilweise im Kapitel \textit{Interpolation} behandelt. Alle noch nicht verwendeten Funktionen werden für spätere Berechnungen der Werte aus aktuellen Zahlen benötigt.
+
+\lstinputlisting{../../VirtualScienceLabProject/Assets/Scripts/electro_frequenz.cs}
+
+\clearpage
+\subsection{electro\_lampe.cs}
+
+Dieses Script steuert den Licht-Versuch im Elektrolabor. Es funktioniert ähnlich wie das vorherige Script. Gesteuert wird jedoch zusätzlich zu den Anzeigen noch die Helligkeit einer \"Glühbirne\".
+
+\lstinputlisting{../../VirtualScienceLabProject/Assets/Scripts/electro_lampe.cs}
+
+\clearpage
+\subsection{ShowResults.cs}
+
+Dieses Script dient zur Darstellung der Ergebnisse des Frequenz-Versuchs im Elektro Labor. Bei Berührung eines Buttons wird ein Bild mit einer Wertetafel an der Wand angezeigt.
+
+\lstinputlisting{../../VirtualScienceLabProject/Assets/Scripts/ShowResults.cs}
+
+\clearpage
+\subsection{Move.cs}
+
+Dieses Script dient zur Steuerung der Bewegung der Moleküle im Teilchenlabor. Die Geschwindigkeit wird aus einer globalen Variable genommen und in die Bewegung eingerechnet.
+
+\lstinputlisting{../../VirtualScienceLabProject/Assets/Scripts/Molekuele/Move.cs}
+
+\clearpage
+\subsection{Rotate.cs}
+
+Siehe vorheriges Script. Allerdings wird hier die Drehung berechnet.
+
+\lstinputlisting{../../VirtualScienceLabProject/Assets/Scripts/Molekuele/Rotate.cs}
+
+\clearpage
+\subsection{RotateXAxis.cs}
+
+Siehe vorheriges Script. Allerdings wird hier die X-Achsen-Drehung berechnet.
+
+\lstinputlisting{../../VirtualScienceLabProject/Assets/Scripts/Molekuele/RotateXAxis.cs}

@@ -59,8 +59,18 @@
 \bibliographystyle{geralpha}
 % Listingspaket
 \usepackage{listings}
-\lstloadlanguages{python}
-\lstset{language=python}
+\usepackage{lmodern}  % for bold teletype font
+\usepackage{amsmath}  % for \hookrightarrow
+\usepackage{xcolor}   % for \textcolor
+\lstloadlanguages{csh}
+\lstset{
+	language=csh,
+	basicstyle=\ttfamily,
+	columns=fullflexible,
+	frame=single,
+	breaklines=true,
+	postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space}
+}
 \definecolor{lstback}{gray}{0.85}
 \lstset{backgroundcolor=\color{lstback}}
 \lstset{extendedchars=true}

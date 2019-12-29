@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Move : MonoBehaviour {
-
     private float speed = 0.5f;
     private Vector3 direction = new Vector3(1, 1, 1);
     
@@ -19,8 +18,6 @@ public class Move : MonoBehaviour {
             direction = direction * -1;
         }
     }
-
-    
 
     // Update is called once per frame
     void Update () {
