@@ -7,17 +7,11 @@ using HTC.UnityPlugin.Vive;
 public class NextScene   : MonoBehaviour {
    public System.String sceneName;
    private bool collisionHappend = false;
-
-
-
    
-
     private void OnTriggerEnter(Collider other)
     {
         collisionHappend = true;
         Debug.Log("collisionHappend: " + collisionHappend);
-        
-
     }
 
     private void OnTriggerExit(Collider other)
@@ -34,8 +28,4 @@ public class NextScene   : MonoBehaviour {
             UnityEngine.SceneManagement.SceneManager.LoadScene(sceneName.ToString());
         }
     }
-
-
-
-
 }

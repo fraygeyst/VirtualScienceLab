@@ -1,4 +1,4 @@
-Ôªøusing System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,13 +8,13 @@ public class Beschleunigung : MonoBehaviour {
     // Use this for initialization
     void Start () {
         Sev_Seg_Counter counti = new Sev_Seg_Counter();
-        counti.setSevSegCount(0, "Z√§hler1");
+        counti.setSevSegCount(0, "Z‰hler1");
     }
 	
 	// Update is called once per frame
 	void Update () {
         Sev_Seg_Counter counti = new Sev_Seg_Counter();
-        counti.setSevSegCount(Load_Publics.Temperatur, "Z√§hler1");
+        counti.setSevSegCount(Load_Publics.Temperatur, "Z‰hler1");
     }
 
     private void OnTriggerEnter(Collider other)
@@ -25,7 +25,7 @@ public class Beschleunigung : MonoBehaviour {
                 if (Load_Publics.plus_act && Load_Publics.Temperatur < Load_Publics.Temp_Max)
                 {
                     Load_Publics.Temperatur += 25;
-                    Debug.Log("w√§rmer");
+                    Debug.Log("w‰rmer");
                     StartCoroutine(waiter(true));
                 }
                 break;
@@ -33,7 +33,7 @@ public class Beschleunigung : MonoBehaviour {
                 if (Load_Publics.min_act && Load_Publics.Temperatur > Load_Publics.Temp_Min)
                 {
                     Load_Publics.Temperatur -= 25;
-                    Debug.Log("k√§lter");
+                    Debug.Log("k‰lter");
                     StartCoroutine(waiter(false));
                 }
                 break;

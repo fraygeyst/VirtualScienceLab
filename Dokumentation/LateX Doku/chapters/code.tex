@@ -4,7 +4,7 @@
 
 Viele Funktionen sind in Unity standardmäßig implementiert. So zum Beispiel die Möglichkeit physikalische Eigentschaften auf ein Objekt zu definieren. Dies macht es anfassbar und ermöglicht die Interaktion mit dem Objekt. \newline
 
-Eigene bzw. weitere und schwierigere Funktionen müssen hingegen selbst implementiert werden. Alle von uns implementierten Funktionen und Methoden befinden sich im Projekt unter Assets -> Scripts. Alle Scripte wurden in C# programmiert. \newline
+Eigene bzw. weitere und schwierigere Funktionen müssen hingegen selbst implementiert werden. Alle von uns implementierten Funktionen und Methoden befinden sich im Projekt unter Assets -> Scripts. Alle Scripte wurden in C\# programmiert. \newline
 
 Es gibt Scripte, die sich durchs ganze Projekt ziehen und andere, die sich auf bestimmte Szenen beziehen. Allgemein können jedoch alle Scripte überall verwendet werden.
 
@@ -13,45 +13,7 @@ Es gibt Scripte, die sich durchs ganze Projekt ziehen und andere, die sich auf b
 
 Das Scene Management Script dient zur richtigen Positionierung des Spielers, wenn er den Flur betritt. Je nachdem aus welchem Raum er kommt ändert sich die Startposition. Das Script muss in jeder Szene eingebaut sein, da nur so die zuletzt verwendete Szene ausgelesen werden kann. 
 
-\begin{lstlisting}
-Scene scene = SceneManager.GetActiveScene();
-camera_obj = GameObject.Find("ViveRig");
-Vector3 vec = new Vector3();
-
-if (scene.name == "NeuerFlur" && Globals.last_scene != "")
-{
-Debug.Log("Switching Cam from: " + Globals.last_scene);
-switch (Globals.last_scene)
-{
-case "BioLab":
-vec = new Vector3(12.0f, 0f, -1.4f);
-break;
-case "grosserRaum": // Mathe
-vec = new Vector3(9.2f, 0f, 0f);
-break;
-case "Lab1": // Chemie
-vec = new Vector3(22.0f, 0f, -1.4f);
-break;
-case "Lab2": // Physik
-vec = new Vector3(22.0f, 0f, 1.4f);
-break;
-case "Lab3": // Informatik
-vec = new Vector3(16.9f, 0f, 1.4f);
-break;
-case "Teilchenlabor":
-vec = new Vector3(12.0f, 0f, 1.4f);
-break;
-case "VRLab":
-vec = new Vector3(16.9f, 0f, 1.4f);
-break;
-}
-Debug.Log("Changing Position: " + vec);
-camera_obj.transform.position = vec;
-} else
-{
-Globals.last_scene = scene.name;
-}
-\end{lstlisting}
+\lstinputlisting{../../VirtualScienceLabProject/Assets/Scripts/Scene_Management.cs}
 
 Das Script wird in der \textit{start()} Methode ausgeführt - also beim Laden der Szene. Am Anfang wird der Szenenname rausgefunden und in einer Variable gespeichert. Anschließend erfolgt eine Abfrage, ob die aktuelle Szene der "Flur" ist oder nicht. Falls nicht, wird der aktuelle Scenenname als \textit{last\_scene} in einer Globalen Variable gespeichert. Wenn es sich um den Flur handelt wird die Position des Players entsprechend der letzten Szene im Flur geändert.
 
@@ -60,304 +22,35 @@ Das Script wird in der \textit{start()} Methode ausgeführt - also beim Laden der
 
 In der Globals.cs werden globale Variablen gespeichert, die Szenenübergreifend benötigt werden. Aktuell ist dies nur der letzte Szenenname.
 
-\begin{lstlisting}
-public static class Globals {
-
-public static string last_scene = "";
-}
-\end{lstlisting}
+\lstinputlisting{../../VirtualScienceLabProject/Assets/Scripts/Globals.cs}
 
 \clearpage
-\subsection{Load\_publics.cs}
+\subsection{Load\_Publics.cs}
 
 In diesem Script werden alle Variablen gespeichert, die über ein Script hinaus aber nur innerhalb einer Szene benötigt werden. Das Script wird in jeder Szene eingebunden. Das Objekt auf dem es positioniert ist, spielt dabei keine Rolle. \newline
 
-\begin{lstlisting}
-//Allgemein
-public static bool light_on = false;
-public static bool light_col = false;
-public static string[] lightnames = {"Point_Light_l", 
-"Point_Light_m", "Point_light_r"};
-
-// Informatiklab
-// Dijkstra
-internal static readonly bool reset_clicked;
-public static string Dijkstra_Word;
-public static bool s_active = true;
-public static bool a_active = false;
-public static bool b_active = false;
-public static bool g_active = false;
-public static bool c_active = false;
-public static bool d_active = false;
-public static bool e_active = false;
-public static bool f_active = false;
-public static bool z_active = false;
-public static bool r_active = false;
-
-public static bool s_clicked = false;
-public static bool a_clicked = false;
-public static bool b_clicked = false;
-public static bool g_clicked = false;
-public static bool c_clicked = false;
-public static bool d_clicked = false;
-public static bool e_clicked = false;
-public static bool f_clicked = false;
-public static bool z_clicked = false;
-public static bool r_clicked = false;
-
-public static int counter = 0;
-public static int maximum = 19;
-public static string last_clicked = "";
-
-
-// Bubblesort
-public static int b_state = 0;
-public static bool bubble_active = true;
-public static bool s_1_act = true;
-public static bool s_2_act = true;
-public static bool s_3_act = true;
-public static bool s_4_act = true;
-public static bool s_5_act = true;
-public static bool s_6_act = true;
-public static bool s_7_act = true;
-
-// BioLab
-public static string scene_change = "";
-public static bool bio_collision_happened = false;
-
-// Teilchenlabor
-// Molekuele
-public static int Temperatur = 25;
-public static bool min_act = true;
-public static bool plus_act = true;
-public static float Temp_Max = 200f;
-public static float Temp_Min = 0f;
-public static float Map_Temp_Max = 0.25f;
-public static float Map_Temp_Min = 0f;
-public static float move_speed_multi = 15;
-public static float RemapTemp(float from, float fromMin, 
-float fromMax, float toMin, float toMax)
-{
-var fromAbs = from - fromMin;
-var fromMaxAbs = fromMax - fromMin;
-var normal = fromAbs / fromMaxAbs;
-var toMaxAbs = toMax - toMin;
-var toAbs = toMaxAbs * normal;
-var to = toAbs + toMin;
-
-return to;
-}
-
-// Mathelab
-public static int sev_bridges_counter = 0;
-public static bool bridges_active = true;
-
-// Elektrolab
-public static double lampe_netzteil_count = 0;
-public static float RemapLight(float from, float fromMin, 
-float fromMax, float toMin, float toMax)
-{
-var fromAbs = from - fromMin;
-var fromMaxAbs = fromMax - fromMin;
-var normal = fromAbs / fromMaxAbs;
-var toMaxAbs = toMax - toMin;
-var toAbs = toMaxAbs * normal;
-var to = toAbs + toMin;
-
-return to;
-}
-
-// Versuch 2
-public static float Uq = 4.0f;
-public static float R = 2000f;
-public static float C = 0.5f;
-public static float frequency_Netzteil = 0.0f;
-\end{lstlisting}
+\lstinputlisting{../../VirtualScienceLabProject/Assets/Scripts/Load_Publics.cs}
 
 Wichtig ist, dass in dem Script eine Klasse definiert ist, die die Variablen und für die Variablen wichtige Funktionen z. B. zum Mapping von manchen Variablen enthält.
 
 \clearpage
-\subsection{Sev\_Seg\_counter.cs}
+\subsection{Sev\_Seg\_Counter.cs}
 
 Die 7-Segment-Anzeige wird in verschiedenen Szenen benutzt. Dieses Script dient dazu eine eingegebenen Zahl auf das 3-Ziffern-Display zu übertragen. \newline
 Der Funktion \textit{setSevSegCount()} wird eine Zahl als int und der Name des zugehörigen Parent-Objekts übergeben. Die Zahl wird als String formatiert, sodass sie besser in 3 Teile geteilt werden kann. Das Parent-Objekt wird per \textit{Find} Befehl gesucht und in einer Variable gespeichert. Anschließend wird für jede der 3 Zeichen des Zahl-Strings die Funktion \textit{set\_n()} aufgerufen, welche die entsprechende Position in der 7-Segment-Anzeige in die Zahl umwandelt. \newline
 
 Innerhalb der \textit{set\_n()} Methode werden die Segment-Objekte innerhalb des Parent-Objekts gesucht. Da die Benennung immer gleich ist, kann dies programmatisch anhand eines zusammengesetzten Strings geschehen. Anschließend wird für jedes Segment der Anzeige die Farbe entsprechend einer Vorgabe, die per If-Abfrage anhand der eingegebenen Zahl festgestellt wird, entweder Schwarz oder Rot bzw. Grün gesetzt. Dadurch entsteht die Zahl auf der Anzeige.
 
-\begin{lstlisting}
-public void setSevSegCount(int seconds, String parentname)
-{
-if (seconds < 1000)
-{
-string s_number = String.Format("{0:000}", seconds);
-GameObject parent = GameObject.Find(parentname);
-
-Debug.Log(s_number);
-
-set_n(int.Parse(Char.ToString(s_number[0])), 1, parent);
-set_n(int.Parse(Char.ToString(s_number[1])), 2, parent);
-set_n(int.Parse(Char.ToString(s_number[2])), 3, parent);
-}
-}
-
-private void set_n(int number, int disp_num, 
-GameObject parent_item)
-{
-string s_lt = "n_" + disp_num + "_lt";
-string s_rt = "n_" + disp_num + "_rt";
-string s_lb = "n_" + disp_num + "_lb";
-string s_rb = "n_" + disp_num + "_rb";
-string s_m = "n_" + disp_num + "_m";
-string s_b = "n_" + disp_num + "_b";
-string s_t = "n_" + disp_num + "_t";
-
-Debug.Log(parent_item);
-Debug.Log(number);
-
-switch (number)
-{
-case 0:
-setColorP(parent_item.transform.Find(s_lt).gameObject);
-setColorP(parent_item.transform.Find(s_rt).gameObject);
-setColorP(parent_item.transform.Find(s_lb).gameObject);
-setColorP(parent_item.transform.Find(s_rb).gameObject);
-setColorN(parent_item.transform.Find(s_m).gameObject);
-setColorP(parent_item.transform.Find(s_b).gameObject);
-setColorP(parent_item.transform.Find(s_t).gameObject);
-break;
-case 1:
-setColorN(parent_item.transform.Find(s_lt).gameObject);
-setColorP(parent_item.transform.Find(s_rt).gameObject);
-setColorN(parent_item.transform.Find(s_lb).gameObject);
-setColorP(parent_item.transform.Find(s_rb).gameObject);
-setColorN(parent_item.transform.Find(s_m).gameObject);
-setColorN(parent_item.transform.Find(s_b).gameObject);
-setColorN(parent_item.transform.Find(s_t).gameObject);
-break;
-case 2:
-setColorN(parent_item.transform.Find(s_lt).gameObject);
-setColorP(parent_item.transform.Find(s_rt).gameObject);
-setColorP(parent_item.transform.Find(s_lb).gameObject);
-setColorN(parent_item.transform.Find(s_rb).gameObject);
-setColorP(parent_item.transform.Find(s_m).gameObject);
-setColorP(parent_item.transform.Find(s_b).gameObject);
-setColorP(parent_item.transform.Find(s_t).gameObject);
-break;
-case 3:
-setColorN(parent_item.transform.Find(s_lt).gameObject);
-setColorP(parent_item.transform.Find(s_rt).gameObject);
-setColorN(parent_item.transform.Find(s_lb).gameObject);
-setColorP(parent_item.transform.Find(s_rb).gameObject);
-setColorP(parent_item.transform.Find(s_m).gameObject);
-setColorP(parent_item.transform.Find(s_b).gameObject);
-setColorP(parent_item.transform.Find(s_t).gameObject);
-break;
-case 4:
-setColorP(parent_item.transform.Find(s_lt).gameObject);
-setColorP(parent_item.transform.Find(s_rt).gameObject);
-setColorN(parent_item.transform.Find(s_lb).gameObject);
-setColorP(parent_item.transform.Find(s_rb).gameObject);
-setColorP(parent_item.transform.Find(s_m).gameObject);
-setColorN(parent_item.transform.Find(s_b).gameObject);
-setColorN(parent_item.transform.Find(s_t).gameObject);
-break;
-case 5:
-setColorP(parent_item.transform.Find(s_lt).gameObject);
-setColorN(parent_item.transform.Find(s_rt).gameObject);
-setColorN(parent_item.transform.Find(s_lb).gameObject);
-setColorP(parent_item.transform.Find(s_rb).gameObject);
-setColorP(parent_item.transform.Find(s_m).gameObject);
-setColorP(parent_item.transform.Find(s_b).gameObject);
-setColorP(parent_item.transform.Find(s_t).gameObject);
-break;
-case 6:
-setColorP(parent_item.transform.Find(s_lt).gameObject);
-setColorN(parent_item.transform.Find(s_rt).gameObject);
-setColorP(parent_item.transform.Find(s_lb).gameObject);
-setColorP(parent_item.transform.Find(s_rb).gameObject);
-setColorP(parent_item.transform.Find(s_m).gameObject);
-setColorP(parent_item.transform.Find(s_b).gameObject);
-setColorP(parent_item.transform.Find(s_t).gameObject);
-break;
-case 7:
-setColorN(parent_item.transform.Find(s_lt).gameObject);
-setColorP(parent_item.transform.Find(s_rt).gameObject);
-setColorN(parent_item.transform.Find(s_lb).gameObject);
-setColorP(parent_item.transform.Find(s_rb).gameObject);
-setColorN(parent_item.transform.Find(s_m).gameObject);
-setColorN(parent_item.transform.Find(s_b).gameObject);
-setColorP(parent_item.transform.Find(s_t).gameObject);
-break;
-case 8:
-setColorP(parent_item.transform.Find(s_lt).gameObject);
-setColorP(parent_item.transform.Find(s_rt).gameObject);
-setColorP(parent_item.transform.Find(s_lb).gameObject);
-setColorP(parent_item.transform.Find(s_rb).gameObject);
-setColorP(parent_item.transform.Find(s_m).gameObject);
-setColorP(parent_item.transform.Find(s_b).gameObject);
-setColorP(parent_item.transform.Find(s_t).gameObject);
-break;
-case 9:
-setColorP(parent_item.transform.Find(s_lt).gameObject);
-setColorP(parent_item.transform.Find(s_rt).gameObject);
-setColorN(parent_item.transform.Find(s_lb).gameObject);
-setColorP(parent_item.transform.Find(s_rb).gameObject);
-setColorP(parent_item.transform.Find(s_m).gameObject);
-setColorP(parent_item.transform.Find(s_b).gameObject);
-setColorP(parent_item.transform.Find(s_t).gameObject);
-break;
-}
-}
-
-private void setColorP(GameObject gameObject)
-{
-if(Load_Publics.counter <= Load_Publics.maximum)
-{
-gameObject.GetComponent<Renderer>().material.color 
-= Color.green;
-} else
-{
-gameObject.GetComponent<Renderer>().material.color 
-= Color.red;
-}
-
-}
-private void setColorN(GameObject gameObject)
-{
-gameObject.GetComponent<Renderer>().material.color 
-= Color.black;
-}
-
-}
-\end{lstlisting}
+\lstinputlisting{../../VirtualScienceLabProject/Assets/Scripts/Sev_Seg_Counter.cs}
 
 \clearpage
-\subsection{Display\_Meter\_5D.cs}
+\subsection{Display\_Meter\_5\_D.cs}
 
 Ähnlich des Scripts \textit{Sev\_Seg\_counter.cs} ist auch dieses Script zum Anzeigen von Zahlen auf einer 7-Segment-Anzeige gedacht. Die Besonderheit hier ist, dass 5 Ziffern dargestellt werden und die letzten beiden Ziffern nach einem Komma stehen. Also eine Kommazahl. \newline
 
 Der Unterscheid der beiden Scripte besteht rein in der Formatierung der Zahl und der Eingabe einer Double-Variable, anstatt einer Integer-Variable. Der Rest ist identisch. Einzig die \textit{set\_n()}-Methode wird fünf mal anstatt nur drei mal aufgerufen.
 
-\begin{lstlisting}
-public void setDisplay(double do_number, string parent_name)
-{
-if(do_number < 1000)
-{
-string s_number = String.Format("{0:000.00}", do_number);
-GameObject parent = GameObject.Find(parent_name);
-
-Debug.Log(s_number);
-
-set_n(int.Parse(Char.ToString(s_number[0])), 1, parent);
-set_n(int.Parse(Char.ToString(s_number[1])), 2, parent);
-set_n(int.Parse(Char.ToString(s_number[2])), 3, parent);
-set_n(int.Parse(Char.ToString(s_number[4])), 4, parent);
-set_n(int.Parse(Char.ToString(s_number[5])), 5, parent);
-
-setColorP(parent.transform.Find("decimal_point").gameObject);
-}
-}
-\end{lstlisting}
+\lstinputlisting{../../VirtualScienceLabProject/Assets/Scripts/Display_Meter_5_D.cs}
 
 \clearpage
 \section{Szenenspezifische Scripte}
@@ -365,85 +58,10 @@ setColorP(parent.transform.Find("decimal_point").gameObject);
 
 Dieses Script ist für die Steuerung der Geschwindigkeit der Teilchen im Teilchenlabor zuständig.
 
-\begin{lstlisting}
-public class Beschleunigung : MonoBehaviour {
-
-
-// Use this for initialization
-void Start () {
-Sev_Seg_Counter counti = new Sev_Seg_Counter();
-counti.setSevSegCount(0, "Zähler1");
-}
-
-// Update is called once per frame
-void Update () {
-Sev_Seg_Counter counti = new Sev_Seg_Counter();
-counti.setSevSegCount(Load_Publics.Temperatur, "Zähler1");
-}
-
-private void OnTriggerEnter(Collider other)
-{
-switch (gameObject.name)
-{
-case "plus":
-if (Load_Publics.plus_act && Load_Publics.Temperatur 
-< Load_Publics.Temp_Max)
-{
-Load_Publics.Temperatur += 25;
-Debug.Log("wärmer");
-StartCoroutine(waiter(true));
-}
-break;
-case "minus":
-if (Load_Publics.min_act && Load_Publics.Temperatur 
-> Load_Publics.Temp_Min)
-{
-Load_Publics.Temperatur -= 25;
-Debug.Log("kälter");
-StartCoroutine(waiter(false));
-}
-break;
-}
-}
-
-IEnumerator waiter(bool isplus)
-{
-GameObject button_mol = null;
-if (isplus)
-{
-button_mol = GameObject.Find("plus");
-Load_Publics.plus_act = false;
-} else
-{
-button_mol = GameObject.Find("minus");
-Load_Publics.min_act = false;
-}
-button_mol.GetComponent<Renderer>().material.color 
-= Color.yellow;
-
-yield return new WaitForSeconds(1);    //Wait 1 Second
-Color color = new Color();
-
-if (isplus)
-{
-Load_Publics.plus_act = true;
-if(ColorUtility.TryParseHtmlString("#FF0000", out color))
-{
-button_mol.GetComponent<Renderer>().material.color = color;
-}
-}
-else
-{
-Load_Publics.min_act = true;
-if (ColorUtility.TryParseHtmlString("#00FFFF", out color))
-{
-button_mol.GetComponent<Renderer>().material.color = color;
-}
-}
-}
-}
-\end{lstlisting}
+\lstinputlisting{../../VirtualScienceLabProject/Assets/Scripts/Beschleunigung.cs}
 
 Das Script wurde auf die beiden Buttons in der Szene zum Beschleunigen und Abbremsen der Teilchen gelegt. Bei Aufruf der Szene wird zuerst in der \textit{start()} die 7-Segment-Anzeige auf 0 gesetzt. Das ist der Temperatur Startwert. Anschließend wird die Anzeige in der \textit{Update()} jeweils auf den Wert der Temperatur-Variable in der \textit{Load\_Publics.cs} gesetzt. Standardmäßig ist dies 25. \newline
 
 Das Script enthält außerdem Listener, die ausgelöst werden, sobald der Spieler einen der Buttons berührt. Diese Listener unterscheiden dann welcher Button gedrückt wurde und ändern entsprechend die Temperatur-Variable. Nachdem ein Button gedrückt wurde wird es für eine Sekunde unmöglich diesen nochmals zu drücken. Dies wird auch durch eine Farbänderung dargestellt.
+
+\clearpage
