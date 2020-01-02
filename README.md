@@ -7,11 +7,16 @@ PHILIPP LAUER, MARC ZINTEL
 
 Link zur ausführlichen Dokumentation: https://github.com/fraygeyst/VirtualScienceLab/blob/master/Dokumentation/Dokumentation%20V2.0/VirtualScienceLab.pdf
 
+Video: https://youtu.be/XuGCA2x-6-4
+
 
 Übersicht über Tastenbelegungen:
 Pad: Teleport
 Hairtrigger: Objekte aufnehmen, Lichtschalter aktivieren, Beamer einschalten, Wasserhahn öffnen, Türklinke bedienen
 
+___________________________________________________________
+___________________________________________________________
+___________________________________________________________
 
 Quellen (https://free3d.com)
 ___________________________
