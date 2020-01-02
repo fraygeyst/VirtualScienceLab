@@ -7,4 +7,10 @@ Warning--entry type for "ZittScript1" isn't style-file defined
 --line 12 of file ./bib/literatur.bib
 Warning--entry type for "ZittScript2" isn't style-file defined
 --line 21 of file ./bib/literatur.bib
-(There were 3 warnings)
+Warning--entry type for "MyCurveFit" isn't style-file defined
+--line 30 of file ./bib/literatur.bib
+Warning--entry type for "Brill" isn't style-file defined
+--line 39 of file ./bib/literatur.bib
+Warning--entry type for "Schug" isn't style-file defined
+--line 48 of file ./bib/literatur.bib
+(There were 6 warnings)

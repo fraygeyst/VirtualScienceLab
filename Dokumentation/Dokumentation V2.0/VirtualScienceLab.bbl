@@ -1,4 +1,18 @@
-\begin{thebibliography}{{Zit}b}
+\begin{thebibliography}{{MyC}}
+
+\bibitem[{Bri}]{Brill}
+{\sc {Brill, Prof. Dr. Manfred}}: {\em Materialien Augmented und Virtual
+  Reality}.
+\newblock \url{http://webhome.hs-kl.de/~brill/}.
+\newblock Zuletzt gesehen am 15.12.2019.
+
+\bibitem[{MyC}]{MyCurveFit}
+{\sc {MyCurveFit}}: {\em Online Curve Fitting}.
+\newblock \url{https://mycurvefit.com/}.
+\newblock Zuletzt gesehen am 02.01.2020.
+
+\bibitem[{Sch}]{Schug}
+{\sc {Schug, Jens Cedric}}: {\em Modelle in Unity}.
 
 \bibitem[{Zin}]{VSL}
 {\sc {Zintel, Marc}, {Lauer, Philipp}}: {\em Virtual Science Lab}.
