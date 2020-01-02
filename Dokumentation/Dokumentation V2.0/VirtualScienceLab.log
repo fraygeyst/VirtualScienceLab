@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.12.11)  2 JAN 2020 13:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.12.11)  2 JAN 2020 14:41
 entering extended mode
 **./VirtualScienceLab.tex
 (VirtualScienceLab.tex
@@ -1126,10 +1126,15 @@ Class scrbook Warning: \float@addtolists detected!
 (scrbook)              a package that still implements the
 (scrbook)              deprecated \float@addtolist interface .
 
-<images/labor/labor_vgl.png, id=106, 1293.83376pt x 1136.245pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--10
+
+ []
+
+<images/labor/labor_vgl.png, id=107, 1293.83376pt x 1136.245pt>
 File: images/labor/labor_vgl.png Graphic file (type png)
 <use images/labor/labor_vgl.png>
-Package pdftex.def Info: images/labor/labor_vgl.png  used on input line 9.
+Package pdftex.def Info: images/labor/labor_vgl.png  used on input line 14.
 (pdftex.def)             Requested size: 403.51187pt x 354.36484pt.
 ) (chapters/steuerung.tex [1
 
@@ -1138,7 +1143,7 @@ Package pdftex.def Info: images/labor/labor_vgl.png  used on input line 9.
 
 ] [2 <./images/labor/labor_vgl.png (PNG copy)>]
 chapter 2.
-<images/steuerung/trigger.jpg, id=117, 2409.0pt x 1806.75pt>
+<images/steuerung/trigger.jpg, id=118, 2409.0pt x 1806.75pt>
 File: images/steuerung/trigger.jpg Graphic file (type jpg)
 <use images/steuerung/trigger.jpg>
 Package pdftex.def Info: images/steuerung/trigger.jpg  used on input line 11.
@@ -1152,7 +1157,7 @@ chapter 3.
 
 
 ]
-<images/bisheriger_stand/grundriss_chemielabor.png, id=134, 526.21594pt x 388.4
+<images/bisheriger_stand/grundriss_chemielabor.png, id=135, 526.21594pt x 388.4
 5125pt>
 File: images/bisheriger_stand/grundriss_chemielabor.png Graphic file (type png)
 
@@ -1171,20 +1176,20 @@ File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 
 ]
 chapter 4.
-<images/neuerungen/grundriss_physiklabor.png, id=152, 513.41812pt x 383.93437pt
+<images/neuerungen/grundriss_physiklabor.png, id=153, 513.41812pt x 383.93437pt
 >
 File: images/neuerungen/grundriss_physiklabor.png Graphic file (type png)
 <use images/neuerungen/grundriss_physiklabor.png>
 Package pdftex.def Info: images/neuerungen/grundriss_physiklabor.png  used on i
 nput line 9.
 (pdftex.def)             Requested size: 403.51187pt x 301.75235pt.
-<images/neuerungen/neuer_flur.png, id=153, 913.91437pt x 386.19281pt>
+<images/neuerungen/neuer_flur.png, id=154, 913.91437pt x 386.19281pt>
 File: images/neuerungen/neuer_flur.png Graphic file (type png)
 <use images/neuerungen/neuer_flur.png>
 Package pdftex.def Info: images/neuerungen/neuer_flur.png  used on input line 1
 8.
 (pdftex.def)             Requested size: 403.51187pt x 170.50874pt.
-<images/neuerungen/grundriss_vrlab.png, id=154, 545.03625pt x 380.92313pt>
+<images/neuerungen/grundriss_vrlab.png, id=155, 545.03625pt x 380.92313pt>
 File: images/neuerungen/grundriss_vrlab.png Graphic file (type png)
 <use images/neuerungen/grundriss_vrlab.png>
 Package pdftex.def Info: images/neuerungen/grundriss_vrlab.png  used on input l
@@ -1192,31 +1197,31 @@ ine 24.
 (pdftex.def)             Requested size: 403.51187pt x 282.01237pt.
 [9] [10 <./images/neuerungen/grundriss_physiklabor.png> <./images/neuerungen/ne
 uer_flur.png>]
-<images/neuerungen/grundriss_biolab.png, id=165, 493.845pt x 364.36125pt>
+<images/neuerungen/grundriss_biolab.png, id=166, 493.845pt x 364.36125pt>
 File: images/neuerungen/grundriss_biolab.png Graphic file (type png)
 <use images/neuerungen/grundriss_biolab.png>
 Package pdftex.def Info: images/neuerungen/grundriss_biolab.png  used on input 
 line 36.
 (pdftex.def)             Requested size: 403.51187pt x 297.7107pt.
-<images/neuerungen/biolab_mikroskop.png, id=166, 764.10469pt x 372.64218pt>
+<images/neuerungen/biolab_mikroskop.png, id=167, 764.10469pt x 372.64218pt>
 File: images/neuerungen/biolab_mikroskop.png Graphic file (type png)
 <use images/neuerungen/biolab_mikroskop.png>
 Package pdftex.def Info: images/neuerungen/biolab_mikroskop.png  used on input 
 line 42.
 (pdftex.def)             Requested size: 403.51187pt x 196.78865pt.
-<images/neuerungen/biolab_blutzelle.png, id=167, 733.99219pt x 382.42876pt>
+<images/neuerungen/biolab_blutzelle.png, id=168, 733.99219pt x 382.42876pt>
 File: images/neuerungen/biolab_blutzelle.png Graphic file (type png)
 <use images/neuerungen/biolab_blutzelle.png>
 Package pdftex.def Info: images/neuerungen/biolab_blutzelle.png  used on input 
 line 48.
 (pdftex.def)             Requested size: 403.51187pt x 210.24309pt.
-<images/neuerungen/biolab_pflanze.png, id=168, 778.40813pt x 390.70969pt>
+<images/neuerungen/biolab_pflanze.png, id=169, 778.40813pt x 390.70969pt>
 File: images/neuerungen/biolab_pflanze.png Graphic file (type png)
 <use images/neuerungen/biolab_pflanze.png>
 Package pdftex.def Info: images/neuerungen/biolab_pflanze.png  used on input li
 ne 54.
 (pdftex.def)             Requested size: 403.51187pt x 202.54422pt.
-<images/neuerungen/biolab_textil.png, id=169, 820.56563pt x 388.45125pt>
+<images/neuerungen/biolab_textil.png, id=170, 820.56563pt x 388.45125pt>
 File: images/neuerungen/biolab_textil.png Graphic file (type png)
 <use images/neuerungen/biolab_textil.png>
 Package pdftex.def Info: images/neuerungen/biolab_textil.png  used on input lin
@@ -1236,7 +1241,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 70--71
 [15
 
 ]
-<images/neuerungen/brueckenproblem.png, id=197, 818.30719pt x 374.90062pt>
+<images/neuerungen/brueckenproblem.png, id=198, 818.30719pt x 374.90062pt>
 File: images/neuerungen/brueckenproblem.png Graphic file (type png)
 <use images/neuerungen/brueckenproblem.png>
 Package pdftex.def Info: images/neuerungen/brueckenproblem.png  used on input l
@@ -1248,19 +1253,19 @@ Underfull \hbox (badness 1024) in paragraph at lines 77--77
 n-far-be
  []
 
-<images/neuerungen/grundriss_mathelab.png, id=198, 500.62032pt x 393.72093pt>
+<images/neuerungen/grundriss_mathelab.png, id=199, 500.62032pt x 393.72093pt>
 File: images/neuerungen/grundriss_mathelab.png Graphic file (type png)
 <use images/neuerungen/grundriss_mathelab.png>
 Package pdftex.def Info: images/neuerungen/grundriss_mathelab.png  used on inpu
 t line 83.
 (pdftex.def)             Requested size: 403.51187pt x 317.36223pt.
-<images/neuerungen/mathelab_kardioide.png, id=199, 678.28406pt x 387.69844pt>
+<images/neuerungen/mathelab_kardioide.png, id=200, 678.28406pt x 387.69844pt>
 File: images/neuerungen/mathelab_kardioide.png Graphic file (type png)
 <use images/neuerungen/mathelab_kardioide.png>
 Package pdftex.def Info: images/neuerungen/mathelab_kardioide.png  used on inpu
 t line 90.
 (pdftex.def)             Requested size: 403.51187pt x 230.63905pt.
-<images/neuerungen/mathelab_briefkasten.png, id=200, 685.05937pt x 385.44pt>
+<images/neuerungen/mathelab_briefkasten.png, id=201, 685.05937pt x 385.44pt>
 File: images/neuerungen/mathelab_briefkasten.png Graphic file (type png)
 <use images/neuerungen/mathelab_briefkasten.png>
 Package pdftex.def Info: images/neuerungen/mathelab_briefkasten.png  used on in
@@ -1273,14 +1278,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 103--104
 
  []
 
-<images/neuerungen/grundriss_informatiklab.png, id=213, 538.26094pt x 392.96812
+<images/neuerungen/grundriss_informatiklab.png, id=214, 538.26094pt x 392.96812
 pt>
 File: images/neuerungen/grundriss_informatiklab.png Graphic file (type png)
 <use images/neuerungen/grundriss_informatiklab.png>
 Package pdftex.def Info: images/neuerungen/grundriss_informatiklab.png  used on
  input line 109.
 (pdftex.def)             Requested size: 403.51187pt x 294.59343pt.
-<images/neuerungen/informatiklab_bubblesort.png, id=214, 802.49812pt x 389.2040
+<images/neuerungen/informatiklab_bubblesort.png, id=215, 802.49812pt x 389.2040
 6pt>
 File: images/neuerungen/informatiklab_bubblesort.png Graphic file (type png)
 <use images/neuerungen/informatiklab_bubblesort.png>
@@ -1291,7 +1296,7 @@ n input line 115.
 
 
  <./images/neuerungen/grundriss_informatiklab.png>]
-<images/neuerungen/informatiklab_dijkstra.png, id=220, 824.32968pt x 380.17032p
+<images/neuerungen/informatiklab_dijkstra.png, id=221, 824.32968pt x 380.17032p
 t>
 File: images/neuerungen/informatiklab_dijkstra.png Graphic file (type png)
 <use images/neuerungen/informatiklab_dijkstra.png>
@@ -1300,14 +1305,14 @@ input line 124.
 (pdftex.def)             Requested size: 403.51187pt x 186.09364pt.
  [19 <./images/neuerungen/informatiklab_bubblesort.png>] [20 <./images/neuerung
 en/informatiklab_dijkstra.png>]
-<images/neuerungen/grundriss_teilchenlab.png, id=232, 472.01344pt x 352.31625pt
+<images/neuerungen/grundriss_teilchenlab.png, id=233, 472.01344pt x 352.31625pt
 >
 File: images/neuerungen/grundriss_teilchenlab.png Graphic file (type png)
 <use images/neuerungen/grundriss_teilchenlab.png>
 Package pdftex.def Info: images/neuerungen/grundriss_teilchenlab.png  used on i
 nput line 138.
 (pdftex.def)             Requested size: 403.51187pt x 301.1905pt.
-<images/neuerungen/teilchenlab_temp.png, id=233, 569.12625pt x 344.03531pt>
+<images/neuerungen/teilchenlab_temp.png, id=234, 569.12625pt x 344.03531pt>
 File: images/neuerungen/teilchenlab_temp.png Graphic file (type png)
 <use images/neuerungen/teilchenlab_temp.png>
 Package pdftex.def Info: images/neuerungen/teilchenlab_temp.png  used on input 
@@ -1326,7 +1331,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 155--156
 
  []
 
-<images/neuerungen/grundriss_elektrotechnik.png, id=245, 510.40688pt x 381.6759
+<images/neuerungen/grundriss_elektrotechnik.png, id=246, 510.40688pt x 381.6759
 3pt>
 File: images/neuerungen/grundriss_elektrotechnik.png Graphic file (type png)
 <use images/neuerungen/grundriss_elektrotechnik.png>
@@ -1341,19 +1346,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 166--167
 [23
 
  <./images/neuerungen/grundriss_elektrotechnik.png>]
-<images/neuerungen/etechnik_v1.png, id=253, 743.02594pt x 369.63094pt>
+<images/neuerungen/etechnik_v1.png, id=254, 743.02594pt x 369.63094pt>
 File: images/neuerungen/etechnik_v1.png Graphic file (type png)
 <use images/neuerungen/etechnik_v1.png>
 Package pdftex.def Info: images/neuerungen/etechnik_v1.png  used on input line 
 172.
 (pdftex.def)             Requested size: 403.51187pt x 200.73703pt.
-<images/neuerungen/lampe_versuchsaufbau.jpg, id=254, 4015.0pt x 3011.25pt>
+<images/neuerungen/lampe_versuchsaufbau.jpg, id=255, 4015.0pt x 3011.25pt>
 File: images/neuerungen/lampe_versuchsaufbau.jpg Graphic file (type jpg)
 <use images/neuerungen/lampe_versuchsaufbau.jpg>
 Package pdftex.def Info: images/neuerungen/lampe_versuchsaufbau.jpg  used on in
 put line 178.
 (pdftex.def)             Requested size: 403.51187pt x 302.61298pt.
-<images/neuerungen/etechnik_v2.png, id=255, 858.20625pt x 390.70969pt>
+<images/neuerungen/etechnik_v2.png, id=256, 858.20625pt x 390.70969pt>
 File: images/neuerungen/etechnik_v2.png Graphic file (type png)
 <use images/neuerungen/etechnik_v2.png>
 Package pdftex.def Info: images/neuerungen/etechnik_v2.png  used on input line 
@@ -1364,7 +1369,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 186--186
 [][][]|\T1/lmr/m/n/12 Ver-such: Mes-sen von Span-nun-gen bei ei-ner RC-
  []
 
-<images/neuerungen/frequenz_versuch_aufbau.jpg, id=256, 4015.0pt x 3011.25pt>
+<images/neuerungen/frequenz_versuch_aufbau.jpg, id=257, 4015.0pt x 3011.25pt>
 File: images/neuerungen/frequenz_versuch_aufbau.jpg Graphic file (type jpg)
 <use images/neuerungen/frequenz_versuch_aufbau.jpg>
 Package pdftex.def Info: images/neuerungen/frequenz_versuch_aufbau.jpg  used on
@@ -1497,20 +1502,20 @@ Overfull \hbox (3.22461pt too wide) in paragraph at lines 8--9
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 10.
 
-<images/interpolation/beispiel_online_fitting.jpg, id=2428, 1927.2pt x 1043.9pt
+<images/interpolation/beispiel_online_fitting.jpg, id=2429, 1927.2pt x 1043.9pt
 >
 File: images/interpolation/beispiel_online_fitting.jpg Graphic file (type jpg)
 <use images/interpolation/beispiel_online_fitting.jpg>
 Package pdftex.def Info: images/interpolation/beispiel_online_fitting.jpg  used
  on input line 34.
 (pdftex.def)             Requested size: 403.51187pt x 218.55646pt.
-<images/interpolation/graph_uc.png, id=2429, 428.35031pt x 302.63063pt>
+<images/interpolation/graph_uc.png, id=2430, 428.35031pt x 302.63063pt>
 File: images/interpolation/graph_uc.png Graphic file (type png)
 <use images/interpolation/graph_uc.png>
 Package pdftex.def Info: images/interpolation/graph_uc.png  used on input line 
 41.
 (pdftex.def)             Requested size: 322.81071pt x 228.06682pt.
-<images/interpolation/graph_ur.png, id=2431, 408.77719pt x 311.66437pt>
+<images/interpolation/graph_ur.png, id=2432, 408.77719pt x 311.66437pt>
 File: images/interpolation/graph_ur.png Graphic file (type png)
 <use images/interpolation/graph_ur.png>
 Package pdftex.def Info: images/interpolation/graph_ur.png  used on input line 
@@ -1980,9 +1985,9 @@ eX 2.9/fonts/type1/public/lm/lmro12.pfb><C:/Users/phili/AppData/Local/Programs/
 MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/phili/AppData/Local/Pro
 grams/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Users/phili/AppData/Local
 /Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb>
-Output written on VirtualScienceLab.pdf (108 pages, 48180233 bytes).
+Output written on VirtualScienceLab.pdf (108 pages, 48180917 bytes).
 PDF statistics:
- 3110 PDF objects out of 3580 (max. 8388607)
+ 3111 PDF objects out of 3580 (max. 8388607)
  2075 named destinations out of 2487 (max. 500000)
  421 words of extra memory for PDF output out of 10000 (max. 10000000)
 
