@@ -1767,7 +1767,7 @@ GameObject:
   - component: {fileID: 176418291}
   - component: {fileID: 176418290}
   m_Layer: 0
-  m_Name: "Z\xE4hler"
+  m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2202,7 +2202,7 @@ GameObject:
   - component: {fileID: 209089066}
   - component: {fileID: 209089065}
   m_Layer: 0
-  m_Name: "Z\xE4hler1"
+  m_Name: "Z\xE4hler"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
