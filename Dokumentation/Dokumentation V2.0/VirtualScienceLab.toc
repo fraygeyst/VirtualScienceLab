@@ -8,13 +8,13 @@
 \contentsline {section}{\numberline {4.4}Teilchenlabor}{21}{section.4.4}% 
 \contentsline {section}{\numberline {4.5}Elektrotechnik}{23}{section.4.5}% 
 \contentsline {chapter}{\numberline {5}Code}{27}{chapter.5}% 
-\contentsline {section}{\numberline {5.1}Allgemeine Scripte}{27}{section.5.1}% 
+\contentsline {section}{\numberline {5.1}Allgemeine Skripte}{27}{section.5.1}% 
 \contentsline {subsection}{\numberline {5.1.1}Scene\_Management.cs}{28}{subsection.5.1.1}% 
 \contentsline {subsection}{\numberline {5.1.2}Globals.cs}{30}{subsection.5.1.2}% 
 \contentsline {subsection}{\numberline {5.1.3}Load\_Publics.cs}{31}{subsection.5.1.3}% 
 \contentsline {subsection}{\numberline {5.1.4}Sev\_Seg\_Counter.cs}{35}{subsection.5.1.4}% 
 \contentsline {subsection}{\numberline {5.1.5}Display\_Meter\_5\_D.cs}{40}{subsection.5.1.5}% 
-\contentsline {section}{\numberline {5.2}Szenenspezifische Scripte}{45}{section.5.2}% 
+\contentsline {section}{\numberline {5.2}Szenenspezifische Skripte}{45}{section.5.2}% 
 \contentsline {subsection}{\numberline {5.2.1}Beschleunigung.cs}{45}{subsection.5.2.1}% 
 \contentsline {subsection}{\numberline {5.2.2}NextScene.cs}{48}{subsection.5.2.2}% 
 \contentsline {subsection}{\numberline {5.2.3}Mikroskop\_NewScene.cs}{49}{subsection.5.2.3}% 
