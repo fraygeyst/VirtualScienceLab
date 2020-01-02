@@ -31,5 +31,6 @@
 \contentsline {chapter}{\numberline {7}Verworfene Ideen}{93}{chapter.7}% 
 \contentsline {chapter}{\numberline {8}Ausblick}{95}{chapter.8}% 
 \contentsline {chapter}{\numberline {9}Fazit}{97}{chapter.9}% 
-\contentsline {chapter}{Literaturverzeichnis}{99}{section*.34}% 
-\contentsline {chapter}{Abbildungsverzeichnis}{99}{chapter*.36}% 
+\contentsline {chapter}{\numberline {10}Ehrenw\"ortliche Erkl\"arung}{99}{chapter.10}% 
+\contentsline {chapter}{Literaturverzeichnis}{101}{section*.36}% 
+\contentsline {chapter}{Abbildungsverzeichnis}{101}{chapter*.38}% 
