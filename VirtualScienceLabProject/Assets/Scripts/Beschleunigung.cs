@@ -9,14 +9,14 @@ public class Beschleunigung : MonoBehaviour {
     void Start () {
 		// Counter auf 0 setzen
         Sev_Seg_Counter counti = new Sev_Seg_Counter();
-        counti.setSevSegCount(0, "Zähler1");
+        counti.setSevSegCount(0, "Zaehler");
     }
 	
 	// Update is called once per frame
 	void Update () {
 		// Counter auf Standard setzen und aktualisieren wenn geändert
         Sev_Seg_Counter counti = new Sev_Seg_Counter();
-        counti.setSevSegCount(Load_Publics.Temperatur, "Zähler1");
+        counti.setSevSegCount(Load_Publics.Temperatur, "Zaehler");
     }
 
 	// Bei Controller Berührung

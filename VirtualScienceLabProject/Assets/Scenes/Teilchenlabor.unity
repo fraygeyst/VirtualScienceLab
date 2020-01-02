@@ -2202,7 +2202,7 @@ GameObject:
   - component: {fileID: 209089066}
   - component: {fileID: 209089065}
   m_Layer: 0
-  m_Name: "Z\xE4hler"
+  m_Name: Zaehler
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
