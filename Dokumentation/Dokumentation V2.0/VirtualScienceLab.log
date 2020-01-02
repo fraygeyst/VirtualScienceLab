@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.12.11)  2 JAN 2020 12:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.12.11)  2 JAN 2020 13:42
 entering extended mode
 **./VirtualScienceLab.tex
 (VirtualScienceLab.tex
@@ -1580,7 +1580,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--9
 [97
 
 
-]) [98] (VirtualScienceLab.bbl
+]
+Underfull \hbox (badness 10000) in paragraph at lines 10--11
+
+ []
+
+) [98] (VirtualScienceLab.bbl
 
 Class scrbook Warning: deprecated old font command `\sc' used.
 (scrbook)              You should note, that since 1994 LaTeX2e provides a
@@ -1975,7 +1980,7 @@ eX 2.9/fonts/type1/public/lm/lmro12.pfb><C:/Users/phili/AppData/Local/Programs/
 MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/phili/AppData/Local/Pro
 grams/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Users/phili/AppData/Local
 /Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb>
-Output written on VirtualScienceLab.pdf (108 pages, 48180034 bytes).
+Output written on VirtualScienceLab.pdf (108 pages, 48180233 bytes).
 PDF statistics:
  3110 PDF objects out of 3580 (max. 8388607)
  2075 named destinations out of 2487 (max. 500000)
