@@ -15,12 +15,14 @@ public class Move : MonoBehaviour {
     {
         if (collision.gameObject)
         {
+			// Richtungsänderung bei Kollision
             direction = direction * -1;
         }
     }
 
     // Update is called once per frame
     void Update () {
+		// Movespeed berechnen und umsetzen
         float move_speed = Load_Publics.RemapTemp((float)Load_Publics.Temperatur, Load_Publics.Temp_Min, Load_Publics.Temp_Max, Load_Publics.Map_Temp_Min, Load_Publics.Map_Temp_Max) * Load_Publics.move_speed_multi;
         //update the position
         transform.Translate(direction * move_speed * Time.deltaTime);

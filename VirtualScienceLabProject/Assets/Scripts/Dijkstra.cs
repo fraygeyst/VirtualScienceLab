@@ -19,15 +19,19 @@ public class Dijkstra : MonoBehaviour {
 
 	}
 
+	// Controller Input abfangen
     private void OnTriggerEnter(Collider other)
     {
-
+		// Überprüfen welcher Buchstabe geklickt wurde
         switch (gameObject.name)
         {
             case "S":
+			// Wenn S geklickt und S auch geklickt werden darf
                 if (Load_Publics.s_active && !Load_Publics.s_clicked)
                 {
+					// Einfärbung
                     gameObject.GetComponent<Renderer>().material.color = Color.green;
+					// Aktivierung nächster Bausteine
                     setActive("A");
                     setActive("B");
                     setActive("G");
@@ -255,6 +259,7 @@ public class Dijkstra : MonoBehaviour {
         Debug.Log(Load_Publics.counter);
     }
 
+	// Aktivierungsscript für Buchstaben
     private void setActive(string name)
     {
         Debug.Log("Active: " + name);
@@ -329,7 +334,8 @@ public class Dijkstra : MonoBehaviour {
             set_act_obj.GetComponent<Renderer>().material.color = Color.yellow;
         }
     }
-
+	
+	// Deaktivierungsscript für Buchstaben
     private void deactivate(string name)
     {
         Debug.Log("Deactivate: " + name);
@@ -405,6 +411,7 @@ public class Dijkstra : MonoBehaviour {
         }
     }
 
+	// Zurücksetzen aller Buchstaben und Counter
     private void reset()
     {
         GameObject.Find("S").GetComponent<Renderer>().material.color = Color.white;

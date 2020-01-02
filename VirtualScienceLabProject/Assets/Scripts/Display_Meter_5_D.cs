@@ -17,27 +17,34 @@ public class Display_Meter_5_D : MonoBehaviour {
 
     }
 
+	// Funktion zum setzen des Counters
     public void setDisplay(double do_number, string parent_name)
     {
         if(do_number < 1000)
         {
+			// Eingegebene Zahl in richtige Form bringen
             string s_number = String.Format("{0:000.00}", do_number);
+			// Counter Objekt finden
             GameObject parent = GameObject.Find(parent_name);
 
             Debug.Log(s_number);
 
+			// Jede Zahl muss einzeln gesetzt werden
             set_n(int.Parse(Char.ToString(s_number[0])), 1, parent);
             set_n(int.Parse(Char.ToString(s_number[1])), 2, parent);
             set_n(int.Parse(Char.ToString(s_number[2])), 3, parent);
             set_n(int.Parse(Char.ToString(s_number[4])), 4, parent);
             set_n(int.Parse(Char.ToString(s_number[5])), 5, parent);
 
+			// Komma färben
             setColorP(parent.transform.Find("decimal_point").gameObject);
         }
     }
 
+	// Zahl setzen
     private void set_n(int number, int disp_num, GameObject parent_item)
     {
+		// Segmente der Anzeige finden
         string s_lt = "n_" + disp_num + "_lt";
         string s_rt = "n_" + disp_num + "_rt";
         string s_lb = "n_" + disp_num + "_lb";
@@ -46,9 +53,11 @@ public class Display_Meter_5_D : MonoBehaviour {
         string s_b = "n_" + disp_num + "_b";
         string s_t = "n_" + disp_num + "_t";
 
+		// Zahl überprüfen
         switch (number)
         {
             case 0:
+				// Jedes Segment färben
                 setColorP(parent_item.transform.Find(s_lt).gameObject);
                 setColorP(parent_item.transform.Find(s_rt).gameObject);
                 setColorP(parent_item.transform.Find(s_lb).gameObject);
@@ -141,6 +150,7 @@ public class Display_Meter_5_D : MonoBehaviour {
         }
     }
     
+	// Positivfarbe
     private void setColorP(GameObject gameObject)
     {
         if (Load_Publics.counter <= Load_Publics.maximum)
@@ -153,20 +163,9 @@ public class Display_Meter_5_D : MonoBehaviour {
         }
 
     }
+	// Negativfarbe
     private void setColorN(GameObject gameObject)
     {
         gameObject.GetComponent<Renderer>().material.color = Color.black;
-    }
-
-    private int[] GetIntArray(int num)
-    {
-        List<int> listOfInts = new List<int>();
-        while (num > 0)
-        {
-            listOfInts.Add(num % 10);
-            num = num / 10;
-        }
-        listOfInts.Reverse();
-        return listOfInts.ToArray();
     }
 }

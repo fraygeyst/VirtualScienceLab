@@ -10,12 +10,13 @@ public class Mikroskop_NewScene : MonoBehaviour
     public GameObject blut;
     public GameObject zelle;
 
- 
+	// Controller Input abfangen
     private void OnTriggerEnter(Collider other)
     {
         Load_Publics.bio_collision_happened = true;
-       Debug.Log("collisionHappend: " + Load_Publics.bio_collision_happened);
+		Debug.Log("collisionHappend: " + Load_Publics.bio_collision_happened);
 
+// Abfragen welches Objekt auf Träger liegt
         if (other.gameObject.name == "pflanze_com" || other.gameObject.name == "pflanze" || other.gameObject.name == "pflanze_scheibe")
         {
             Debug.Log("Pflanze eingelegt");
@@ -63,7 +64,7 @@ public class Mikroskop_NewScene : MonoBehaviour
         Debug.Log("collisionHappend: " + Load_Publics.bio_collision_happened);
     }
 
-
+	// Szene Wechseln
     private void Update()
     {
         if ((ViveInput.GetPressDownEx(HandRole.RightHand, ControllerButton.Trigger) && Load_Publics.bio_collision_happened && Load_Publics.scene_change == "pflanze") || (ViveInput.GetPressDownEx(HandRole.LeftHand, ControllerButton.Trigger) && Load_Publics.bio_collision_happened && Load_Publics.scene_change == "pflanze"))

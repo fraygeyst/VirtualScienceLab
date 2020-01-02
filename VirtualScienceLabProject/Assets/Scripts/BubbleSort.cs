@@ -17,6 +17,7 @@ public class BubbleSort : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+		// Initialisierung und "Finden" der Glasscheiben-Objekte
         sicht_1 = GameObject.Find("sicht_1");
         sicht_2 = GameObject.Find("sicht_2");
         sicht_3 = GameObject.Find("sicht_3");
@@ -33,12 +34,16 @@ public class BubbleSort : MonoBehaviour
 
     }
 
+//Controllerinput auf Button abfangen
     private void OnTriggerEnter(Collider other)
     {
         next_sort(gameObject.name);
     }
+	
+	// Collider für Bausteine abfangen
     void OnCollisionEnter(Collision col)
     {
+		// Überprüfen ob richtiges Objekt auf Collider steht
         Debug.Log("Act: " + gameObject.name + ", col: " + col.gameObject.name);
         switch (gameObject.name)
         {
@@ -94,6 +99,7 @@ public class BubbleSort : MonoBehaviour
         }
     }
 
+	// Schließt aktuelle Scheiben und öffnet für nächsten Schritt
     private void next_sort(string obj_name)
     {
         switch (obj_name)
@@ -192,10 +198,13 @@ public class BubbleSort : MonoBehaviour
                 break;
         }
     }
+	
     private void activate(GameObject obj)
     {
+		// Verschieben der Glasscheiben-Objekte
         Transform transform = obj.GetComponent<Transform>();
         Vector3 vec = new Vector3(obj.transform.position.x, obj.transform.position.y, (float)-3.1);
+		// Coroutine fängt mehrmaliges versehentliches Button drücken ab
         StartCoroutine(MoveToPosition(transform, vec, 1));
     }
     private void deactivate(GameObject obj)
@@ -204,6 +213,8 @@ public class BubbleSort : MonoBehaviour
         Vector3 vec = new Vector3(obj.transform.position.x, obj.transform.position.y, (float)-3.412225);
         StartCoroutine(MoveToPosition(transform, vec, 1));
     }
+	
+	// Wenn alle Bausteine richtig liegen, Deaktivierung des Buttons und Einfärbung
     private bool all_done()
     {
         if(!Load_Publics.s_1_act && !Load_Publics.s_2_act && !Load_Publics.s_3_act && !Load_Publics.s_4_act && !Load_Publics.s_5_act && !Load_Publics.s_6_act && !Load_Publics.s_7_act)
@@ -217,6 +228,7 @@ public class BubbleSort : MonoBehaviour
             return false;
         }
     }
+	
     IEnumerator waiter()
     {
         GameObject button_bub = GameObject.Find("bubble_start");

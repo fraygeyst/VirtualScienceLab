@@ -22,6 +22,7 @@ public class NextScene   : MonoBehaviour {
 
     private void Update()
     {
+		// Szene wechseln nach COntroller Input
         if ((ViveInput.GetPressDownEx(HandRole.RightHand, ControllerButton.Trigger) && collisionHappend) || (ViveInput.GetPressDownEx(HandRole.LeftHand, ControllerButton.Trigger) && collisionHappend))
         {
             Debug.Log("changing Scene");

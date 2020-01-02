@@ -4,5 +4,6 @@ using UnityEngine;
 
 public static class Globals {
 
+// Globale Variable für Szenenwechsel
     public static string last_scene = "";
 }

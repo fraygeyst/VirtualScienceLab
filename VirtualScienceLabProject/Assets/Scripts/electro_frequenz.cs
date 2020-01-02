@@ -7,6 +7,7 @@ public class electro_frequenz : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		// Counter setzen
         Display_Meter_5_D counti = new Display_Meter_5_D();
         counti.setDisplay(Load_Publics.frequency_Netzteil, "Zähler_Netzteil_v2");
         counti.setDisplay(0, "Zähler_Volt_v2");
@@ -31,11 +32,15 @@ public class electro_frequenz : MonoBehaviour {
 		
 	}
 
+	// Controller Input abfangen
     private void OnTriggerEnter(Collider other)
     {
+		// Frequenz laden
         float new_freq = Load_Publics.frequency_Netzteil;
+		// Button abfangen
         switch (gameObject.name)
         {
+			// Frequenz ändern
             case "Button_links_plus":
                 if (Load_Publics.frequency_Netzteil < 100f)
                 {
@@ -102,12 +107,14 @@ public class electro_frequenz : MonoBehaviour {
             Load_Publics.frequency_Netzteil = new_freq;
         }
 
+		// Counter setzen
         Display_Meter_5_D counti = new Display_Meter_5_D();
         counti.setDisplay(System.Convert.ToDouble(Load_Publics.frequency_Netzteil / 10.0), "Zähler_Netzteil_v2");
         counti.setDisplay(System.Convert.ToDouble(interpolateUc(Load_Publics.frequency_Netzteil)), "Zähler_Volt_v2");
         counti.setDisplay(System.Convert.ToDouble(interpolateUr(Load_Publics.frequency_Netzteil)), "Zähler_Ampere_v2");
     }
 
+	// Benutzte Funktionen zur Interpolation der Werte
     float interpolateUc(float f)
     {
         float d = -0.05401982f;
@@ -128,6 +135,7 @@ public class electro_frequenz : MonoBehaviour {
         return Y0 - ((V0 / K) * (1f - Mathf.Exp(-1f * K * f)));
     }
 
+	// Andere von Herr Zitt gegebene Funktionen
     float getUq(float Ur, float Uc)
     {
         return Mathf.Sqrt(Mathf.Pow(2, Ur) + Mathf.Pow(2, Uc));

@@ -8,12 +8,16 @@ public class Scene_Management : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+		// Aktive Szene auslesen
         Scene scene = SceneManager.GetActiveScene();
+		// Player initialisieren
         camera_obj = GameObject.Find("ViveRig");
         Vector3 vec = new Vector3();
 
+// Überprüfen ob Szene == NeuerFlur
         if (scene.name == "NeuerFlur" && Globals.last_scene != "")
         {
+			// Player Position ändern
             Debug.Log("Switching Cam from: " + Globals.last_scene);
             switch (Globals.last_scene)
             {
@@ -43,6 +47,7 @@ public class Scene_Management : MonoBehaviour {
             camera_obj.transform.position = vec;
         } else
         {
+			// Last Szene setzen
             Globals.last_scene = scene.name;
         }
     }

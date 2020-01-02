@@ -34,14 +34,17 @@ public class ShowResults : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
+		// Input durch Controller abfragen
         if ((ViveInput.GetPressDownEx(HandRole.RightHand, ControllerButton.Trigger) && collisionHappend) || (ViveInput.GetPressDownEx(HandRole.LeftHand, ControllerButton.Trigger) && collisionHappend))
         {
+			// Falls Results angezeigt werden
             if (isOn)
             {
                 isOn = false;
                 graph.SetActive(false);
                 table.SetActive(false);
             }
+			// Falls noch nicht angezeigt
             else
             {
                 isOn = true;

@@ -7,23 +7,29 @@ public class Beschleunigung : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+		// Counter auf 0 setzen
         Sev_Seg_Counter counti = new Sev_Seg_Counter();
         counti.setSevSegCount(0, "Zähler1");
     }
 	
 	// Update is called once per frame
 	void Update () {
+		// Counter auf Standard setzen und aktualisieren wenn geändert
         Sev_Seg_Counter counti = new Sev_Seg_Counter();
         counti.setSevSegCount(Load_Publics.Temperatur, "Zähler1");
     }
 
+	// Bei Controller Berührung
     private void OnTriggerEnter(Collider other)
     {
+		// Abfrage ob + oder - gedrückt wurde
         switch (gameObject.name)
         {
             case "plus":
+			// Wenn Button aktiv ist und Max bzw Min Temp noch nicht erreicht
                 if (Load_Publics.plus_act && Load_Publics.Temperatur < Load_Publics.Temp_Max)
                 {
+					// Temperatur Änderung und Button deaktivieren
                     Load_Publics.Temperatur += 25;
                     Debug.Log("wärmer");
                     StartCoroutine(waiter(true));
@@ -40,6 +46,7 @@ public class Beschleunigung : MonoBehaviour {
         }
     }
 
+	// Deaktiviert Button für 1 Sekunde und aktiviert danach wieder
     IEnumerator waiter(bool isplus)
     {
         GameObject button_mol = null;

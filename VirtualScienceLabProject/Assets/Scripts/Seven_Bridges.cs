@@ -15,18 +15,25 @@ public class Seven_Bridges : MonoBehaviour {
 
     }
 
+	// COntroller Input abfangen
     private void OnTriggerEnter(Collider col)
     {
+		// Falls aktiv
         if (Load_Publics.bridges_active)
         {
+			// Wenn Counter kleiner 7
             if (Load_Publics.sev_bridges_counter < 7)
             {
+				// COunter erhöhen
                 Load_Publics.sev_bridges_counter++;
+				// Corountine Input deaktivieren
                 StartCoroutine(waiter());
+				// Brücke einfärben
                 gameObject.GetComponent<Renderer>().material.color = Color.yellow;
             }
             else
             {
+				// Neustart
                 StartCoroutine(reset());
                 Load_Publics.sev_bridges_counter = 0;
             }
@@ -35,6 +42,7 @@ public class Seven_Bridges : MonoBehaviour {
         }
     }
 
+	// Alle Brücken färben
     private void colorAll(bool isRed)
     {
         if (isRed)
@@ -59,6 +67,7 @@ public class Seven_Bridges : MonoBehaviour {
         
     }
 
+	// Deaktiviert für 2 Sekunden die Eingabe
     IEnumerator waiter()
     {
         Load_Publics.bridges_active = false;
@@ -67,6 +76,7 @@ public class Seven_Bridges : MonoBehaviour {
 
         Load_Publics.bridges_active = true;
     }
+	// Setzt alles zurück und lässt Brücken rot blinken
     IEnumerator reset()
     {
         Load_Publics.bridges_active = false;

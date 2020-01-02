@@ -19,11 +19,14 @@ public class Sev_Seg_Counter : MonoBehaviour {
     {
         if (seconds < 1000)
         {
+			// Input formatieren
             string s_number = String.Format("{0:000}", seconds);
+			// Parent finden
             GameObject parent = GameObject.Find(parentname);
 
             Debug.Log(s_number);
 
+			// Nummer setzen
             set_n(int.Parse(Char.ToString(s_number[0])), 1, parent);
             set_n(int.Parse(Char.ToString(s_number[1])), 2, parent);
             set_n(int.Parse(Char.ToString(s_number[2])), 3, parent);
@@ -32,6 +35,7 @@ public class Sev_Seg_Counter : MonoBehaviour {
 
     private void set_n(int number, int disp_num, GameObject parent_item)
     {
+		// Segmente finden
         string s_lt = "n_" + disp_num + "_lt";
         string s_rt = "n_" + disp_num + "_rt";
         string s_lb = "n_" + disp_num + "_lb";
@@ -43,9 +47,11 @@ public class Sev_Seg_Counter : MonoBehaviour {
         Debug.Log(parent_item);
         Debug.Log(number);
 
+		// Zahl rausfinden
         switch (number)
         {
             case 0:
+				// Segmente einfärben
                 setColorP(parent_item.transform.Find(s_lt).gameObject);
                 setColorP(parent_item.transform.Find(s_rt).gameObject);
                 setColorP(parent_item.transform.Find(s_lb).gameObject);
@@ -138,6 +144,7 @@ public class Sev_Seg_Counter : MonoBehaviour {
         }
     }
 
+	// Positivfarbe
     private void setColorP(GameObject gameObject)
     {
         if(Load_Publics.counter <= Load_Publics.maximum)
@@ -149,20 +156,9 @@ public class Sev_Seg_Counter : MonoBehaviour {
         }
         
     }
+	// Negativfarbe
     private void setColorN(GameObject gameObject)
     {
         gameObject.GetComponent<Renderer>().material.color = Color.black;
-    }
-
-    private int[] GetIntArray(int num)
-    {
-        List<int> listOfInts = new List<int>();
-        while (num > 0)
-        {
-            listOfInts.Add(num % 10);
-            num = num / 10;
-        }
-        listOfInts.Reverse();
-        return listOfInts.ToArray();
     }
 }
