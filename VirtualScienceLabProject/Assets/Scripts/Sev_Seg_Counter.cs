@@ -24,7 +24,8 @@ public class Sev_Seg_Counter : MonoBehaviour {
 			// Parent finden
             GameObject parent = GameObject.Find(parentname);
 
-            Debug.Log(s_number);
+            Debug.Log(parentname);
+            Debug.Log(parent);
 
 			// Nummer setzen
             set_n(int.Parse(Char.ToString(s_number[0])), 1, parent);

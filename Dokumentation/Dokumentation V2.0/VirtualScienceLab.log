@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.12.11)  2 JAN 2020 15:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.12.11)  2 JAN 2020 15:48
 entering extended mode
 **./VirtualScienceLab.tex
 (VirtualScienceLab.tex
@@ -1415,10 +1415,15 @@ File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) (../../VirtualScienceLabProject/Assets/Scripts/Scene_Management.cs
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 1.
- [28
+LaTeX Font Info:    Try loading font information for TS1+lmtt on input line 17.
 
-])
-[29] (../../VirtualScienceLabProject/Assets/Scripts/Globals.cs) [30
+
+("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ts1lmtt.fd"
+File: ts1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+[28
+
+]) [29] (../../VirtualScienceLabProject/Assets/Scripts/Globals.cs) [30
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 30--31
@@ -1465,14 +1470,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 63--64
 (../../VirtualScienceLabProject/Assets/Scripts/Dijkstra.cs [60
 
 ] [61] [62]
-[63] [64] [65]
-LaTeX Font Info:    Try loading font information for TS1+lmtt on input line 254
-.
-
-("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ts1lmtt.fd"
-File: ts1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-[66] [67] [68] [69] [70]) [71]
+[63] [64] [65] [66] [67] [68] [69] [70]) [71]
 (../../VirtualScienceLabProject/Assets/Scripts/Seven_Bridges.cs [72
 
 ] [73])
@@ -1512,20 +1510,20 @@ Overfull \hbox (3.22461pt too wide) in paragraph at lines 8--9
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 10.
 
-<images/interpolation/beispiel_online_fitting.jpg, id=2431, 1927.2pt x 1043.9pt
+<images/interpolation/beispiel_online_fitting.jpg, id=2495, 1927.2pt x 1043.9pt
 >
 File: images/interpolation/beispiel_online_fitting.jpg Graphic file (type jpg)
 <use images/interpolation/beispiel_online_fitting.jpg>
 Package pdftex.def Info: images/interpolation/beispiel_online_fitting.jpg  used
  on input line 34.
 (pdftex.def)             Requested size: 403.51187pt x 218.55646pt.
-<images/interpolation/graph_uc.png, id=2432, 428.35031pt x 302.63063pt>
+<images/interpolation/graph_uc.png, id=2496, 428.35031pt x 302.63063pt>
 File: images/interpolation/graph_uc.png Graphic file (type png)
 <use images/interpolation/graph_uc.png>
 Package pdftex.def Info: images/interpolation/graph_uc.png  used on input line 
 41.
 (pdftex.def)             Requested size: 322.81071pt x 228.06682pt.
-<images/interpolation/graph_ur.png, id=2434, 408.77719pt x 311.66437pt>
+<images/interpolation/graph_ur.png, id=2498, 408.77719pt x 311.66437pt>
 File: images/interpolation/graph_ur.png Graphic file (type png)
 <use images/interpolation/graph_ur.png>
 Package pdftex.def Info: images/interpolation/graph_ur.png  used on input line 
@@ -1973,6 +1971,7 @@ images/neuerungen/frequenz_versuch_aufbau.jpg
 ./chapters/code.tex
   t1lmtt.fd    2009/10/30 v1.6 Font defs for Latin Modern
 ../../VirtualScienceLabProject/Assets/Scripts/Scene_Management.cs
+ ts1lmtt.fd    2009/10/30 v1.6 Font defs for Latin Modern
 ../../VirtualScienceLabProject/Assets/Scripts/Globals.cs
 ../../VirtualScienceLabProject/Assets/Scripts/Load_Publics.cs
 ../../VirtualScienceLabProject/Assets/Scripts/Sev_Seg_Counter.cs
@@ -1982,7 +1981,6 @@ images/neuerungen/frequenz_versuch_aufbau.jpg
 ../../VirtualScienceLabProject/Assets/Scripts/Mikroskop_NewScene.cs
 ../../VirtualScienceLabProject/Assets/Scripts/BubbleSort.cs
 ../../VirtualScienceLabProject/Assets/Scripts/Dijkstra.cs
- ts1lmtt.fd    2009/10/30 v1.6 Font defs for Latin Modern
 ../../VirtualScienceLabProject/Assets/Scripts/Seven_Bridges.cs
 ../../VirtualScienceLabProject/Assets/Scripts/electro_frequenz.cs
 ../../VirtualScienceLabProject/Assets/Scripts/electro_lampe.cs
@@ -2007,18 +2005,18 @@ Package rerunfilecheck Info: File `VirtualScienceLab.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 78.
  ) 
 Here is how much of TeX's memory you used:
- 18791 strings out of 492895
- 341591 string characters out of 3123734
+ 18857 strings out of 492895
+ 342647 string characters out of 3123734
  807633 words of memory out of 3000000
- 20198 multiletter control sequences out of 15000+200000
+ 20200 multiletter control sequences out of 15000+200000
  71360 words of font info for 68 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,21n,109p,10113b,1902s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,21n,109p,10113b,1902s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/phili/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.en
-c}{C:/Users/phili/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.e
-nc}{C:/Users/phili/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-math
-sy.enc}{C:/Users/phili/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-
-mathit.enc}<C:/Users/phili/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
+c}{C:/Users/phili/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-maths
+y.enc}{C:/Users/phili/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-m
+athit.enc}{C:/Users/phili/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/
+lm-ts1.enc}<C:/Users/phili/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
 /lm/lmbx12.pfb><C:/Users/phili/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
 blic/lm/lmcsc10.pfb><C:/Users/phili/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
 e1/public/lm/lmmi10.pfb><C:/Users/phili/AppData/Local/Programs/MiKTeX 2.9/fonts
@@ -2030,9 +2028,9 @@ eX 2.9/fonts/type1/public/lm/lmro12.pfb><C:/Users/phili/AppData/Local/Programs/
 MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/phili/AppData/Local/Pro
 grams/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Users/phili/AppData/Local
 /Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb>
-Output written on VirtualScienceLab.pdf (110 pages, 48186605 bytes).
+Output written on VirtualScienceLab.pdf (110 pages, 48202208 bytes).
 PDF statistics:
- 3129 PDF objects out of 3580 (max. 8388607)
- 2080 named destinations out of 2487 (max. 500000)
+ 3206 PDF objects out of 3580 (max. 8388607)
+ 2144 named destinations out of 2487 (max. 500000)
  429 words of extra memory for PDF output out of 10000 (max. 10000000)
 
