@@ -1,7 +1,6 @@
-﻿# Unity
-Version: 2018.2.21f1
+﻿# Virtual Science Lab Version 2.0
+Verwendete Software : Unity Version: 2018.2.21f1
 
-Virtual Science Lab Version 2.0
 ____________________________________
 PHILIPP LAUER, MARC ZINTEL
 
