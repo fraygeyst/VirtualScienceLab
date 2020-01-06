@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.12.11)  6 JAN 2020 11:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.12.11)  6 JAN 2020 12:31
 entering extended mode
 **./poster.tex
 (poster.tex
@@ -1160,31 +1160,31 @@ Dictionary: translator-theorem-dictionary, Language: English
 <labor_vgl.png, id=12, 1293.83376pt x 1136.245pt>
 File: labor_vgl.png Graphic file (type png)
 <use labor_vgl.png>
-Package pdftex.def Info: labor_vgl.png  used on input line 174.
+Package pdftex.def Info: labor_vgl.png  used on input line 178.
 (pdftex.def)             Requested size: 1030.14429pt x 904.71483pt.
 <VSL_Screen_2.jpg, id=13, 3854.4pt x 2168.1pt>
 File: VSL_Screen_2.jpg Graphic file (type jpg)
 <use VSL_Screen_2.jpg>
-Package pdftex.def Info: VSL_Screen_2.jpg  used on input line 174.
+Package pdftex.def Info: VSL_Screen_2.jpg  used on input line 178.
 (pdftex.def)             Requested size: 1030.14429pt x 579.43999pt.
 <bunsenbrenner.png, id=14, 3854.4pt x 2168.1pt>
 File: bunsenbrenner.png Graphic file (type png)
 <use bunsenbrenner.png>
-Package pdftex.def Info: bunsenbrenner.png  used on input line 174.
+Package pdftex.def Info: bunsenbrenner.png  used on input line 178.
 (pdftex.def)             Requested size: 1030.14429pt x 579.43999pt.
 <etechnik_vgl.png, id=15, 1293.83376pt x 1136.245pt>
 File: etechnik_vgl.png Graphic file (type png)
 <use etechnik_vgl.png>
-Package pdftex.def Info: etechnik_vgl.png  used on input line 174.
+Package pdftex.def Info: etechnik_vgl.png  used on input line 178.
 (pdftex.def)             Requested size: 1030.14429pt x 904.71483pt.
 <informatiklab_bubblesort.png, id=16, 3854.4pt x 2168.1pt>
 File: informatiklab_bubblesort.png Graphic file (type png)
 <use informatiklab_bubblesort.png>
-Package pdftex.def Info: informatiklab_bubblesort.png  used on input line 174.
+Package pdftex.def Info: informatiklab_bubblesort.png  used on input line 178.
 (pdftex.def)             Requested size: 1030.14429pt x 579.43999pt.
-LaTeX Font Info:    Calculating math sizes for size <40.43> on input line 174.
+LaTeX Font Info:    Calculating math sizes for size <40.43> on input line 178.
 LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 174.
+line 178.
 
 ("C:\Users\phili\AppData\Local\Programs\MiKTeX 2.9\tex/latex/sansmathaccent\ot1
 mathkerncmss.fd"
@@ -1204,19 +1204,19 @@ py)> <./etechnik_vgl.png (PNG copy)> <./informatiklab_bubblesort.png (PNG copy)
 \tf@snm=\write8
 \openout8 = `poster.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 176.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 176.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 180.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 180.
  (poster.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 176.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 176.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 180.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 180.
 Package rerunfilecheck Info: File `poster.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 19058 strings out of 492895
- 359407 string characters out of 3123734
- 479814 words of memory out of 3000000
- 22493 multiletter control sequences out of 15000+200000
+ 19057 strings out of 492895
+ 359392 string characters out of 3123734
+ 480814 words of memory out of 3000000
+ 22492 multiletter control sequences out of 15000+200000
  13627 words of font info for 48 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,17n,68p,775b,979s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1224,7 +1224,7 @@ Here is how much of TeX's memory you used:
 /cm/cmss17.pfb><C:/Users/phili/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/cm/cmssbx10.pfb><C:/Users/phili/AppData/Local/Programs/MiKTeX 2.9
 /fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on poster.pdf (1 page, 7478764 bytes).
+Output written on poster.pdf (1 page, 7479667 bytes).
 PDF statistics:
  38 PDF objects out of 1000 (max. 8388607)
  3 named destinations out of 1000 (max. 500000)
