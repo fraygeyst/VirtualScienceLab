@@ -27,14 +27,14 @@ public class ChangeColorScript : MonoBehaviour {
     {
         //Zeit abfragen
         int sec = System.DateTime.Now.Second;
-        //falls sich die Zeit nicht geaendert hat soll die Farbe beibehalten werden
+        //falls sich die Zeit nicht geaendert hat soll die Farbei beibehalten werden
         if (seconds != sec)
         {
             gameObject.GetComponent<Renderer>().material = Materialcolor2;
            
         }else
         {
-            //Ansonsten soll es kurz aufblitzen
+            //Ansonsten soll es kurz aufblinzeln
             gameObject.GetComponent<Renderer>().material = Materialcolor1;
             
         }
